@@ -1,3 +1,3 @@
 {
-    "plugins": ["search"]
+    "plugins": ["search", "toggle-chapters"]
 }
