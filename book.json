@@ -1,3 +1,3 @@
 {
-    "plugins": ["gitbook-plugin-regexplace"]
+    "plugins": ["regexplace"]
 }
