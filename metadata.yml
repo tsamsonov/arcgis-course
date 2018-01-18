@@ -1,0 +1,12 @@
+---
+title: Практикум по геоинформатике
+author: Симофей Самсонов
+rights:  Creative Commons Attribution 4.0 International
+language: ru-RU
+tags: [ГИС, геоинформатика, пространственный анализ]
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+---
