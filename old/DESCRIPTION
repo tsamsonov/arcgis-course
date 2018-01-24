@@ -1,0 +1,5 @@
+Package: arcgiscourse
+Type: Book
+Title: GIS excercises
+Version: 0.0.1
+Imports: bookdown

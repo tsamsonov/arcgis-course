@@ -1,0 +1,42 @@
+book_filename: "arcgis-course"
+chapter_name: "Упражнение "
+output_dir: docs
+rmd_files:
+    - "index.Rmd"
+    - "Ex01_MapDesign_Climates.md"
+    - "Ex02_MapDesign_Economic.md"
+    - "Ex03_MapDesign_Quaternary.md"
+    - "Ex04_MapDesign_General.md"
+    - "Ex05_MapReferencing_Hydrogeologic.md"
+    - "Ex06_MapReferencing_Economic.md"
+    - "Ex07_MapReferencing_General.md"
+    - "Ex08_StatisticalMapping_Economic.md"
+    - "Ex09_LandCover_Hydro.md"
+    - "Ex10_Overlay.md"
+    - "Ex11_WeightedOverlay.md"
+    - "Ex12_NetworkAnalysis.md"
+    - "Ex13_NetworkModeling_Hydro.md"
+    - "Ex14_Geocoding.md"
+    - "Ex15_DensityAnalysis_Economic.md"
+    - "Ex16_Interpolation.md"
+    - "Ex17_DemAnalysis.md"
+    - "Ex18_3DModelling_Viewsheds.md"
+new_session: yes
+language:
+  label:
+    fig: 'Рис. '
+    tab: 'Таблица '
+    eq: 'Уравнение '
+    thm: 'Теорема '
+    lem: 'Лемма '
+    def: 'Определение '
+    cor: 'Следствие '
+    prp: 'Предположение '
+    exm: 'Пример '
+    exr: 'Упражнение '
+    proof: 'Доказательство. '
+    remark: 'Заметка. '
+    solution: 'Решение. '
+  ui:
+    edit: Редактировать
+    chapter_name: 'Глава '

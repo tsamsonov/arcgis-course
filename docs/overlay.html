@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Практикум по геоинформатике</title>
+  <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Практикум по геоинформатике" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
+  <meta name="github-repo" content="tsamsonov/arcgis-course" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Практикум по геоинформатике" />
+  
+  <meta name="twitter:description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
+  
+
+<meta name="author" content="Тимофей Самсонов">
+
+
+<meta name="date" content="2018-01-24">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="land-cover-hydro.html">
+<link rel="next" href="weighted-overlay.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Практикум по геоинформатике</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Регламент</a></li>
+<li class="chapter" data-level="1" data-path="map-design-climates.html"><a href="map-design-climates.html"><i class="fa fa-check"></i><b>1</b> Оформление климатической карты</a><ul>
+<li class="chapter" data-level="1.1" data-path="map-design-climates.html"><a href="map-design-climates.html#section-1.1"><i class="fa fa-check"></i><b>1.1</b> Введение</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>1.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="1.1.2" data-path="map-design-climates.html"><a href="map-design-climates.html#section-1.1.2"><i class="fa fa-check"></i><b>1.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>1.2</b> Начало работы</a></li>
+<li class="chapter" data-level="1.3" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>1.3</b> Оформление слоев</a></li>
+<li class="chapter" data-level="1.4" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>1.4</b> Настройка подписей</a></li>
+<li class="chapter" data-level="1.5" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>1.5</b> Настройка компоновки</a></li>
+<li class="chapter" data-level="1.6" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>1.6</b> Экспорт в графический файл</a></li>
+<li class="chapter" data-level="1.7" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>1.7</b> Ответы на вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="map-design-economic.html"><a href="map-design-economic.html"><i class="fa fa-check"></i><b>2</b> Оформление социально-экономической карты</a><ul>
+<li class="chapter" data-level="2.1" data-path="map-design-economic.html"><a href="map-design-economic.html#-1"><i class="fa fa-check"></i><b>2.1</b> Введение</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="map-design-economic.html"><a href="map-design-economic.html#--1"><i class="fa fa-check"></i><b>2.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="2.1.2" data-path="map-design-economic.html"><a href="map-design-economic.html#-1"><i class="fa fa-check"></i><b>2.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="map-design-economic.html"><a href="map-design-economic.html#--1"><i class="fa fa-check"></i><b>2.2</b> Начало работы</a></li>
+<li class="chapter" data-level="2.3" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>2.3</b> Оформление тематических слоев</a></li>
+<li class="chapter" data-level="2.4" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>2.4</b> Оформление общегеографических слоев</a></li>
+<li class="chapter" data-level="2.5" data-path="map-design-economic.html"><a href="map-design-economic.html#--1"><i class="fa fa-check"></i><b>2.5</b> Настройка подписей</a></li>
+<li class="chapter" data-level="2.6" data-path="map-design-economic.html"><a href="map-design-economic.html#--1"><i class="fa fa-check"></i><b>2.6</b> Настройка компоновки</a></li>
+<li class="chapter" data-level="2.7" data-path="map-design-economic.html"><a href="map-design-economic.html#----1"><i class="fa fa-check"></i><b>2.7</b> Экспорт в графический файл</a></li>
+<li class="chapter" data-level="2.8" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>2.8</b> Контрольные вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html"><i class="fa fa-check"></i><b>3</b> Оформление карты четвертичных отложений</a><ul>
+<li class="chapter" data-level="3.1" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#-2"><i class="fa fa-check"></i><b>3.1</b> Введение</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#--2"><i class="fa fa-check"></i><b>3.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="3.1.2" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#-2"><i class="fa fa-check"></i><b>3.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----arcmap"><i class="fa fa-check"></i><b>3.2</b> Изучение данных в приложении ArcMap</a></li>
+<li class="chapter" data-level="3.3" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>3.3</b> Способы изображения</a></li>
+<li class="chapter" data-level="3.4" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#section-3.4"><i class="fa fa-check"></i><b>3.4</b> Подписи</a></li>
+<li class="chapter" data-level="3.5" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>3.5</b> Компоновка карты</a></li>
+<li class="chapter" data-level="3.6" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>3.6</b> Редактирование атрибутов</a></li>
+<li class="chapter" data-level="3.7" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>3.7</b> Создание и вычисление атрибутов (дополнительно)</a></li>
+<li class="chapter" data-level="3.8" data-path="map-design-economic.html"><a href="map-design-economic.html#--1"><i class="fa fa-check"></i><b>3.8</b> Контрольные вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="map-design-general.html"><a href="map-design-general.html"><i class="fa fa-check"></i><b>4</b> Оформление общегеографической карты</a><ul>
+<li class="chapter" data-level="4.1" data-path="map-design-general.html"><a href="map-design-general.html#-3"><i class="fa fa-check"></i><b>4.1</b> Введение</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="map-design-general.html"><a href="map-design-general.html#--3"><i class="fa fa-check"></i><b>4.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="4.1.2" data-path="map-design-general.html"><a href="map-design-general.html#-3"><i class="fa fa-check"></i><b>4.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#--2"><i class="fa fa-check"></i><b>4.2</b> Начало работы</a></li>
+<li class="chapter" data-level="4.3" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>4.3</b> Оформление рельефа</a></li>
+<li class="chapter" data-level="4.4" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>4.4</b> Оформление векторных слоев</a></li>
+<li class="chapter" data-level="4.5" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>4.5</b> Создание подписей</a></li>
+<li class="chapter" data-level="4.6" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>4.6</b> Классификация населенных пунктов</a></li>
+<li class="chapter" data-level="4.7" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>4.7</b> Маска и подписи стран</a></li>
+<li class="chapter" data-level="4.8" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>4.8</b> Настройка компоновки карты</a></li>
+<li class="chapter" data-level="4.9" data-path="map-design-general.html"><a href="map-design-general.html#----2"><i class="fa fa-check"></i><b>4.9</b> Экспорт в графический файл</a></li>
+<li class="chapter" data-level="4.10" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#--2"><i class="fa fa-check"></i><b>4.10</b> Контрольные вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html"><i class="fa fa-check"></i><b>5</b> Привязка и цифрование гидрогеологической карты</a><ul>
+<li class="chapter" data-level="5.1" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#-4"><i class="fa fa-check"></i><b>5.1</b> Введение</a></li>
+<li class="chapter" data-level="5.2" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>5.2</b> Оформление базовых слоев</a></li>
+<li class="chapter" data-level="5.3" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>5.3</b> Привязка карты</a></li>
+<li class="chapter" data-level="5.4" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>5.4</b> Создание слоя гидрогеологического районирования</a></li>
+<li class="chapter" data-level="5.5" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>5.5</b> Пространственный запрос</a></li>
+<li class="chapter" data-level="5.6" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#section-5.6"><i class="fa fa-check"></i><b>5.6</b> Оверлей</a><ul>
+<li class="chapter" data-level="5.6.1" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>5.6.1</b> Атрибутивный запрос</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>5.7</b> Оформление карты</a></li>
+<li class="chapter" data-level="5.8" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#---1"><i class="fa fa-check"></i><b>5.8</b> Ответы на вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="map-ref-economic.html"><a href="map-ref-economic.html"><i class="fa fa-check"></i><b>6</b> Создание тематической базы геоданных административного деления города</a><ul>
+<li class="chapter" data-level="6.1" data-path="map-ref-economic.html"><a href="map-ref-economic.html#-5"><i class="fa fa-check"></i><b>6.1</b> Введение</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="map-ref-economic.html"><a href="map-ref-economic.html#--4"><i class="fa fa-check"></i><b>6.1.1</b> Контрольный лист:</a></li>
+<li class="chapter" data-level="6.1.2" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#-4"><i class="fa fa-check"></i><b>6.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>6.2</b> Добавление референцных данных</a></li>
+<li class="chapter" data-level="6.3" data-path="map-design-economic.html"><a href="map-design-economic.html#--1"><i class="fa fa-check"></i><b>6.3</b> Привязка карты</a></li>
+<li class="chapter" data-level="6.4" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>6.4</b> Создание слоя городских районов</a></li>
+<li class="chapter" data-level="6.5" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>6.5</b> Расчет статистики по районам</a></li>
+<li class="chapter" data-level="6.6" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>6.6</b> Построение картодиаграмм</a></li>
+<li class="chapter" data-level="6.7" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>6.7</b> Настройка оформления других слоев</a></li>
+<li class="chapter" data-level="6.8" data-path="map-ref-economic.html"><a href="map-ref-economic.html#section-6.8"><i class="fa fa-check"></i><b>6.8</b> Компоновка</a></li>
+<li class="chapter" data-level="6.9" data-path="map-ref-economic.html"><a href="map-ref-economic.html#---2"><i class="fa fa-check"></i><b>6.9</b> Ответы на вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="map-ref-general.html"><a href="map-ref-general.html"><i class="fa fa-check"></i><b>7</b> Привязка и цифрование туристской карты</a><ul>
+<li class="chapter" data-level="7.1" data-path="map-ref-general.html"><a href="map-ref-general.html#-6"><i class="fa fa-check"></i><b>7.1</b> Введение</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="map-ref-general.html"><a href="map-ref-general.html#--5"><i class="fa fa-check"></i><b>7.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="7.1.2" data-path="map-ref-economic.html"><a href="map-ref-economic.html#-5"><i class="fa fa-check"></i><b>7.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>7.2</b> Привязка карт</a></li>
+<li class="chapter" data-level="7.3" data-path="map-ref-general.html"><a href="map-ref-general.html#------"><i class="fa fa-check"></i><b>7.3</b> Создание базы данных и классов пространственных объектов</a></li>
+<li class="chapter" data-level="7.4" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>7.4</b> Цифрование регионов</a></li>
+<li class="chapter" data-level="7.5" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>7.5</b> Атрибутирование регионов</a></li>
+<li class="chapter" data-level="7.6" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>7.6</b> Цифрование маршрутов и точек интереса</a></li>
+<li class="chapter" data-level="7.7" data-path="map-design-economic.html"><a href="map-design-economic.html#--1"><i class="fa fa-check"></i><b>7.7</b> Оформление карты</a></li>
+<li class="chapter" data-level="7.8" data-path="map-design-economic.html"><a href="map-design-economic.html#--1"><i class="fa fa-check"></i><b>7.8</b> Компоновка карты</a></li>
+<li class="chapter" data-level="7.9" data-path="map-design-general.html"><a href="map-design-general.html#--3"><i class="fa fa-check"></i><b>7.9</b> Контрольные вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="stat-map-economic.html"><a href="stat-map-economic.html"><i class="fa fa-check"></i><b>8</b> Картографирование по статистическим данным</a><ul>
+<li class="chapter" data-level="8.1" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-7"><i class="fa fa-check"></i><b>8.1</b> Введение</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--6"><i class="fa fa-check"></i><b>8.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="8.1.2" data-path="map-ref-general.html"><a href="map-ref-general.html#-6"><i class="fa fa-check"></i><b>8.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-----nuts"><i class="fa fa-check"></i><b>8.2</b> Скачивание географических данных с сайта NUTS</a></li>
+<li class="chapter" data-level="8.3" data-path="stat-map-economic.html"><a href="stat-map-economic.html#----nuts"><i class="fa fa-check"></i><b>8.3</b> Скачивание таблиц с сайта NUTS</a></li>
+<li class="chapter" data-level="8.4" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-----nuts"><i class="fa fa-check"></i><b>8.4</b> Скачивание структурных таблиц с сайта NUTS</a></li>
+<li class="chapter" data-level="8.5" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-----"><i class="fa fa-check"></i><b>8.5</b> Форматирование таблиц для загрузки в ГИС</a></li>
+<li class="chapter" data-level="8.6" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>8.6</b> Подготовка проекта</a></li>
+<li class="chapter" data-level="8.7" data-path="stat-map-economic.html"><a href="stat-map-economic.html#----2--"><i class="fa fa-check"></i><b>8.7</b> Отображение картодиаграмм по единицам 2-го уровня</a></li>
+<li class="chapter" data-level="8.8" data-path="stat-map-economic.html"><a href="stat-map-economic.html#----3--"><i class="fa fa-check"></i><b>8.8</b> Отображение картограмм по единицам 3-го уровня</a></li>
+<li class="chapter" data-level="8.9" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-----3--"><i class="fa fa-check"></i><b>8.9</b> Отображение структурных картодиаграмм по единицам 3-го уровня</a></li>
+<li class="chapter" data-level="8.10" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>8.10</b> Оформление итоговых карт</a></li>
+<li class="chapter" data-level="8.11" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>8.11</b> Экспорт карты числа транспортных средств</a></li>
+<li class="chapter" data-level="8.12" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>8.12</b> Экспорт карты населения</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html"><i class="fa fa-check"></i><b>9</b> Анализ распределения типов подстилающей поверхности</a><ul>
+<li class="chapter" data-level="9.1" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#-8"><i class="fa fa-check"></i><b>9.1</b> Введение</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#--7"><i class="fa fa-check"></i><b>9.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="9.1.2" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-7"><i class="fa fa-check"></i><b>9.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#---1"><i class="fa fa-check"></i><b>9.2</b> Оформление базовых слоев</a></li>
+<li class="chapter" data-level="9.3" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>9.3</b> Построение регулярной сетки</a></li>
+<li class="chapter" data-level="9.4" data-path="map-ref-general.html"><a href="map-ref-general.html#------"><i class="fa fa-check"></i><b>9.4</b> Подсчет доли водных объектов в площади ячеек</a></li>
+<li class="chapter" data-level="9.5" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#-------"><i class="fa fa-check"></i><b>9.5</b> Подсчет доли прочих типов поверхности в площади ячеек</a></li>
+<li class="chapter" data-level="9.6" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>9.6</b> Добавление и инициализация атрибутивных полей</a></li>
+<li class="chapter" data-level="9.7" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-----"><i class="fa fa-check"></i><b>9.7</b> Присоединение таблицы с долей водных объектов</a></li>
+<li class="chapter" data-level="9.8" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>9.8</b> Присоединение таблиц прочих типов поверхностей</a></li>
+<li class="chapter" data-level="9.9" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>9.9</b> Вычисление доли прочих поверхностей</a></li>
+<li class="chapter" data-level="9.10" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>9.10</b> Вычисление координат центров ячеек</a></li>
+<li class="chapter" data-level="9.11" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>9.11</b> Экспорт таблицы в файл</a></li>
+<li class="chapter" data-level="9.12" data-path="map-design-economic.html"><a href="map-design-economic.html#--1"><i class="fa fa-check"></i><b>9.12</b> Построение картодиаграмм</a></li>
+<li class="chapter" data-level="9.13" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>9.13</b> Оформление компоновки карты</a></li>
+<li class="chapter" data-level="9.14" data-path="map-ref-economic.html"><a href="map-ref-economic.html#--4"><i class="fa fa-check"></i><b>9.14</b> Контрольные вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="overlay.html"><a href="overlay.html"><i class="fa fa-check"></i><b>10</b> Анализ пространственных взаимосвязей методом оверлея на основе векторных данных</a><ul>
+<li class="chapter" data-level="10.1" data-path="overlay.html"><a href="overlay.html#-9"><i class="fa fa-check"></i><b>10.1</b> Введение</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="overlay.html"><a href="overlay.html#--8"><i class="fa fa-check"></i><b>10.1.1</b> Контрольный лист:</a></li>
+<li class="chapter" data-level="10.1.2" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#-8"><i class="fa fa-check"></i><b>10.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>10.2</b> Визуальный анализ векторных слоев</a></li>
+<li class="chapter" data-level="10.3" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>10.3</b> Организация рабочего пространства</a></li>
+<li class="chapter" data-level="10.4" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>10.4</b> Оверлей слоев методом пересечения</a></li>
+<li class="chapter" data-level="10.5" data-path="overlay.html"><a href="overlay.html#--------"><i class="fa fa-check"></i><b>10.5</b> Слияние результатов пересечения с целью получения показателя пространственной связи</a></li>
+<li class="chapter" data-level="10.6" data-path="overlay.html"><a href="overlay.html#---------"><i class="fa fa-check"></i><b>10.6</b> Подсчет суммарной площади каждой комбинации подтипа почв и типа рельефа</a></li>
+<li class="chapter" data-level="10.7" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-----"><i class="fa fa-check"></i><b>10.7</b> Подсчет суммарной площади каждого подтипа почв</a></li>
+<li class="chapter" data-level="10.8" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-----"><i class="fa fa-check"></i><b>10.8</b> Добавление нового поля для результирующих значений</a></li>
+<li class="chapter" data-level="10.9" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-----"><i class="fa fa-check"></i><b>10.9</b> Соединение таблиц по названию подтипа почв</a></li>
+<li class="chapter" data-level="10.10" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>10.10</b> Вычисление результирующих значений</a></li>
+<li class="chapter" data-level="10.11" data-path="overlay.html"><a href="overlay.html#---3"><i class="fa fa-check"></i><b>10.11</b> Ответы на вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="weighted-overlay.html"><a href="weighted-overlay.html"><i class="fa fa-check"></i><b>11</b> Выбор оптимального местоположения средствами растрового анализа</a><ul>
+<li class="chapter" data-level="11.1" data-path="weighted-overlay.html"><a href="weighted-overlay.html#-10"><i class="fa fa-check"></i><b>11.1</b> Введение</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="weighted-overlay.html"><a href="weighted-overlay.html#--9"><i class="fa fa-check"></i><b>11.1.1</b> Контрольный лист:</a></li>
+<li class="chapter" data-level="11.1.2" data-path="overlay.html"><a href="overlay.html#-9"><i class="fa fa-check"></i><b>11.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>11.2</b> Подготовка рабочего пространства</a></li>
+<li class="chapter" data-level="11.3" data-path="map-ref-general.html"><a href="map-ref-general.html#------"><i class="fa fa-check"></i><b>11.3</b> Преобразование слоя типов землепользования в растровое представление</a></li>
+<li class="chapter" data-level="11.4" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>11.4</b> Расчет углов наклона</a></li>
+<li class="chapter" data-level="11.5" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>11.5</b> Расчет расстояний</a><ul>
+<li class="chapter" data-level="11.5.1" data-path="weighted-overlay.html"><a href="weighted-overlay.html#section-11.5.1"><i class="fa fa-check"></i><b>11.5.1</b> Дороги</a></li>
+<li class="chapter" data-level="11.5.2" data-path="weighted-overlay.html"><a href="weighted-overlay.html#section-11.5.2"><i class="fa fa-check"></i><b>11.5.2</b> Водотоки</a></li>
+</ul></li>
+<li class="chapter" data-level="11.6" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>11.6</b> Классификация углов наклона</a></li>
+<li class="chapter" data-level="11.7" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>11.7</b> Классификация расстояний</a><ul>
+<li class="chapter" data-level="11.7.1" data-path="map-design-economic.html"><a href="map-design-economic.html#-1"><i class="fa fa-check"></i><b>11.7.1</b> Дороги</a></li>
+<li class="chapter" data-level="11.7.2" data-path="map-design-economic.html"><a href="map-design-economic.html#-1"><i class="fa fa-check"></i><b>11.7.2</b> Водотоки</a></li>
+</ul></li>
+<li class="chapter" data-level="11.8" data-path="overlay.html"><a href="overlay.html#---------"><i class="fa fa-check"></i><b>11.8</b> Нахождение мест с наилучшей комбинацией факторов с помощью взвешенного оверлея</a></li>
+<li class="chapter" data-level="11.9" data-path="stat-map-economic.html"><a href="stat-map-economic.html#-----"><i class="fa fa-check"></i><b>11.9</b> Конвертация результирующих зон в векторный формат</a><ul>
+<li class="chapter" data-level="11.9.1" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>11.9.1</b> Выбор участков, имеющих необходимую площадь</a></li>
+</ul></li>
+<li class="chapter" data-level="11.10" data-path="weighted-overlay.html"><a href="weighted-overlay.html#---4"><i class="fa fa-check"></i><b>11.10</b> Ответы на вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="network-analysis.html"><a href="network-analysis.html"><i class="fa fa-check"></i><b>12</b> Сетевой анализ</a><ul>
+<li class="chapter" data-level="12.1" data-path="network-analysis.html"><a href="network-analysis.html#-11"><i class="fa fa-check"></i><b>12.1</b> Введение</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="network-analysis.html"><a href="network-analysis.html#--10"><i class="fa fa-check"></i><b>12.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="12.1.2" data-path="weighted-overlay.html"><a href="weighted-overlay.html#-10"><i class="fa fa-check"></i><b>12.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="map-ref-economic.html"><a href="map-ref-economic.html#---2"><i class="fa fa-check"></i><b>12.2</b> Оформление базовых слоев</a></li>
+<li class="chapter" data-level="12.3" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>12.3</b> Построение маршрута</a></li>
+<li class="chapter" data-level="12.4" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>12.4</b> Определение зоны обслуживания</a></li>
+<li class="chapter" data-level="12.5" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>12.5</b> Определение ближайшего пункта обслуживания</a></li>
+<li class="chapter" data-level="12.6" data-path="network-analysis.html"><a href="network-analysis.html#section-12.6"><i class="fa fa-check"></i><b>12.6</b> Размещение—распределение</a></li>
+<li class="chapter" data-level="12.7" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>12.7</b> Районирование города по зонам обслуживания</a></li>
+<li class="chapter" data-level="12.8" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#--2"><i class="fa fa-check"></i><b>12.8</b> Компоновка карты</a></li>
+<li class="chapter" data-level="12.9" data-path="network-analysis.html"><a href="network-analysis.html#---5"><i class="fa fa-check"></i><b>12.9</b> Ответы на вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="network-modeling-hydro.html"><a href="network-modeling-hydro.html"><i class="fa fa-check"></i><b>13</b> Геометрическое моделирование речной сети</a><ul>
+<li class="chapter" data-level="13.1" data-path="network-modeling-hydro.html"><a href="network-modeling-hydro.html#-12"><i class="fa fa-check"></i><b>13.1</b> Введение</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="network-modeling-hydro.html"><a href="network-modeling-hydro.html#--11"><i class="fa fa-check"></i><b>13.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="13.1.2" data-path="network-analysis.html"><a href="network-analysis.html#-11"><i class="fa fa-check"></i><b>13.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>13.2</b> Создание набора данных речной сети</a></li>
+<li class="chapter" data-level="13.3" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>13.3</b> Копирование и цифрование линий водотоков</a></li>
+<li class="chapter" data-level="13.4" data-path="overlay.html"><a href="overlay.html#--------"><i class="fa fa-check"></i><b>13.4</b> Притягивание (снэппинг) притоков и разрезание осевой линии основных рек</a></li>
+<li class="chapter" data-level="13.5" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>13.5</b> Установка точки стока</a></li>
+<li class="chapter" data-level="13.6" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>13.6</b> Построение и настройка геометрической сети</a></li>
+<li class="chapter" data-level="13.7" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>13.7</b> Анализ и редактирование геометрической сети</a></li>
+<li class="chapter" data-level="13.8" data-path="map-ref-general.html"><a href="map-ref-general.html#--5"><i class="fa fa-check"></i><b>13.8</b> Контрольные вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="geocoding.html"><a href="geocoding.html"><i class="fa fa-check"></i><b>14</b> Картографирование на основе адресных данных</a><ul>
+<li class="chapter" data-level="14.1" data-path="geocoding.html"><a href="geocoding.html#-13"><i class="fa fa-check"></i><b>14.1</b> Введение</a><ul>
+<li class="chapter" data-level="14.1.1" data-path="geocoding.html"><a href="geocoding.html#--12"><i class="fa fa-check"></i><b>14.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="14.1.2" data-path="network-modeling-hydro.html"><a href="network-modeling-hydro.html#-12"><i class="fa fa-check"></i><b>14.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>14.2</b> Подключение к сервисам</a></li>
+<li class="chapter" data-level="14.3" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>14.3</b> Геокодирование адресов</a></li>
+<li class="chapter" data-level="14.4" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>14.4</b> Визуализация посещаемости в точках</a></li>
+<li class="chapter" data-level="14.5" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>14.5</b> Построение поля посещаемости</a></li>
+<li class="chapter" data-level="14.6" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#--2"><i class="fa fa-check"></i><b>14.6</b> Оформление карты</a></li>
+<li class="chapter" data-level="14.7" data-path="geocoding.html"><a href="geocoding.html#---6"><i class="fa fa-check"></i><b>14.7</b> Ответы на вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="density-analysis.html"><a href="density-analysis.html"><i class="fa fa-check"></i><b>15</b> Анализ плотности пространственного распределения</a><ul>
+<li class="chapter" data-level="15.1" data-path="density-analysis.html"><a href="density-analysis.html#-14"><i class="fa fa-check"></i><b>15.1</b> Введение</a><ul>
+<li class="chapter" data-level="15.1.1" data-path="density-analysis.html"><a href="density-analysis.html#--13"><i class="fa fa-check"></i><b>15.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="15.1.2" data-path="geocoding.html"><a href="geocoding.html#-13"><i class="fa fa-check"></i><b>15.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>15.2</b> Оценка плотности дорожной сети</a></li>
+<li class="chapter" data-level="15.3" data-path="density-analysis.html"><a href="density-analysis.html#----kernel-density"><i class="fa fa-check"></i><b>15.3</b> Оценка влияния радиуса поиска (kernel density)</a></li>
+<li class="chapter" data-level="15.4" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>15.4</b> Масштабирование значение показателя</a></li>
+<li class="chapter" data-level="15.5" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>15.5</b> Оформление слоя густоты дорожной сети</a></li>
+<li class="chapter" data-level="15.6" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>15.6</b> Оформление итоговой карты</a></li>
+<li class="chapter" data-level="15.7" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--6"><i class="fa fa-check"></i><b>15.7</b> Контрольные вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="interpolation.html"><a href="interpolation.html"><i class="fa fa-check"></i><b>16</b> Интерполяция и картографирование гидрометеорологических полей</a><ul>
+<li class="chapter" data-level="16.1" data-path="interpolation.html"><a href="interpolation.html#-15"><i class="fa fa-check"></i><b>16.1</b> Введение</a><ul>
+<li class="chapter" data-level="16.1.1" data-path="interpolation.html"><a href="interpolation.html#--14"><i class="fa fa-check"></i><b>16.1.1</b> Контрольный лист:</a></li>
+<li class="chapter" data-level="16.1.2" data-path="density-analysis.html"><a href="density-analysis.html#-14"><i class="fa fa-check"></i><b>16.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="overlay.html"><a href="overlay.html#---3"><i class="fa fa-check"></i><b>16.2</b> Оформление базовых слоев</a></li>
+<li class="chapter" data-level="16.3" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>16.3</b> Оценка необходимого разрешения растра</a></li>
+<li class="chapter" data-level="16.4" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>16.4</b> Интерполяция поверхностей</a></li>
+<li class="chapter" data-level="16.5" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>16.5</b> Настройка отображения поверхностей</a></li>
+<li class="chapter" data-level="16.6" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>16.6</b> Сглаживание поверхности, полученной методом кригинга</a></li>
+<li class="chapter" data-level="16.7" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>16.7</b> Построение линии профиля</a></li>
+<li class="chapter" data-level="16.8" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>16.8</b> Определение температур по линии профиля</a></li>
+<li class="chapter" data-level="16.9" data-path="map-design-general.html"><a href="map-design-general.html#--3"><i class="fa fa-check"></i><b>16.9</b> Оформление карты</a></li>
+<li class="chapter" data-level="16.10" data-path="interpolation.html"><a href="interpolation.html#---7"><i class="fa fa-check"></i><b>16.10</b> Ответы на вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="dem-analysis.html"><a href="dem-analysis.html"><i class="fa fa-check"></i><b>17</b> Гидрологический анализ цифровой модели рельефа</a><ul>
+<li class="chapter" data-level="17.1" data-path="dem-analysis.html"><a href="dem-analysis.html#-16"><i class="fa fa-check"></i><b>17.1</b> Введение</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>17.1.1</b> Контрольный список:</a></li>
+<li class="chapter" data-level="17.1.2" data-path="interpolation.html"><a href="interpolation.html#-15"><i class="fa fa-check"></i><b>17.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="17.2" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>17.2</b> Оформление данных</a></li>
+<li class="chapter" data-level="17.3" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>17.3</b> Направление тока</a></li>
+<li class="chapter" data-level="17.4" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>17.4</b> Аккумуляция тока</a></li>
+<li class="chapter" data-level="17.5" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>17.5</b> Выделение и классификация водотоков</a></li>
+<li class="chapter" data-level="17.6" data-path="map-design-climates.html"><a href="map-design-climates.html#-"><i class="fa fa-check"></i><b>17.6</b> Векторизация водотоков</a></li>
+<li class="chapter" data-level="17.7" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>17.7</b> Выделение и разделение устьевых точек</a></li>
+<li class="chapter" data-level="17.8" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>17.8</b> Построение водосборных бассейнов</a></li>
+<li class="chapter" data-level="17.9" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#-------"><i class="fa fa-check"></i><b>17.9</b> Расчет, привязка и визуализация статистики по водосборным бассейнам</a></li>
+<li class="chapter" data-level="17.10" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#---1"><i class="fa fa-check"></i><b>17.10</b> Оформление итоговой карты</a></li>
+<li class="chapter" data-level="17.11" data-path="dem-analysis.html"><a href="dem-analysis.html#---8"><i class="fa fa-check"></i><b>17.11</b> Ответы на вопросы</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="three-modelling.html"><a href="three-modelling.html"><i class="fa fa-check"></i><b>18</b> Трехмерное моделирование</a><ul>
+<li class="chapter" data-level="18.1" data-path="three-modelling.html"><a href="three-modelling.html#-17"><i class="fa fa-check"></i><b>18.1</b> Введение</a><ul>
+<li class="chapter" data-level="18.1.1" data-path="three-modelling.html"><a href="three-modelling.html#--15"><i class="fa fa-check"></i><b>18.1.1</b> Контрольный лист</a></li>
+<li class="chapter" data-level="18.1.2" data-path="dem-analysis.html"><a href="dem-analysis.html#-16"><i class="fa fa-check"></i><b>18.1.2</b> Аннотация</a></li>
+</ul></li>
+<li class="chapter" data-level="18.2" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#---1"><i class="fa fa-check"></i><b>18.2</b> Организация рабочего пространства</a></li>
+<li class="chapter" data-level="18.3" data-path="map-design-climates.html"><a href="map-design-climates.html#---"><i class="fa fa-check"></i><b>18.3</b> Визуализация цифровой модели рельефа</a></li>
+<li class="chapter" data-level="18.4" data-path="map-ref-general.html"><a href="map-ref-general.html#------"><i class="fa fa-check"></i><b>18.4</b> Подготовка вспомогательных цифровых моделей для учета препятствий</a></li>
+<li class="chapter" data-level="18.5" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>18.5</b> Преобразование растровых моделей в триангуляционные</a></li>
+<li class="chapter" data-level="18.6" data-path="three-modelling.html"><a href="three-modelling.html#---------arcscene"><i class="fa fa-check"></i><b>18.6</b> Визуализация данных в трехмерной среде и знакомство с приложением ArcScene</a></li>
+<li class="chapter" data-level="18.7" data-path="map-ref-general.html"><a href="map-ref-general.html#------"><i class="fa fa-check"></i><b>18.7</b> Визуализация трехмерных объектов: геодезические пункты и здания</a></li>
+<li class="chapter" data-level="18.8" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#----"><i class="fa fa-check"></i><b>18.8</b> Анализ зоны видимости наблюдательного пункта</a></li>
+<li class="chapter" data-level="18.9" data-path="map-design-climates.html"><a href="map-design-climates.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
+<li class="chapter" data-level="18.10" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Практикум по геоинформатике</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="overlay" class="section level1">
+<h1><span class="header-section-number">Упражнение 10</span> Анализ пространственных взаимосвязей методом оверлея на основе векторных данных</h1>
+<div id="-9" class="section level2">
+<h2><span class="header-section-number">10.1</span> Введение</h2>
+<p><strong>Цель</strong> — научиться определять пространственную приуроченность двух явлений на основе процента взаимного покрытия их площадей (методом оверлея).</p>
+<table style="width:11%;">
+<colgroup>
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Поток</strong></td>
+<td>==Физпоток==</td>
+</tr>
+<tr class="even">
+<td><strong>Теоретическая подготовка</strong></td>
+<td>Оверлей пространственных объектов, геометрическое определение вероятности как отношения мер (площадей), соединение таблиц в реляционных базах данных, внешний и внутренний ключ соединения.</td>
+</tr>
+<tr class="odd">
+<td><strong>Практическая подготовка</strong></td>
+<td>Знание основных компонент интерфейса ArcGIS Desktop (каталог, таблица содержания, карта). Работы с базой пространственных данных. Настройка символики и подписей объектов. Владение базовыми ГИС-технологиями: пространственные и атрибутивные запросы, оверлей.</td>
+</tr>
+<tr class="even">
+<td><strong>Исходные данные</strong></td>
+<td>База данных ГИС «Сатино».</td>
+</tr>
+<tr class="odd">
+<td><strong>Результат</strong></td>
+<td>Таблица взаимного покрытия площадей типов рельефа и подтипов почв.</td>
+</tr>
+<tr class="even">
+<td><strong>Ключевые слова</strong></td>
+<td>Базовые технологии ГИС, оверлей, геометрическая вероятность.</td>
+</tr>
+</tbody>
+</table>
+<div id="--8" class="section level3">
+<h3><span class="header-section-number">10.1.1</span> Контрольный лист:</h3>
+<ul>
+<li>Добавить на карту слои типов почв и рельефа, оформить их</li>
+<li>Произвести оверлей слоев</li>
+<li>Произвести слияние данных и соединение таблиц</li>
+<li>Подсчитать процент покрытия площадей</li>
+</ul>
+</div>
+<div id="-8" class="section level3">
+<h3><span class="header-section-number">10.1.2</span> Аннотация</h3>
+<p>Задание посвящено знакомству с пространственным анализом на основе векторных данных. Векторная модель представляет объекты в виде отдельных геометрических фигур с набором атрибутов. Она является объектно-ориентированной и удобна для анализа формы, размеров объектов, их взаимной конфигурации в пространстве. Одним из широко используемых методов анализа на основе векторных данных является оверлей.</p>
+<blockquote>
+<p>При <em>оверлее</em> происходит наложение двух или более слоев, в результате чего образуется их графическая композиция. Полученные участки наследуют атрибуты от каждого слоя. Эта операция базируется на стандартных отношениях множеств, таких как пересечение, объединение и симметрическая разность.</p>
+</blockquote>
+<p>С помощью оверлея можно, например, установить, к каким генетическим типам рельефа приурочены различные типы и подтипы почв. В общем случае оверлей позволяет установить, какие комбинации объектов встречаются в пространстве. В задании предлагается исследовать методом оверлея взаимосвязь типов рельефа и типов и подтипов почв.</p>
+</div>
+</div>
+<div id="---" class="section level2">
+<h2><span class="header-section-number">10.2</span> Визуальный анализ векторных слоев</h2>
+<p><a href="#анализ-пространственных-взаимосвязей-методом-оверлея-на-основе-векторных-данных">К содержанию ⇡</a></p>
+<p>В первую очередь при анализе данных следует провести их визуальную оценку, которая может натолкнуть на отыскание закономерностей во взаимном расположении объектов.</p>
+<ol style="list-style-type: decimal">
+<li><p>Скопируйте папку <em>Ex04</em> из серверной директории в свой рабочий каталог с помощью Проводника.</p></li>
+<li><p>Откройте <strong>ArcMap</strong> и в нем — окно <strong>Catalog</strong>.</p></li>
+<li><p>Найдите базу геоданных <img src="images/Ex10/image2.png" /> <em>Satino.gdb</em> в своем каталоге <em>Ex04</em> и перенесите на карту два тематических слоя: <img src="images/Ex10/image3.png" /> <em>SoilTypes</em> (Типы почв) и <img src="images/Ex10/image3.png" /> <em>RelTypes</em> (Типы рельефа) из группы <em>Thematic</em>.</p></li>
+<li><p>Поместите слой <em>Типы рельефа</em> вниз таблицы содержания, откройте его свойства (двойным щелчком на названии) и перейдите на вкладку <strong>Symbology</strong>.</p></li>
+<li><p>Выберите тип отображения <strong>Categories</strong> и в нем — режим <strong>Match to Symbols In a Style</strong>, который позволяет настроить символы в соответствии с заранее определенным стилем.</p></li>
+<li><p>В качестве определяющего поля <strong>Value field</strong> выберите <em>Тип рельефа</em>. Далее нажмите кнопку Browse и выберите стиль <em>Satino.style</em>, лежащий в вашем каталоге <em>Ex04</em>. Нажмите кнопку <strong>Match symbols</strong>. Снимите флажок со строчки <strong>All other values</strong>. Окно свойств слоя должно принять вид, аналогичный представленному на рисунке. Нажмите <strong>ОК</strong>.</p>
+<div class="figure">
+<img src="images/Ex10/image4.png" alt="Рис. 2. Настройка способа изображения в соответствии с предопределенным стилем" />
+<p class="caption">Рис. 2. Настройка способа изображения в соответствии с предопределенным стилем</p>
+</div></li>
+<li><p>Настройте отображение слоя <em>Типы почв</em> в виде полигонов без заливки с ярко красной обводкой толщиной <em>1.5</em> пиксела. Чтобы сделать полигон без заливки, необходимо выбрать в меню <strong>Fill Color</strong> режим <strong>No Color</strong>. Нажмите <strong>ОК</strong>:</p>
+<div class="figure">
+<img src="images/Ex10/image6.png" alt="Рис. 3. Выбор режима отображения полигонов без заливки" />
+<p class="caption">Рис. 3. Выбор режима отображения полигонов без заливки</p>
+</div></li>
+<li><p>Выберите инструмент идентификации <img src="images/Ex10/image5.png" /> и щелкните в пределах карты на любом полигоне.</p></li>
+<li><p>Переведите инструмент идентификации в многослойный режим. Для этого в окне <strong>Identify</strong> раскройте верхний список <strong>Identify From</strong> и выберите пункт <strong>All layers</strong>. Попробуйте идентифицировать полигоны в разных участках карты, обращая внимания на информацию, которая отображается в окне идентификации.</p>
+<div class="figure">
+<img src="images/Ex10/image7.png" alt="Рис. 4. Переключение инструмента идентификации в многослойный режим" />
+<p class="caption">Рис. 4. Переключение инструмента идентификации в многослойный режим</p>
+</div></li>
+</ol>
+<p>==✔︎ <em>Проанализируйте совмещенное изображение границ типов почв и рельефа. Есть ли какие-то совпадения или подобия их рисунков в пределах речных долин, междуречий, малых эрозионных форм?</em>==</p>
+<p>Теперь, когда данные исследованы визуально и путем идентификации, можно перейти к их анализу с помощью оверлея. Предварительно следует организовать рабочее пространство, чтобы результаты анализа хранились в структурированном виде и не смешивались с базовыми слоями.</p>
+</div>
+<div id="--" class="section level2">
+<h2><span class="header-section-number">10.3</span> Организация рабочего пространства</h2>
+<p><a href="#анализ-пространственных-взаимосвязей-методом-оверлея-на-основе-векторных-данных">К содержанию ⇡</a></p>
+<p>Поскольку в процессе оверлея будет создан новый слой (а затем еще и другие), возникает задача хранения вновь создаваемых данных. База геоданных <em>Satino</em> содержит базовые слои, и производные результаты лучше помещать в другое хранилище.</p>
+<ol style="list-style-type: decimal">
+<li><p>Сохраните документ карты в свой каталог <em>Ex04</em> под именем <em>Ex04_Оверлей.mxd</em></p></li>
+<li><p>Откройте окно <strong>Catalog</strong> и обратите внимание на то, в нем наверху появился домашний каталог под именем <em>Home - Фамилия/Ex04.</em>. Раскройте его.</p>
+<blockquote>
+<p><em>Домашний каталог</em> — директория файловой системы, в которой хранится документ карты, с которым вы работаете в данный момент. Обычно в том же каталоге стараются хранить и сами данные (если они не берутся из внешней СУБД), чтобы избежать путаницы.</p>
+</blockquote></li>
+<li><p>Щелкните правой кнопкой мыши по домашнему каталогу и выберите <strong>New &gt; File Geodatabase</strong> для того, чтобы создать новую базу геоданных.</p></li>
+<li><p>Назовите ее <em>Ex04.gdb</em></p></li>
+<li><p>Щелкните по <em>Ex04.gdb</em> правой кнопкой мыши и выберите пункт <strong>Make Default Geodatabase</strong>. Эта команда указывает программе, что все результаты обработки данных следует помещать в выбранную базу геоданных.</p></li>
+</ol>
+</div>
+<div id="---" class="section level2">
+<h2><span class="header-section-number">10.4</span> Оверлей слоев методом пересечения</h2>
+<p><a href="#анализ-пространственных-взаимосвязей-методом-оверлея-на-основе-векторных-данных">К содержанию ⇡</a></p>
+<p>Оверлей осуществляется в ArcGIS с помощью инструментов геообработки.</p>
+<blockquote>
+<p><em>Геообработка</em> (geoprocessing) в терминологии ArcGIS — это анализ и преобразование пространственных данных. Доступ к инструментам геообработки осуществляется через окно <em>ArcToolbox</em>, где они сгруппированы по назначению. Некоторые наборы инструментов, такие как <em>Spatial Analyst</em> и <em>3D Analyst</em>, являются дополнительными модулями ArcGIS, предназначенными для решения специализированного круга задач: растровый анализ, трехмерный анализ, сетевой анализ и т.д.</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li><p>Откройте <strong>ArcToolbox</strong> с помощью красной кнопки <img src="images/Ex10/image8.png" /> на панели инструментов.</p></li>
+<li><p>Раскройте группу инструментов <strong>Analysis Tools &gt; Overlay</strong>. Здесь можно найти различные режимы оверлея.</p>
+<p>==✔︎ <em>Обсудите с преподавателем режимы оверлея Intersect, Symmetrical Difference и Union. Чем они отличаются друг от друга?</em>==</p></li>
+<li><p>Запустите инструмент <strong>Intersect</strong>, который ищет геометрическое пересечение нескольких слоев. Изучите пояснительную иллюстрацию в правой части окна.</p></li>
+<li><p>Перенесите из таблицы содержания в список <strong>Input features</strong> слой <em>Типы почв</em>, затем слой <em>Типы рельефа</em></p>
+<p>Обратите внимание на то, что система автоматически определила адрес и название выходного класса объектов в следующем виде:</p>
+<pre><code>D:/GIS/207/CAR/Петров/Ex04/Ex04.gdb/SoilTypes/Intersect</code></pre></li>
+<li><p>Замените <em>SoilTypes_Intersect</em> на <em>SoilsRelief_Intersect</em>, чтобы из названия было ясно, что с чем пересекается.</p></li>
+<li><p>Параметр <strong>Join Attributes</strong> оставьте <em>ALL</em>. В этом режиме результат оверлея унаследует все поля из обоих слоев.</p></li>
+<li><p>Диалог инструмента <strong>Intersect</strong> примет вид, аналогичный представленному на рисунке. Запустите вычисления, нажав кнопку <strong>ОК</strong>.</p>
+<div class="figure">
+<img src="images/Ex10/image9.png" alt="Рис. 5. Диалог инструмента Intersect" />
+<p class="caption">Рис. 5. Диалог инструмента Intersect</p>
+</div></li>
+<li><p>Дождитесь, пока в таблицу содержания добавится слой <em>SoilsRelief_Intersect</em> и переименуйте его в <em>Комбинации почвы-рельеф</em>. Для этого выделите слой в таблице содержания и нажмите <kbd>F2</kbd> на клавиатуре, либо найдите пункт <strong>Rename</strong> в контекстном меню.</p></li>
+<li><p>Поместите полученный оверлеем слой между слоями типов почв и рельефа, и настройте его отображение в виде полигона без заливки с черной обводкой толщиной 4 пиксела. Там, где границы совпадают с контурами типов рельефа, они будут черного цвета, а там где они совпадают с контурами типов почв, будет красная линия с черной обводкой.</p></li>
+<li><p>Раскройте атрибутивную таблицу слоя <em>Комбинации почвы-рельеф</em>.</p></li>
+</ol>
+<p>==✔︎ <em>Какие поля содержатся в атрибутивной таблице полученного слоя? Сравните его границы с границами двух исходных слоев. Обсудите результат с преподавателем</em>==</p>
+</div>
+<div id="--------" class="section level2">
+<h2><span class="header-section-number">10.5</span> Слияние результатов пересечения с целью получения показателя пространственной связи</h2>
+<p><a href="#анализ-пространственных-взаимосвязей-методом-оверлея-на-основе-векторных-данных">К содержанию ⇡</a></p>
+<p>Поскольку каждый полигон в оверлейном слое содержит значение типа/подтипа почвы и типа рельефа, появляется возможность установить приуроченность типов и подтипов почв к определенным типам рельефа.</p>
+<p>Чтобы подсчитать долю каждого типа рельефа в площади каждого подтипа почв, необходимо просуммировать площади каждой их уникальной комбинации. Например, дерново-карбонатные выщелоченные почвы (<em>Д-в-к</em>) на крутых эрозионных склонах встречаются в пределах Сатинского полигона в виде 6 разрозненных участков, имеющих некоторую суммарную площадь. Эта площадь, деленная на суммарную площадь почв подтипа <em>Д-в-к</em> даст вероятностный критерий приуроченности почв <em>Д-в-к</em> к крутым эрозионным склонам. То же самое касается остальных комбинаций подтипов почв и типов рельефа.</p>
+<p>С точки зрения рабочих процессов ГИС, операцию следует разбить на 5 шагов:</p>
+<ul>
+<li><p>подсчет суммарной площади каждой комбинации подтипа почв и типа рельефа;</p></li>
+<li><p>подсчет суммарной площади каждого подтипа почв;</p></li>
+<li><p>добавление поля, в которое будет записана процентная доля;</p></li>
+<li><p>соединение таблиц комбинаций и подтипов почв по названию подтипа почв;</p></li>
+<li><p>деление площади комбинации на площадь подтипа почв и запись результата в соответствующее поле.</p></li>
+</ul>
+<blockquote>
+<p>Объединение разрозненных объектов, обладающих одинаковым набором атрибутов, осуществляется с помощью <em>операции слияния</em> (Dissolve). Причем, если объекты примыкают друг к другу, граница между ними будет стерта, а если объекты разнесены в пространстве, на выходе получится сложный составной объект (Multipart feature), состоящий из нескольких полигонов. Слияние — это один из методов генерализации.</p>
+</blockquote>
+</div>
+<div id="---------" class="section level2">
+<h2><span class="header-section-number">10.6</span> Подсчет суммарной площади каждой комбинации подтипа почв и типа рельефа</h2>
+<p><a href="#анализ-пространственных-взаимосвязей-методом-оверлея-на-основе-векторных-данных">К содержанию ⇡</a></p>
+<ol style="list-style-type: decimal">
+<li><p>Откройте в ArcToolbox инструмент геообработки <strong>Data Management Tools &gt; Generalization &gt; Dissolve</strong>. Изучите пояснительный рисунок в правой части окна интерфейса.</p></li>
+<li><p>Выберите в качестве значения параметра <strong>Input Features</strong> слой <em>Комбинации почвы-рельеф</em></p></li>
+<li><p>В списке <strong>Dissolve Fields</strong> следует отметить поля <em>SoilType</em>, <em>SoilSubtype</em> и <em>RelType</em>, тем самым можно будет найти все уникальные комбинации подтипов почв и типов рельефа.</p></li>
+</ol>
+<blockquote>
+<p>Поле <em>SoilType</em> необходимо отметить для того, чтобы в таблице результирующего слоя сохранилась информация о типах почв. Это не повлияет на сам результат, поскольку количество комбинаций типа и подтипа почв равно количеству самих подтипов.</p>
+</blockquote>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Введите название выходного класса <em>SoilsRelief_Intersect_Dissolve</em>. Диалог инструмента <strong>Dissolve</strong> примет вид, аналогичный представленному на рисунке ниже.</p>
+<div class="figure">
+<img src="images/Ex10/image10.png" alt="Рис. 6. Инструмент Dissolve, выполняющий слияние объектов по набору атрибутов" />
+<p class="caption">Рис. 6. Инструмент Dissolve, выполняющий слияние объектов по набору атрибутов</p>
+</div></li>
+<li><p>Остальные параметры оставьте по умолчанию и нажмите <strong>ОК</strong>.</p></li>
+<li><p>После того как результат появится в таблице содержания, назовите полученный слой <em>Слияние комбинаций почвы-рельеф</em>.</p></li>
+<li><p>Отключите этот слой в таблице содержания.</p></li>
+</ol>
+</div>
+<div id="-----" class="section level2">
+<h2><span class="header-section-number">10.7</span> Подсчет суммарной площади каждого подтипа почв</h2>
+<p><a href="#анализ-пространственных-взаимосвязей-методом-оверлея-на-основе-векторных-данных">К содержанию ⇡</a></p>
+<ol style="list-style-type: decimal">
+<li><p>Запустите инструмент <strong>Dissolve</strong> еще раз.</p></li>
+<li><p>Выберите в качестве <strong>Input Features</strong> слой <em>Типы почв</em>.</p></li>
+<li><p>В списке <strong>Dissolve fields</strong> выберите поля <em>SoilType</em> и <em>SoilSubtype</em>.</p></li>
+<li><p>Введите название выходного класса <em>SoilTypes_Dissolve</em>.</p></li>
+<li><p>Остальные параметры оставьте по умолчанию и нажмите <strong>ОК</strong>.</p></li>
+<li><p>Назовите полученный слой <em>Слияние подтипов почв</em>. В данном слое в результате операции слияния каждый подтип почв будет представлен единственным объектом, а в его поле <em>Shape_Area</em> будет записана суммарная площадь данного подтипа</p></li>
+<li><p>Отключите этот слой в таблице содержания.</p></li>
+</ol>
+</div>
+<div id="-----" class="section level2">
+<h2><span class="header-section-number">10.8</span> Добавление нового поля для результирующих значений</h2>
+<p><a href="#анализ-пространственных-взаимосвязей-методом-оверлея-на-основе-векторных-данных">К содержанию ⇡</a></p>
+<ol style="list-style-type: decimal">
+<li><p>Откройте таблицу слоя <em>Слияние комбинаций почвы-рельеф</em>.</p></li>
+<li><p>Выберите в окне таблицы пункт меню <img src="images/Ex10/image11.png" /> <strong>Table Options &gt; Add Field…</strong></p></li>
+<li><p>В диалоге введите название поля <em>Percent</em>.</p></li>
+<li><p>Выберите тип поля <strong>Float</strong> (с плавающей точкой). Оставьте остальные параметры по умолчанию и нажмите <strong>ОК</strong>.</p></li>
+</ol>
+</div>
+<div id="-----" class="section level2">
+<h2><span class="header-section-number">10.9</span> Соединение таблиц по названию подтипа почв</h2>
+<p><a href="#анализ-пространственных-взаимосвязей-методом-оверлея-на-основе-векторных-данных">К содержанию ⇡</a></p>
+<p>Для расчета пространственной взаимосвязи необходимо поделить площадь каждой комбинации на площадь соответствующего подтипа почв. Эти площади находятся сейчас в разных таблицах — <em>Слияние подтипов почв</em> и <em>Слияние комбинаций почвы-рельеф</em>. Их можно соединить по полю <em>Подтип</em>.</p>
+<blockquote>
+<p><em>Соединение таблиц</em> (table join) — операция, в результате которой к одной таблице временно добавляются столбцы из другой таблицы. Чтобы установить соответствие между строками исходной и присоединяемой таблицы, необходимо иметь в каждой таблице поле с общими для них значениями. Например, это может быть числовой код объекта или, как в нашем случае, подтип почв.</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li><p>Перейдите в контекстное меню слоя <em>Слияние комбинаций почвы-рельеф</em> и выполните команду <strong>Joins and Relates &gt; Join</strong>. Внимательно изучите содержимое появившегося диалога.</p></li>
+<li><p>Выберите <em>Подтип</em> в качестве поля <strong>1</strong>, по которому будет делаться соединение:</p>
+<div class="figure">
+<img src="images/Ex10/image12.png" alt="Рис. 7. Диалог настройки соединения таблиц" />
+<p class="caption">Рис. 7. Диалог настройки соединения таблиц</p>
+</div></li>
+<li><p>Выберите <em>Слияние подтипов почв</em> в качестве присоединяемой таблицы <strong>2</strong>.</p></li>
+<li><p>Выберите <em>Подтип</em> в качестве поля, по которому будет присоединяться таблица <em>Слияние подтипов почв</em>.</p></li>
+<li><p>Нажмите <strong>OK</strong>.</p></li>
+</ol>
+<p>==✔︎ <em>Что изменилось в атрибутивной таблице слоя <strong>Слияние комбинаций почвы-рельеф?</strong></em>==</p>
+</div>
+<div id="--" class="section level2">
+<h2><span class="header-section-number">10.10</span> Вычисление результирующих значений</h2>
+<p><a href="#анализ-пространственных-взаимосвязей-методом-оверлея-на-основе-векторных-данных">К содержанию ⇡</a></p>
+<ol style="list-style-type: decimal">
+<li><p>Откройте таблицу слоя <em>Слияние комбинаций почвы-рельеф</em>.</p></li>
+<li><p>Щелкните правой кнопкой мыши на заголовке поля <em>Percent</em>, вызовите <strong>Field Calculator</strong> и введите туда указанное ниже выражение для подсчета процента площади. Вы можете просто набрать <code>100 *</code>, а затем дважды щелкнуть по названию каждого поля в списке, чтобы не вписывать их вручную:</p>
+<pre><code>100 * [SoilsRelief_Intersect_Dissolve.SHAPE_Area] /
+[SoilTypes_Dissolve.SHAPE_Area]</code></pre>
+<blockquote>
+<p><em>Калькулятор поля</em> (field calculator) используется для вычисления значений атрибутов. Вы можете, например, умножить значение одного поля на 100 и записать в другое, соединить несколько текстовых полей в одно предложение или просто скопировать значение одного поля в другое.</p>
+</blockquote></li>
+<li><p>Нажмите <strong>ОК</strong>. Посмотрите получившиеся значения в поле <em>Percent</em>.</p></li>
+<li><p>Удалите соединение таблиц через контекстное меню слоя <em>Слияние комбинаций почвы-рельеф</em> командой <strong>Joins and Relates &gt; Remove Joins &gt; Remove All joins</strong>.</p></li>
+<li><p>В атрибутивной таблице слоя <em>Слияние комбинаций почвы-рельеф</em> щелкните на любом поле правой кнопкой мыши и выберите команду <strong>Advanced Sorting</strong>.</p></li>
+<li><p>Выберите в качестве первого поля <em>Подтип</em> и установите порядок сортировки <strong>Ascending</strong> (в сторону увеличения).</p></li>
+<li><p>Выберите в качестве второго поля <em>Percent</em> и порядок сортировки <strong>Descending</strong> (в сторону уменьшения).</p></li>
+<li><p>Растяните таблицу таким образом, чтобы хорошо было видно поле типа почв, поле подтипа почв, поле типа рельефа и поле <em>Percent.</em></p></li>
+<li><p>Нажмите <strong>ОК</strong>.</p></li>
+<li><p>Отключите оба слоя слияния в таблице содержания.</p></li>
+<li><p>Сохраните документ карты.</p>
+<p>Получившаяся таблица отображает для каждого подтипа почвы типы рельефа в порядке уменьшения их доли в площади. Первая строка для каждого подтипа почвы устанавливает наиболее вероятный тип рельефа.</p>
+<p>==✔︎ <em>Обсудите с преподавателем результаты анализа. Какие почвы показывают наибольшую связь с определенным типом рельефа?</em>==</p></li>
+<li><p>Отсортируйте таблицу только по убыванию значений в поле <em>Percent</em> (нажав дважды и еще раз дважды на нем) и выделите строки, в которых значение процента в поле <em>Percent</em> более <em>75</em>.</p></li>
+<li><p>Скомпонуйте окно приложения так, чтобы было видно целиком карту, а также выделенные в таблице строки, а также столбцы <em>Тип</em>, <em>Подтип</em>, <em>Тип рельефа</em> и поле <em>Percent</em>. Окно примет вид, аналогичный представленному на рисунке:</p>
+<div class="figure">
+<img src="images/Ex10/image13.png" alt="Рис. 8. Результаты оверлейного анализа" />
+<p class="caption">Рис. 8. Результаты оверлейного анализа</p>
+</div>
+<p><kbd><strong>Снимок экрана №1</strong> — Окно карты и результирующая таблица</kbd></p></li>
+<li><p>Сохраните документ карты</p></li>
+</ol>
+</div>
+<div id="---3" class="section level2">
+<h2><span class="header-section-number">10.11</span> Ответы на вопросы</h2>
+<p><a href="#анализ-пространственных-взаимосвязей-методом-оверлея-на-основе-векторных-данных">К содержанию ⇡</a></p>
+<p>Заполните отчетный файл и положите его в сетевую папку для проверки преподавателем.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="land-cover-hydro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="weighted-overlay.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/tsamsonov/arcgis-course/edit/master/Ex10_Overlay.md",
+"text": "Редактировать"
+},
+"download": ["arcgis-course.pdf", "arcgis-course.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
