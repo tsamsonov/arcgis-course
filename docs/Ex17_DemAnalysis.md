@@ -39,9 +39,9 @@
 ## Оформление данных
 [В начало упражнения ⇡](#dem-analysis)
 
-1. Скопируйте каталог *Ex5* в свою папку.
+1. Скопируйте каталог *Ex17* в свою папку.
 
-2. Подключитесь в окне каталога к вашей папке *Ex5*. Убедитесь, что в ней находится база геоданных *Ex5.gdb*.
+2. Подключитесь в окне каталога к вашей папке *Ex17*. Убедитесь, что в ней находится база геоданных *Ex17.gdb*.
 
 3. Используя контекстное меню базы данных, назначьте ее базой данных по умолчанию.
 
@@ -74,7 +74,7 @@
     Параметр                    Значение  
     --------------------------- --------
     *Input Raster*              Послойная окраска  
-    *Output Polyline Features*  `…\Ex5\Ex5.gdb\contours`
+    *Output Polyline Features*  `…\Ex17\Ex17.gdb\contours`
     *Contour interval*          20  
 
     Величина сечения рельефа указывается в параметре **Contour Interval**. Остальные параметры оставьте по умолчанию и нажмите **ОК**. Полученный слой будет добавлен на карту.
@@ -93,7 +93,7 @@
 
 <kbd>**Снимок экрана №1.**  Изображение рельефа методом горизонталей с послойной окраской</kbd>
 
-Сохраните документ карты в свою папку *Ex5* под именем *Ex5\_DemAnalysis.mxd*.
+Сохраните документ карты в свою папку *Ex17* под именем *Ex17\_DemAnalysis.mxd*.
 
 ## Направление тока
 [В начало упражнения ⇡](#dem-analysis)
@@ -105,7 +105,7 @@
 Параметр                        Значение  
 ------------------------------- --------
 *Input Raster*                  Послойная окраска  
-*Output flow direction raster*  `…\Ex5\Ex5.gdb\dir`
+*Output flow direction raster*  `…\Ex17\Ex17.gdb\dir`
 
 Нажмите **ОК**. Полученный слой будет добавлен на карту:
 
@@ -124,7 +124,7 @@
     Параметр                          Значение  
     --------------------------------- --------
     *Input Raster*                    dir  
-    *Output flow accumulation raster* `…\Ex5\Ex5.gdb\acc`  
+    *Output flow accumulation raster* `…\Ex17\Ex17.gdb\acc`  
 
     Нажмите **ОК**. Полученный слой будет добавлен на карту.
 
@@ -150,7 +150,7 @@
     *Input Conditional Raster*              acc  
     *Expression Value*                      < 2000  
     *Input false raster or constant value*  1
-    *Output raster*                         `…\Ex5\Ex5.gdb\str`
+    *Output raster*                         `…\Ex17\Ex17.gdb\str`
 
     По результатам выполнения данного инструмента будут выделены все водотоки, в которых значение аккумуляции тока более *2000*.
 
@@ -170,7 +170,7 @@
     ----------------------------- --------
     *Input Stream Raster*         str  
     *Input Flow Direction Raster* dir  
-    *Output raster*               `…\Ex5\Ex5.gdb\strorder`  
+    *Output raster*               `…\Ex17\Ex17.gdb\strorder`  
     *Method of Stream Ordering*   STRAHLER
 
     Нажмите **ОК**, чтобы запустить инструмент. Растр классифицированных водотоков будет добавлен на экран. Если все выполнено верно, расцветка водотоков должна соответствовать их порядкам от 1 до 4.
@@ -188,7 +188,7 @@
     ----------------------------- --------
     *Input Stream Raster*         strorder
     *Input Flow Direction Raster* dir
-    *Output Polyline Features*    `…\Ex5\Ex5.gdb\streams`
+    *Output Polyline Features*    `…\Ex17\Ex17.gdb\streams`
     *Simplify Polylines*          Да
 
     После запуска инструмента в таблицу содержания будут добавлены векторные линии водотоков.
@@ -242,7 +242,7 @@
     Параметр                Значение  
     ----------------------- --------
     *Input Features*        Водотоки  
-    *Output Feature Class*  `…\Ex5\Ex5.gdb\streams_ends`  
+    *Output Feature Class*  `…\Ex17\Ex17.gdb\streams_ends`  
     *Point Type*            END (конечные точки)
 
 1. Приблизьтесь к одной из точек слияния водотоков, пока не станут видны отдельные пикселы, чтобы внимательно наблюдать за тем, что будет происходить дальше.
@@ -254,7 +254,7 @@
     Параметр                  Значение  
     ------------------------- --------
     *Input Features*          streams\_ends  
-    *Output Feature Class*    `…\Ex5\Ex5.gdb\streams_ends_Buffer`  
+    *Output Feature Class*    `…\Ex17\Ex17.gdb\streams_ends_Buffer`  
     *Distance (Linear Unit)*  200  
 
     В таблицу содержания будут добавлены буферные зона вокруг устьев водотоков:
@@ -291,7 +291,7 @@
     --------------------------- --------
     *Input raster*              streams\_Erase\_ends  
     *Input accumulation raster* acc
-    *Output raster*             `…\Ex5\Ex5.gdb\pour`
+    *Output raster*             `…\Ex17\Ex17.gdb\pour`
     *Snap Distance*             100
 
     Остальные параметры оставьте по умолчанию. Параметр **Snap distance** указывает радиус поиска, в пределах которого вокруг каждой заданной точки устья будет искаться ячейка с максимальной аккумуляцией тока. В данном случае он равен *100* метрам — разрешению ЦМР.
@@ -307,7 +307,7 @@
     *Input flow direction raster*             dir  
     *Input raster or feature pour point data* pour
     *Pour point field*                        Value
-    *Output raster*                           `…\Ex5\Ex5.gdb\wsh`
+    *Output raster*                           `…\Ex17\Ex17.gdb\wsh`
 
     Полученный растр будет добавлен на экран, вы можете его расцветить в уникальных цветах, чтобы границы бассейнов хорошо читались:
 
@@ -321,7 +321,7 @@
     ------------------------- --------
     *Input raster*            wsh
     *Field*                   Value
-    *Output polygon features* `…\Ex5\Ex5.gdb\watersheds`
+    *Output polygon features* `…\Ex17\Ex17.gdb\watersheds`
     *Simplify polygons*       Да
 
 1. Переименуйте полученный слой в «Водосборные бассейны» и измените его символ на тонкую красную линию *без заливки*.
@@ -351,7 +351,7 @@
     *Input raster or feature zone data* Водосборные бассейны
     *Zone Field*                        Id
     *Input Value Raster*                Послойная окраска
-    *Output Table*                      `…\Ex5\Ex5.gdb\stats`
+    *Output Table*                      `…\Ex17\Ex17.gdb\stats`
     *Statistics Type*                   ALL
 
 1. Откройте полученную таблицу, чтобы ознакомиться с ее содержимым:
