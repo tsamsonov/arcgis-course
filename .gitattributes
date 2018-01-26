@@ -1,6 +1,5 @@
 *.css     linguist-vendored=true
 *.js      linguist-vendored=true
-*.html    linguist-vendored=true
 *.tex     linguist-vendored=true
 *.bib     linguist-vendored=true
 *.sh      linguist-vendored=true
