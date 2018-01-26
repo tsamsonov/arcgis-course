@@ -2,5 +2,6 @@
 *.js      linguist-vendored=true
 *.html    linguist-vendored=true
 *.tex     linguist-vendored=true
+*.bib     linguist-vendored=true
 *.sh      linguist-vendored=true
 Makefile  linguist-vendored=true
