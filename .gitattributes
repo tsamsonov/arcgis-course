@@ -1,6 +1,6 @@
-*.css
-*.js
-*.html
-*.tex
-*.sh
-Makefile
+*.css     linguist-vendored=true
+*.js      linguist-vendored=true
+*.html    linguist-vendored=true
+*.tex     linguist-vendored=true
+*.sh      linguist-vendored=true
+Makefile  linguist-vendored=true
