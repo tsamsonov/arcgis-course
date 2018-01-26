@@ -35,9 +35,9 @@
 ## Оформление базовых слоев
 [В начало упражнения ⇡](#interpolation)
 
-1. Скопируйте каталог *Ex4* в свой рабочий каталог.
+1. Скопируйте каталог *Ex16* в свой рабочий каталог.
 
-2. Подключитесь в окне каталога к вашей папке *Ex4*. Убедитесь, что в ней находится база геоданных *Argo.gdb*.
+2. Подключитесь в окне каталога к вашей папке *Ex16*. Убедитесь, что в ней находится база геоданных *Argo.gdb*.
 
 3. Используя контекстное меню базы данных, назначьте ее базой данных по умолчанию.
 
@@ -54,7 +54,7 @@
 
     <kbd>**Снимок экрана №1.**  Исходные данные</kbd>
 
-1. Сохраните документ карты в свою папку под названием *Ex4_Interpolation.mxd*
+1. Сохраните документ карты в свою папку под названием *Ex16_Interpolation.mxd*
 
 ## Оценка необходимого разрешения растра
 [В начало упражнения ⇡](#interpolation)
@@ -86,11 +86,11 @@
 
 Метод | Инструмент геообработки | Выходной растр
 ------|-------------------------|---------------
-[Обратно взвешенных расстояний](http://desktop.arcgis.com/ru/arcmap/latest/tools/3d-analyst-toolbox/how-idw-works.htm) | **IDW** | `.Ex4/Argo.gdb/Temp_IDW`
-[Естественного соседа](http://desktop.arcgis.com/ru/arcmap/latest/tools/3d-analyst-toolbox/how-natural-neighbor-works.htm) | **Natural Neighbor** | `…/Ex4/Argo.gdb/Natural`
-[Сплайнов](http://desktop.arcgis.com/ru/arcmap/latest/tools/3d-analyst-toolbox/how-spline-works.htm) | **Spline** | `…/Ex4/Argo.gdb/Spline`
-[Кригинга](http://desktop.arcgis.com/ru/arcmap/latest/tools/3d-analyst-toolbox/how-kriging-works.htm) | **Kriging** | `…/Ex4/Argo.gdb/Temp_Kriging`
-[Тренда](http://desktop.arcgis.com/ru/arcmap/latest/tools/3d-analyst-toolbox/how-trend-works.htm) 1,2,3,4,5 степени | **Trend** (для указания степени полинома используйте параметр Polynomial Order) |  `…/Ex4/Argo.gdb/Trend1`,`…/Ex4/Argo.gdb/Trend2`,`…/Ex4/Argo.gdb/Trend3`,`…/Ex4/Argo.gdb/Trend4`,`…/Ex4/Argo.gdb/Trend5`
+[Обратно взвешенных расстояний](http://desktop.arcgis.com/ru/arcmap/latest/tools/3d-analyst-toolbox/how-idw-works.htm) | **IDW** | `.Ex16/Argo.gdb/Temp_IDW`
+[Естественного соседа](http://desktop.arcgis.com/ru/arcmap/latest/tools/3d-analyst-toolbox/how-natural-neighbor-works.htm) | **Natural Neighbor** | `…/Ex16/Argo.gdb/Natural`
+[Сплайнов](http://desktop.arcgis.com/ru/arcmap/latest/tools/3d-analyst-toolbox/how-spline-works.htm) | **Spline** | `…/Ex16/Argo.gdb/Spline`
+[Кригинга](http://desktop.arcgis.com/ru/arcmap/latest/tools/3d-analyst-toolbox/how-kriging-works.htm) | **Kriging** | `…/Ex16/Argo.gdb/Temp_Kriging`
+[Тренда](http://desktop.arcgis.com/ru/arcmap/latest/tools/3d-analyst-toolbox/how-trend-works.htm) 1,2,3,4,5 степени | **Trend** (для указания степени полинома используйте параметр Polynomial Order) |  `…/Ex16/Argo.gdb/Trend1`,`…/Ex16/Argo.gdb/Trend2`,`…/Ex16/Argo.gdb/Trend3`,`…/Ex16/Argo.gdb/Trend4`,`…/Ex16/Argo.gdb/Trend5`
 
 > Используя гиперссылки в таблице, вы можете перейти на страницу справки и изучить принципы работы каждого из методов интерполяции.
 
@@ -162,7 +162,7 @@
     Параметр        Значение
     --------------- --------
     *Input Raster*  Temp\_Kriging  
-    *Output Raster* `.Ex4\Argo.gdb\Temp_Kriging_3x3`  
+    *Output Raster* `.Ex16\Argo.gdb\Temp_Kriging_3x3`  
 
     Остальные параметры (включая размер окна 3×3) оставьте по умолчанию. Нажмите **ОК**. После выполнения сглаженный растр будет добавлен в таблицу содержания:
 
@@ -226,7 +226,7 @@
     ----------------------- --------
     *Input Surface*         Temp_Kriging_3x3  
     *Input Feature Class*   Profile
-    *Output Feature Class*  `.Ex4\Argo.gdb\Profile_Temp`  
+    *Output Feature Class*  `.Ex16\Argo.gdb\Profile_Temp`  
 
     Остальные параметры оставьте по умолчанию и нажмите **ОК**.
 

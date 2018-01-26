@@ -63,7 +63,7 @@
 
     ![](images/Ex14/image7.png)
 
-1. Подключитесь в окне **Каталога** к вашей папке *Ex5* и создайте в ней новую базу геоданных под названием *Ex5*. Назначьте ее базой данных по умолчанию.
+1. Подключитесь в окне **Каталога** к вашей папке *Ex14* и создайте в ней новую базу геоданных под названием *Ex14*. Назначьте ее базой данных по умолчанию.
 
 ## Геокодирование адресов
 [В начало упражнения ⇡](#geocoding)
@@ -97,7 +97,7 @@
     *Street or Intersection*            Address
     *City or Placename*                 City
     *State*                             State
-    *Output Shapefile or Feature Class* `…\Ex5\Ex5.gdb\NYMcDonalds`
+    *Output Shapefile or Feature Class* `…\Ex14\Ex14.gdb\NYMcDonalds`
 
     Выберите в поле **Save as Type** фильтр *File and Personal Geodatabase Feature Class*
 
@@ -135,7 +135,7 @@
 
 1. Нажмите **Close**, чтобы завершить геокодирование.
 
-2. Сохраните документ карты в свою папку *Ex5* под названием *Ex5\_Geocoding.mxd*.
+2. Сохраните документ карты в свою папку *Ex14* под названием *Ex14\_Geocoding.mxd*.
 
 ## Визуализация посещаемости в точках
 [В начало упражнения ⇡](#geocoding)
@@ -192,7 +192,7 @@
     ----------------------- --------
     *Input Point Features*  Рестораны McDonalds
     *Z Value Field*         Visitors
-    *Output Raster*         `…\Ex5\Ex5.gdb\Visitors`
+    *Output Raster*         `…\Ex14\Ex14.gdb\Visitors`
     *Output Cell Size*      50  
 
     Метод естественного соседа осуществляет интерполяцию на основе диаграммы Вороного точек. Полученный растр будет добавлен на экран. Переименуйте его в *«Посещаемость»*:
