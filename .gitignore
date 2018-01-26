@@ -4,7 +4,5 @@
 .Ruserdata
 .DS_Store
 .Rapp.history
-docs/
-*.html
 *.pdf
 *.utf8.md
