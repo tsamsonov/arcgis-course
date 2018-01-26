@@ -6,4 +6,4 @@
 
 [![Build Status](https://travis-ci.org/tsamsonov/arcgis-course.svg?branch=master)](https://travis-ci.org/tsamsonov/arcgis-course)
 
-2011-2018, Тимофей Самсонов, Географический факультет МГУ
+© 2011-2018 Тимофей Самсонов, Географический факультет МГУ имени М.В.Ломоносова
