@@ -1,3 +1,6 @@
 *.css
 *.js
 *.html
+*.tex
+*.sh
+Makefile
