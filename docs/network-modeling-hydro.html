@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -498,7 +495,8 @@
 <p>Какая топологическая ошибка может быть замечена в месте впадения ручья в Протву?</p>
 </blockquote></li>
 <li><p>Возьмите стрелку <img src="images/Ex13/image15.png" /> на панели <strong>Editor</strong> и дважды щелкните на линии ручья. Должны появиться вершины. Потяните за последнюю вершину и пристыкуйте ее к линии реки (<strong>Рис. 6</strong>). Щелкните на пустом месте, чтобы завершить редактирование.</p>
-<p><img src="images/Ex13/image16.png" alt="Рис. 6. Притягивание устья притока к осевой линии реки" /> <img src="images/Ex13/image17.png" /></p></li>
+<p><img src="images/Ex13/image16.png" alt="Рис. 6. Притягивание устья притока к осевой линии реки" />
+<img src="images/Ex13/image17.png" /></p></li>
 <li><p>Повторите операцию для всех остальных ручьев. Перемещайтесь по карте, используя клавишу <kbd>C</kbd>. Не забудьте также про <em>Исьму</em>. Сохраните изменения, выбрав команду <strong>Editor &gt; Save Edits</strong></p>
 <p>Помимо сохранения связности для геометрической сети очень важно, чтобы линии были разрезаны на сегменты между пересечениями. Это необходимо для того чтобы отличать реальные узлы от перекрытий (сравните обычный перекресток и эстакаду!).</p></li>
 <li><p>Выделите на карте <em>Протву</em> и приблизьтесь к месту впадения в нее реки <em>Межиловки</em>.</p></li>
@@ -680,9 +678,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

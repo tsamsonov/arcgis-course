@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -459,15 +456,9 @@
 <li><p>Чтобы были подписаны только крупнейшие реки, необходимо использовать определяющий запрос на языке SQL. Для этого откройте снова свойства слоя и на вкладке <strong>Labels</strong> выберите метод «<em>Define classes of features and label each class separately</em>». Нажмите кнопку <strong>SQL query…</strong> и введите в поле следующий текст запроса:</p>
 <p><code>&quot;CLASS&quot; = 2 OR &quot;CLASS&quot; = 3</code></p>
 <p>Чтобы избежать ошибок ввода, вы можете дважды щелкнуть на поле <code>CLASS</code> в списке слева — оно подставится в запрос. Добавьте знак <code>=</code>. Далее нажмите кнопку <strong>Get unique values</strong> и найдите 2-й класс. Щелкните на нем дважды — после этого название поля подставится в текст запроса. После этого введите оператор <code>OR</code> и повторите ввод для 3-го класса. Диалог примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex05/image8.png" />
-
-</div></li>
+<p><img src="images/Ex05/image8.png" /></p></li>
 <li><p>Нажмите ОК в диалоге свойств слоя. Карта примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex05/image9.png" />
-
-</div></li>
+<p><img src="images/Ex05/image9.png" /></p></li>
 <li><p>Сохраните документ карты в <em>свою</em> папку <em>Ex05</em> под именем <em>Don.mxd</em>.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №1</strong> — <em>Реки</em></kbd></p>
@@ -482,14 +473,8 @@
 <li><p>Откройте панель инструментов <strong>Georeferencing</strong>. Убедитесь, что в ее списке выбран файл <em>DonArtesian</em>. Выберите в ее меню команду <strong>Fit to Display</strong>, чтобы переместить непривязанный растр на середину области отображения.</p></li>
 <li><p>Поместите растр непосредственно под слоем <em>Rivers</em>.</p></li>
 <li><p>Используя инструмент расстановки контрольных точек, укажите пять контрольных точек в разных частях карты. Желательно, чтобы точки были равномерно распределены по полю карты (по краям и в центре) и <em>не располагались на одной линии</em> — это обеспечит хорошие коэффициенты трансформации. В качестве точек используйте места впадения притоков и впадения рек в водохранилища. Например, можно использовать точку впадения реки Хопёр в реку Дон:</p>
-<div class="figure">
-<img src="images/Ex05/image10.png" />
-
-</div>
-<div class="figure">
-<img src="images/Ex05/image11.png" />
-
-</div></li>
+<p><img src="images/Ex05/image10.png" /></p>
+<p><img src="images/Ex05/image11.png" /></p></li>
 <li><p>Ознакомьтесь с доступными методами трансформирования по контрольным точкам. Для этого в меню <strong>Georeferencing</strong> выберите команду <strong>Transformation</strong>. По умолчанию выбрано аффинное преобразование.</p>
 <blockquote>
 <p>Какие еще виды трансформирования доступны? Чем проективное преобразование отличается от аффинного?</p>
@@ -497,10 +482,7 @@
 <p>Оставьте выбранным аффинное преобразование.</p></li>
 <li><p>Осуществите трансформирование растра. На панели инструментов <strong>Georeferencing</strong> выберите команду меню <strong>Georeferencing &gt; Update Georeferencing</strong>. Контрольные точки удалятся.</p>
 <p>Картографическое изображение примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex05/image12.png" />
-
-</div>
+<p><img src="images/Ex05/image12.png" /></p>
 <p><kbd><strong>Снимок экрана №2</strong> — <em>Привязанная растровая карта</em></kbd></p></li>
 <li><p>Сохраните документ карты в формате mxd в папке отчета.</p></li>
 </ol>
@@ -530,19 +512,16 @@
 </ul></li>
 <li><p>После того как редактирование районов завершено, сохраните изменения, выбрав команду <strong>Editor — Save Edits</strong>.</p></li>
 <li><p>Откройте таблицу атрибутов слоя районов. Поочередно выделяя каждый из них (для этого щелкните в самом начале строки), введите в поле <em>Basin</em> его название, ориентируясь по карте. Слово «бассейн» не вводите:</p>
-<div class="figure">
-<img src="images/Ex05/image13.png" />
-
-</div></li>
+<p><img src="images/Ex05/image13.png" /></p></li>
 <li><p>После ввода названий снова сохраните изменения.</p></li>
 <li><p>Завершите редактирование, выбрав команду <strong>Editor &gt; Stop Editing</strong>.</p></li>
-<li><p>Измените оформление слоя в соответствии с цветами на исходном растре.</p></li>
+<li><p>Измените оформление слоя в соответствии с цветами на
+исходном растре.</p></li>
 <li><p>Включите подписи районов по полю <em>Basin</em>.</p></li>
-<li><p>Отключите слой растровой карты. Включите снова слои рек и озер и переместите их вверх таблицы содержания. Картографическое изображение примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex05/image14.png" />
-
-</div></li>
+<li><p>Отключите слой растровой карты. Включите снова слои рек и озер и
+переместите их вверх таблицы содержания. Картографическое
+изображение примет следующий вид:</p>
+<p><img src="images/Ex05/image14.png" /></p></li>
 <li><p>Сохраните документ карты в папке отчета.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №3</strong> — <em>Слой артезианских бассейнов</em></kbd></p>
@@ -564,24 +543,15 @@
 <li><p>Выберите в диалоге пространственной выборки слой <em>Rivers</em> в качестве выбираемого (<strong>target</strong>) и слой <em>Artesian</em> в качестве выбирающего (<strong>source</strong>). Отметьте галочкой пункт <strong>Use Selected Features</strong> — это позволит выбирать с использованием уже выбранных объектов.</p></li>
 <li><p>Выберите метод выборки «<em>intersect the source layer feature</em>» —пересечение.</p></li>
 <li><p>Нажмите <strong>Apply</strong>. Будут выбраны реки, пересекающие выбранный артезианский бассейн:</p>
-<div class="figure">
-<img src="images/Ex05/image16.png" />
-
-</div>
+<p><img src="images/Ex05/image16.png" /></p>
 <p><kbd><strong>Снимок экрана №4</strong> — <em>Пространственный запрос методом пересечения</em></kbd></p></li>
 <li><p>Выберите метод выборки «<em>are completely within the source layer feature</em>» (полностью внутри).</p></li>
 <li><p>Нажмите <strong>Apply</strong>. Будут выбраны реки, находящиеся полностью внутри выбранного бассейна:</p>
-<div class="figure">
-<img src="images/Ex05/image17.png" />
-
-</div>
+<p><img src="images/Ex05/image17.png" /></p>
 <p><kbd><strong>Снимок экрана №5</strong> — <em>Пространственный запрос методом «внутри»</em></kbd></p></li>
 <li><p>Очистите выборку с помощью инструмента <strong>Clear Selected Features</strong>:</p></li>
 </ol>
-<div class="figure">
-<img src="images/Ex05/image18.png" />
-
-</div>
+<p><img src="images/Ex05/image18.png" /></p>
 </div>
 <div id="section-5.6" class="section level2">
 <h2><span class="header-section-number">5.6</span> Оверлей</h2>
@@ -625,16 +595,10 @@
 </tbody>
 </table>
 <p>Диалог инструмента примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex05/image20.png" />
-
-</div></li>
+<p><img src="images/Ex05/image20.png" /></p></li>
 </ol>
 <p>После выполнения инструмента слой будет добавлен на карту. Раскройте его таблицу атрибутов, чтобы убедиться, что каждому участку реки присвоена принадлежность к артезианскому бассейну (часть строк будет пустой, так как созданный вами слой артезианских бассейнов покрывает не всю территорию):</p>
-<div class="figure">
-<img src="images/Ex05/image21.png" />
-
-</div>
+<p><img src="images/Ex05/image21.png" /></p>
 </div>
 <div id="-" class="section level2">
 <h2><span class="header-section-number">5.7</span> Атрибутивный запрос</h2>
@@ -647,15 +611,9 @@
 <p><code>&quot;Basin&quot; = 'Приволжско-Хоперский'</code></p></li>
 <li><p>На карте будут выделены водотоки, принадлежащие данному артезианскому бассейну. Обратите внимание на то, что выборка теперь полностью совпадает с границами бассейна.</p></li>
 <li><p>Откройте таблицу атрибутов слоя <em>Rivers_Identity</em> и укажите опцию <strong>Show Selected records</strong>, чтобы показывать только выбранные объекты:</p>
-<div class="figure">
-<img src="images/Ex05/image22.png" />
-
-</div></li>
+<p><img src="images/Ex05/image22.png" /></p></li>
 <li><p>Скомпонуйте окна приложения таким образом, чтобы было видно одновременно окно атрибутивного запроса, таблицу атрибутов слоя со столбцом <em>Basin</em>, а также картографическое изображение с выделенными реками. Окно приложения примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex05/image23.png" />
-
-</div></li>
+<p><img src="images/Ex05/image23.png" /></p></li>
 <li><p>Сохраните документ карты.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №6</strong> — <em>Атрибутивный запрос</em></kbd></p>
@@ -665,10 +623,7 @@
 <p><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Отключите слой <em>Rivers_Identity</em> и завершите оформление карты, добавив на нее слои <em>Boundaries</em> (границы) и <em>Cities</em> (города). Используйте для их отображения способ <strong>Категорий</strong> и настройте отображение разными символами классов границ, а также городов в соответствии с численностью населения. При оформлении подписей городов используйте метод <em>Классифицированных подписей</em> (прочтите соответствующий раздел в файле <em>Описание функций</em>). Пример результирующего изображения:</p>
-<div class="figure">
-<img src="images/Ex05/image24.png" />
-
-</div>
+<p><img src="images/Ex05/image24.png" /></p>
 <p><kbd><strong>Снимок экрана №7</strong> — Карта</kbd></p></li>
 <li><p>Переключитесь в режим компоновки и оформите легенду карты. Добавьте название «<em>Гидрогеологическое районирование среднего течения Дона</em>», а также масштаб и свои ФИО.</p></li>
 <li><p>Экспортируйте результирующую карту в файл с расширением <code>png</code> и вставьте его в отчет.</p></li>
@@ -732,9 +687,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

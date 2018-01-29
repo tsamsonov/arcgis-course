@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -425,10 +422,7 @@
 <ol style="list-style-type: decimal">
 <li><p>Запустите приложение <strong>ArcMap</strong> и откройте окно <strong>Каталога</strong></p></li>
 <li><p>Подключитесь к рабочему каталогу <em>Ex02</em> в окне <strong>Сatalog</strong>:</p>
-<div class="figure">
-<img src="images/Ex02/image2.png" />
-
-</div></li>
+<p><img src="images/Ex02/image2.png" /></p></li>
 <li><p>Раскройте базу данных <em>MapData.gdb</em> и изучите классы пространственных объектов внутри нее:</p>
 <table>
 <thead>
@@ -471,10 +465,7 @@
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слой <em>Regions</em>. Для этого просто перетащите его из окна Каталога на карту.</p></li>
 <li><p>Переименуйте его в «<em>Плотность населения</em>». Для этого дважды (медленно) щелкните на названии слоя или выделите его и нажмите клавишу <kbd>F2</kbd>:</p>
-<div class="figure">
-<img src="images/Ex02/image8.png" />
-
-</div></li>
+<p><img src="images/Ex02/image8.png" /></p></li>
 <li><p>Измените проекцию карты на равновеликую коническую проекцию Альберса. Ее можно найти по следующему пути:</p>
 <p><strong>Projected Coordinate Systems &gt; Continental &gt; Asia &gt; Asia North Albers Equal Area Conic</strong></p>
 <p>Обратите внимание на то, как изменится форма отображаемых объектов.</p></li>
@@ -492,93 +483,45 @@
 <p>Существует множество методов классификаций: равных интервалов, квантилей, стандартных отклонений и т.д. По умолчанию всегда выбирается метод естественных интервалов, т.к. считается, что он в среднем неплохо отражает особенности распределения. Следует знать, однако, что этот метод классификации плохо справляется с распределениями, обладающими значительной асимметрией и эксцессом (<em>heavy-tail distribution</em>).</p>
 </blockquote></li>
 <li><p>Измените число классов на 7:</p>
-<div class="figure">
-<img src="images/Ex02/image9.png" />
-
-</div></li>
+<p><img src="images/Ex02/image9.png" /></p></li>
 <li><p>Измените метод классификации. Для этого нажмите <strong>Classify</strong>. В появившемся диалоговом окне выберите в списке сверху ручной метод задания интервалов (<em>Manual</em>) и в правом столбце замените первые шесть значений на следующие: 1, 10, 25, 50, 100, 250. Максимальное значение оставьте без изменений. Жмите <strong>ОК</strong>:</p>
-<div class="figure">
-<img src="images/Ex02/image10.png" />
-
-</div></li>
+<p><img src="images/Ex02/image10.png" /></p></li>
 <li><p>На вкладке <strong>Symbology</strong> выберите цветовую шкалу <em>Yellow To Dark Red</em>:</p>
-<div class="figure">
-<img src="images/Ex02/image11.png" />
-
-</div></li>
+<p><img src="images/Ex02/image11.png" /></p></li>
 <li><p>Инвертируйте сортировку классов, чтобы наверху оказались максимальные градации:</p>
-<div class="figure">
-<img src="images/Ex02/image12.png" />
-
-</div></li>
+<p><img src="images/Ex02/image12.png" /></p></li>
 <li><p>Инвертируйте цветовую шкалу, чтобы цвета соответствовали градациям:</p>
-<div class="figure">
-<img src="images/Ex02/image13.png" />
-
-</div></li>
+<p><img src="images/Ex02/image13.png" /></p></li>
 <li><p>В основном диалоге настройки символов исправьте подписи классов (столбец <em>Label</em>) в соответствии с нижеприведенным фрагментом:</p>
-<div class="figure">
-<img src="images/Ex02/image14.png" />
-
-</div></li>
+<p><img src="images/Ex02/image14.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>.</p></li>
 <li><p>Переименуйте показатель в «<em>чел/кв. км</em>»:</p>
-<div class="figure">
-<img src="images/Ex02/image15.png" />
-
-</div>
+<p><img src="images/Ex02/image15.png" /></p>
 <p>Результат:</p>
-<div class="figure">
-<img src="images/Ex02/image16.png" />
-
-</div></li>
+<p><img src="images/Ex02/image16.png" /></p></li>
 <li><p>Сохраните карту</p></li>
 <li><p>Скопируйте и вставьте слой «<em>Плотность населения</em>». Переименуйте его в «<em>Численность населения</em>»:</p>
-<div class="figure">
-<img src="images/Ex02/image17.png" />
-
-</div></li>
+<p><img src="images/Ex02/image17.png" /></p></li>
 <li><p>Разместите новый слой поверх слоя плотности населения.</p></li>
 <li><p>Измените его способ изображения на <em>Картодиаграммы (Quantities &gt; Graduated Symbols)</em>.</p></li>
 <li><p>Выберите для отображения поле <em>SUM_Все_население</em>. Появится шкала классификации картодиаграмм.</p></li>
 <li><p>Измените цвет кружка на голубой. Для этого нажмите кнопку <strong>Template</strong>, выберите значок <em>Circle 2</em> с тонкой обводкой и смените цвет заливки:</p>
-<div class="figure">
-<img src="images/Ex02/image18.png" />
-
-</div></li>
+<p><img src="images/Ex02/image18.png" /></p></li>
 <li><p>Установите число классов равным 6:</p>
-<div class="figure">
-<img src="images/Ex02/image19.png" />
-
-</div></li>
+<p><img src="images/Ex02/image19.png" /></p></li>
 <li><p>Аналогично предыдущему слою выберите ручной метод классификации и введите следующие границы классов: <span class="math inline">\(500, 1000, 2500, 5000, 10000\)</span>. Максимальную границу оставьте прежней:</p>
-<div class="figure">
-<img src="images/Ex02/image20.png" />
-
-</div></li>
+<p><img src="images/Ex02/image20.png" /></p></li>
 <li><p>Нажмите ОК</p></li>
 <li><p>Инвертируйте порядок классов и порядок символов в классификации (аналогично предыдущему слою) так чтобы наверху оказались максимальные значения.</p></li>
 <li><p>Установите на вкладке <strong>Symbology</strong> максимальный и минимальный размер значка равным 18 и 4 пункта соответственно:</p>
-<div class="figure">
-<img src="images/Ex02/image21.png" />
-
-</div></li>
+<p><img src="images/Ex02/image21.png" /></p></li>
 <li><p>Отредактируйте подписи классов по аналогии с картограммами:</p>
-<div class="figure">
-<img src="images/Ex02/image22.png" />
-
-</div></li>
+<p><img src="images/Ex02/image22.png" /></p></li>
 <li><p>Задайте символ фона картодиаграмм в виде полигона с пустой заливкой и пустой обводкой. Для этого щелкните на кнопке <strong>Background</strong> и выберите режим <em>No Color</em> для заливки и для обводки:</p>
-<div class="figure">
-<img src="images/Ex02/image23.png" />
-
-</div></li>
+<p><img src="images/Ex02/image23.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>.</p>
 <p>Результат:</p>
-<div class="figure">
-<img src="images/Ex02/image24.png" />
-
-</div></li>
+<p><img src="images/Ex02/image24.png" /></p></li>
 <li><p>Сохраните карту</p></li>
 </ol>
 </div>
@@ -648,7 +591,8 @@
 </tr>
 </tbody>
 </table>
-<p>Результат: <img src="images/Ex02/image25.png" /></p></li>
+<p>Результат:
+<img src="images/Ex02/image25.png" /></p></li>
 <li><p>Сохраните карту</p></li>
 </ol>
 </div>
@@ -657,15 +601,9 @@
 <p><a href="map-design-economic.html#map-design-economic">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Включите механизм размещения подписей <strong>Maplex</strong>:</p>
-<div class="figure">
-<img src="images/Ex02/image26.png" />
-
-</div></li>
+<p><img src="images/Ex02/image26.png" /></p></li>
 <li><p>Включите подписи для слоя <em>Города</em> на вкладке <strong>Labels</strong>. Выберите в качестве поля для подписей <em>name_2.</em> Остальные настройки оставьте по умолчанию:</p>
-<div class="figure">
-<img src="images/Ex02/image27.png" />
-
-</div></li>
+<p><img src="images/Ex02/image27.png" /></p></li>
 <li><p>Включите подписи для слоя Страны. Настройте подписи следующим образом:</p>
 <table>
 <thead>
@@ -698,10 +636,7 @@
 </tbody>
 </table>
 <p>Результат:</p>
-<div class="figure">
-<img src="images/Ex02/image28.png" />
-
-</div></li>
+<p><img src="images/Ex02/image28.png" /></p></li>
 </ol>
 </div>
 <div id="--1" class="section level2">
@@ -717,17 +652,12 @@
 <li><p>Установите масштаб карты равным <span class="math inline">\(1:35 000 000\)</span>. Подгоните размер фрейма данных таким образом, чтобы он был слегка больше контура России. Для этого используйте стрелку <img src="images/Ex02/image29.png" /> на панели <strong>Tools</strong>. Разместите его в правом верхнем углу карты.</p></li>
 <li><p>Отцентрируйте контур России внутри фрейма (рамки). Для этого используйте лапу <img src="images/Ex02/image30.png" /> на панели <strong>Tools</strong>.</p></li>
 <li><p>Смените цвет фрейма данных (фона) на светло-голубой.</p>
-<p>Результат: <img src="images/Ex02/image31.png" /></p></li>
+<p>Результат:
+<img src="images/Ex02/image31.png" /></p></li>
 <li><p>Добавьте на карту легенду, включив в нее только слои <em>Численность населения</em> и <em>Плотность населения.</em> Нажмите <strong>Далее</strong>.</p>
-<div class="figure">
-<img src="images/Ex02/image32.png" />
-
-</div></li>
+<p><img src="images/Ex02/image32.png" /></p></li>
 <li><p>В следующем диалоге название легенды оставьте пустым:</p>
-<div class="figure">
-<img src="images/Ex02/image33.png" />
-
-</div></li>
+<p><img src="images/Ex02/image33.png" /></p></li>
 <li><p>Далее все параметры оставьте по умолчанию.</p></li>
 <li><p>Добавьте сетку координат со следующими параметрами:</p>
 <table>
@@ -754,13 +684,11 @@
 </table></li>
 <li><p>Отключите отображение нулевых минут и секунд</p></li>
 <li><p>Разместите над картой текст заголовка карты, используя панель <strong>Drawing</strong> или меню <strong>Insert</strong>:</p>
-<div class="figure">
-<img src="images/Ex02/image34.png" />
-
-</div></li>
+<p><img src="images/Ex02/image34.png" /></p></li>
 <li><p>Разместите под картой по центру численный масштаб <span class="math inline">\(1:30 000 000\)</span>.</p></li>
 <li><p>Разместите в правом нижнем углу карты текст «Выполнил» и свое ФИО.</p>
-<p>Результат: <img src="images/Ex02/image35.png" /></p></li>
+<p>Результат:
+<img src="images/Ex02/image35.png" /></p></li>
 <li><p>Сохраните карту.</p></li>
 </ol>
 </div>
@@ -830,9 +758,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

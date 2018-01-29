@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -413,10 +410,7 @@
 <ol style="list-style-type: decimal">
 <li><p>Создайте в директории <em>Ex15</em> новую файловую базу геоданных и назовите ее <em>Analysis</em></p></li>
 <li><p>Назначьте созданную базу данных <strong>базой данных по умолчанию</strong>:</p>
-<div class="figure">
-<img src="images/Ex15/image5.png" />
-
-</div></li>
+<p><img src="images/Ex15/image5.png" /></p></li>
 <li><p>Добавьте на карту слой <em>Roads</em> из базы данных <em>MapData.gdb</em> в папке <em>Ex15</em>. Это дороги на территорию <em>России</em>, оцифрованные по картам масштаба <em>1:1 000 000</em>.</p></li>
 <li><p>Используя команду меню <strong>Cutomize &gt; Extensions</strong>, включите модуль <strong>Spatial Analyst</strong></p></li>
 <li><p>Откройте <em>ArcToolbox</em></p></li>
@@ -452,19 +446,14 @@
 </tbody>
 </table>
 <p>Диалог примет <em>следующий вид</em>:</p>
-<div class="figure">
-<img src="images/Ex15/image6.png" />
-
-</div></li>
+<p><img src="images/Ex15/image6.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>, чтобы запустить инструмент. Когда вычисления закончатся, созданная поверхность будет добавлена на карту.</p></li>
 <li><p>Отключите слой <em>roads</em> и установите <strong>передискретизацию</strong> слоя <em>line_dens_100</em> в режим <em>Cubic Convolution</em>.</p></li>
 <li><p>Примените к растру цветовую шкалу от синего к красному.</p>
-<p><em>Результат</em>: <img src="images/Ex15/image7.png" /></p></li>
+<p><em>Результат</em>:
+<img src="images/Ex15/image7.png" /></p></li>
 <li><p>Запустите инструмент <strong>Spatial Analyst Tools &gt; Density &gt; Kernel Density</strong> и заполните его параметры аналогично предыдущему инструменту. Назовите выходную поверхность <em>kernel_dens_100</em>:</p>
-<div class="figure">
-<img src="images/Ex15/image8.png" />
-
-</div></li>
+<p><img src="images/Ex15/image8.png" /></p></li>
 <li><p>Примените к получившемуся слою такую же цветовую шкалу, как и предыдущему</p></li>
 <li><p>Установите режиме <em>передискретизации</em> результирующего слоя <strong>Cubic Convolution</strong></p></li>
 <li><p>Сделайте слой дорог черного цвета и установите ему <strong>прозрачность</strong> <em>70%</em>.</p></li>
@@ -490,10 +479,7 @@
 <ol style="list-style-type: decimal">
 <li><p>Запустите инструмент <strong>Spatial Analyst &gt; Math &gt; Times</strong></p></li>
 <li><p>Заполните его параметры в соответствии со следующим диалогом и запустите:</p>
-<div class="figure">
-<img src="images/Ex15/image14.png" />
-
-</div></li>
+<p><img src="images/Ex15/image14.png" /></p></li>
 </ol>
 </div>
 <div id="----" class="section level2">
@@ -505,10 +491,7 @@
 <li><p>Уберите у него заливку, а обводку установите черной, толщиной <em>1,5</em> пиксела.</p></li>
 <li><p><em>Выделите</em> на карте полигон <em>России</em>.</p></li>
 <li><p>Запустите инструмент <strong>Spatial Analyst &gt; Extraction &gt; Extract by Mask</strong>, чтобы обрезать растр по границе России. Заполните его параметры в соответствии со следующим диалогом:</p>
-<div class="figure">
-<img src="images/Ex15/image15.png" />
-
-</div></li>
+<p><img src="images/Ex15/image15.png" /></p></li>
 <li><p>Примените к полученному растру следующие настройки отображения:</p>
 <table>
 <thead>
@@ -538,12 +521,10 @@
 </table>
 <p>Округлите значения полученных границ классов в столбце <em>Label</em> до одного-двух знаков после запятой и <strong>отсортируйте</strong> классы по убыванию значений.</p>
 <p><em>Результат</em>:</p>
-<div class="figure">
-<img src="images/Ex15/image16.png" />
-
-</div></li>
+<p><img src="images/Ex15/image16.png" /></p></li>
 <li><p><strong>Переименуйте</strong> слой в «<em>Густота дорожной сети</em>», а заголовок показателя в «км/кв.км»</p>
-<p><em>Результат</em>: <img src="images/Ex15/image17.png" /></p></li>
+<p><em>Результат</em>:
+<img src="images/Ex15/image17.png" /></p></li>
 </ol>
 </div>
 <div id="--" class="section level2">
@@ -555,13 +536,11 @@
 <li><p><strong>Создайте новый слой на основе выборки</strong> и назовите его <em>«Страны»</em>. Присвойте ему символ с белой заливкой и черной обводкой толщиной 1,5 пункта.</p></li>
 <li><p><strong>Переименуйте</strong> исходный слой <em>Countries</em> в <em>“Границы”</em></p></li>
 <li><p>Установите <strong>заливку фрейма данных</strong> голубого цвета</p>
-<p><em>Результат</em>: <img src="images/Ex15/image18.png" /></p></li>
+<p><em>Результат</em>:
+<img src="images/Ex15/image18.png" /></p></li>
 <li><p>Добавьте на карту слой <em>Cities</em>, примените к нему символ черного кружка диаметром 3 пункта и <strong>включите подписи</strong> по полю <em>Name_normal</em> шрифтом <em>Tahoma</em> 8 кегля.</p></li>
 <li><p>Оформите компоновку карты в соответствии со следующим образцом:</p>
-<div class="figure">
-<img src="images/Ex15/image19.png" />
-
-</div></li>
+<p><img src="images/Ex15/image19.png" /></p></li>
 <li><p>Сохраните документ карты.</p></li>
 </ol>
 </div>
@@ -623,9 +602,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

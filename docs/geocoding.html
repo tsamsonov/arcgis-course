@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -410,7 +407,8 @@
 <p>На основе точечных данных часто восстанавливают поле распределения некоторого показателя. В случае социально-экономических показателей это такие поля являются абстрактными и показываются псевдоизолиниями. Несмотря на то, что признак может не иметь истинно непрерывного распределения (как в случае этого задания — посещаемость ресторанов), показ с помощью изолиний бывает наглядным, дает лучшее представление о дифференциации территории, чем просто значки.</p>
 <p>В работе вам предлагается совместно использовать эти 2 метода.</p>
 <blockquote>
-<p><strong>ВНИМАНИЕ</strong>: для выполнения задания необходимо подключение к сети Интернет.</p>
+<p><strong>ВНИМАНИЕ</strong>: для выполнения задания необходимо подключение к сети
+Интернет.</p>
 </blockquote>
 </div>
 </div>
@@ -419,33 +417,19 @@
 <p><a href="geocoding.html#geocoding">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту в качестве основы картографический сервис <em>Esri Streets</em>. Его можно выбрать, используя команду <strong>Add Basemap</strong> на главной панели инструментов:</p>
-<div class="figure">
-<img src="images/Ex14/image3.png" />
-
-</div>
+<p><img src="images/Ex14/image3.png" /></p>
 <p>В появившемся диалоге выберите <em>Streets</em>:</p>
-<div class="figure">
-<img src="images/Ex14/image4.png" />
-
-</div>
-<p>Если подключение произошло корректно, появится картографическое изображение.</p></li>
+<p><img src="images/Ex14/image4.png" /></p>
+<p>Если подключение произошло корректно, появится картографическое
+изображение.</p></li>
 <li><p>Увеличьте масштаб карты таким образом, чтобы был хорошо виден Манхэттен:</p>
-<div class="figure">
-<img src="images/Ex14/image5.png" />
-
-</div></li>
+<p><img src="images/Ex14/image5.png" /></p></li>
 <li><p>Подключитесь к ГИС-серверу официального портала штата Нью-Йорк. Для этого в окне каталога выберите команду <strong>GIS Servers &gt; Add ArcGIS Server</strong> и в появившемся диалоге выберите <strong>Use GIS Services</strong> (использовать ГИС-сервисы), нажмите Далее:</p>
-<div class="figure">
-<img src="images/Ex14/image6.png" />
-
-</div></li>
+<p><img src="images/Ex14/image6.png" /></p></li>
 <li><p>В следующем диалоге в параметр <strong>Server URL</strong> скопируйте и вставьте следующий адрес и нажмите <strong>Finish</strong> (имя пользователя и пароль вводить не надо):</p>
 <p><code>http://gisservices.dhses.ny.gov/arcgis/rest/services</code></p>
 <p>Если соединение прошло удачно, в списке ГИС-серверов появится новое подключение к ГИС-серверу. Внутри него среди прочих сервисов должен располагаться адресный локатор <em>Street_and_Address_Composite</em>:</p>
-<div class="figure">
-<img src="images/Ex14/image7.png" />
-
-</div></li>
+<p><img src="images/Ex14/image7.png" /></p></li>
 <li><p>Подключитесь в окне <strong>Каталога</strong> к вашей папке <em>Ex14</em> и создайте в ней новую базу геоданных под названием <em>Ex14</em>. Назначьте ее базой данных по умолчанию.</p></li>
 </ol>
 </div>
@@ -454,31 +438,16 @@
 <p><a href="geocoding.html#geocoding">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>В окне <strong>Каталога</strong> раскройте таблицу <em>NYMcDonalds.xlx</em> и перетащите ее первый лист на карту:</p>
-<div class="figure">
-<img src="images/Ex14/image8.png" />
-
-</div></li>
+<p><img src="images/Ex14/image8.png" /></p></li>
 <li><p>Откройте таблицу, чтобы просмотреть ее содержимое. В ней есть несколько полей, отвечающих за адрес, а также поле <em>Visitors</em>, хранящее информацию о среднем числе посетителей, обслуживаемых за один час:</p>
-<div class="figure">
-<img src="images/Ex14/image9.png" />
-
-</div></li>
+<p><img src="images/Ex14/image9.png" /></p></li>
 <li><p>Выберите в контекстном меню таблицы опцию <strong>Geocode Addresses</strong>, чтобы приступить к геокодированию:</p>
-<div class="figure">
-<img src="images/Ex14/image10.png" />
-
-</div>
+<p><img src="images/Ex14/image10.png" /></p>
 <p>В появившемся диалоге необходимо добавить сервис геокодирования, к которому вы осуществили подключение ранее.</p></li>
 <li><p>Нажмите <strong>Add…</strong> и, используя навигацию по папкам, перейдите в каталог <strong>GIS Servers</strong> и найдите сервис геокодирования <em>Street_and_Address_Composite</em>. Выделите его и нажмите <strong>Add</strong>:</p>
-<div class="figure">
-<img src="images/Ex14/image11.png" />
-
-</div></li>
+<p><img src="images/Ex14/image11.png" /></p></li>
 <li><p>Далее выделите его и нажмите ОК:</p>
-<div class="figure">
-<img src="images/Ex14/image12.png" />
-
-</div></li>
+<p><img src="images/Ex14/image12.png" /></p></li>
 <li><p>В появившемся диалоге настроек геокодирования необходимо выбрать поля атрибутивной таблицы, из которых будет браться адресная информация. Заполните его следующим образом:</p>
 <table>
 <thead>
@@ -509,10 +478,7 @@
 <p>Выберите в поле <strong>Save as Type</strong> фильтр <em>File and Personal Geodatabase Feature Class</em></p>
 <p>Остальные параметры оставьте по умолчанию и нажмите <strong>ОК</strong>. После выполнения геокодирования появится диалог, сообщающий процент удачно геокодированных адресов (<em>Matched</em>). Нажмите Rematch, чтобы приступить к исправлению ошибок: <img src="images/Ex14/image13.png" /></p>
 <p>Появится диалог сопоставления адресов, а на карту будет добавлены удачно геокодированные точки. Выберите в списке <strong>Show Results</strong> режим <strong>Unmatched Addresses</strong>. Не закрывая диалог, увеличьте изображение таким образом, чтобы точки было хорошо видно:</p>
-<div class="figure">
-<img src="images/Ex14/image14.png" />
-
-</div>
+<p><img src="images/Ex14/image14.png" /></p>
 <p><kbd><strong>Снимок экрана №1.</strong> Автоматически геокодированные точки на карте и список негеокодированных точек</kbd></p></li>
 </ol>
 <p>Возникшие проблемы сопоставления адресов почти во всех случаях обусловлены тем, что для зданий на перекрестках указано сразу 2 адреса (<em>427 10TH AVE &amp; 34TH).</em> Такая форма адреса не соответствует требованиям геокодера. Исключение составляет адрес «<em>139TH &amp; ADAM CLAYTON POWELL</em>», в котором не указан номер дома ни по одной из улиц. Его вы обработаете отдельно.</p>
@@ -523,18 +489,12 @@
 <p><img src="images/Ex14/image15.png" /> <img src="images/Ex14/image16.png" /></p></li>
 <li><p>Нажмите <strong>Search</strong>. Среди полученных вариантов выберите имеющий ранг <em>Score</em> равный <em>100</em> (полное совпадение). Если таких адресов несколько, следует выбрать тот, что имеет заполненное поле <em>House</em> (дом).</p></li>
 <li><p>Нажмите <strong>Match</strong>, чтобы сопоставить адрес. Результат должен выглядеть следующим образом:</p>
-<div class="figure">
-<img src="images/Ex14/image17.png" />
-
-</div></li>
+<p><img src="images/Ex14/image17.png" /></p></li>
 </ul></li>
 <li><p>Повторите эту последовательность действий для всех оставшихся строк.</p></li>
 <li><p>Для кафе, располагающегося на перекрестке <em>139TH &amp; ADAM CLAYTON POWELL</em> вам необходимо узнать точный адрес по одной из этих улиц. Найдите этот адрес, используя поисковые возможности сети Интернет и введите его полностью (включая номер дома и полное название улицы) в поле <strong>Street or Intersection</strong>.</p>
 <p>После выполнения правок все адреса должны быть сопоставлены и диалог примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex14/image18.jpeg" />
-
-</div>
+<p><img src="images/Ex14/image18.jpeg" /></p>
 <p><kbd><strong>Снимок экрана №2.</strong> Результат ручного сопоставления адресов</kbd></p></li>
 <li><p>Нажмите <strong>Close</strong>, чтобы завершить геокодирование.</p></li>
 <li><p>Сохраните документ карты в свою папку <em>Ex14</em> под названием <em>Ex14_Geocoding.mxd</em>.</p></li>
@@ -572,34 +532,19 @@
 </tbody>
 </table>
 <p>Диалог настройки свойств слоя примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex14/image19.png" />
-
-</div></li>
+<p><img src="images/Ex14/image19.png" /></p></li>
 <li><p>Установите прозрачность значков на вкладке <em>Display</em> равной <em>50%</em>.</p></li>
 <li><p>Переименуйте слой в «<em>Рестораны McDonalds</em>», а значение подписи показателя в заголовке легенды измените на «чел/час». Картографическое изображение примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex14/image20.png" />
-
-</div></li>
+<p><img src="images/Ex14/image20.png" /></p></li>
 <li><p>Откройте панель инструментов <strong>Labeling</strong> и включите механизм <em>Maplex</em>, чтобы получить доступ к расширенным настройкам подписей.</p></li>
 <li><p>Включите подписи точек по полю <em>Address</em>. Установите размер шрифта равным <em>7</em>.</p>
 <p>Чтобы полученные надписи не загораживали значки, необходимо установить значкам высокий вес при размещении подписей.</p></li>
 <li><p>Нажмите кнопку <strong>Label Weight Ranking</strong> на панели <strong>Labeling</strong>:</p>
-<div class="figure">
-<img src="images/Ex14/image21.png" />
-
-</div></li>
+<p><img src="images/Ex14/image21.png" /></p></li>
 <li><p>В открывшемся диалоге установите значение веса точек равным <em>1000</em>:</p>
-<div class="figure">
-<img src="images/Ex14/image22.png" />
-
-</div></li>
+<p><img src="images/Ex14/image22.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>. После выполнения этих действий подписи будут размещены в стороне от значков:</p>
-<div class="figure">
-<img src="images/Ex14/image23.png" />
-
-</div>
+<p><img src="images/Ex14/image23.png" /></p>
 <p><kbd><strong>Снимок экрана №3.</strong> Градуированные значки с подписями</kbd></p></li>
 <li><p>Сохраните документ карты</p></li>
 </ol>
@@ -637,10 +582,7 @@
 </tbody>
 </table>
 <p>Метод естественного соседа осуществляет интерполяцию на основе диаграммы Вороного точек. Полученный растр будет добавлен на экран. Переименуйте его в <em>«Посещаемость»</em>:</p>
-<div class="figure">
-<img src="images/Ex14/image24.png" />
-
-</div></li>
+<p><img src="images/Ex14/image24.png" /></p></li>
 <li><p>Дважды щелкните на растре, перейдите на вкладку <strong>Symbology</strong> и измените параметры его отображения следующим образом:</p>
 <table>
 <thead>
@@ -665,15 +607,9 @@
 </tbody>
 </table>
 <p>Диалог настройки слоя примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex14/image25.png" />
-
-</div></li>
+<p><img src="images/Ex14/image25.png" /></p></li>
 <li><p>Перейдите на вкладку <strong>Display</strong> и установите параметр прозрачности (<strong>Transparency</strong>) равным <em>20%</em>, чтобы сделать послойную окраску полупрозрачной. Нажмите <strong>ОК</strong>. Картографическое изображение примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex14/image26.png" />
-
-</div>
+<p><img src="images/Ex14/image26.png" /></p>
 <p><kbd><strong>Снимок экрана №4.</strong> Поле распределения посещаемости</kbd></p></li>
 <li><p>Сохраните документ карты</p></li>
 </ol>
@@ -682,10 +618,7 @@
 <h2><span class="header-section-number">14.6</span> Оформление карты</h2>
 <p><a href="geocoding.html#geocoding">В начало упражнения ⇡</a></p>
 <p>Переключитесь в режим компоновки и установите масштаб карты равным <em>1:100 000</em>. Оформите карту в соответствии с нижеприведенным образцов, экспортируйте ее в графический файл и вставьте в отчет.</p>
-<div class="figure">
-<img src="images/Ex14/image27.png" />
-
-</div>
+<p><img src="images/Ex14/image27.png" /></p>
 </div>
 <div id="---6" class="section level2">
 <h2><span class="header-section-number">14.7</span> Ответы на вопросы</h2>
@@ -745,9 +678,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

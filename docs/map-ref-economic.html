@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -415,16 +412,10 @@
 <ol style="list-style-type: decimal">
 <li><p>Скопируйте каталог <em>Ex06</em> в свою папку и разархивируйте внутри него файл <em>London.zip</em> — он содержит базу геоданных для выполнения упражнения.</p></li>
 <li><p>Подключитесь в окне Каталога к вашей папке <em>Ex06</em>. Убедитесь, что в ней находится база геоданных <em>London.gdb</em> и растровый файл <em>InnerLondon.png</em>:</p>
-<div class="figure">
-<img src="images/Ex06/image6.png" />
-
-</div></li>
+<p><img src="images/Ex06/image6.png" /></p></li>
 <li><p>Раскройте базу геоданных и перенесите на карту класс пространственных объектов <em>Roads</em>, присвойте ему символ в виде черной линии толщиной 0,5 пункта.</p></li>
 <li><p>Добавьте на карту также слой <em>Water</em> и присвойте ему символ <em>Lake</em> (голубой полигон с синей обводкой). Картографическое изображение примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex06/image7.png" />
-
-</div>
+<p><img src="images/Ex06/image7.png" /></p>
 <p><kbd><strong>Снимок экрана №1</strong>. Картографическая основа</kbd></p></li>
 <li><p>Сохраните документ карты в <em>свою</em> папку <em>Ex06</em> под именем <em>London.mxd</em>.</p></li>
 </ol>
@@ -438,27 +429,15 @@
 <li><p>Расположите карту в центре окна <strong>ArcMap</strong>.</p></li>
 <li><p>Откройте панель инструментов <strong>Georeferencing</strong>. Выберите в ее меню команду <strong>Fit to Display</strong>, чтобы переместить непривязанный растр на середину области отображения.</p></li>
 <li><p>Используя инструмент расстановки контрольных точек на панели <strong>Georeferencing</strong>, укажите по крайней мере 3 контрольные точки в разных частях города:</p>
-<div class="figure">
-<img src="images/Ex06/image8.png" />
-
-</div>
+<p><img src="images/Ex06/image8.png" /></p>
 <p>Щелкайте сначала на растре, затем на векторном слое. В качестве точек используйте перекрестки дорог, которые вы можете найти как на растре, так и на картографической основе. Например, и на растре и на основе хорошо распознается перекресток на западной окраине <em>Хемпстеда</em>:</p>
-<div class="figure">
-<img src="images/Ex06/image9.png" />
-
-</div>
+<p><img src="images/Ex06/image9.png" /></p>
 <p>Желательно, чтобы точки были равномерно распределены по полю карты (по краям и в центре) и не располагались на одной линии — это обеспечит хорошие коэффициенты трансформации.</p></li>
 <li><p>Ознакомьтесь с доступными методами трансформирования по контрольным точкам. Для этого в меню на панели <strong>Georeferencing</strong> выберите команду <strong>Transformation</strong>. По умолчанию выбрано аффинное преобразование. При пяти контрольных точках будет доступно также проективное преобразование. Оставьте выбранным аффинное преобразование:</p>
-<div class="figure">
-<img src="images/Ex06/image10.png" />
-
-</div></li>
+<p><img src="images/Ex06/image10.png" /></p></li>
 <li><p>Осуществите трансформирование растра. Для этого на панели инструментов <strong>Georeferencing</strong> выберите команду меню <strong>Georeferencing &gt; Update Georeferencing</strong>. После выполнения трансформирования контрольные точки удалятся.</p>
 <p>Картографическое изображение примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex06/image11.png" />
-
-</div>
+<p><img src="images/Ex06/image11.png" /></p>
 <p><kbd><strong>Снимок экрана №2</strong> Привязанный растровый слой</kbd></p></li>
 <li><p>Сохраните документ карты в папке отчета.</p></li>
 </ol>
@@ -469,10 +448,7 @@
 <ol style="list-style-type: decimal">
 <li><p>Отключите слой дорог и слой гидрографии, оставив видимой только подложку.</p></li>
 <li><p>Добавьте на карту класс пространственных объектов <em>Districts</em>. Он содержит районы северного берега Темзы. Вам необходимо его дополнить, оцифровав районы южного берега реки:</p>
-<div class="figure">
-<img src="images/Ex06/image12.png" />
-
-</div></li>
+<p><img src="images/Ex06/image12.png" /></p></li>
 <li><p>Прочтите раздел <strong><em>Редактирование</em></strong> в файле <strong><em>Описание функций</em></strong>, особенно уделив внимание разделам <strong><em>Создание объектов</em></strong> и <strong><em>Цифрование в режиме автозавершения (auto-complete)</em></strong>.</p></li>
 <li><p>Включите режим редактирования слоя <em>Districts</em>. Для этого в его контекстном меню выберите команду <strong>Edit Features &gt; Start Editing</strong>.</p></li>
 <li><p>Откройте список шаблонов слоя, нажав кнопку <em>Create Features</em> на панели <em>Editor</em> и посмотрите доступные опции.</p></li>
@@ -491,10 +467,7 @@
 <li><p>Отключите слой растровой карты.</p></li>
 <li><p>Включите слой дорог и установите ему прозрачность, равную <em>60%</em>.</p>
 <p>Картографическое изображение примет следующий вид:</p>
-<div class="figure">
-<img src="/images/Ex06/image14.png" />
-
-</div>
+<p><img src="/images/Ex06/image14.png" /></p>
 <p><kbd><strong>Снимок экрана №3</strong>. Оцифрованные городские районы с подписями</kbd></p></li>
 <li><p>Сохраните документ карты.</p></li>
 </ol>
@@ -515,59 +488,35 @@
 <li><p>Остановите сеанс редактирования, если это не было сделано ранее (<strong>Editor &gt; Stop Editing</strong>).</p></li>
 <li><p>Откройте таблицу атрибутов слоя.</p></li>
 <li><p>Выберите команду меню <strong>Add Field…</strong> (если она не активна, это значит, что вы не остановили сеанс редактирования на панели <strong>Editor</strong>).</p>
-<div class="figure">
-<img src="images/Ex06/image14.png" />
-
-</div></li>
+<p><img src="images/Ex06/image14.png" /></p></li>
 <li><p>Введите название поля <em>Hotels</em> и тип поля <strong>Short Integer</strong>. Диалог примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex06/image15.png" />
-
-</div></li>
+<p><img src="images/Ex06/image15.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>. Поле будет добавлено в слой.</p></li>
 <li><p>Добавьте на карту класс <em>building_points</em> из базы геоданных <em>London.gdb</em>. Разместите его под слоем <em>districts</em>. В данном слое каждая точка соответствует зданию.</p>
 <p>Для удобства работы организуйте пространство следующим образом:</p></li>
 <li><p>Откройте атрибутивные таблицы слоев <em>districts</em> и <em>buildings</em> и расположите их друг над другом в левой части окна:</p>
-<div class="figure">
-<img src="images/Ex06/image16.png" />
-
-</div></li>
+<p><img src="images/Ex06/image16.png" /></p></li>
 <li><p>Включите редактирование слоя <em>districts</em> и выберите в его таблице первую строчку (нужно щелкнуть на заголовке слева от строки).</p></li>
 <li><p>Откройте диалог пространственной выборки (<strong>Selection &gt; Select by Location</strong>) и диалог атрибутивной выборки (<strong>Selection &gt; Select by &gt; Attributes</strong>). Расположите их рядом.</p></li>
 <li><p>Выберите в диалоге пространственной выборки слой <em>building_points</em> в качестве выбираемого (<strong>target</strong>) и слой <em>districts</em> в качестве выбирающего (<strong>source</strong>). Отметьте галочкой пункт <strong>Use Selected Features</strong> — это позволит выбирать с использованием уже выбранного района. Диалог примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex06/image17.png" />
-
-</div></li>
+<p><img src="images/Ex06/image17.png" /></p></li>
 <li><p>Нажмите кнопку <strong>Apply</strong> — на карте должны выбраться здания, попавшие в пределы выбранного района. Не закрывайте диалог.</p></li>
 <li><p>Перейдите в диалог атрибутивной выборки. В качестве выбираемого слоя укажите <em>building_points</em> и смените режим выборки на <strong>Select from current selection</strong>. В этом режиме будет осуществляться подвыборка среди уже выбранных объектов.</p></li>
-<li><p>Введите следующий атрибутивный запрос, чтобы отобрать отели:</p>
-<pre><code>&quot;type&quot; = &#39;hotel&#39;</code></pre>
-<p>Диалог примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex06/image18.png" />
-
-</div></li>
+<li><p>Введите следующий атрибутивный запрос, чтобы отобрать отели:
+<code>&quot;type&quot; = 'hotel'</code>
+Диалог примет следующий вид:</p>
+<p><img src="images/Ex06/image18.png" /></p></li>
 <li><p>Нажмите <strong>Apply</strong>. <em>Не закрывайте диалог атрибутивной выборки</em>. На карте останутся выбранными только те здания текущего района, которые являются отелями. Чтобы ознакомиться с их списком, перейдите в атрибутивную таблицу слоя <em>building_points</em> и включите режим показа только выбранных объектов (<strong>Show selected records</strong>):</p>
-<div class="figure">
-<img src="images/Ex06/image19.png" />
-
-</div>
+<p><img src="images/Ex06/image19.png" /></p>
 <p>Внизу таблицы вы можете увидеть число выбранных объектов (на рисунке их 8, у вас может получиться другое число, если выделен другой район).</p></li>
 <li><p>Внесите указанное число в атрибутивную таблицу слоя <em>districts</em> для текущего выбранного района:</p>
-<div class="figure">
-<img src="images/Ex06/image20.png" />
-
-</div></li>
+<p><img src="images/Ex06/image20.png" /></p></li>
 <li><p>Выберите следующий район в таблице слоя <em>districts</em> (на рисунке выше это будет район <em>Islington</em>).</p></li>
 <li><p>Повторите шаги 5–10 для всех оставшихся районов. На всем протяжении выполнения этих операций у вас должны быть открыты таблицы обоих слоев, а также диалоговые окна атрибутивной и пространственной выборки.</p></li>
 <li><p>Сохраните документ карты</p></li>
 </ol>
 <p>Законченная таблица должна содержать в поле <em>Hotels</em> число отелей для каждого района:</p>
-<div class="figure">
-<img src="images/Ex06/image21.png" />
-
-</div>
+<p><img src="images/Ex06/image21.png" /></p>
 <p><kbd><strong>Снимок экрана №4</strong>. Атрибутивная таблица с числом отелей по каждому району</kbd></p>
 </div>
 <div id="-" class="section level2">
@@ -579,12 +528,9 @@
 <ul>
 <li><p>Щелкните правой кнопкой мыши по базе данных <em>London.gdb</em> и выберите пункт <strong>Make Default Geodatabase</strong>, чтобы результаты обработки складывались в эту базу.</p></li>
 <li><p>Откройте <strong>ArcToolbox</strong> и запустите инструмент геообработки <strong>Data Management Tools &gt; Features &gt; Feature to Point</strong>.</p></li>
-<li><p>Укажите в качестве <strong>Input Features</strong> слой <em>Districts</em>. Исправьте название выходного класса на <em>Hotels</em>. Диалог примет следующий вид:</p></li>
-</ul>
-<div class="figure">
-<img src="images/Ex06/image22.png" />
-
-</div></li>
+<li><p>Укажите в качестве <strong>Input Features</strong> слой <em>Districts</em>. Исправьте название выходного класса на <em>Hotels</em>. Диалог примет следующий вид:</p>
+<p><img src="images/Ex06/image22.png" /></p></li>
+</ul></li>
 <li><p>Нажмите <strong>ОК</strong>. Созданный слой точек будет добавлен на карту.</p></li>
 <li><p>Создайте картодиаграммы на основе полученных точек. Для этого:</p>
 <ul>
@@ -593,12 +539,9 @@
 <li><p>Аналогично первому упражнению, отредактируйте границы классов. Предлагается выделить следующие классы: менее <em>5, 5-9, 10-19, 20-29, 30</em> и более. Для этого необходимо нажать кнопку <strong>Classify</strong> и заменить границы первых четырех классов на <em>4, 9, 19, 29</em>. Максимальное значение не трогайте. Нажмите <strong>ОК</strong>.</p></li>
 <li><p>Измените шаблон картодиаграммы на значок отеля. Для этого сначала прочтите разделы Подключение библиотек символов и поиск символов по названию в файле <strong><em>Описание функций</em></strong>. Нажмите кнопку <strong>Template</strong> на вкладке <strong>Symbology</strong>. Далее подключите библиотеку <em>Civic</em> и найдите в ней символ <em>Hotel Information 1.</em> Выберите его и нажмите <strong>ОК</strong>.</p></li>
 <li><p>Отредактируйте подписи классов, изменив первый на «<em>less than 5</em>», а последний — на «<em>30 and more</em>».</p></li>
-<li><p>Измените максимальный и минимальный размер значка на <em>48</em> и <em>16</em> соответственно. Диалог настройки символов примет следующий вид:</p></li>
-</ul>
-<div class="figure">
-<img src="images/Ex06/image23.png" />
-
-</div></li>
+<li><p>Измените максимальный и минимальный размер значка на <em>48</em> и <em>16</em> соответственно. Диалог настройки символов примет следующий вид:</p>
+<p><img src="images/Ex06/image23.png" /></p></li>
+</ul></li>
 <li><p>Нажмите ОК.</p></li>
 <li><p>Сохраните документ карты</p></li>
 </ol>
@@ -617,23 +560,15 @@
 </ul></li>
 <li><p>Для слоя <em>Water</em> отключите обводку, оставив только голубую заливку.</p></li>
 <li><p>Необходимо запретить подписям районов перекрывать значки картодиаграмм. Для этого откройте панель <strong>Labeling</strong>, откройте на ней меню <strong>Labeling</strong> и убедитесь, что включен механизм размещения подписей <strong>Maplex</strong>. Далее нажмите кнопку <strong>Label Weight Ranking</strong>:</p>
-<div class="figure">
-<img src="images/Ex06/image24.png" />
-
-</div>
-<p>В открывшемся диалоге исправьте значение <strong>Feature Weight</strong> для слоя <em>Hotels</em> на <em>1000</em>.</p>
-<div class="figure">
-<img src="images/Ex06/image25.png" />
-
-</div>
+<p><img src="images/Ex06/image24.png" /></p>
+<p>В открывшемся диалоге исправьте значение <strong>Feature Weight</strong> для слоя
+<em>Hotels</em> на <em>1000</em>.</p>
+<p><img src="images/Ex06/image25.png" /></p>
 <blockquote>
 <p>Любому слою может быть присвоен вес от <em>0</em> до <em>1000</em>. Чем выше вес, тем меньше вероятность, что слой будет перекрываться подписями.</p>
 </blockquote>
 <p>Нажмите <strong>ОК</strong>. Картографическое изображение примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex06/image26.png" />
-
-</div>
+<p><img src="images/Ex06/image26.png" /></p>
 <p><kbd><strong>Снимок экрана №5.</strong> Картодиаграммы числа отелей по городским районам</kbd></p></li>
 <li><p>Сохраните документ карты</p></li>
 </ol>
@@ -641,11 +576,9 @@
 <div id="section-6.8" class="section level2">
 <h2><span class="header-section-number">6.8</span> Компоновка</h2>
 <p><a href="map-ref-economic.html#map-ref-economic">В начало упражнения ⇡</a></p>
-<p>Оформите компоновку карты с легендой в соответствии со следующим образцом.</p>
-<div class="figure">
-<img src="images/Ex06/image27.png" />
-
-</div>
+<p>Оформите компоновку карты с легендой в соответствии со следующим
+образцом.</p>
+<p><img src="images/Ex06/image27.png" /></p>
 <p>Для этого:</p>
 <ol style="list-style-type: decimal">
 <li><p>Установите масшта равным <em>1:100 000</em>.</p></li>
@@ -715,9 +648,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -421,19 +418,14 @@
 <li><p>Скопируйте каталог <em>Ex16</em> в свой рабочий каталог.</p></li>
 <li><p>Подключитесь в окне каталога к вашей папке <em>Ex16</em>. Убедитесь, что в ней находится база геоданных <em>Argo.gdb</em>.</p></li>
 <li><p>Используя контекстное меню базы данных, назначьте ее базой данных по умолчанию.</p></li>
-<li><p>Добавьте на карту слои <em>ArgoBuoys</em> и <em>Countries</em> и оформите их следующим образом:</p></li>
-</ol>
+<li><p>Добавьте на карту слои <em>ArgoBuoys</em> и <em>Countries</em> и оформите их следующим образом:</p>
 <ul>
 <li><em>ArgoBuoys</em> — черные кружки диаметром 3 пункта</li>
 <li><em>Countries</em> — заливка серым цветом 30%, обводка серым цветом 60%</li>
-</ul>
-<ol style="list-style-type: decimal">
+</ul></li>
 <li><p>Включите подписи слоя <em>ArgoBuoys</em> по полю <em>Temp</em>, установите размер шрифта равным 7 пунктам.</p>
 <p>Картографическое изображение примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex16/image7.png" />
-
-</div>
+<p><img src="images/Ex16/image7.png" /></p>
 <p><kbd><strong>Снимок экрана №1.</strong> Исходные данные</kbd></p></li>
 <li><p>Сохраните документ карты в свою папку под названием <em>Ex16_Interpolation.mxd</em></p></li>
 </ol>
@@ -463,10 +455,7 @@
 </tbody>
 </table>
 <p>Нажмите <strong>ОК</strong>:</p>
-<div class="figure">
-<img src="images/Ex16/image8.png" />
-
-</div></li>
+<p><img src="images/Ex16/image8.png" /></p></li>
 <li><p>После завершения работы инструмента откройте атрибутивную таблицу слоя <em>ArgoBuoys</em> и в контекстном меню заголовка поля <em>Near_DIST</em> выберите команду <strong>Statistics</strong>, чтобы открыть диалог со статистикой поля.</p></li>
 <li><p>Найдите в диалоговом окне строку <em>Mean</em> (среднее значение), разделите его пополам и округлите полученное значение в меньшую сторону до ближайшего числа, кратного 0,5. Если все сделано правильно, то в результате должно получиться разрешение <em>2,5 градуса</em>.</p></li>
 </ol>
@@ -476,11 +465,11 @@
 <h2><span class="header-section-number">16.4</span> Интерполяция поверхностей</h2>
 <p><a href="interpolation.html#interpolation">В начало упражнения ⇡</a></p>
 <p>Используя инструменты геообработки, находящиеся в <strong>ArcToolbox</strong> в группе <strong>Spatial Analyst Tools &gt; Interpolation</strong>, постройте растровые поверхности нижеуказанными методами:</p>
-<table style="width:68%;">
+<table>
 <colgroup>
-<col width="9%" />
-<col width="36%" />
-<col width="22%" />
+<col width="13%" />
+<col width="54%" />
+<col width="32%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -544,10 +533,7 @@
 </tbody>
 </table>
 <p>Если все выполнено верно, то в вашей базе геоданных и таблице содержания должно появиться <em>9 новых растров</em>, отражающих поверхность распределения температуры:</p>
-<div class="figure">
-<img src="images/Ex16/image9.png" />
-
-</div>
+<p><img src="images/Ex16/image9.png" /></p>
 <p><kbd><strong>Снимок экрана №2</strong>. Построенные поверхности</kbd></p>
 </div>
 <div id="--" class="section level2">
@@ -557,20 +543,11 @@
 <ol style="list-style-type: decimal">
 <li><p>Убедитесь, что в свойствах слоя <em>Temp_Kriging</em> на вкладке <strong>Symbology</strong> включен режим отображения <em>Classified</em>. Нажмите на этой же вкладке кнопку <strong>Classify…</strong></p></li>
 <li><p>В появившемся диалоге выберите метод классификации <em>Defined</em> (заданный интервал), установите интервал равным 2,5 метра и нажмите <strong>ОК</strong>:</p>
-<div class="figure">
-<img src="images/Ex16/image10.png" />
-
-</div></li>
+<p><img src="images/Ex16/image10.png" /></p></li>
 <li><p>Выберите сине-бело-красную шкалу для отображения температуры. Диалог свойств слоя примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex16/image11.png" />
-
-</div></li>
+<p><img src="images/Ex16/image11.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>. Картографическое изображение примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex16/image12.png" />
-
-</div>
+<p><img src="images/Ex16/image12.png" /></p>
 <p><kbd><strong>Снимок экрана №3.</strong> Поле температуры методом кригинга</kbd></p></li>
 <li><p>Повторите эту операцию для оставшихся растров.</p></li>
 <li><p>Поочередно <em>включая только нужный растр</em> (так чтобы на карте был виден именно он) сделайте снимки экрана:</p></li>
@@ -610,27 +587,15 @@
 </tbody>
 </table>
 <p>Остальные параметры (включая размер окна 3×3) оставьте по умолчанию. Нажмите <strong>ОК</strong>. После выполнения сглаженный растр будет добавлен в таблицу содержания:</p>
-<div class="figure">
-<img src="images/Ex16/image13.png" />
-
-</div>
+<p><img src="images/Ex16/image13.png" /></p>
 <p>Обратите внимание на размер ячейки.</p></li>
 <li><p>Визуализируйте сглаженный растр аналогично созданным ранее растрам. Для этого вам потребуется сменить способ его отображения на <strong>Classified</strong>.</p></li>
 <li><p>Нажмите <strong>ОК</strong>. Изображение примет цветной, но по прежнему пикселизованный вид:</p>
-<div class="figure">
-<img src="images/Ex16/image14.png" />
-
-</div></li>
+<p><img src="images/Ex16/image14.png" /></p></li>
 <li><p>Дважды щелкните на слое <em>Temp_Kriging_3x3</em>, перейдите на вкладку <strong>Display</strong> и установите режим <a href="https://ru.wikipedia.org/wiki/Передискретизация">передискретизации</a> слоя <strong>Сubic Convolution</strong> (кубическая свертка):</p>
-<div class="figure">
-<img src="images/Ex16/image15.png" />
-
-</div></li>
+<p><img src="images/Ex16/image15.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>. Изображение примет более привычный гладкий вид непрерывной поверхности:</p>
-<div class="figure">
-<img src="images/Ex16/image16.png" />
-
-</div>
+<p><img src="images/Ex16/image16.png" /></p>
 <p><kbd><strong>Снимок экрана №12.</strong> Сглаженная поверхность поля температуры</kbd></p></li>
 </ol>
 </div>
@@ -643,21 +608,12 @@
 <li><p>Добавьте этот слой на карту и смените его символ на линию черного цвета.</p></li>
 <li><p>Включите режим редактирования.</p></li>
 <li><p>Выберите в окне <strong>Create Features</strong> слой <strong>Profiles</strong> и щелкните правой кнопкой мыши на карте. В появившемся диалоге выберите команду <strong>Absolute X,Y</strong> чтобы задать координаты первой точки профиля:</p>
-<div class="figure">
-<img src="images/Ex16/image17.png" />
-
-</div></li>
+<p><img src="images/Ex16/image17.png" /></p></li>
 <li><p>В появившемся мини-диалоге введите значения для долготы и широты соответственно -38 и 0 и нажмите на клавиатуре <kbd>Enter</kbd>.</p>
-<div class="figure">
-<img src="images/Ex16/image18.png" />
-
-</div></li>
+<p><img src="images/Ex16/image18.png" /></p></li>
 <li><p>Повторите эту операцию для ввода конечной точки профиля (координаты -38 и 63 соответственно)</p></li>
 <li><p>Нажмите на клавиатуре <kbd>F2</kbd>, чтобы завершить создание линии:</p>
-<div class="figure">
-<img src="images/Ex16/image19.png" />
-
-</div></li>
+<p><img src="images/Ex16/image19.png" /></p></li>
 <li><p>Завершите сеанс редактирования, выбрав на панели <strong>Editor</strong> команду <strong>Editor &gt; Stop Editing</strong>.</p></li>
 </ol>
 </div>
@@ -696,15 +652,9 @@
 <li><p>Для корректного отображения широты коневертируйте линию в точки. Для этого запустите инструмент <strong>Data Management Tools &gt; Features &gt; Feature Vertices to Points</strong>. Назовите выходной класс <em>Profile_Temp_Pts.</em></p></li>
 <li><p>Добавьте в точки значения широты, долготы и температуры. Для этого воспользуйтесь инструментом <strong>Data Management Tools &gt; Features &gt; Add XY Coordinates</strong>.</p></li>
 <li><p>Откройте атрибутивную таблицу получившегося слоя. Она должна иметь следующий вид:</p>
-<div class="figure">
-<img src="images/Ex16/image20.png" />
-
-</div></li>
+<p><img src="images/Ex16/image20.png" /></p></li>
 <li><p>Выберите команду меню <strong>View &gt; Graphs &gt; Create Graph</strong>:</p>
-<div class="figure">
-<img src="images/Ex16/image21.png" />
-
-</div></li>
+<p><img src="images/Ex16/image21.png" /></p></li>
 <li><p>Настройте параметры графика следующим образом:</p>
 <table>
 <thead>
@@ -737,10 +687,7 @@
 </tbody>
 </table>
 <p>Диалог примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex16/image22.png" />
-
-</div></li>
+<p><img src="images/Ex16/image22.png" /></p></li>
 <li><p>Нажмите <strong>Next</strong> и настройте отображение графика следующим образом:</p>
 <table>
 <thead>
@@ -765,15 +712,10 @@
 </tbody>
 </table>
 <p>Диалог примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex16/image23.png" />
-
-</div></li>
-<li><p>Нажмите <strong>Finish</strong>. Построенный профиль будет добавлен в окно приложения:</p>
-<div class="figure">
-<img src="images/Ex16/image24.png" />
-
-</div>
+<p><img src="images/Ex16/image23.png" /></p></li>
+<li><p>Нажмите <strong>Finish</strong>. Построенный профиль будет добавлен в окно
+приложения:</p>
+<p><img src="images/Ex16/image24.png" /></p>
 <p><kbd><strong>Снимок экрана №13</strong>. Профиль температуры</kbd></p></li>
 </ol>
 </div>
@@ -785,15 +727,9 @@
 <li><p>Установите масштаб равным 1:70 000 000.</p></li>
 <li><p>Щелкните на профиле правой кнопкой мыши и выберите команду <strong>Add To Layout</strong>, чтобы добавить его на страницу компоновки.</p></li>
 <li><p>Оформите карту в соответствии с нижеприведенным изображением. Добавьте на нее название, легенду и численный масштаб:</p>
-<div class="figure">
-<img src="images/Ex16/image26.png" />
-
-</div>
+<p><img src="images/Ex16/image26.png" /></p>
 <p>Для установки нулевого расстояния между плашками цветовой шкалы дважды щелкните на легенде, перейдите на вкладку <strong>Layout</strong> и установите параметр <strong>Vertical Patch Gap</strong> равным <em>0 pt</em>:</p>
-<div class="figure">
-<img src="images/Ex16/image25.png" />
-
-</div></li>
+<p><img src="images/Ex16/image25.png" /></p></li>
 <li><p>Экспортируйте изображение в файл формата <em>PNG</em> и вставьте его в отчет.</p></li>
 <li><p>Сохраните документ карты.</p></li>
 </ol>
@@ -856,9 +792,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

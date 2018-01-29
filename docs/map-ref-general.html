@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -416,39 +413,21 @@
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слой <em>Countries</em> из базы данных упражнения 3.</p></li>
 <li><p>Добавьте на карту растр <em>SwissRegions.gif</em>. Появится диалог, предупреждающий вас, что добавляемый файл не имеет пространственной привязки. Нажмите <strong>ОК</strong>:</p>
-<div class="figure">
-<img src="images/Ex07/image8.png" />
-
-</div></li>
+<p><img src="images/Ex07/image8.png" /></p></li>
 <li><p>Убедитесь, что контур страны отображается примерно посередине экрана.</p></li>
 <li><p>Откройте панель инструментов <strong>Georeferencing</strong>. Выберите в меню команду <strong>Fit to Display</strong>, чтобы переместить непривязанный растр на середину области отображения:</p>
-<div class="figure">
-<img src="images/Ex07/image9.png" />
-
-</div></li>
+<p><img src="images/Ex07/image9.png" /></p></li>
 <li><p>Сделайте растровый слой прозрачным на <em>50%</em>.</p></li>
 <li><p>Используя <strong>инструмент расстановки контрольных точек</strong>, укажите <em>3-6</em> соответствующих точек по границе страны на характерных выступах контура:</p>
-<div class="figure">
-<img src="images/Ex07/image10.png" />
-
-</div></li>
+<p><img src="images/Ex07/image10.png" /></p></li>
 <li><p>Выберите команду меню <strong>Georeferencing &gt; Update Georeferencing</strong>, чтобы завершить привязку растра. При этом по умолчанию будет примененоаффинное преобразование с минимизацией среднеквадратической ошибки отклонения исходных и целевых координат:</p>
-<div class="figure">
-<img src="images/Ex07/image11.png" />
-
-</div></li>
+<p><img src="images/Ex07/image11.png" /></p></li>
 <li><p>Добавьте на карту слой <em>WineSafariRoute.jpg</em>.</p></li>
 <li><p>Выберите его в списке на панели <strong>Georeferencing</strong>:</p>
-<div class="figure">
-<img src="images/Ex07/image12.png" />
-
-</div></li>
+<p><img src="images/Ex07/image12.png" /></p></li>
 <li><p>Отключите слой <em>SwissRegions.gif</em> в таблице содержания.</p></li>
 <li><p>Привяжите растр <em>WineSafariRoute</em> аналогично предыдущему растру, используя контрольные точки:</p>
-<div class="figure">
-<img src="images/Ex07/image13.png" />
-
-</div></li>
+<p><img src="images/Ex07/image13.png" /></p></li>
 </ol>
 <p>1.Выберите команду <strong>Georeferencing &gt; Update georeferencing</strong>, чтобы завершить привязку второго растра.</p>
 </div>
@@ -490,10 +469,7 @@
 </tbody>
 </table>
 <p>По завершению создания слоев они автоматически будут добавлены на карту:</p>
-<div class="figure">
-<img src="images/Ex07/image14.png" />
-
-</div>
+<p><img src="images/Ex07/image14.png" /></p>
 </div>
 <div id="-" class="section level2">
 <h2><span class="header-section-number">7.4</span> Цифрование регионов</h2>
@@ -502,64 +478,38 @@
 <li><p>Оставьте включенными только слои <em>Regions</em>, <em>SwissRegions</em> и <em>Countries</em>.</p></li>
 <li><p>Уберите <em>прозрачность</em> у слоя <em>SwissRegions</em>.</p></li>
 <li><p>Откройте сеанс редактирования для слоя <em>Regions</em>. Появится панель редактирования <strong>Editor</strong>, а также окно шаблонов объектов <strong>Create Features</strong>:</p>
-<div class="figure">
-<img src="images/Ex07/image15.png" />
-
-</div></li>
+<p><img src="images/Ex07/image15.png" /></p></li>
 <li><p>Щелкните на шаблоне объекта <em>Regions</em> в окне <strong>Create Features</strong> и выберите режим цифрования <strong>Polygon</strong>:</p>
-<div class="figure">
-<img src="images/Ex07/image16.png" />
-
-</div></li>
+<p><img src="images/Ex07/image16.png" /></p></li>
 <li><p>Оцифруйте регион <em>Prealpine Zones</em> в центре карты. По завершению дважды щелкните мышкой:</p>
-<div class="figure">
-<img src="images/Ex07/image17.png" />
-
-</div></li>
+<p><img src="images/Ex07/image17.png" /></p></li>
 <li><p>Чтобы появилась возможность пристыковать остальные регионы к границам стран, <strong>выделите</strong> в слое <em>Countries</em> все страны, кроме Швейцарии, <strong>скопируйте</strong> их в буфер обмена и <strong>вставьте</strong> в слой <em>Regions</em>:</p>
-<div class="figure">
-<img src="images/Ex07/image18.png" />
-
-</div></li>
+<p><img src="images/Ex07/image18.png" /></p></li>
 <li><p>Выделите опять шаблон <em>Regions</em> в окне <strong>Create Features</strong>.</p></li>
 <li><p>Используя режим <strong>Auto-Complete Polygon</strong>, оцифруйте границы оставшихся регионов в следующем порядке:</p>
 <ul>
 <li><p>Сначала небольшие регионы, примыкающие к границам:</p>
-<div class="figure">
-<img src="images/Ex07/image19.png" />
-
-</div></li>
+<p><img src="images/Ex07/image19.png" /></p></li>
 <li><p>Затем область второго порядка (горы <em>Юра</em>):</p>
-<div class="figure">
-<img src="images/Ex07/image20.png" />
-
-</div></li>
+<p><img src="images/Ex07/image20.png" /></p></li>
 <li><p>Наконец, границу между центральными регионами:</p>
-<div class="figure">
-<img src="images/Ex07/image21.png" />
-
-</div></li>
+<p><img src="images/Ex07/image21.png" /></p></li>
 </ul></li>
 <li><p>Выделите в слое <em>Regions</em> границы стран и удалите их.</p></li>
 <li><p>Выберите команду <strong>Editor &gt; Save Edits</strong>, чтобы сохранить результаты редактирования.</p></li>
 </ol>
-<p><em>Результат</em>: <img src="images/Ex07/image22.png" /></p>
+<p><em>Результат</em>:
+<img src="images/Ex07/image22.png" /></p>
 </div>
 <div id="-" class="section level2">
 <h2><span class="header-section-number">7.5</span> Атрибутирование регионов</h2>
 <p><a href="map-ref-general.html#map-ref-general">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Уберите заливку регионов, линии сделайте толщиной 1.5-2 пиксела:</p>
-<div class="figure">
-<img src="images/Ex07/image23.png" />
-
-</div></li>
+<p><img src="images/Ex07/image23.png" /></p></li>
 <li><p>Откройте атрибутивную таблицу слоя <em>Regions</em>.</p></li>
 <li><p>Поочередно выделяя каждый объект в таблице или на карте, заполните его атрибуты в соответствии с легендой:</p>
-<div class="figure">
-<img src="images/Ex07/image24.png" />
-
-</div></li>
+<p><img src="images/Ex07/image24.png" /></p></li>
 <li><p>Сохраните изменения и завершите сеанс редактирования.</p></li>
 </ol>
 </div>
@@ -572,27 +522,16 @@
 <li><p>Оцифруйте объекты слоев <em>Places</em> и <em>Routes</em>, используя инструменты панели <strong>Сreate Features</strong>:</p>
 <ul>
 <li><p>Начните с расстановки точек:</p>
-<div class="figure">
-<img src="images/Ex07/image25.png" />
-
-</div></li>
+<p><img src="images/Ex07/image25.png" /></p></li>
 <li><p>Увеличьте масштаб, чтобы были хорошо видны изгибы линий:</p>
-<div class="figure">
-<img src="images/Ex07/image26.png" />
-
-</div></li>
+<p><img src="images/Ex07/image26.png" /></p></li>
 <li><p>Проведите линии через получившиеся точки, повторяя контур исходной линии на растровой подложке. Каждую линию начинайте в точке и завершайте двойным щелчком в перекрестке:</p>
-<div class="figure">
-<img src="images/Ex07/image27.png" />
-
-</div></li>
+<p><img src="images/Ex07/image27.png" /></p></li>
 </ul>
-<p><em>Результат</em>: <img src="images/Ex07/image28.png" /></p></li>
+<p><em>Результат</em>:
+<img src="images/Ex07/image28.png" /></p></li>
 <li><p>Заполните названия городов в слое <em>Places</em>.</p>
-<div class="figure">
-<img src="images/Ex07/image29.png" />
-
-</div></li>
+<p><img src="images/Ex07/image29.png" /></p></li>
 <li><p>Сохраните изменения и завершите сеанс редактирования.</p></li>
 </ol>
 </div>
@@ -603,15 +542,9 @@
 <li><p>Оставьте включенными слои <em>Regions</em>, <em>Routes</em>, <em>Places</em> и <em>Countries</em>. Остальные слои выключите.</p></li>
 <li><p>Уберите заливку у слоя <em>Countries</em>.</p></li>
 <li><p>Оформите слой <em>Regions</em> методом категорий по полю <em>NAME</em>:</p>
-<div class="figure">
-<img src="images/Ex07/image30.png" />
-
-</div></li>
+<p><img src="images/Ex07/image30.png" /></p></li>
 <li><p>Оформите слои <em>Routes</em> и <em>Places</em> по аналогии с нижеприведенным фрагментом:</p>
-<div class="figure">
-<img src="images/Ex07/image31.png" />
-
-</div></li>
+<p><img src="images/Ex07/image31.png" /></p></li>
 <li><p>Откройте панель <strong>Labeling</strong> и включите <strong>Maplex</strong> для размещения подписей.</p></li>
 <li><p>Включите подписи для слоя <em>Places</em> со следующими настройками:</p>
 <table>
@@ -644,21 +577,22 @@
 </tr>
 </tbody>
 </table>
-<p><em>Результат</em>: <img src="images/Ex07/image32.png" /></p></li>
+<p><em>Результат</em>:
+<img src="images/Ex07/image32.png" /></p></li>
 </ol>
 <p>Некоторые подписи могут быть размещены не очень удачно. Чтобы они не перекрывали линии маршрута и значки выполните следующие действия:</p>
 <ol style="list-style-type: decimal">
 <li><p>Откройте <em>настройки весов подписей</em> <strong>Label Weight Ranking</strong> на панели <strong>Labeling</strong></p></li>
 <li><p>Установите вес равным <span class="math inline">\(1000\)</span> слоям <em>Places</em> и <em>Routes:</em></p>
-<div class="figure">
-<img src="images/Ex07/image33.png" />
-
-</div>
-<p><em>Результат</em>: <img src="images/Ex07/image34.png" /></p></li>
+<p><img src="images/Ex07/image33.png" /></p>
+<p><em>Результат</em>:
+<img src="images/Ex07/image34.png" /></p></li>
 <li><p>Добавьте на карту слой <em>Hillshade</em> из базы данных упражнения 3, разместите его над слоем Regions и установите прозрачность <span class="math inline">\(80%\)</span>.</p>
-<p><em>Результат</em>: <img src="images/Ex07/image35.png" /></p></li>
+<p><em>Результат</em>:
+<img src="images/Ex07/image35.png" /></p></li>
 <li><p>Добавьте на карту слой <em>Lakes</em> и присвойте ему символ полигона с голубой заливкой без обводки.</p>
-<p><em>Результат</em>: <img src="images/Ex07/image36.png" /></p></li>
+<p><em>Результат</em>:
+<img src="images/Ex07/image36.png" /></p></li>
 </ol>
 </div>
 <div id="--1" class="section level2">
@@ -668,10 +602,7 @@
 <li><p>Переключитесь в <strong>режим компоновки</strong>.</p></li>
 <li><p>Установите альбомную ориентировку листа.</p></li>
 <li><p>Оформите компоновку в соответствии с нижеприведенным образцом:</p>
-<div class="figure">
-<img src="images/Ex07/image37.png" />
-
-</div></li>
+<p><img src="images/Ex07/image37.png" /></p></li>
 <li><p>Экспортируйте карту в формат <kbd>PNG</kbd> с разрешением <span class="math inline">\(300~dpi\)</span>.</p></li>
 <li><p>Сохраните документ карты.</p></li>
 </ol>
@@ -733,9 +664,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

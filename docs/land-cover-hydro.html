@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -498,10 +495,7 @@
 </tbody>
 </table>
 <p>Остальные параметры оставьте по умолчанию. <em>Диалог инструмента примет следующий вид:</em></p>
-<div class="figure">
-<img src="images/Ex09/image8.png" />
-
-</div></li>
+<p><img src="images/Ex09/image8.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>. После выполнения расчетная сетка будет добавлена на экран.</p></li>
 <li><p>Разместите слой <em>Fishnet</em> поверх других слоев и смените его символ на черную линию толщиной 1 пункт.</p></li>
 <li><p>Сохраните документ карты.</p></li>
@@ -540,10 +534,7 @@
 </tbody>
 </table>
 <p>Остальные параметры оставьте по умолчанию. <em>Диалог примет следующий вид:</em></p>
-<div class="figure">
-<img src="images/Ex09/image9.png" />
-
-</div></li>
+<p><img src="images/Ex09/image9.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>, после выполнения таблица результатов будет добавлена в таблицу содержания.</p></li>
 <li><p>Откройте таблицу и посмотрите значения в поле <em>PERCENTAGE</em> — они отражают долю объекта в площади ячейки.</p></li>
 </ol>
@@ -642,18 +633,12 @@
 </tbody>
 </table>
 <p>При указании свойств соединения отметьте флажком опцию <strong>Keep Only Matching records</strong>. Диалог соединения таблиц примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex09/image10.png" />
-
-</div></li>
+<p><img src="images/Ex09/image10.png" /></p></li>
 <li><p>Используя калькулятор поля, перенесите значения из присоединенного столбца <em>PERCENTAGE</em> в столбец <em>Hydro</em> слоя <em>Fishnet</em>. Для этого щелкните правой кнопкой мыши по заголовку столбца <em>Hydro</em> и выберите в контекстном меню команду <strong>Field Calculator</strong>. В появившемся диалоге введите следующий текст команды (см рисунок ниже):</p>
 <p><code>[fishnet_1000_Hydro.PERCENTAGE]</code></p>
 <p>Для подстановки названия поля в строку просто дважды щелкните на нем в списке. Обратите внимание на точечную нотацию. Текст до точки — это название таблицы. Текст после точки — название поля.</p>
 <p><em>Диалог примет следующий вид</em>:</p>
-<div class="figure">
-<img src="images/Ex09/image11.png" />
-
-</div></li>
+<p><img src="images/Ex09/image11.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>. Значения будут скопированы их одного столбца в другой.</p></li>
 <li><p>Удалите соединение таблиц.</p></li>
 </ol>
@@ -678,17 +663,11 @@
 <li><p>Добавьте столбцы <em>X</em> и <em>Y</em> типа <em>Long Integer</em> в таблицу слоя <em>Fishnet</em>.</p></li>
 <li><p>Вычислите их с помощью калькулятора геометрии. Для этого щелкните на столбце <em>X</em> правой кнопкой мыши и в контекстном меню выберите команду <strong>Calculate Geometry</strong>.</p></li>
 <li><p>В появившемся диалоге выберите режим <strong>X Coordinate of Centroid</strong> и нажмите <strong>ОК</strong>:</p>
-<div class="figure">
-<img src="images/Ex09/image12.png" />
-
-</div></li>
+<p><img src="images/Ex09/image12.png" /></p></li>
 <li><p>Повторите операцию для столбца <em>Y</em>.</p></li>
 <li><p>Сохраните документ карты.</p>
 <p>После выполнения всех операций атрибутивная таблица слоя <em>Fishnet</em> должна принять приблизительно следующий вид:</p>
-<div class="figure">
-<img src="images/Ex09/image13.png" />
-
-</div></li>
+<p><img src="images/Ex09/image13.png" /></p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №2.</strong> Атрибутивная таблица слоя расчетной сетки</kbd></p>
 </div>
@@ -700,10 +679,7 @@
 <li><p>В главном меню таблицы выберите команду <strong>Export…</strong>.</p></li>
 <li><p>В поле <strong>Output Table</strong> нажмите кнопку указания места сохранения файла и перейдите в ваш каталог <em>Ex09</em>.</p></li>
 <li><p>Смените тип файла на текстовый и назовите его <em>Results.txt</em>:</p>
-<div class="figure">
-<img src="images/Ex09/image14.png" />
-
-</div></li>
+<p><img src="images/Ex09/image14.png" /></p></li>
 <li><p>Откройте получившийся файл через <strong>Проводник</strong>, чтобы просмотреть его содержимое.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №3.</strong> Файл данных расчетной сетки</kbd></p>
@@ -716,18 +692,12 @@
 <li><p>Установите масштаб изображения <em>1:100 000</em>.</p></li>
 <li><p>Измените способ изображения слоя <em>Fishnet</em> на <strong>Pie Charts</strong> (картодиаграммы).</p></li>
 <li><p>Добавьте столбцы <em>Hydro, Green, Industrial, Buildings и Other</em> в поля картодиаграммы и раскрасьте их в соответствии с рисунком:</p>
-<div class="figure">
-<img src="images/Ex09/image15.png" />
-
-</div></li>
+<p><img src="images/Ex09/image15.png" /></p></li>
 <li><p>Нажмите кнопку <strong>Size</strong> и установите диаметр кружка равным 18 пунктам.</p></li>
 <li><p>Символ <strong>Background</strong> сделайте без заливки и с черной обводкой. Нажмите <strong>ОК</strong>.</p></li>
 <li><p>Установите прозрачность для всех слоев 70%, чтобы подложка не мешала восприятию картодиаграмм. Документ карты примет следующий вид:</p></li>
 </ol>
-<div class="figure">
-<img src="images/Ex09/image16.png" />
-
-</div>
+<p><img src="images/Ex09/image16.png" /></p>
 <p><kbd><strong>Снимок экрана №4.</strong> Картодиаграммы</kbd></p>
 </div>
 <div id="--" class="section level2">
@@ -804,9 +774,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

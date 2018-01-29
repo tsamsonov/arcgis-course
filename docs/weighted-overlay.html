@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -414,7 +411,8 @@
 <li><p>необходимая площадь участка — не менее <em>30 000 м<sup>2</sup></em>.</p></li>
 </ul>
 <p>Таким образом, в анализе участвует 5 факторов: тип землепользования, углы наклона рельефа, расстояние до автодорог, расстояние до водотоков, площадь участка. Поскольку расстояния и углы наклона меняются в пространстве непрерывно, для их анализа удобно использовать растровое представление. К нему же необходимо привести типы землепользования, применив векторно-растровое преобразование. Каждый из полученных слоев далее следует классифицировать по балльной шкале от <em>1</em> до <em>10</em> и затем получить взвешенную сумму баллов по всей территории. Оптимальное местоположение будет соответствовать участкам с максимальной суммой баллов. Среди них необходимо удовлетворяющие критерию минимальной площади.</p>
-<p>Для выполнения анализа и преобразований данных вы будете использовать инструменты <em>геообработки</em>.</p>
+<p>Для выполнения анализа и преобразований данных вы будете использовать
+инструменты <em>геообработки</em>.</p>
 <blockquote>
 <p><strong>Геообработка (geoprocessing)</strong> в терминологии ArcGIS — это анализ и преобразование пространственных данных. Инструменты геообработки находятся в ArcToolbox, где они сгруппированы по функциональному назначению.</p>
 </blockquote>
@@ -475,10 +473,7 @@
 </table>
 <p>В поле <strong>Output point features</strong> вам потребуется заменить только название класса объектов (<em>LandUse_R</em>).</p>
 <p>Диалог примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex11/image4.png" />
-
-</div>
+<p><img src="images/Ex11/image4.png" /></p>
 <p>После завершения работы инструмента конвертации в таблицу содержания добавится новый слой.</p></li>
 <li><p>Выделите его, нажмите <kbd>F2</kbd> и переименуйте в <em>Землепользование (растр)</em>.</p></li>
 <li><p>Дважды щелкните по созданному слою и перейдите на вкладку <strong>Symbology</strong>.</p></li>
@@ -528,10 +523,7 @@
 <li><p>После того как слой углов наклона <em>Slope</em> добавится в таблицу содержания, переименуйте его в <em>Углы наклона</em>.</p></li>
 </ol>
 <p>Обратите внимание на то, что значения углов были классифицированы на несколько интервалов, которым был присвоен цвет:</p>
-<div class="figure">
-<img src="images/Ex11/image8.png" />
-
-</div>
+<p><img src="images/Ex11/image8.png" /></p>
 <p>Эта классификация является динамической (то есть, применяется при визуализации слоя и никак не отражается на его хранении) и при желании ее можно поменять ее на вкладке <strong>Symbology</strong> в свойствах слоя.</p>
 </div>
 <div id="-" class="section level2">
@@ -542,8 +534,8 @@
 <p>Чтобы определить участки, наиболее подходящие с точки зрения транспортной доступности, можно построить растр, в каждой ячейке которого будет содержится расстояние (евклидово) до ближайшей дороги.</p>
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слой дорог <em>General/Roads</em> из базы геоданных <em>Satino</em>.</p></li>
-<li><p>Откройте пункт меню <strong>Selection &gt; Select by attributes</strong>, выберите для выборки слой <em>Дороги и тропы</em> и в конструктор запроса введите следующее выражение:</p>
-<pre><code>&quot;Description&quot; = &#39;Асфальтированные&#39; OR &quot;Description&quot; = &#39;Проселочные&#39;</code></pre>
+<li><p>Откройте пункт меню <strong>Selection &gt; Select by attributes</strong>, выберите для выборки слой <em>Дороги и тропы</em> и в конструктор запроса введите следующее выражение:
+<code>&quot;Description&quot; = 'Асфальтированные' OR &quot;Description&quot; = 'Проселочные'</code></p>
 <p>Выборка позволит учитывать для при анализе только дороги (в слое также содержатся тропы). Окно запроса примет вид, аналогичный представленному на рисунке. Нажмите <strong>ОК</strong>:</p>
 <div class="figure">
 <img src="images/Ex11/image9.png" alt="Рис. 4. Выборка автомобильных дорог в диалоге атрибутивного запроса" />
@@ -551,16 +543,10 @@
 </div></li>
 <li><p>Постройте растр расстояний для выбранных дорог. Для этого запустите инструмент <strong>Spatial Analyst Tools &gt; Distance &gt; Euclidian Distance</strong>.</p></li>
 <li><p>Выберите в качестве параметра <strong>Input Raster or Feature</strong> слой <em>Roads</em>. Остальные параметры оставьте по умолчанию. Диалог примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex11/image10.png" />
-
-</div></li>
+<p><img src="images/Ex11/image10.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>. Получившийся растр будет добавлен на карту. Переименуйте его в <em>Расстояния до дорог</em>.</p></li>
 <li><p>Очистите выборку в слое дорог, нажав кнопку <img src="images/Ex11/image11.png" /> <strong>Clear Selected Features</strong> на панели инструментов <strong>Tools</strong>. Окно приложения примет следующий вид (обратите внимание на то, что расстояния были вычислены не для всех дорог, а только для выбранных):</p>
-<div class="figure">
-<img src="images/Ex11/image12.png" />
-
-</div></li>
+<p><img src="images/Ex11/image12.png" /></p></li>
 </ol>
 </div>
 <div id="section-11.5.2" class="section level3">
@@ -569,16 +555,10 @@
 <ol style="list-style-type: decimal">
 <li><p>Добавить на карту слой G<em>eneral/WaterPolygon</em> (Гидрография (Полигоны))</p></li>
 <li><p>Выбрать вручную крупные реки (Протва, Исьма) с помощью инструмента <img src="images/Ex11/image13.png" /> <strong>Select Features By Rectangle</strong> на панели инструментов <strong>Tools</strong>. Чтобы выбрать последовательно несколько объектов, вы можете зажать клавишу <kbd>Shift</kbd>:</p>
-<div class="figure">
-<img src="images/Ex11/image14.png" />
-
-</div></li>
+<p><img src="images/Ex11/image14.png" /></p></li>
 <li><p>Запустить инструмент <strong>Euclidian Distance</strong> для слоя <em>Гидрография (полигоны)</em>. Все параметры оставить по умолчанию.</p></li>
 <li><p>Получившийся после расчетов слой переименовать в <em>Расстояния до водотоков</em>. Если все выполнено правильно, то результат должен быть примерно следующим:</p>
-<div class="figure">
-<img src="images/Ex11/image15.png" />
-
-</div></li>
+<p><img src="images/Ex11/image15.png" /></p></li>
 </ol>
 </div>
 </div>
@@ -617,10 +597,7 @@
 <p class="caption">Рис. 9. Функция Flip Colors</p>
 </div></li>
 <li><p>Нажмите <strong>ОК</strong> в диалоге свойств слоя, чтобы закрыть его. Изображение должно принять следующий вид:</p>
-<div class="figure">
-<img src="images/Ex11/image19.png" />
-
-</div>
+<p><img src="images/Ex11/image19.png" /></p>
 <p><kbd><strong>Снимок экрана №2.</strong> Классифицированные углы наклона</kbd></p></li>
 <li><p>Сохраните документ карты.</p></li>
 </ol>
@@ -742,8 +719,8 @@
 <p>Для выбора участков по площади следует использовать атрибутивный запрос</p>
 <ol style="list-style-type: decimal">
 <li><p>Откройте пункт меню <strong>Selection &gt; Select by attributes</strong>, выберите для выборки слой <em>Потенциальные участки.</em></p></li>
-<li><p>В конструктор запроса введите следующее выражение:</p>
-<pre><code>&quot;Shape_Area&quot; &gt; 30000</code></pre>
+<li><p>В конструктор запроса введите следующее выражение:
+<code>&quot;Shape_Area&quot; &gt; 30000</code></p>
 <p>Нажмите <strong>ОК</strong>. Результат вашей работы должен быть похож на рисунок ниже:</p>
 <div class="figure">
 <img src="images/Ex11/image30.png" alt="Рис. 19. Результат анализа: ярко-желтые полигоны участков, оптимальные для строительства. Выделен полигон, имеющий необходимую площадь более 30 000 м2" />
@@ -812,9 +789,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Практикум по геоинформатике</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown 0.6 and GitBook 2.6.7">
 
   <meta property="og:title" content="Практикум по геоинформатике" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-26">
+<meta name="date" content="2018-01-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -337,9 +337,6 @@
 <li class="chapter" data-level="18.9" data-path="index.html"><a href="index.html#--"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#--7"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
-
 </ul>
 
       </nav>
@@ -403,15 +400,22 @@
 </div>
 <div id="section-1.1.2" class="section level3">
 <h3><span class="header-section-number">1.1.2</span> Аннотация</h3>
-<p>Задание посвящено знакомству с созданием тематических карт на основе баз пространственных данных. Вы познакомитесь с представлением площадных, линейных, точечных объектов в базе пространственных данных. Научитесь создавать карты на их основе, оформлять легенду, сетку координат и зарамочные элементы карты.</p>
+<p>Задание посвящено знакомству с созданием тематических карт на основе баз
+пространственных данных. Вы познакомитесь с представлением площадных,
+линейных, точечных объектов в базе пространственных данных. Научитесь
+создавать карты на их основе, оформлять легенду, сетку координат и
+зарамочные элементы карты.</p>
 </div>
 </div>
 <div id="-" class="section level2">
 <h2><span class="header-section-number">1.2</span> Начало работы</h2>
 <p><a href="map-design-climates.html#map-design-climates">В начало упражнения ⇡</a></p>
-<p>В каталоге <em>Ex01</em> находится база геоданных <em>Ex01.gdb</em>, содержащая исходные данные для выполнения задания.</p>
+<p>В каталоге <em>Ex01</em> находится база геоданных <em>Ex01.gdb</em>, содержащая
+исходные данные для выполнения задания.</p>
 <blockquote>
-<p><strong>База геоданных</strong> — это структурированное хранилище, внутри которого можно создавать слои данных, группировать их и связывать различными отношениями.</p>
+<p><strong>База геоданных</strong> — это структурированное хранилище, внутри которого
+можно создавать слои данных, группировать их и связывать различными
+отношениями.</p>
 </blockquote>
 <p>Внутри базы геоданных могут быть объекты следующих типов:</p>
 <ul>
@@ -420,7 +424,13 @@
 <li><img src="images/Ex01/image11.png" /> — обычные таблицы;</li>
 </ul>
 <blockquote>
-<p><strong>Класс пространственных объектов (feature class)</strong> — это набор пространственных объектов одного типа геометрии (точки, линии, полигоны или объемные тела). Для класса могут быть определены атрибуты, а его представлением является таблица, содержащая как обычные столбцы (текстовые, числовые и т.д.) так и специальное поле Shape, в котором хранится информация о геометрии. Каждая строчка в таблице — это описание одного объекта.</p>
+<p><strong>Класс пространственных объектов (feature class)</strong> — это набор
+пространственных объектов одного типа геометрии (точки, линии, полигоны
+или объемные тела). Для класса могут быть определены атрибуты, а его
+представлением является таблица, содержащая как обычные столбцы
+(текстовые, числовые и т.д.) так и специальное поле Shape, в котором
+хранится информация о геометрии. Каждая строчка в таблице — это описание
+одного объекта.</p>
 </blockquote>
 <ol style="list-style-type: decimal">
 <li><p>Запустите приложение <strong>ArcMap</strong> и откройте окно <strong>Catalog</strong>, нажав кнопку <img src="images/Ex01/image5.png" /> на панели инструментов</p></li>
@@ -471,7 +481,12 @@
 <p>К какому типу геометрии относятся данные классы?</p></li>
 <li><p>Дважды щелкните на слое <em>Climates</em> и перейдите на вкладку XY Coordinate System.</p></li>
 </ol>
-<p>Внимательно прочитайте информацию. Этот слой хранится в <em>Географической системе координат (GCS)</em>, отнесенной к эллипсоиду WGS-1984. Это означает, что координаты каждого объекта хранятся в виде широты и долготы. В любой момент этот слой можно спроецировать в любую проекцию. При этом координаты будут представлены в метрических единицах, а система координат получит название <em>Проецированной системы координат (PCS)</em>.</p>
+<p>Внимательно прочитайте информацию. Этот слой хранится в <em>Географической
+системе координат (GCS)</em>, отнесенной к эллипсоиду WGS-1984. Это
+означает, что координаты каждого объекта хранятся в виде широты и
+долготы. В любой момент этот слой можно спроецировать в любую проекцию.
+При этом координаты будут представлены в метрических единицах, а система
+координат получит название <em>Проецированной системы координат (PCS)</em>.</p>
 </div>
 <div id="-" class="section level2">
 <h2><span class="header-section-number">1.3</span> Оформление слоев</h2>
@@ -480,10 +495,7 @@
 <li><p>Добавьте на карту слой <em>Countries</em>, просто перетащив его из окна каталога.</p></li>
 <li><p>Дважды щелкните на названии слоя <em>Countries</em> и перейдите на вкладку Symbology.</p></li>
 <li><p>Внимательно изучите список способов изображения слева. Они разделены на категории <strong>Features</strong> (единый символ), <strong>Categories</strong> (качественные характеристики), <strong>Quantities</strong> (количественные характеристики), <strong>Charts</strong> (картодиаграммы), <strong>Multiple Attributes</strong> (способы изображения по нескольким атрибутам).Разверните каждую группу и щелкните на каждом способе. Сопоставьте их с традиционной классификацией способов изображения:</p>
-<div class="figure">
-<img src="images/Ex01/image12.png" />
-
-</div></li>
+<p><img src="images/Ex01/image12.png" /></p></li>
 <li><p>Выберите способ единого символа (<strong>Features &gt; Single symbol</strong>)</p></li>
 <li><p>Щелкните на кнопке с изображением символа и измените оформление следующим образом:</p>
 <table>
@@ -509,25 +521,13 @@
 </tbody>
 </table>
 <p>Диалог свойств слоя:</p>
-<div class="figure">
-<img src="images/Ex01/image16.png" />
-
-</div>
+<p><img src="images/Ex01/image16.png" /></p>
 <p>Результат:</p>
-<div class="figure">
-<img src="images/Ex01/image17.png" />
-
-</div></li>
+<p><img src="images/Ex01/image17.png" /></p></li>
 <li><p>Измените проекцию карты на <em>проекцию Робинсона (Robinson)</em>. Ее можно найти в группе <strong>Projected Сoordinate Systems &gt; World</strong>. Обратите внимание на то, как изменятся очертания объектов:</p>
-<div class="figure">
-<img src="images/Ex01/image18.png" />
-
-</div></li>
+<p><img src="images/Ex01/image18.png" /></p></li>
 <li><p>Добавьте на карту слой <em>Coast</em>, расположите его поверх слоя <em>Countries</em> и измените цвет линии на <em>Delft Blue:</em></p>
-<div class="figure">
-<img src="images/Ex01/image19.png" />
-
-</div></li>
+<p><img src="images/Ex01/image19.png" /></p></li>
 <li><p>Добавьте на карту слой <em>Rivers</em> расположите его поверх слоя <em>Coast</em> и измените цвет линии на <em>Delft Blue,</em> а толщину сделайте равной 0,5 пиксела<em>.</em></p></li>
 <li><p>Добавьте на карту слой <em>Lakes</em>, расположите его поверх слоя <em>Rivers</em> и измените его оформление следующим образом:</p>
 <table>
@@ -553,10 +553,7 @@
 </tbody>
 </table>
 <p>Результат:</p>
-<div class="figure">
-<img src="images/Ex01/image20.png" />
-
-</div></li>
+<p><img src="images/Ex01/image20.png" /></p></li>
 <li><p>Сохраните карту в свою директорию <em>Ex01</em>.</p></li>
 <li><p>Добавьте на карту слой <em>Cities</em>, расположите его поверх слоя <em>Lakes</em> и измените его параметры следующим образом:</p>
 <table>
@@ -581,10 +578,7 @@
 </tr>
 </tbody>
 </table>
-<div class="figure">
-<img src="images/Ex01/image21.png" />
-
-</div></li>
+<p><img src="images/Ex01/image21.png" /></p></li>
 <li><p>Добавьте на карту слой <em>Seas</em>, расположите его внизу таблицы содержания и измените его параметры следующим образом:</p>
 <table>
 <thead>
@@ -613,10 +607,7 @@
 </tbody>
 </table>
 <p>Результат:</p>
-<div class="figure">
-<img src="images/Ex01/image22.png" />
-
-</div></li>
+<p><img src="images/Ex01/image22.png" /></p></li>
 <li><p>Добавьте на карту слой <em>Сlimates</em>, расположите его внизу таблицы содержания.</p></li>
 <li><p>Откройте таблицу атрибутов слоя <em>Сlimates</em>, щелкнув на его названии правой кнопкой мыши и выбрав команду <strong>Open Attribute Table</strong>. Найдите в ней столбец <em>Type</em>, просмотрите его значения. Это поле таблицы хранит информацию о типе климата для каждой области. Вы будете использовать ее для классификации при отображении данного слоя.</p></li>
 <li><p>Найдите поля <em>Shape</em> и <em>ObjectID</em>.</p>
@@ -662,10 +653,7 @@
 </tbody>
 </table>
 <p>Диалог настройки символики слоя должен выглядеть следующим образом:</p>
-<div class="figure">
-<img src="images/Ex01/image23.png" />
-
-</div></li>
+<p><img src="images/Ex01/image23.png" /></p></li>
 <li><p>Добавьте на карту слой <em>Сurrents</em>, расположите его поверх слоя <em>Сlimates</em>. Этот слой содержит данные о течениях <em>OSCAR (Ocean Surface Current Analyses – Real time)</em>, осредненные с 1993 по 2003 год.</p>
 <blockquote>
 <p>Течения относятся к векторным полям. Существует множество способов визуализации векторных полей. В картографии распространен способ <strong>градиентного поля</strong>, при котором стрелки размещаются по регулярной сетке, их поворот соответствует направлению векторного поля в точке, а длина — скорости. Для реализации способа градиентного поля вам нужно выбрать символ (стрелку), а также указать атрибутивные поля слоя, в соответствии с которыми будет меняться их направление и длина.</p>
@@ -697,10 +685,7 @@
 </tr>
 </tbody>
 </table>
-<div class="figure">
-<img src="images/Ex01/image24.png" />
-
-</div></li>
+<p><img src="images/Ex01/image24.png" /></p></li>
 <li><p>Нажмите <em>ОК</em> и еще раз <em>ОК</em>.</p></li>
 <li><p>Чтобы задать направление стрелки, не выходя из диалога свойств слоя на вкладке <strong>Symbology</strong> нажмите <strong>Advanced &gt; Rotation…</strong> и настройте следующие параметры вращения:</p>
 <table>
@@ -722,7 +707,8 @@
 </tbody>
 </table></li>
 <li><p>Для изменения размера стрелки в зависимости от скорости течения нажмите <strong>Advanced &gt; Size…</strong> Выберите в списке поле <em>Length</em>. Нажмите ОК.</p>
-<p>Результат: <img src="images/Ex01/image25.png" /></p></li>
+<p>Результат:
+<img src="images/Ex01/image25.png" /></p></li>
 <li><p>Сохраните карту.</p></li>
 </ol>
 </div>
@@ -731,16 +717,10 @@
 <p><a href="map-design-climates.html#map-design-climates">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Включите механизм размещения подписей Maplex</p>
-<div class="figure">
-<img src="images/Ex01/image26.png" />
-
-</div></li>
+<p><img src="images/Ex01/image26.png" /></p></li>
 <li><p>Дважды щелкните на слое <em>Cities</em>, и перейдите на вкладку <em>Labels</em>.</p></li>
 <li><p>Включите подписи для слоя <em>Cities</em>:</p>
-<div class="figure">
-<img src="images/Ex01/image27.png" />
-
-</div></li>
+<p><img src="images/Ex01/image27.png" /></p></li>
 <li><p>Настройте параметры подписей следующим образом:</p>
 <table>
 <thead>
@@ -768,10 +748,7 @@
 </tr>
 </tbody>
 </table>
-<div class="figure">
-<img src="images/Ex01/image28.png" />
-
-</div></li>
+<p><img src="images/Ex01/image28.png" /></p></li>
 <li><p>Включите подписи для слоя <em>Rivers</em> со следующими параметрами:</p>
 <table>
 <thead>
@@ -870,10 +847,7 @@
 </tbody>
 </table>
 <p>Результат:</p>
-<div class="figure">
-<img src="images/Ex01/image29.png" />
-
-</div></li>
+<p><img src="images/Ex01/image29.png" /></p></li>
 <li><p>Сохраните карту.</p></li>
 </ol>
 </div>
@@ -889,20 +863,16 @@
 </ul></li>
 <li><p>Подгоните размер фрейма данных таким образом, чтобы карта заняла площадь всего листа с небольшим запасом.</p></li>
 <li><p>Установите масштаб равным <code>1:90 000 000</code> и отцентрируйте карту в пределах листа.</p>
-<p>Результат: <img src="images/Ex01/image30.png" /></p></li>
+<p>Результат:
+<img src="images/Ex01/image30.png" /></p></li>
 <li><p>Добавьте на карту легенду с помощью команды <strong>Insert &gt; Legend</strong>, включив в нее только слои <em>Климат</em> и <em>Течения:</em></p>
-<div class="figure">
-<img src="images/Ex01/image31.png" />
-
-</div></li>
+<p><img src="images/Ex01/image31.png" /></p></li>
 <li><p>В следующем диалоге название легенды оставьте пустым:</p>
-<div class="figure">
-<img src="images/Ex01/image32.png" />
-
-</div></li>
+<p><img src="images/Ex01/image32.png" /></p></li>
 <li><p>Далее все параметры оставьте по умолчанию.</p></li>
 <li><p>Уберите заголовок поля для слоя <em>Климат</em>:</p>
-<p><img src="images/Ex01/image33.png" /> <img src="images/Ex01/image34.png" /></p></li>
+<p><img src="images/Ex01/image33.png" />
+<img src="images/Ex01/image34.png" /></p></li>
 <li><p>Добавьте градусную сетку координат со следующими параметрами:</p>
 <table>
 <thead>
@@ -927,7 +897,8 @@
 <li><p>Разместите над картой текст «КЛИМАТ И ОСНОВНЫЕ ОБЪЕКТЫ ГИДРОСФЕРЫ».</p></li>
 <li><p>Разместите под картой по центру численный масштаб <code>1:90 000 000</code>.</p></li>
 <li><p>Разместите в правом нижнем углу карты текст «Выполнил» и свое ФИО.</p>
-<p>Результат: <img src="images/Ex01/image35.png" /></p></li>
+<p>Результат:
+<img src="images/Ex01/image35.png" /></p></li>
 <li><p>Сохраните карту.</p></li>
 </ol>
 </div>
@@ -942,7 +913,8 @@
 <div id="--" class="section level2">
 <h2><span class="header-section-number">1.7</span> Ответы на вопросы</h2>
 <p><a href="map-design-climates.html#map-design-climates">В начало упражнения ⇡</a></p>
-<p>Ответьте на вопросы в отчетном файле. После окончания положите ваш отчет в сетевую папку для проверки вашим преподавателем</p>
+<p>Ответьте на вопросы в отчетном файле. После окончания положите ваш отчет
+в сетевую папку для проверки вашим преподавателем</p>
 
 </div>
 </div>
@@ -997,9 +969,11 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
