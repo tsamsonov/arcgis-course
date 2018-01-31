@@ -418,7 +418,7 @@
 </div>
 <div id="dem-design" class="section level2">
 <h2><span class="header-section-number">17.2</span> Оформление данных</h2>
-<p><a href="#dem-analysis">В начало упражнения ⇡</a></p>
+<p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Скопируйте каталог <em>Ex17</em> в свою папку.</p></li>
 <li><p>Подключитесь в окне каталога к вашей папке <em>Ex17</em>. Убедитесь, что в ней находится база геоданных <em>Ex17.gdb</em>.</p></li>
@@ -509,7 +509,7 @@
 </div>
 <div id="dem-flowdir" class="section level2">
 <h2><span class="header-section-number">17.3</span> Направление тока</h2>
-<p><a href="#dem-analysis">В начало упражнения ⇡</a></p>
+<p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
 <p>Растр направления тока показывает в каждой ячейке направление максимального уклона. Он необходим для построения водосборных бассейнов и прочих задач гидрологического и морфометрического анализа.</p>
 <p>Для построения растра направлений тока запустите инструмент <strong>Spatial Analyst Tools &gt; Hydrology &gt; Flow Direction</strong> и заполните его параметры следующим образом:</p>
 <table>
@@ -536,7 +536,7 @@
 </div>
 <div id="dem-flowacc" class="section level2">
 <h2><span class="header-section-number">17.4</span> Площадь водосбора (аккумуляция тока)</h2>
-<p><a href="#dem-analysis">В начало упражнения ⇡</a></p>
+<p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
 <p>Растр аккумуляции тока в каждой ячейке хранит количество ячеек, дренируемых выше по склону. Фактически, это число показывает площадь водосбора для каждой ячейки. Площадь водосбора необходима для автоматического выделения водотоков (тальвегов) по цифровой модели рельефа.</p>
 <ol style="list-style-type: decimal">
 <li><p>Для построения растра аккмуляции тока запустите инструмент <strong>Spatial Analyst Tools &gt; Hydrology &gt; Flow Accumulation</strong> и заполните его параметры следующим образом:</p>
@@ -568,7 +568,7 @@
 </div>
 <div id="dem-classify" class="section level2">
 <h2><span class="header-section-number">17.5</span> Выделение и классификация водотоков</h2>
-<p><a href="#dem-analysis">В начало упражнения ⇡</a></p>
+<p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
 <p>Выделение тальвегов осуществляется на основе растра аккумуляции тока. Вы просто задаете запрос следующего вида: «<em>Водотокам принадлежат те пикселы, в которых значение аккумуляции тока больше заданной величины. Остальные пикселы сделать пустыми</em>».</p>
 <ol style="list-style-type: decimal">
 <li><p>Для реализации этого запроса используйте инструмент <strong>Spatial Analyst &gt; Conditional &gt; Set Null</strong> со следующими параметрами:</p>
@@ -640,7 +640,7 @@
 </div>
 <div id="dem-vectorize" class="section level2">
 <h2><span class="header-section-number">17.6</span> Векторизация водотоков</h2>
-<p><a href="#dem-analysis">В начало упражнения ⇡</a></p>
+<p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Для получения векторных линий водотоков воспользуйтесь инструментом <strong>Spatial Analyst Tools &gt; Hydrology &gt; Stream to Feature</strong> и заполните его параметры согласно следующей таблице:</p>
 <table>
@@ -711,7 +711,7 @@
 </div>
 <div id="dem-mouth" class="section level2">
 <h2><span class="header-section-number">17.7</span> Выделение и разделение устьевых точек</h2>
-<p><a href="#dem-analysis">В начало упражнения ⇡</a></p>
+<p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
 <p>Водосборный бассейн в рабочем процессе гидрологического анализа ЦМР строится для одной точки. Если в качестве точки выбрать устье реки, то полученный бассейн будет соответствовать бассейну всей реки. Однако если устье является точкой слияния двух водотоков, будет построен бассейн, <em>общий для обоих водотоков</em>. Проблему можно решить, немного сдвинув конечные точки водотоков выше по течению. Для этого можно использовать следующую последовательность действий:</p>
 <ul>
 <li><p>Получить конечные точки водотоков (устья)</p></li>
@@ -783,7 +783,7 @@
 </div>
 <div id="dem-watersheds" class="section level2">
 <h2><span class="header-section-number">17.8</span> Построение водосборных бассейнов</h2>
-<p><a href="#dem-analysis">В начало упражнения ⇡</a></p>
+<p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
 <p>Построение водосборных бассейнов состоит из трех операций:
 * привязка точек устья к растру аккумуляции тока,
 * проведение границ водосборов в растровом режиме,
@@ -891,7 +891,7 @@
 </div>
 <div id="dem-statistics" class="section level2">
 <h2><span class="header-section-number">17.9</span> Расчет, привязка и визуализация статистики по водосборным бассейнам</h2>
-<p><a href="#dem-analysis">В начало упражнения ⇡</a></p>
+<p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
 <p>В пределах границ водосборных бассейнов возможно рассчитать различную статистику по данным ЦМР. Вам предлагается рассчитать статистику по высотам. Далее эту статистику необходимо присоединить к исходному слою бассейнов.</p>
 <ol style="list-style-type: decimal">
 <li><p>Запустите инструмент <strong>Spatial Analyst Tools &gt; Zonal &gt; Zonal Statistics as Table</strong> со следующими параметрами:</p>
@@ -978,7 +978,7 @@
 </div>
 <div id="dem-result" class="section level2">
 <h2><span class="header-section-number">17.10</span> Оформление итоговой карты</h2>
-<p><a href="#dem-analysis">В начало упражнения ⇡</a></p>
+<p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Установите масштаб карты равным 1:500 000</p></li>
 <li><p>Переключитесь в режим компоновки</p></li>
@@ -994,7 +994,7 @@
 </div>
 <div id="dem-questions" class="section level2">
 <h2><span class="header-section-number">17.11</span> Ответы на вопросы</h2>
-<p><a href="#dem-analysis">В начало упражнения ⇡</a></p>
+<p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
 <p>Заполните отчетный файл и положите его в сетевую папку для проверки преподавателем.</p>
 
 </div>

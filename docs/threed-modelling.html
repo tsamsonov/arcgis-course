@@ -410,7 +410,7 @@
 </div>
 <div id="threed-modelling-workspace" class="section level2">
 <h2><span class="header-section-number">18.2</span> Организация рабочего пространства</h2>
-<p><a href="#three-modelling">В начало упражнения ⇡</a></p>
+<p><a href="threed-modelling.html#threed-modelling">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Скопируйте данные упражнения в свой рабочий каталог <em>Ex18</em> с помощью <strong>Проводника</strong>.</p></li>
 <li><p>Откройте <strong>ArcMap</strong> и в нем — окно <strong>Catalog (Каталог)</strong>.</p></li>
@@ -421,7 +421,7 @@
 </div>
 <div id="threed-modelling-demviz" class="section level2">
 <h2><span class="header-section-number">18.3</span> Визуализация цифровой модели рельефа</h2>
-<p><a href="#three-modelling">В начало упражнения ⇡</a></p>
+<p><a href="threed-modelling.html#threed-modelling">В начало упражнения ⇡</a></p>
 <p>Для того чтобы полноценно моделировать видимость в трехмерном пространстве, необходимо иметь в наличии цифровую модель рельефа, а также и объекты, расположенные на поверхности.</p>
 <ol style="list-style-type: decimal">
 <li><p>Раскройте в домашнем каталоге базу геоданных <em>Satino.gdb</em> и перенесите на карту следующие слои из группы <em>General</em>:</p>
@@ -458,7 +458,7 @@
 </div>
 <div id="threed-modelling-additional" class="section level2">
 <h2><span class="header-section-number">18.4</span> Подготовка вспомогательных цифровых моделей для учета препятствий</h2>
-<p><a href="#three-modelling">В начало упражнения ⇡</a></p>
+<p><a href="threed-modelling.html#threed-modelling">В начало упражнения ⇡</a></p>
 <p>При расчете зоны видимости важно учитывать, что на поверхности расположены разные объекты, в том числе здания и растительность. Чтобы учесть объект в качестве препятствия, есть два пути: представить его в виде трехмерного тела, либо внедрить в качестве неровности в цифровую модель рельефа. Для растительности вам предлагается воспользоваться вторым вариантом. Алгоритм состоит из двух шагов:</p>
 <ul>
 <li><p>­преобразовать слой растительности в растр, каждый пиксел которого хранит значение высоты растительности;</p></li>
@@ -505,7 +505,7 @@
 </div>
 <div id="threed-modelling-rastertotin" class="section level2">
 <h2><span class="header-section-number">18.5</span> Преобразование растровых моделей в триангуляционные</h2>
-<p><a href="#three-modelling">В начало упражнения ⇡</a></p>
+<p><a href="threed-modelling.html#threed-modelling">В начало упражнения ⇡</a></p>
 <p>До этого момента вы использовали растровые модели, которые удобны для вычислений. Их также можно использовать и в трехмерной среде. Однако, чтобы обеспечить максимальную производительность и качество визуализации, растровые модели желательно преобразовать в триангуляционные, поскольку именно на них основаны методы трехмерной визуализации.</p>
 <ol style="list-style-type: decimal">
 <li><p>Запустите инструмент геообработки <strong>3D Analyst Tools &gt; Conversion &gt; From Raster &gt; Raster to TIN</strong>.</p></li>
@@ -542,7 +542,7 @@
 </div>
 <div id="threed-modelling-arcscene" class="section level2">
 <h2><span class="header-section-number">18.6</span> Визуализация данных в трехмерной среде и знакомство с приложением ArcScene</h2>
-<p><a href="#three-modelling">В начало упражнения ⇡</a></p>
+<p><a href="threed-modelling.html#threed-modelling">В начало упражнения ⇡</a></p>
 <p>Несмотря на то, что анализ зон видимости можно проводить и в традиционной двумерной среде, более наглядно результат выглядит в трехмерной сцене, особенно когда есть несколько местоположений наблюдателя с разными высотами.</p>
 <p>Для работы в трехмерной среде в <strong>ArcGIS</strong> используется приложение <strong>ArcScene</strong>. Это инструмент визуализации, анализа и редактирования трехмерных данных.</p>
 <ol style="list-style-type: decimal">
@@ -591,7 +591,7 @@
 </div>
 <div id="threed-modelling-geodesy" class="section level2">
 <h2><span class="header-section-number">18.7</span> Визуализация трехмерных объектов: геодезические пункты и здания</h2>
-<p><a href="#three-modelling">В начало упражнения ⇡</a></p>
+<p><a href="threed-modelling.html#threed-modelling">В начало упражнения ⇡</a></p>
 <p>В сцену необходимо добавить здания, которые играют роль дополнительных препятствий и геодезические пункты, с которых производятся наблюдения. До этого момента вы пользовались функцией драпировки объектов на поверхность. Здания и геодезические пункты, напротив, хранятся в базе данных как трехмерные объекты.</p>
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слой <em>Geopoints_3D</em> из базы данных <em>Satino</em>.</p></li>
@@ -619,7 +619,7 @@
 </div>
 <div id="threed-modelling-viewshed" class="section level2">
 <h2><span class="header-section-number">18.8</span> Анализ зоны видимости наблюдательного пункта</h2>
-<p><a href="#three-modelling">В начало упражнения ⇡</a></p>
+<p><a href="threed-modelling.html#threed-modelling">В начало упражнения ⇡</a></p>
 <p>Зона видимости строится для определенной точки в трехмерном пространстве. В качестве наблюдательных точек удобно использовать геодезические пункты. Сначала вы определите зону видимости с точки, расположенной на земле, а затем приподнимете ее на несколько метров, чтобы понять, как изменится зона видимости.</p>
 <ol style="list-style-type: decimal">
 <li><p>Откройте атрибутивную таблицу слоя Геодезические пункты 3D и выделите строку с геодезическим пунктом <em>Старое русло</em>. Строка должна выделиться ярко-голубым цветом.</p></li>
@@ -653,7 +653,7 @@
 </div>
 <div id="threed-modelling-height" class="section level2">
 <h2><span class="header-section-number">18.9</span> Изменение высоты наблюдения</h2>
-<p><a href="#three-modelling">В начало упражнения ⇡</a></p>
+<p><a href="threed-modelling.html#threed-modelling">В начало упражнения ⇡</a></p>
 <p>Рассмотрим теперь, как изменится зона видимости, если переместиться в пункт, расположенный более высоко.</p>
 <ol style="list-style-type: decimal">
 <li><p>Выберите в таблице атрибутов слоя <em>Геодезические пункты 3D</em> строку <em>Дедюевка</em>. Строка должна выделиться ярко-голубым цветом.</p></li>
@@ -683,7 +683,7 @@
 </div>
 <div id="threed-modelling-questions" class="section level2">
 <h2><span class="header-section-number">18.10</span> Контрольные вопросы</h2>
-<p><a href="#three-modelling">В начало упражнения ⇡</a></p>
+<p><a href="threed-modelling.html#threed-modelling">В начало упражнения ⇡</a></p>
 
 </div>
 </div>
