@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-31">
+<meta name="date" content="2018-02-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -338,6 +338,9 @@
 <li class="chapter" data-level="18.9" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-height"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-questions"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org/yihui/bookdown/" target="blank">Опубликовано с помощью bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -414,7 +417,7 @@
 <ol style="list-style-type: decimal">
 <li><p>Подключитесь к базе геоданных <em>Ex12.gdb</em> в вашей папке <em>Ex12</em>.</p></li>
 <li><p>Добавьте на карту слои <em>Buildings</em> (здания) и <em>Streets</em> (улицы).</p></li>
-<li><p>Присвойте зданиям цвет серый (20%), уберите обводку (<strong>Outline Color — No Color</strong>).</p></li>
+<li><p>Присвойте зданиям цвет серый (20%), уберите обводку (<strong>Outline Color &gt; No Color</strong>).</p></li>
 <li><p>Установите масштаб равным 1:10 000 для удобной работы с картой.</p></li>
 <li><p>Включите подписи зданий со следующими параметрами:</p>
 <table>
@@ -472,7 +475,7 @@
 </ol>
 <p>Примерный результат должен выглядеть так:</p>
 <p><img src="images/Ex12/image6.png" /></p>
-<p><kbd><strong>Снимок экрана №1</strong> Базовые слои: улицы, здания, граф дорожной сети</kbd></p>
+<p><kbd><strong>Снимок экрана №1</strong> — Базовые слои: улицы, здания, граф дорожной сети</kbd></p>
 </div>
 <div id="network-analysis-route" class="section level2">
 <h2><span class="header-section-number">12.3</span> Построение маршрута</h2>
@@ -485,23 +488,23 @@
 <p>Если все правильно, в ниспадающем списке панели будет отображаться граф дорожной сети <em>OSM_nd</em></p></li>
 <li><p>Создайте слой вычисления маршрутов с помощью команды <strong>Network Analyst &gt; New Route</strong>:</p>
 <p><img src="images/Ex12/image8.png" /></p></li>
-<li><p>Откройте окно <em>Network Analyst Window</em>:</p>
+<li><p>Откройте окно <strong>Network Analyst Window</strong>:</p>
 <p><img src="images/Ex12/image9.png" /></p></li>
 </ol>
 <p>Предположим, что по адресу ул. Профсоюзная, д.9 находится магазин. Вы проживаете по адресу ул. Шверника, д. 19. Необходимо построить прямой и обратный автомобильный маршрут.</p>
 <ol style="list-style-type: decimal">
-<li><p>Выделите в списке набор <em>Stops</em>, и, используя инструмент <em>Create Network Location</em>, поставьте на графе дорожной сети 2 точки:</p>
+<li><p>Выделите в списке набор <strong>Stops</strong>, и, используя инструмент <strong>Create Network Location</strong>, поставьте на графе дорожной сети 2 точки:</p>
 <ul>
 <li>Рядом со зданием ул. Профсоюзная, д. 9</li>
 <li>Рядом со зданием ул. Шверника, д. 19</li>
 </ul>
 <p><img src="images/Ex12/image10.png" /></p></li>
-<li><p>Нажмите <em>Solve</em>, чтобы построить прямой маршрут:</p>
+<li><p>Нажмите <strong>Solve</strong>, чтобы построить прямой маршрут:</p>
 <p><img src="images/Ex12/image11.png" /></p>
-<p><kbd><strong>Снимок экрана №2</strong>. Прямой маршрут</kbd></p></li>
+<p><kbd><strong>Снимок экрана №2.</strong> Прямой маршрут</kbd></p></li>
 <li><p>Поменяйте точки местами в окне <strong>Network Analyst</strong> чтобы построить обратный маршрут. Для этого перетащите нижнюю точку вверх списка. Запустите еще раз <strong>Solve</strong>:</p>
 <p><img src="images/Ex12/image12.png" /></p>
-<p><kbd> <strong>Снимок экрана №3</strong> . Обратный маршрут</kbd></p></li>
+<p><kbd> <strong>Снимок экрана №3.</strong> Обратный маршрут</kbd></p></li>
 </ol>
 <p>Допустим, по адресу проспект 60-летия Октября, д.29к1 ведутся ремонтные работы и движение перекрыто. Поставьте в этом месте барьер и перестройте маршрут. Для этого:</p>
 <ol style="list-style-type: decimal">
@@ -546,7 +549,7 @@
 <li><p>Нажмите <strong>Solve</strong> на панели <strong>Network Analyst</strong>, чтобы построить зону обслуживания:</p>
 <p><img src="images/Ex12/image15.png" /></p>
 <p><kbd><strong>Снимок экрана №5</strong>. Зона обслуживания 2 мин</kbd></p></li>
-<li><p>Постройте иерархию зон обслуживания от 1 до 5 минут. Для этого поменяйте значение параметра <strong>Breaks</strong> в настройках слоя <em>Service Area</em> на 1 2 3 4 5 (через пробелы):</p>
+<li><p>Постройте иерархию зон обслуживания от 1 до 5 минут. Для этого поменяйте значение параметра <strong>Breaks</strong> в настройках слоя <em>Service Area</em> на <em>1 2 3 4 5</em> (через пробелы):</p>
 <p><img src="images/Ex12/image16.png" /></p></li>
 <li><p>Перезапустите расчет зон обслуживания.</p>
 <p>Примерный результат должен выглядеть следующим образом:</p>
@@ -556,11 +559,11 @@
 <p>Получив зоны обслуживания, вы можете выделить с их помощью здания и провести экономико-географический анализ. Для этого можно воспользоваться пространственной выборкой.</p>
 <ol style="list-style-type: decimal">
 <li><p>Раскройте список <strong>Polygons</strong> в окне <strong>Network Analyst</strong>, чтобы увидеть легенду слоя. Выберите зону <em>Graphic Pick 1: 1 – 2</em>, она соответствует интервалу движения от 1 до 2 минут до магазина. Соответствующий полигон подсветится на карте.</p></li>
-<li><p>Откройте диалог пространственной выборки (<strong>Selection — Select By Location</strong>). Задайте в качестве целевого слоя <em>(Target) Buildings</em>, а в качестве слоя-источника (<strong>Source</strong>) — <em>Polygons</em> из группы <em>Service Area</em>. Отметьте галочкой <strong>Use selected features</strong>, чтобы пространственный запрос осуществлялся выбранной зоной. Диалог пространственной выборки примет следующий вид:</p>
+<li><p>Откройте диалог пространственной выборки (<strong>Selection &gt; Select By Location</strong>). Задайте в качестве целевого слоя <em>(Target) Buildings</em>, а в качестве слоя-источника (<strong>Source</strong>) — <em>Polygons</em> из группы <strong>Service Area</strong>. Отметьте галочкой <strong>Use selected features</strong>, чтобы пространственный запрос осуществлялся выбранной зоной. Диалог пространственной выборки примет следующий вид:</p>
 <p><img src="images/Ex12/image18.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong>. На карте будут отобраны здания, попадающие в заданный интервал транспортной доступности:</p>
 <p><img src="images/Ex12/image19.png" /></p>
-<p><kbd><strong>Снимок экрана №7</strong> Выборка зданий</kbd></p>
+<p><kbd><strong>Снимок экрана №7.</strong> Выборка зданий</kbd></p>
 <p>Полученную выборку зданий вы можете далее использовать для проведения статистического и географического анализа.</p></li>
 <li><p>Сохраните документ карты</p></li>
 </ol>
@@ -571,7 +574,7 @@
 <p>Предположим, что есть 2 магазина и 5 семей, которые живут в разных районах. Необходимо определить, какой магазин является ближайшим для каждой семьи и построить маршрут.</p>
 <ol style="list-style-type: decimal">
 <li><p>Отключите слой <em>Service Area</em> в таблице содержания и снимите выборку со всех объектов.</p></li>
-<li><p>Создайте слой определения ближайшего пункта обслуживания с помощью команды <strong>Network Analyst — New Closest Facility</strong>.</p></li>
+<li><p>Создайте слой определения ближайшего пункта обслуживания с помощью команды <strong>Network Analyst &gt; New Closest Facility</strong>.</p></li>
 <li><p>Используя навыки предыдущего анализа, поставьте два пункта обслуживания (<em>Facilities</em>) по адресам:</p>
 <ul>
 <li>Ул. Вавилова д. 48</li>
@@ -617,17 +620,17 @@
 <p><img src="images/Ex12/image22.png" /></p></li>
 <li><p>В появившемся диалоге выберите в списке <strong>Load From</strong> слой <em>Points</em> и нажмите <em>ОК</em>. Потребуется некоторое время, чтобы точки привязались к графу дорожной сети. За процессом вы можете следить в строке состояния приложения (внизу).</p>
 <p><img src="images/Ex12/image23.png" /></p></li>
-<li><p>Дважды щелкните на слое <em>Location-Allocation</em> в таблице содержания, чтобы изменить настройки анализа. Перейдите на вкладку <em>Advanced Settings</em>:</p>
+<li><p>Дважды щелкните на слое <em>Location-Allocation</em> в таблице содержания, чтобы изменить настройки анализа. Перейдите на вкладку <strong>Advanced Settings</strong>:</p>
 <p><img src="images/Ex12/image24.png" /></p></li>
 <li><p>Попробуйте выбрать различные варианты решения задачи в списке <strong>Problem Type</strong> и прочитайте их описание. Подумайте, где можно применить такой анализ.</p></li>
 <li><p>Выберите режим <em>Minimize Impedance</em> (минимизировать суммарное время движения от потребителей к ближайшим пунктам обслуживания).</p></li>
-<li><p>Установите количество отбираемых кандидатов (<em>Facilities to Choose</em>) равное <em>4</em>.</p>
+<li><p>Установите количество отбираемых кандидатов (<strong>Facilities to Choose</strong>) равное <em>4</em>.</p>
 <p><img src="images/Ex12/image25.png" /></p></li>
-<li><p>Установите направление движения <em>Demand to Facility</em> (потребитель к услугам) на вкладке <em>Analysis Settings</em>:</p>
+<li><p>Установите направление движения <em>Demand to Facility</em> (потребитель к услугам) на вкладке <strong>Analysis Settings</strong>:</p>
 <p><img src="images/Ex12/image26.png" /></p></li>
 <li><p>Нажмите <strong>ОК</strong> и запустите решение задачи на панели <strong>Network Analyst</strong>. Будут выбраны 4 наиболее оптимальных пункта обслуживания, а здания будут распределены между ними в виде веерной диаграммы. Программа выдаст предупреждение, что некоторые точки оказались непривязанными — проигнорируйте его. Это связано с тем, что некоторые здания по краям области транспортно недоступны, поскольку к ним требуется подъезд извне изучаемого района. Вы можете их видеть по отсутствию исходящих линий.</p>
 <p><img src="images/Ex12/image27.png" /></p>
-<p><kbd><strong>Снимок экрана №9</strong> Результат размещения — распределения</kbd></p></li>
+<p><kbd><strong>Снимок экрана №9.</strong> Результат размещения—распределения</kbd></p></li>
 <li><p>Сохраните документ карты</p></li>
 </ol>
 </div>
@@ -703,15 +706,15 @@
 <li><p>Переместите слой Regions под слои зданий и дорог.</p></li>
 <li><p>Измените оформление слоя Regions следующим образом:</p>
 <ul>
-<li><p>Способ изображения <strong>Categories — Unique Values</strong></p></li>
+<li><p>Способ изображения <strong>Categories &gt; Unique Values</strong></p></li>
 <li><p>Поле отображения <em>Facility ID</em></p></li>
 <li><p>Цвета отображения спокойные, пастельные, одинаковые по насыщенности.</p></li>
 <li><p>Обводка полигонов отсутствует. Чтобы убрать обводку сразу у всех плашек, щелкните на заголовке столбца <strong>Symbol</strong>, выберите пункт <strong>Properties for All Symbols</strong> и установите параметр <strong>Outline Color</strong> в положение <strong>No Color</strong>.</p></li>
 </ul>
 <p>Примерный вид диалога свойств слоя <em>Regions</em> выглядит следующим образом:</p>
 <p><img src="images/Ex12/image32.png" /></p></li>
-<li><p>Нажмите <em>ОК</em>, чтобы завершить оформление</p></li>
-<li><p>В слое <em>Location-Allocation</em> оставьте включенным только слой <em>Facilities</em>.</p></li>
+<li><p>Нажмите <strong>ОК</strong>, чтобы завершить оформление</p></li>
+<li><p>В группе <em>Location-Allocation</em> оставьте включенным только слой <em>Facilities</em>.</p></li>
 <li><p>Выгрузите отобранные пункты в отдельный слой. Для этого в окне <strong>Network Analyst</strong> выделите в списке <em>Facilities</em> пункты, помеченные звездочками (зажав клавишу <kbd>Ctrl</kbd>). Далее в контекстном меню слоя <em>Facilities</em> выберите команду <strong>Export Data</strong>.</p>
 <p><img src="images/Ex12/image33.png" /></p></li>
 <li><p>Сохраните выборку в базу геоданных <em>Regions.gdb</em> под названием
@@ -724,7 +727,7 @@
 </ol>
 <p>Ваш проект примет следующий вид:</p>
 <p><img src="images/Ex12/image35.png" /></p>
-<p><kbd><strong>Снимок экрана №10</strong> Районирование территории</kbd></p>
+<p><kbd><strong>Снимок экрана №10.</strong> Районирование территории</kbd></p>
 </div>
 <div id="network-analysis-layout" class="section level2">
 <h2><span class="header-section-number">12.8</span> Компоновка карты</h2>

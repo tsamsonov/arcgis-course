@@ -5,8 +5,8 @@ bookdown::gitbook:
       collapse: section
       before: |
         <li><a href="./">Практикум по геоинформатике</a></li>
-      #after: |
-       # <li><a href="https://github.com/tsamsonov/arcgis-course" target="blank">Опубликовано с помощью bookdown</a></li>
+      after: |
+        <li><a href="https://bookdown.org/yihui/bookdown/" target="blank">Опубликовано с помощью bookdown</a></li>
     edit: https://github.com/tsamsonov/arcgis-course/edit/master/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:

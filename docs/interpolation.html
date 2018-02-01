@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-31">
+<meta name="date" content="2018-02-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -338,6 +338,9 @@
 <li class="chapter" data-level="18.9" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-height"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-questions"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org/yihui/bookdown/" target="blank">Опубликовано с помощью bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -460,7 +463,9 @@
 <li><p>После завершения работы инструмента откройте атрибутивную таблицу слоя <em>ArgoBuoys</em> и в контекстном меню заголовка поля <em>Near_DIST</em> выберите команду <strong>Statistics</strong>, чтобы открыть диалог со статистикой поля.</p></li>
 <li><p>Найдите в диалоговом окне строку <em>Mean</em> (среднее значение), разделите его пополам и округлите полученное значение в меньшую сторону до ближайшего числа, кратного 0,5. Если все сделано правильно, то в результате должно получиться разрешение <em>2,5 градуса</em>.</p></li>
 </ol>
-<p>==✔︎ <em>Более подробно с решением проблемы выбора оптимального разрешения растра вы можете ознакомиться в статье <a href="https://www.researchgate.net/publication/222014409_Finding_the_right_pixel_size">Hengl T. Finding the right pixel size // Comput. Geosci. 2006. Vol. 32, № 9. P. 1283–1298.</a></em>==</p>
+<blockquote>
+<p>Более подробно с решением проблемы выбора оптимального разрешения растра вы можете ознакомиться в статье <a href="https://www.researchgate.net/publication/222014409_Finding_the_right_pixel_size">Hengl T. Finding the right pixel size // Comput. Geosci. 2006. Vol. 32, № 9. P. 1283–1298</a>.</p>
+</blockquote>
 </div>
 <div id="interpolation-surfaces" class="section level2">
 <h2><span class="header-section-number">16.4</span> Интерполяция поверхностей</h2>
@@ -535,7 +540,7 @@
 </table>
 <p>Если все выполнено верно, то в вашей базе геоданных и таблице содержания должно появиться <em>9 новых растров</em>, отражающих поверхность распределения температуры:</p>
 <p><img src="images/Ex16/image9.png" /></p>
-<p><kbd><strong>Снимок экрана №2</strong>. Построенные поверхности</kbd></p>
+<p><kbd><strong>Снимок экрана №2.</strong> Построенные поверхности</kbd></p>
 </div>
 <div id="interpolation-visualization" class="section level2">
 <h2><span class="header-section-number">16.5</span> Настройка отображения поверхностей</h2>
@@ -583,7 +588,7 @@
 </tr>
 <tr class="even">
 <td align="left"><em>Output Raster</em></td>
-<td><code>.Ex16\Argo.gdb\Temp_Kriging_3x3</code></td>
+<td><code>Ex16\Argo.gdb\Temp_Kriging_3x3</code></td>
 </tr>
 </tbody>
 </table>
@@ -603,7 +608,7 @@
 <div id="interpolation-profile" class="section level2">
 <h2><span class="header-section-number">16.7</span> Построение линии профиля</h2>
 <p><a href="interpolation.html#interpolation">В начало упражнения ⇡</a></p>
-<p>Распространенная задача при анализе полей температуры, солености, давление — построение профилей или разрезов. Вам предлагается построить профиль температуры по меридиану 38°з.д.</p>
+<p>Распространенная задача при анализе полей температуры, солености, давление — построение профилей или разрезов. Вам предлагается построить профиль температуры по меридиану 38° з.д.</p>
 <ol style="list-style-type: decimal">
 <li><p>Создайте в базе геоданных <em>Argo</em> линейный класс пространственных объектов c названием <em>Profile</em> и системой координат <em>WGS84</em> из группы <strong>Geographic Coordinate Systems &gt; World</strong>.</p></li>
 <li><p>Добавьте этот слой на карту и смените его символ на линию черного цвета.</p></li>
@@ -650,7 +655,7 @@
 </tbody>
 </table>
 <p>Остальные параметры оставьте по умолчанию и нажмите <strong>ОК</strong>.</p></li>
-<li><p>Для корректного отображения широты коневертируйте линию в точки. Для этого запустите инструмент <strong>Data Management Tools &gt; Features &gt; Feature Vertices to Points</strong>. Назовите выходной класс <em>Profile_Temp_Pts.</em></p></li>
+<li><p>Для корректного отображения широты конвертируйте линию в точки. Для этого запустите инструмент <strong>Data Management Tools &gt; Features &gt; Feature Vertices to Points</strong>. Назовите выходной класс <em>Profile_Temp_Pts.</em></p></li>
 <li><p>Добавьте в точки значения широты, долготы и температуры. Для этого воспользуйтесь инструментом <strong>Data Management Tools &gt; Features &gt; Add XY Coordinates</strong>.</p></li>
 <li><p>Откройте атрибутивную таблицу получившегося слоя. Она должна иметь следующий вид:</p>
 <p><img src="images/Ex16/image20.png" /></p></li>

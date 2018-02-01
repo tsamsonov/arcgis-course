@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-01-31">
+<meta name="date" content="2018-02-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -338,6 +338,9 @@
 <li class="chapter" data-level="18.9" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-height"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
 <li class="chapter" data-level="18.10" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-questions"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
 </ul></li>
+<li class="divider"></li>
+<li><a href="https://bookdown.org/yihui/bookdown/" target="blank">Опубликовано с помощью bookdown</a></li>
+
 </ul>
 
       </nav>
@@ -425,8 +428,8 @@
 <h2><span class="header-section-number">6.3</span> Привязка карты</h2>
 <p><a href="map-ref-economic.html#map-ref-economic">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
-<li><p>Внимательно прочтите раздел <strong><em>Привязка растровых данных (Georeferencing)</em></strong> в файле <strong><em>Описание функций</em></strong>.</p></li>
-<li><p>Добавьте на карту из окна каталога слой <em>InnerLondon.png</em> и поместите его под слои Water и Roads. При добавлении слоя появится диалоговое окно, предупреждающее о том, что файл не имеет привязки. Закройте его.</p></li>
+<li><p>Внимательно прочтите раздел <strong>Привязка растровых данных (Georeferencing)</strong> в разделе <strong>Описание функций</strong>.</p></li>
+<li><p>Добавьте на карту из окна каталога слой <em>InnerLondon.png</em> и поместите его под слои <em>Water</em> и <em>Roads</em>. При добавлении слоя появится диалоговое окно, предупреждающее о том, что файл не имеет привязки. Закройте его.</p></li>
 <li><p>Расположите карту в центре окна <strong>ArcMap</strong>.</p></li>
 <li><p>Откройте панель инструментов <strong>Georeferencing</strong>. Выберите в ее меню команду <strong>Fit to Display</strong>, чтобы переместить непривязанный растр на середину области отображения.</p></li>
 <li><p>Используя инструмент расстановки контрольных точек на панели <strong>Georeferencing</strong>, укажите по крайней мере 3 контрольные точки в разных частях города:</p>
@@ -450,9 +453,9 @@
 <li><p>Отключите слой дорог и слой гидрографии, оставив видимой только подложку.</p></li>
 <li><p>Добавьте на карту класс пространственных объектов <em>Districts</em>. Он содержит районы северного берега Темзы. Вам необходимо его дополнить, оцифровав районы южного берега реки:</p>
 <p><img src="images/Ex06/image12.png" /></p></li>
-<li><p>Прочтите раздел <strong><em>Редактирование</em></strong> в файле <strong><em>Описание функций</em></strong>, особенно уделив внимание разделам <strong><em>Создание объектов</em></strong> и <strong><em>Цифрование в режиме автозавершения (auto-complete)</em></strong>.</p></li>
+<li><p>Прочтите раздел <strong>Редактирование</strong> в разделе <strong>Описание функций</strong>, особенно уделив внимание разделам <strong>Создание объектов</strong> и <strong>Цифрование в режиме автозавершения (auto-complete)</strong>.</p></li>
 <li><p>Включите режим редактирования слоя <em>Districts</em>. Для этого в его контекстном меню выберите команду <strong>Edit Features &gt; Start Editing</strong>.</p></li>
-<li><p>Откройте список шаблонов слоя, нажав кнопку <em>Create Features</em> на панели <em>Editor</em> и посмотрите доступные опции.</p></li>
+<li><p>Откройте список шаблонов слоя, нажав кнопку <strong>Create Features</strong> на панели <strong>Editor</strong> и посмотрите доступные опции.</p></li>
 <li><p>Оцифруйте недостающие городские районы. Выполняйте работу в следующей последовательности:</p>
 <ul>
 <li><p>Сначала оцифруйте район <em>Wandsworth</em> с помощью обычного инструмента <strong>Polygon</strong>.</p></li>
@@ -538,12 +541,12 @@
 <li><p>Включите режим <strong>Graduated Symbols</strong> на вкладке <strong>Symbology</strong>.</p></li>
 <li><p>Выберите поле <em>Hotels</em> в качестве поля по которому будет производиться классификация.</p></li>
 <li><p>Аналогично первому упражнению, отредактируйте границы классов. Предлагается выделить следующие классы: менее <em>5, 5-9, 10-19, 20-29, 30</em> и более. Для этого необходимо нажать кнопку <strong>Classify</strong> и заменить границы первых четырех классов на <em>4, 9, 19, 29</em>. Максимальное значение не трогайте. Нажмите <strong>ОК</strong>.</p></li>
-<li><p>Измените шаблон картодиаграммы на значок отеля. Для этого сначала прочтите разделы Подключение библиотек символов и поиск символов по названию в файле <strong><em>Описание функций</em></strong>. Нажмите кнопку <strong>Template</strong> на вкладке <strong>Symbology</strong>. Далее подключите библиотеку <em>Civic</em> и найдите в ней символ <em>Hotel Information 1.</em> Выберите его и нажмите <strong>ОК</strong>.</p></li>
+<li><p>Измените шаблон картодиаграммы на значок отеля. Для этого сначала прочтите разделы Подключение библиотек символов и поиск символов по названию в разделе <strong>Описание функций</strong>. Нажмите кнопку <strong>Template</strong> на вкладке <strong>Symbology</strong>. Далее подключите библиотеку <em>Civic</em> и найдите в ней символ <em>Hotel Information 1.</em> Выберите его и нажмите <strong>ОК</strong>.</p></li>
 <li><p>Отредактируйте подписи классов, изменив первый на «<em>less than 5</em>», а последний — на «<em>30 and more</em>».</p></li>
 <li><p>Измените максимальный и минимальный размер значка на <em>48</em> и <em>16</em> соответственно. Диалог настройки символов примет следующий вид:</p>
 <p><img src="images/Ex06/image23.png" /></p></li>
 </ul></li>
-<li><p>Нажмите ОК.</p></li>
+<li><p>Нажмите <strong>ОК</strong>.</p></li>
 <li><p>Сохраните документ карты</p></li>
 </ol>
 </div>
@@ -589,7 +592,7 @@
 <li><p>Добавьте легенду к слою <em>Hotels</em>, отключите в ней названия самого слоя и единиц измерения, чтобы остались только плашки и их подписи.</p></li>
 <li><p>Добавьте к фрейму данных рамку серого цвета <em>30%</em>. Для этого в свойствах фрейма данных на вкладке <em>Frame</em> выберите границу <em>Border</em> и измените ее параметры. Выровняйте прямоугольник названия по верхнему правому углу карты.</p></li>
 </ol>
-<p>По завершению оформления <strong>Экспортируйте карту</strong> в файл формата <code>PNG</code> в вашей директории <em>Ex06</em> с разрешением <em>150</em> точек на дюйм, чтобы вставить ее в отчет.</p>
+<p>По завершению оформления <strong>Экспортируйте карту</strong> в файл формата <em>PNG</em> в вашей директории <em>Ex06</em> с разрешением <em>150</em> точек на дюйм, чтобы вставить ее в отчет.</p>
 </div>
 <div id="map-ref-economic-questions" class="section level2">
 <h2><span class="header-section-number">6.9</span> Ответы на вопросы</h2>
