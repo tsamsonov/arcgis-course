@@ -21,6 +21,7 @@ rmd_files:
     - "Ex16_Interpolation.md"
     - "Ex17_DemAnalysis.md"
     - "Ex18_3DModelling_Viewsheds.md"
+    - "Reference.md"
 new_session: yes
 language:
   label:
