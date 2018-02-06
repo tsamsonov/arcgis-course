@@ -5,8 +5,9 @@ bookdown::gitbook:
       collapse: section
       before: |
         <li><a href="./">Практикум по геоинформатике</a></li>
-#      after: |
-#        <li><a href="https://istina.msu.ru/profile/tsamsonov/" target="blank">Тимофей Самсонов</a></li>
+      after: |
+        <li><a href="https://istina.msu.ru/profile/tsamsonov/" target="blank">Тимофей Самсонов</a></li>
+        <li><a href="https://doi.org/10.5281/zenodo.1167857"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1167857.svg" title="DOI"></a><li>
     edit: https://github.com/tsamsonov/arcgis-course/edit/master/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
