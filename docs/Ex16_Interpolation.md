@@ -1,4 +1,4 @@
-# Интерполяция геополей {#interpolation}
+# Моделирование геополей {#interpolation}
 
 ## Введение {#interpolation-intro}
 

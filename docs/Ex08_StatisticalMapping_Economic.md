@@ -1,4 +1,4 @@
-# Картографирование по статистическим данным  {#stat-map-economic}
+# Привязка табличных данных {#stat-map-economic}
 
 ## Введение {#stat-map-economic-intro}
 
