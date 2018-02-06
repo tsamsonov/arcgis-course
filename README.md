@@ -1,6 +1,6 @@
 # Практикум по геоинформатике
 
-[![Build Status](https://travis-ci.org/tsamsonov/arcgis-course.svg?branch=master)](https://travis-ci.org/tsamsonov/arcgis-course)
+[![Build Status](https://travis-ci.org/tsamsonov/arcgis-course.svg?branch=master)](https://travis-ci.org/tsamsonov/arcgis-course) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1167857.svg)](https://doi.org/10.5281/zenodo.1167857)
 
 В данном репозитории размещены исходные файлы и HTML-версия практикума по геоинформатике для студентов общего потока географического факультета МГУ имени М.В.Ломоносова. Практикум состоит из 18 заданий, рассчитанных на студентов различной специализации (физическая география; экология и природопользование; социально-экономическая география; гидрометеорология).
 
