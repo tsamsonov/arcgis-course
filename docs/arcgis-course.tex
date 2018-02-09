@@ -85,7 +85,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2018-02-08}
+  \date{2018-02-09}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -148,7 +148,7 @@
 навигация по разделам.
 
 Актуальная версия практикума, которую вы сейчас просматриваете,
-сформирована 2018-02-08 и доступна по ссылке
+сформирована 2018-02-09 и доступна по ссылке
 \url{https://tsamsonov.github.io/arcgis-course/}.
 
 \textbf{Перед выполнением практикума необходимо внимательно ознакомиться
@@ -1546,7 +1546,23 @@ Esri).\tabularnewline
 
 \protect\hyperlink{map-design-climates}{В начало упражнения ⇡}
 
-В каталоге \emph{Ex03} находится база геоданных \emph{Ex03.gdb},
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Запустите приложение \textbf{ArcMap} и откройте окно \textbf{Catalog},
+  нажав кнопку \includegraphics{images/Ex03/image5.png} на панели
+  инструментов
+\item
+  Найдите вашу папку в дереве каталогов в ней директорию \emph{Ex03}.
+\end{enumerate}
+
+\begin{quote}
+Если вашей директории или вышестоящей директории \emph{D:/GIS} нет в
+списке, подключитесь к ней c помощью кнопки
+\includegraphics{images/Ex03/image6.png}.
+\end{quote}
+
+В каталоге \emph{Ex03} находится база геоданных \emph{MapData.gdb},
 содержащая исходные данные для выполнения задания.
 
 \begin{quote}
@@ -1575,21 +1591,13 @@ Esri).\tabularnewline
 представлением является таблица, содержащая как обычные столбцы
 (текстовые, числовые и т.д.) так и специальное поле Shape, в котором
 хранится информация о геометрии. Каждая строчка в таблице --- это
-описание одного объекта.
+описание одного объекта. В поле ObjectID хранится уникальный
+идентификатор каждого объекта.
 \end{quote}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\item
-  Запустите приложение \textbf{ArcMap} и откройте окно \textbf{Catalog},
-  нажав кнопку \includegraphics{images/Ex03/image5.png} на панели
-  инструментов
-\item
-  Раскройте папку \emph{D:/GIS} в дереве каталогов и найдите в ней
-  директорию \emph{Ex03} в вашем каталоге, содержащую исходные данные
-  для выполнения первого задания. Если директории \emph{D:/GIS} нет в
-  списке, подключитесь к ней c помощью кнопки
-  \includegraphics{images/Ex03/image6.png}.
+\setcounter{enumi}{2}
 \item
   Раскройте базу данных \emph{MapData.gdb} и изучите ее содержимое,
   состоящее из следующих классов:
@@ -1624,13 +1632,16 @@ WGS-1984. Это означает, что координаты каждого о
 а система координат получит название \emph{Проецированной системы
 координат (PCS)}.
 
-\hypertarget{map-design-climates-layers}{%
-\section{Оформление слоев}\label{map-design-climates-layers}}
+\hypertarget{map-design-climates-basic}{%
+\section{Оформление базовых слоев}\label{map-design-climates-basic}}
 
 \protect\hyperlink{map-design-climates}{В начало упражнения ⇡}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\item
+  Ознакомьтесь с главой \protect\hyperlink{manual-vector}{Оформление
+  векторного слоя} в разделе описания функций.
 \item
   Добавьте на карту слой \emph{Countries}, просто перетащив его из окна
   каталога.
@@ -1746,6 +1757,16 @@ WGS-1984. Это означает, что координаты каждого о
   Результат:
 
   \includegraphics{images/Ex03/image22.png}
+\end{enumerate}
+
+\textbf{Снимок экрана №1.} Границы стран, города и объекты гидрографии
+
+\hypertarget{map-design-climates-thematic}{%
+\section{Оформление данных о климате и морских
+течениях}\label{map-design-climates-thematic}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \item
   Добавьте на карту слой \emph{Сlimates}, расположите его внизу таблицы
   содержания.
@@ -1855,6 +1876,8 @@ WGS-1984. Это означает, что координаты каждого о
   Сохраните карту.
 \end{enumerate}
 
+\textbf{Снимок экрана №2.} Климат и направления морских течений
+
 \hypertarget{map-design-climates-labels}{%
 \section{Настройка подписей}\label{map-design-climates-labels}}
 
@@ -1945,6 +1968,8 @@ WGS-1984. Это означает, что координаты каждого о
   Сохраните карту.
 \end{enumerate}
 
+\textbf{Снимок экрана №3.} Подписи объектов
+
 \hypertarget{map-design-climates-layout}{%
 \section{Настройка компоновки}\label{map-design-climates-layout}}
 
@@ -2019,6 +2044,8 @@ WGS-1984. Это означает, что координаты каждого о
   Сохраните карту.
 \end{enumerate}
 
+\textbf{Снимок экрана №4.} Итоговая карта
+
 \hypertarget{map-design-climates-export}{%
 \section{Экспорт в графический файл}\label{map-design-climates-export}}
 
@@ -2031,7 +2058,7 @@ WGS-1984. Это означает, что координаты каждого о
   разрешением 300 точек на дюйм с помощью команды \textbf{File
   \textgreater{} Export Map}. Сохраните его в свою директорию.
 \item
-  Вставьте карту в отчетный файл
+  Вставьте карту в отчетный файл.
 \end{enumerate}
 
 \hypertarget{map-design-climates-questions}{%
@@ -11039,8 +11066,8 @@ Tools:
 \hypertarget{manual-vector}{%
 \chapter{Оформление векторного слоя}\label{manual-vector}}
 
-\hypertarget{----}{%
-\section{Единый символ для всего слоя}\label{----}}
+\hypertarget{manual-vector-one}{%
+\section{Единый символ для всего слоя}\label{manual-vector-one}}
 
 В свойствах слоя перейдите на вкладку Symbology и выберите режим
 Features---Single~Symbol. Далее щелкните на кнопку Настройки символа:
@@ -11050,8 +11077,8 @@ Features---Single~Symbol. Далее щелкните на кнопку Наст
 В появившемся диалоге вы можете выбрать готовый символ, настроить его,
 либо перейти к созданию нового символа.
 
-\hypertarget{-categories}{%
-\section{Категории (Categories)}\label{-categories}}
+\hypertarget{manual-vector-categories}{%
+\section{Категории (Categories)}\label{manual-vector-categories}}
 
 В свойствах слоя перейдите на вкладку Symbology и выберите режим
 Features---Single~Symbol. После этого выберите поле категорий в списке
@@ -11061,49 +11088,51 @@ Value Field и нажмите Add All Values, чтобы подставить и
 
 \includegraphics{images/Appendix/image16.png}
 
-\hypertarget{-}{%
-\subsection{Сортировка классов}\label{-}}
+\hypertarget{manual-vector-sorting}{%
+\subsection{Сортировка классов}\label{manual-vector-sorting}}
 
 Для сортировки категорий по значению категории или подписи щелкните по
 заголовку и выберите команду Reverse Sorting:
 
 \includegraphics{images/Appendix/image17.png}
 
-\hypertarget{--}{%
-\subsection{Сортировка цветовой шкалы}\label{--}}
+\hypertarget{manual-vector-colorscale}{%
+\subsection{Сортировка цветовой шкалы}\label{manual-vector-colorscale}}
 
 Для сортировки категорий по значению категории или подписи щелкните по
 заголовку и выберите команду Flip Symbols:
 
 \includegraphics{images/Appendix/image18.png}
 
-\hypertarget{--match-symbols-in-a-style}{%
+\hypertarget{manual-vector-match}{%
 \subsection{Подстановка стиля (Match Symbols In a
-Style)}\label{--match-symbols-in-a-style}}
+Style)}\label{manual-vector-match}}
 
 На вкладке Symbology свойств слоя выберите режим Categories --- Match
 Symbols In a Style:
 
 \includegraphics{images/Appendix/image19.png}
 
-\hypertarget{--}{%
-\section{Градуированные символы (картодиаграммы)}\label{--}}
+\hypertarget{manual-vector-diagrams}{%
+\section{Градуированные символы
+(картодиаграммы)}\label{manual-vector-diagrams}}
 
 В свойствах слоя на вкладке \emph{Symbology} выберите режим Graduated
 Symbols:
 
 \includegraphics{images/Appendix/image20.png}
 
-\hypertarget{--}{%
-\section{Градуированные цвета (картограммы)}\label{--}}
+\hypertarget{manual-vector-graduated}{%
+\section{Градуированные цвета
+(картограммы)}\label{manual-vector-graduated}}
 
 В свойствах слоя на вкладке \emph{Symbology} выберите режим Graduated
 Colors:
 
 \includegraphics{images/Appendix/image21.png}
 
-\hypertarget{--pie-chart}{%
-\section{Секторная картодиаграмма (pie chart)}\label{--pie-chart}}
+\hypertarget{manual-vector-pie}{%
+\section{Секторная картодиаграмма (pie chart)}\label{manual-vector-pie}}
 
 В свойствах слоя на вкладке \emph{Symbology} выберите режим
 \emph{Charts---Pie Charts}:
@@ -11115,15 +11144,16 @@ Colors:
 
 \includegraphics{images/Appendix/image23.png}
 
-\hypertarget{--}{%
-\section{Выбор метода классификации}\label{--}}
+\hypertarget{manual-vector-classes}{%
+\section{Выбор метода классификации}\label{manual-vector-classes}}
 
 Метод классификации выбирается после нажатия на кнопку Classify\ldots{}
 
 \includegraphics{images/Appendix/image24.png}
 
-\hypertarget{----}{%
-\section{Настройка символа для точечного объекта}\label{----}}
+\hypertarget{manual-vector-point}{%
+\section{Настройка символа для точечного
+объекта}\label{manual-vector-point}}
 
 При редактировании точечного объекта вы можете настраивать его размер и
 основной цвет. Нажав кнопку редактирования символа, вы можете сделать
@@ -11131,8 +11161,8 @@ Colors:
 
 \includegraphics{images/Appendix/image25.png}
 
-\hypertarget{-}{%
-\subsection{Символьный маркер}\label{-}}
+\hypertarget{manual-vector-symbol}{%
+\subsection{Символьный маркер}\label{manual-vector-symbol}}
 
 Чтобы использовать шрифтовые символы для визуализации точечных слоев, в
 диалоге Symbol Selector (см. выше) нажмите Edit Symbol. В появившемся
@@ -11140,8 +11170,8 @@ Colors:
 
 \includegraphics{images/Appendix/image26.png}
 
-\hypertarget{-}{%
-\subsection{Вращение символа}\label{-}}
+\hypertarget{manual-vector-rotation}{%
+\subsection{Вращение символа}\label{manual-vector-rotation}}
 
 Вращение символа обычно используется для показа векторных величин в
 точках. Направление задается значением в заданном атрибутивном поле
@@ -11156,8 +11186,8 @@ Rotation\ldots{}}:
 
 \includegraphics{images/Appendix/image28.png}
 
-\hypertarget{-}{%
-\subsection{Размер символа}\label{-}}
+\hypertarget{manual-vector-size}{%
+\subsection{Размер символа}\label{manual-vector-size}}
 
 Вы можете менять размера символа в соответствии со значением в
 атрибутивном поле. Для включения этого режима войдите в свойства слоя и
@@ -11170,8 +11200,9 @@ Rotation\ldots{}}:
 
 \includegraphics{images/Appendix/image30.png}
 
-\hypertarget{----}{%
-\section{Настройка символа для линейного объекта}\label{----}}
+\hypertarget{manual-vector-line}{%
+\section{Настройка символа для линейного
+объекта}\label{manual-vector-line}}
 
 При настройке символа для линейных объектов вы можете выбрать подходящий
 образец в списке слева, а затем настроить его цвет и толщину. Кнопка
@@ -11180,8 +11211,9 @@ Edit Symbol позволяет осуществить более тонкую н
 
 \includegraphics{images/Appendix/image31.png}
 
-\hypertarget{----}{%
-\section{Настройка символа для полигонального объекта}\label{----}}
+\hypertarget{manual-vector-polygon}{%
+\section{Настройка символа для полигонального
+объекта}\label{manual-vector-polygon}}
 
 При редактировании символа полигонального объекта вы можете задавать
 цвет заливки и обводки, а также толщину обводки. Кнопка Edit Symbol
@@ -11190,31 +11222,33 @@ Edit Symbol позволяет осуществить более тонкую н
 
 \includegraphics{images/Appendix/image32.png}
 
-\hypertarget{----}{%
-\section{Создание площадного объекта без заливки}\label{----}}
+\hypertarget{manual-vector-nullfill}{%
+\section{Создание площадного объекта без
+заливки}\label{manual-vector-nullfill}}
 
 Выберите в свойствах символа цвет заливки No Color:
 
 \includegraphics{images/Appendix/image33.png}
 
-\hypertarget{---}{%
-\section{Регулировка прозрачности векторного слоя}\label{---}}
+\hypertarget{manual-vector-transparency}{%
+\section{Регулировка прозрачности векторного
+слоя}\label{manual-vector-transparency}}
 
 Перейдите на вкладку Display в свойствах слоя и введите значение
 прозрачности в поле Transparent:
 
 \includegraphics{images/Appendix/image34.png}
 
-\hypertarget{---}{%
-\section{Поиск символа по названию}\label{---}}
+\hypertarget{manual-vector-search}{%
+\section{Поиск символа по названию}\label{manual-vector-search}}
 
 Для поиска символа по названию, используйте соответствующее поле в
 диалоге настройки символа:
 
 \includegraphics{images/Appendix/image35.png}
 
-\hypertarget{--}{%
-\section{Подключение библиотек символов}\label{--}}
+\hypertarget{manual-vector-libraries}{%
+\section{Подключение библиотек символов}\label{manual-vector-libraries}}
 
 Вы можете подключить дополнительные библиотеки символов. Для этого в
 настройках символов нажмите кнопку \emph{Style References}:
