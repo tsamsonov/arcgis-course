@@ -1,6 +1,8 @@
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
 \setmonofont{Menlo}
 
 \makeatletter
@@ -8,4 +10,8 @@
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
+\renewcommand{\partname}{Часть}
+\renewcommand{\contentsname}{Содержание}
+\renewcommand{\chaptername}{Упражнение}
+\renewcommand{\figurename}{Рис.}
 \makeatother

@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-02-12">
+<meta name="date" content="2018-02-13">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -119,12 +119,13 @@
 <li class="chapter" data-level="4.1.2" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-annotation"><i class="fa fa-check"></i><b>4.1.2</b> Аннотация</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-begin"><i class="fa fa-check"></i><b>4.2</b> Начало работы</a></li>
-<li class="chapter" data-level="4.3" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-thematic"><i class="fa fa-check"></i><b>4.3</b> Оформление тематических слоев</a></li>
-<li class="chapter" data-level="4.4" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-general"><i class="fa fa-check"></i><b>4.4</b> Оформление общегеографических слоев</a></li>
-<li class="chapter" data-level="4.5" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-labels"><i class="fa fa-check"></i><b>4.5</b> Настройка подписей</a></li>
-<li class="chapter" data-level="4.6" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-layout"><i class="fa fa-check"></i><b>4.6</b> Настройка компоновки</a></li>
-<li class="chapter" data-level="4.7" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-export"><i class="fa fa-check"></i><b>4.7</b> Экспорт в графический файл</a></li>
-<li class="chapter" data-level="4.8" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-questions"><i class="fa fa-check"></i><b>4.8</b> Контрольные вопросы</a></li>
+<li class="chapter" data-level="4.3" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-choropleth"><i class="fa fa-check"></i><b>4.3</b> Создание картограмм</a></li>
+<li class="chapter" data-level="4.4" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-diagrams"><i class="fa fa-check"></i><b>4.4</b> Создание картодиаграмм</a></li>
+<li class="chapter" data-level="4.5" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-general"><i class="fa fa-check"></i><b>4.5</b> Оформление общегеографической основы</a></li>
+<li class="chapter" data-level="4.6" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-labels"><i class="fa fa-check"></i><b>4.6</b> Настройка подписей</a></li>
+<li class="chapter" data-level="4.7" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-layout"><i class="fa fa-check"></i><b>4.7</b> Настройка компоновки</a></li>
+<li class="chapter" data-level="4.8" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-export"><i class="fa fa-check"></i><b>4.8</b> Экспорт в графический файл</a></li>
+<li class="chapter" data-level="4.9" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-questions"><i class="fa fa-check"></i><b>4.9</b> Контрольные вопросы</a></li>
 </ul></li>
 <li class="part"><span><b>II Базовые технологии</b></span></li>
 <li class="chapter" data-level="5" data-path="map-ref-general.html"><a href="map-ref-general.html"><i class="fa fa-check"></i><b>5</b> Привязка и цифрование туристской карты</a><ul>
@@ -493,7 +494,7 @@
 <div id="header">
 <h1 class="title">Практикум по геоинформатике</h1>
 <h4 class="author"><em>Тимофей Самсонов</em></h4>
-<h4 class="date"><em>2018-02-12</em></h4>
+<h4 class="date"><em>2018-02-13</em></h4>
 </div>
 <div id="d092d0b2d0b5d0b4d0b5d0bdd0b8d0b5" class="section level1 unnumbered">
 <h1>Введение</h1>
@@ -501,7 +502,7 @@
 <p>Практикум доступен в трех форматах: <a href="https://tsamsonov.github.io/arcgis-course/"><strong>HTML</strong></a>, <a href="https://tsamsonov.github.io/arcgis-course/arcgis-course.epub"><strong>EPUB</strong></a> и <a href="https://tsamsonov.github.io/arcgis-course/arcgis-course.pdf"><strong>PDF</strong></a>. Скачать практикум в форматах PDF и EPUB можно через главное меню:</p>
 <p><img src="images/download.png" /></p>
 <p><strong>Для практической работы рекомендуется использовать HTML-версию, поскольку она поддерживается в актуальном состоянии</strong><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Формат EPUB удобен своей компактностью и адаптивностью под экран устройства, и может быть использован для работы с электронной книгой или планшетом в оффлайн-режиме. Во всех версиях практикума реализована навигация по разделам.</p>
-<p>Актуальная версия практикума, которую вы сейчас просматриваете, сформирована 2018-02-12 и доступна по ссылке <a href="https://tsamsonov.github.io/arcgis-course/" class="uri">https://tsamsonov.github.io/arcgis-course/</a>.</p>
+<p>Актуальная версия практикума, которую вы сейчас просматриваете, сформирована 2018-02-13 и доступна по ссылке <a href="https://tsamsonov.github.io/arcgis-course/" class="uri">https://tsamsonov.github.io/arcgis-course/</a>.</p>
 <p><strong>Перед выполнением практикума необходимо внимательно ознакомиться с регламентом и тщательно придерживаться его при выполнении заданий</strong>.</p>
 <div id="d0a0d0b5d0b3d0bbd0b0d0bcd0b5d0bdd182" class="section level2 unnumbered">
 <h2>Регламент</h2>

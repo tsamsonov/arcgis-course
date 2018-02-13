@@ -85,11 +85,13 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2018-02-12}
+  \date{2018-02-13}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
 \setmonofont{Menlo}
 
 \makeatletter
@@ -97,6 +99,10 @@
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
+\renewcommand{\partname}{Часть}
+\renewcommand{\contentsname}{Содержание}
+\renewcommand{\chaptername}{Упражнение}
+\renewcommand{\figurename}{Рис.}
 \makeatother
 
 \usepackage{amsthm}
@@ -152,7 +158,7 @@
 навигация по разделам.
 
 Актуальная версия практикума, которую вы сейчас просматриваете,
-сформирована 2018-02-12 и доступна по ссылке
+сформирована 2018-02-13 и доступна по ссылке
 \url{https://tsamsonov.github.io/arcgis-course/}.
 
 \textbf{Перед выполнением практикума необходимо внимательно ознакомиться
@@ -2166,58 +2172,62 @@ WGS-1984. Это означает, что координаты каждого о
 \hypertarget{map-design-economic-annotation}{%
 \subsection{Аннотация}\label{map-design-economic-annotation}}
 
-Задание посвящено знакомству с созданием тематических карт на основе баз
-пространственных данных. Вы познакомитесь с представлением площадных,
-линейных, точечных объектов в базе пространственных данных. Научитесь
-создавать карты на их основе, оформлять легенду, сетку координат и
-зарамочные элементы карты, познакомитесь с применением картограмм и
-картодиаграмм в геоинформационном картографировании.
+Задание посвящено знакомству с ГИС на примере создания
+социально-экономической карты. Вы познакомитесь с представлением
+площадных, линейных, точечных объектов в базе пространственных данных.
+Научитесь создавать карты на их основе, оформлять легенду, сетку
+координат и зарамочные элементы карты, познакомитесь с применением
+картограмм и картодиаграмм в геоинформационном картографировании.
 
 \hypertarget{map-design-economic-begin}{%
 \section{Начало работы}\label{map-design-economic-begin}}
 
 \protect\hyperlink{map-design-economic}{В начало упражнения ⇡}
 
-В каталоге \emph{Ex04} находится база геоданных \emph{MapData.gdb},
-содержащая исходные данные для выполнения задания.
-
-\begin{quote}
-\textbf{База геоданных} --- это структурированное хранилище, внутри
-которого можно создавать слои данных, группировать их и связывать
-различными отношениями.
-\end{quote}
-
-Внутри базы геоданных могут быть объекты следующих типов:
-
-\begin{itemize}
-\tightlist
-\item
-  \includegraphics{images/Ex04/image3.png}\includegraphics{images/Ex04/image4.png}\includegraphics{images/Ex04/image5.png}
-  --- слои векторных данных (классы пространственных объектов),
-\item
-  \includegraphics{images/Ex04/image6.png} --- слои растровых данных;
-\item
-  \includegraphics{images/Ex04/image7.png} --- обычные таблицы;
-\end{itemize}
-
-\begin{quote}
-\textbf{Класс пространственных объектов (feature class)} --- это набор
-пространственных объектов одного типа геометрии (точки, линии, полигоны
-или объемные тела). Для класса могут быть определены атрибуты, а его
-представлением является таблица, содержащая как обычные столбцы
-(текстовые, числовые и т.д.) так и специальное поле Shape, в котором
-хранится информация о геометрии. Каждая строчка в таблице --- это
-описание одного объекта.
-\end{quote}
-
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Запустите приложение \textbf{ArcMap} и откройте окно \textbf{Каталога}
+  Скачайте с сервера каталог \emph{Ex04} и положите его в свою
+  директорию.
+\item
+  Запустите приложение \textbf{ArcMap} и откройте окно \textbf{Сatalog},
+  нажав кнопку \includegraphics{images/Ex01/image2.png} на панели
+  инструментов.
 \item
   Подключитесь к рабочему каталогу \emph{Ex04} в окне \textbf{Сatalog}:
 
   \includegraphics{images/Ex04/image2.png}
+
+  В каталоге \emph{Ex04} находится база геоданных \emph{MapData.gdb},
+  содержащая исходные данные для выполнения задания.
+
+  \begin{quote}
+  \textbf{База геоданных} --- это структурированное хранилище, внутри
+  которого можно создавать слои данных, группировать их и связывать
+  различными отношениями.
+  \end{quote}
+
+  Внутри базы геоданных могут быть объекты следующих типов:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \includegraphics{images/Ex04/image3.png}\includegraphics{images/Ex04/image4.png}\includegraphics{images/Ex04/image5.png}
+    --- слои векторных данных (классы пространственных объектов),
+  \item
+    \includegraphics{images/Ex04/image6.png} --- слои растровых данных;
+  \item
+    \includegraphics{images/Ex04/image7.png} --- обычные таблицы;
+  \end{itemize}
+
+  \begin{quote}
+  \textbf{Класс пространственных объектов (feature class)} --- это набор
+  пространственных объектов одного типа геометрии (точки, линии,
+  полигоны). Для класса могут быть определены атрибуты, а его
+  представлением является таблица, содержащая столбцы разного типа
+  (текстовые, числовые и т.д.). Каждая строчка в таблице --- это
+  описание одного объекта.
+  \end{quote}
 \item
   Раскройте базу данных \emph{MapData.gdb} и изучите классы
   пространственных объектов внутри нее:
@@ -2249,9 +2259,8 @@ WGS-1984. Это означает, что координаты каждого о
   (PCS)}.
 \end{enumerate}
 
-\hypertarget{map-design-economic-thematic}{%
-\section{Оформление тематических
-слоев}\label{map-design-economic-thematic}}
+\hypertarget{map-design-economic-choropleth}{%
+\section{Создание картограмм}\label{map-design-economic-choropleth}}
 
 \protect\hyperlink{map-design-economic}{В начало упражнения ⇡}
 
@@ -2292,7 +2301,8 @@ WGS-1984. Это означает, что координаты каждого о
   --- это будут просто пары координат X и Y для каждого объекта. Для
   линейных и полигональных слоев это будет уже упорядоченный набор пар
   координат вершин границы объекта. Геометрия редактируется специальными
-  инструментами, поэтому содержимое поля Shape скрыто от пользователя.
+  инструментами, поэтому содержимое поля \emph{Shape} скрыто от
+  пользователя.
   \end{quote}
 \item
   Дважды щелкните на названии слоя и на вкладке \textbf{Symbology} и
@@ -2350,11 +2360,24 @@ WGS-1984. Это означает, что координаты каждого о
 
   \includegraphics{images/Ex04/image15.png}
 
-  Результат:
+  \emph{Результат:}
 
   \includegraphics{images/Ex04/image16.png}
+
+  \textbf{Снимок экрана №1.} Картограммы плотности населения
 \item
-  Сохраните карту
+  Сохраните документ карты (\textbf{File \textgreater{} Save As}) в свою
+  директорию \emph{Ex4} под названием \emph{Ex4.mxd}.
+\end{enumerate}
+
+\hypertarget{map-design-economic-diagrams}{%
+\section{Создание картодиаграмм}\label{map-design-economic-diagrams}}
+
+\protect\hyperlink{map-design-economic}{В начало упражнения ⇡}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \item
   Скопируйте и вставьте слой «\emph{Плотность населения}». Переименуйте
   его в «\emph{Численность населения}»:
@@ -2385,7 +2408,7 @@ WGS-1984. Это означает, что координаты каждого о
 
   \includegraphics{images/Ex04/image20.png}
 \item
-  Нажмите ОК
+  Нажмите \textbf{ОК}.
 \item
   Инвертируйте порядок классов и порядок символов в классификации
   (аналогично предыдущему слою) так чтобы наверху оказались максимальные
@@ -2408,16 +2431,18 @@ WGS-1984. Это означает, что координаты каждого о
 \item
   Нажмите \textbf{ОК}.
 
-  Результат:
+  \emph{Результат:}
 
   \includegraphics{images/Ex04/image24.png}
+
+  \textbf{Снимок экрана №2.} Картодиаграммы численности населения
 \item
-  Сохраните карту
+  Сохраните документ карты
 \end{enumerate}
 
 \hypertarget{map-design-economic-general}{%
-\section{Оформление общегеографических
-слоев}\label{map-design-economic-general}}
+\section{Оформление общегеографической
+основы}\label{map-design-economic-general}}
 
 \protect\hyperlink{map-design-economic}{В начало упражнения ⇡}
 
@@ -2481,9 +2506,12 @@ WGS-1984. Это означает, что координаты каждого о
   \bottomrule
   \end{longtable}
 
-  Результат: \includegraphics{images/Ex04/image25.png}
+  \emph{Результат:} \includegraphics{images/Ex04/image25.png}
+
+  \textbf{Снимок экрана №3.} Карта с элементами общегеографической
+  основы
 \item
-  Сохраните карту
+  Сохраните документ карты.
 \end{enumerate}
 
 \hypertarget{map-design-economic-labels}{%
@@ -2519,9 +2547,13 @@ WGS-1984. Это означает, что координаты каждого о
   \bottomrule
   \end{longtable}
 
-  Результат:
+  \emph{Результат:}
 
   \includegraphics{images/Ex04/image28.png}
+
+  \textbf{Снимок экрана №4.} Карта с подписями объектов
+\item
+  Сохраните документ карты.
 \end{enumerate}
 
 \hypertarget{map-design-economic-layout}{%
@@ -2557,7 +2589,7 @@ WGS-1984. Это означает, что координаты каждого о
 \item
   Смените цвет фрейма данных (фона) на светло-голубой.
 
-  Результат: \includegraphics{images/Ex04/image31.png}
+  \emph{Результат:} \includegraphics{images/Ex04/image31.png}
 \item
   Добавьте на карту легенду, включив в нее только слои \emph{Численность
   населения} и \emph{Плотность населения.} Нажмите \textbf{Далее}.
@@ -2595,6 +2627,8 @@ WGS-1984. Это означает, что координаты каждого о
   Разместите в правом нижнем углу карты текст «Выполнил» и свое ФИО.
 
   Результат: \includegraphics{images/Ex04/image35.png}
+
+  \textbf{Снимок экрана №5.} Итоговая карта
 \item
   Сохраните карту.
 \end{enumerate}
@@ -2607,8 +2641,9 @@ WGS-1984. Это означает, что координаты каждого о
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Экспортируйте карту из режима компоновки в формат \emph{PNG} с
-  разрешением \emph{300} точек на дюйм. Сохраните его в свою директорию.
+  Экспортируйте карту из режима компоновки (\textbf{File \textgreater{}
+  Export Map\ldots{}}) в формат \emph{PNG} с разрешением \emph{300}
+  точек на дюйм. Сохраните его в свою директорию.
 \item
   Вставьте карту в отчетный файл
 \end{enumerate}
@@ -2633,7 +2668,7 @@ WGS-1984. Это означает, что координаты каждого о
   Где хранятся числовые данные, которые используются для построения
   картограмм и картодиаграмм?
 \item
-  За что отвечают системные поля Shape и ObjectID?
+  За что отвечают системные поля \emph{Shape} и \emph{ObjectID}?
 \item
   Чем отличается вид компоновки от вида данных?
 \end{enumerate}
