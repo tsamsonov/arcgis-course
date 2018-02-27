@@ -34,6 +34,7 @@ rmd_files:
     - "ExAA_Select.md"
     - "ExAA_Projections.md"
     - "ExAA_Georeference.md"
+    - "ExAA_Edit.md"
     - "ExAA_Layout.md"
     - "ExAA_Legend.md"
     - "ExAA_Export.md"

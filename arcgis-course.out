@@ -1,0 +1,281 @@
+\BOOKMARK [0][-]{chapter*.2}{Введение}{}% 1
+\BOOKMARK [1][-]{section*.3}{Регламент}{chapter*.2}% 2
+\BOOKMARK [1][-]{section*.4}{Принятые обозначения}{chapter*.2}% 3
+\BOOKMARK [1][-]{section*.5}{О практикуме}{chapter*.2}% 4
+\BOOKMARK [-1][-]{part.1}{I Знакомство с ГИС}{}% 5
+\BOOKMARK [0][-]{chapter.1}{Создание карты четвертичных отложений}{part.1}% 6
+\BOOKMARK [1][-]{section.1.1}{Введение}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{Изучение данных в приложении ArcMap}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.3}{Способы изображения}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.4}{Подписи}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.5}{Компоновка карты}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.6}{Редактирование атрибутов}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.7}{Создание и вычисление атрибутов \(дополнительно\)}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.8}{Контрольные вопросы}{chapter.1}% 14
+\BOOKMARK [0][-]{chapter.2}{Создание общегеографической карты}{part.1}% 15
+\BOOKMARK [1][-]{section.2.1}{Введение}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.2}{Начало работы}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.3}{Оформление рельефа}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.4}{Оформление векторных слоев}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.5}{Создание подписей}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.6}{Классификация населенных пунктов}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.7}{Маска и подписи стран}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.8}{Настройка компоновки карты}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.9}{Экспорт в графический файл}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.10}{Контрольные вопросы}{chapter.2}% 25
+\BOOKMARK [0][-]{chapter.3}{Создание климатической карты}{part.1}% 26
+\BOOKMARK [1][-]{section.3.1}{Введение}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{Начало работы}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.3}{Оформление базовых слоев}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.4}{Оформление данных о климате и морских течениях}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.5}{Настройка подписей}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.6}{Настройка компоновки}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.7}{Экспорт в графический файл}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.8}{Контрольные вопросы}{chapter.3}% 34
+\BOOKMARK [0][-]{chapter.4}{Создание социально-экономической карты}{part.1}% 35
+\BOOKMARK [1][-]{section.4.1}{Введение}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.2}{Начало работы}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.3}{Создание картограмм}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.4}{Создание картодиаграмм}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.5}{Оформление общегеографической основы}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.6}{Настройка подписей}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.7}{Настройка компоновки}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.8}{Экспорт в графический файл}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.9}{Контрольные вопросы}{chapter.4}% 44
+\BOOKMARK [-1][-]{part.2}{II Базовые технологии}{}% 45
+\BOOKMARK [0][-]{chapter.5}{Привязка и цифрование туристской карты}{part.2}% 46
+\BOOKMARK [1][-]{section.5.1}{Введение}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.2}{Привязка карт}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.3}{Создание базы данных и классов пространственных объектов}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.4}{Цифрование регионов}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.5}{Атрибутирование регионов}{chapter.5}% 51
+\BOOKMARK [1][-]{section.5.6}{Цифрование маршрутов и точек интереса}{chapter.5}% 52
+\BOOKMARK [1][-]{section.5.7}{Оформление карты}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.8}{Компоновка карты}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.9}{Контрольные вопросы}{chapter.5}% 55
+\BOOKMARK [0][-]{chapter.6}{Привязка и цифрование гидрогеологической карты}{part.2}% 56
+\BOOKMARK [1][-]{section.6.1}{Введение}{chapter.6}% 57
+\BOOKMARK [1][-]{section.6.2}{Оформление базовых слоев}{chapter.6}% 58
+\BOOKMARK [1][-]{section.6.3}{Привязка карты}{chapter.6}% 59
+\BOOKMARK [1][-]{section.6.4}{Создание слоя гидрогеологического районирования}{chapter.6}% 60
+\BOOKMARK [1][-]{section.6.5}{Пространственный запрос}{chapter.6}% 61
+\BOOKMARK [1][-]{section.6.6}{Оформление карты}{chapter.6}% 62
+\BOOKMARK [1][-]{section.6.7}{Оверлей \(дополнительно\)}{chapter.6}% 63
+\BOOKMARK [1][-]{section.6.8}{Атрибутивный запрос \(дополнительно\)}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.9}{Контрольные вопросы}{chapter.6}% 65
+\BOOKMARK [0][-]{chapter.7}{Привязка и цифрование административной карты}{part.2}% 66
+\BOOKMARK [1][-]{section.7.1}{Введение}{chapter.7}% 67
+\BOOKMARK [1][-]{section.7.2}{Добавление референцных данных}{chapter.7}% 68
+\BOOKMARK [1][-]{section.7.3}{Привязка карты}{chapter.7}% 69
+\BOOKMARK [1][-]{section.7.4}{Создание слоя городских районов}{chapter.7}% 70
+\BOOKMARK [1][-]{section.7.5}{Расчет статистики по районам}{chapter.7}% 71
+\BOOKMARK [1][-]{section.7.6}{Построение картодиаграмм}{chapter.7}% 72
+\BOOKMARK [1][-]{section.7.7}{Настройка оформления других слоев}{chapter.7}% 73
+\BOOKMARK [1][-]{section.7.8}{Компоновка}{chapter.7}% 74
+\BOOKMARK [1][-]{section.7.9}{Контрольные вопросы}{chapter.7}% 75
+\BOOKMARK [0][-]{chapter.8}{Привязка табличных данных}{part.2}% 76
+\BOOKMARK [1][-]{section.8.1}{Введение}{chapter.8}% 77
+\BOOKMARK [1][-]{section.8.2}{Скачивание географических данных с сайта NUTS}{chapter.8}% 78
+\BOOKMARK [1][-]{section.8.3}{Скачивание таблиц с сайта NUTS}{chapter.8}% 79
+\BOOKMARK [1][-]{section.8.4}{Скачивание структурных таблиц с сайта NUTS}{chapter.8}% 80
+\BOOKMARK [1][-]{section.8.5}{Форматирование таблиц для загрузки в ГИС}{chapter.8}% 81
+\BOOKMARK [1][-]{section.8.6}{Подготовка проекта}{chapter.8}% 82
+\BOOKMARK [1][-]{section.8.7}{Отображение картодиаграмм по единицам 2-го уровня}{chapter.8}% 83
+\BOOKMARK [1][-]{section.8.8}{Отображение картограмм по единицам 3-го уровня}{chapter.8}% 84
+\BOOKMARK [1][-]{section.8.9}{Отображение структурных картодиаграмм по единицам 3-го уровня}{chapter.8}% 85
+\BOOKMARK [1][-]{section.8.10}{Оформление итоговых карт}{chapter.8}% 86
+\BOOKMARK [1][-]{section.8.11}{Экспорт карты числа транспортных средств}{chapter.8}% 87
+\BOOKMARK [1][-]{section.8.12}{Экспорт карты населения}{chapter.8}% 88
+\BOOKMARK [1][-]{section.8.13}{Контрольные вопросы}{chapter.8}% 89
+\BOOKMARK [0][-]{chapter.9}{Привязка адресных данных}{part.2}% 90
+\BOOKMARK [1][-]{section.9.1}{Введение}{chapter.9}% 91
+\BOOKMARK [1][-]{section.9.2}{Подключение к сервисам}{chapter.9}% 92
+\BOOKMARK [1][-]{section.9.3}{Геокодирование адресов}{chapter.9}% 93
+\BOOKMARK [1][-]{section.9.4}{Визуализация посещаемости в точках}{chapter.9}% 94
+\BOOKMARK [1][-]{section.9.5}{Построение поля посещаемости}{chapter.9}% 95
+\BOOKMARK [1][-]{section.9.6}{Оформление карты}{chapter.9}% 96
+\BOOKMARK [1][-]{section.9.7}{Контрольные вопросы}{chapter.9}% 97
+\BOOKMARK [-1][-]{part.3}{III Векторный анализ}{}% 98
+\BOOKMARK [0][-]{chapter.10}{Анализ пространственных взаимосвязей}{part.3}% 99
+\BOOKMARK [1][-]{section.10.1}{Введение}{chapter.10}% 100
+\BOOKMARK [1][-]{section.10.2}{Визуальный анализ векторных слоев}{chapter.10}% 101
+\BOOKMARK [1][-]{section.10.3}{Организация рабочего пространства}{chapter.10}% 102
+\BOOKMARK [1][-]{section.10.4}{Оверлей слоев методом пересечения}{chapter.10}% 103
+\BOOKMARK [1][-]{section.10.5}{Слияние результатов пересечения с целью получения показателя пространственной связи}{chapter.10}% 104
+\BOOKMARK [1][-]{section.10.6}{Подсчет суммарной площади каждой комбинации подтипа почв и типа рельефа}{chapter.10}% 105
+\BOOKMARK [1][-]{section.10.7}{Подсчет суммарной площади каждого подтипа почв}{chapter.10}% 106
+\BOOKMARK [1][-]{section.10.8}{Добавление нового поля для результирующих значений}{chapter.10}% 107
+\BOOKMARK [1][-]{section.10.9}{Соединение таблиц по названию подтипа почв}{chapter.10}% 108
+\BOOKMARK [1][-]{section.10.10}{Вычисление результирующих значений}{chapter.10}% 109
+\BOOKMARK [1][-]{section.10.11}{Контрольные вопросы}{chapter.10}% 110
+\BOOKMARK [0][-]{chapter.11}{Анализ пространственных соотношений}{part.3}% 111
+\BOOKMARK [1][-]{section.11.1}{Введение}{chapter.11}% 112
+\BOOKMARK [1][-]{section.11.2}{Оформление базовых слоев}{chapter.11}% 113
+\BOOKMARK [1][-]{section.11.3}{Построение регулярной сетки}{chapter.11}% 114
+\BOOKMARK [1][-]{section.11.4}{Подсчет доли водных объектов в площади ячеек}{chapter.11}% 115
+\BOOKMARK [1][-]{section.11.5}{Подсчет доли прочих типов поверхности в площади ячеек}{chapter.11}% 116
+\BOOKMARK [1][-]{section.11.6}{Добавление и инициализация атрибутивных полей}{chapter.11}% 117
+\BOOKMARK [1][-]{section.11.7}{Присоединение таблицы с долей водных объектов}{chapter.11}% 118
+\BOOKMARK [1][-]{section.11.8}{Присоединение таблиц прочих типов поверхностей}{chapter.11}% 119
+\BOOKMARK [1][-]{section.11.9}{Вычисление доли прочих поверхностей}{chapter.11}% 120
+\BOOKMARK [1][-]{section.11.10}{Вычисление координат центров ячеек}{chapter.11}% 121
+\BOOKMARK [1][-]{section.11.11}{Экспорт таблицы в файл}{chapter.11}% 122
+\BOOKMARK [1][-]{section.11.12}{Построение картодиаграмм}{chapter.11}% 123
+\BOOKMARK [1][-]{section.11.13}{Оформление компоновки карты}{chapter.11}% 124
+\BOOKMARK [1][-]{section.11.14}{Контрольные вопросы}{chapter.11}% 125
+\BOOKMARK [0][-]{chapter.12}{Анализ транспортных сетей}{part.3}% 126
+\BOOKMARK [1][-]{section.12.1}{Введение}{chapter.12}% 127
+\BOOKMARK [1][-]{section.12.2}{Оформление базовых слоев}{chapter.12}% 128
+\BOOKMARK [1][-]{section.12.3}{Построение маршрута}{chapter.12}% 129
+\BOOKMARK [1][-]{section.12.4}{Определение зоны обслуживания}{chapter.12}% 130
+\BOOKMARK [1][-]{section.12.5}{Определение ближайшего пункта обслуживания}{chapter.12}% 131
+\BOOKMARK [1][-]{section.12.6}{Размещение—распределение}{chapter.12}% 132
+\BOOKMARK [1][-]{section.12.7}{Районирование города по зонам обслуживания}{chapter.12}% 133
+\BOOKMARK [1][-]{section.12.8}{Компоновка карты}{chapter.12}% 134
+\BOOKMARK [1][-]{section.12.9}{Контрольные вопросы}{chapter.12}% 135
+\BOOKMARK [0][-]{chapter.13}{Анализ гидрографических сетей}{part.3}% 136
+\BOOKMARK [1][-]{section.13.1}{Введение}{chapter.13}% 137
+\BOOKMARK [1][-]{section.13.2}{Создание набора данных речной сети}{chapter.13}% 138
+\BOOKMARK [1][-]{section.13.3}{Копирование и цифрование линий водотоков}{chapter.13}% 139
+\BOOKMARK [1][-]{section.13.4}{Притягивание \(снэппинг\) притоков и разрезание осевой линии основных рек}{chapter.13}% 140
+\BOOKMARK [1][-]{section.13.5}{Установка точки стока}{chapter.13}% 141
+\BOOKMARK [1][-]{section.13.6}{Построение и настройка геометрической сети}{chapter.13}% 142
+\BOOKMARK [1][-]{section.13.7}{Анализ и редактирование геометрической сети}{chapter.13}% 143
+\BOOKMARK [1][-]{section.13.8}{Контрольные вопросы}{chapter.13}% 144
+\BOOKMARK [-1][-]{part.4}{IV Растровый анализ}{}% 145
+\BOOKMARK [0][-]{chapter.14}{Оптимизация местоположения}{part.4}% 146
+\BOOKMARK [1][-]{section.14.1}{Введение}{chapter.14}% 147
+\BOOKMARK [1][-]{section.14.2}{Подготовка рабочего пространства}{chapter.14}% 148
+\BOOKMARK [1][-]{section.14.3}{Преобразование слоя типов землепользования в растровое представление}{chapter.14}% 149
+\BOOKMARK [1][-]{section.14.4}{Расчет углов наклона}{chapter.14}% 150
+\BOOKMARK [1][-]{section.14.5}{Расчет расстояний}{chapter.14}% 151
+\BOOKMARK [1][-]{section.14.6}{Классификация углов наклона}{chapter.14}% 152
+\BOOKMARK [1][-]{section.14.7}{Классификация расстояний}{chapter.14}% 153
+\BOOKMARK [1][-]{section.14.8}{Нахождение мест с наилучшей комбинацией факторов с помощью взвешенного оверлея}{chapter.14}% 154
+\BOOKMARK [1][-]{section.14.9}{Конвертация результирующих зон в векторный формат}{chapter.14}% 155
+\BOOKMARK [1][-]{section.14.10}{Контрольные вопросы}{chapter.14}% 156
+\BOOKMARK [0][-]{chapter.15}{Анализ цифровой модели рельефа}{part.4}% 157
+\BOOKMARK [1][-]{section.15.1}{Введение}{chapter.15}% 158
+\BOOKMARK [1][-]{section.15.2}{Оформление данных}{chapter.15}% 159
+\BOOKMARK [1][-]{section.15.3}{Направление тока}{chapter.15}% 160
+\BOOKMARK [1][-]{section.15.4}{Площадь водосбора \(аккумуляция тока\)}{chapter.15}% 161
+\BOOKMARK [1][-]{section.15.5}{Выделение и классификация водотоков}{chapter.15}% 162
+\BOOKMARK [1][-]{section.15.6}{Векторизация водотоков}{chapter.15}% 163
+\BOOKMARK [1][-]{section.15.7}{Выделение и разделение устьевых точек}{chapter.15}% 164
+\BOOKMARK [1][-]{section.15.8}{Построение водосборных бассейнов}{chapter.15}% 165
+\BOOKMARK [1][-]{section.15.9}{Расчет, привязка и визуализация статистики по водосборным бассейнам}{chapter.15}% 166
+\BOOKMARK [1][-]{section.15.10}{Оформление итоговой карты}{chapter.15}% 167
+\BOOKMARK [1][-]{section.15.11}{Контрольные вопросы}{chapter.15}% 168
+\BOOKMARK [-1][-]{part.5}{V Пространственное моделирование}{}% 169
+\BOOKMARK [0][-]{chapter.16}{Оценка плотности распределения}{part.5}% 170
+\BOOKMARK [1][-]{section.16.1}{Введение}{chapter.16}% 171
+\BOOKMARK [1][-]{section.16.2}{Оценка плотности дорожной сети}{chapter.16}% 172
+\BOOKMARK [1][-]{section.16.3}{Оценка влияния радиуса поиска}{chapter.16}% 173
+\BOOKMARK [1][-]{section.16.4}{Масштабирование значение показателя}{chapter.16}% 174
+\BOOKMARK [1][-]{section.16.5}{Оформление слоя густоты дорожной сети}{chapter.16}% 175
+\BOOKMARK [1][-]{section.16.6}{Оформление итоговой карты}{chapter.16}% 176
+\BOOKMARK [1][-]{section.16.7}{Контрольные вопросы}{chapter.16}% 177
+\BOOKMARK [0][-]{chapter.17}{Пространственная интерполяция}{part.5}% 178
+\BOOKMARK [1][-]{section.17.1}{Введение}{chapter.17}% 179
+\BOOKMARK [1][-]{section.17.2}{Оформление базовых слоев}{chapter.17}% 180
+\BOOKMARK [1][-]{section.17.3}{Оценка необходимого разрешения растра}{chapter.17}% 181
+\BOOKMARK [1][-]{section.17.4}{Интерполяция поверхностей}{chapter.17}% 182
+\BOOKMARK [1][-]{section.17.5}{Настройка отображения поверхностей}{chapter.17}% 183
+\BOOKMARK [1][-]{section.17.6}{Сглаживание поверхности, полученной методом кригинга}{chapter.17}% 184
+\BOOKMARK [1][-]{section.17.7}{Построение линии профиля}{chapter.17}% 185
+\BOOKMARK [1][-]{section.17.8}{Определение температур по линии профиля}{chapter.17}% 186
+\BOOKMARK [1][-]{section.17.9}{Оформление карты}{chapter.17}% 187
+\BOOKMARK [1][-]{section.17.10}{Контрольные вопросы}{chapter.17}% 188
+\BOOKMARK [0][-]{chapter.18}{Трехмерное моделирование}{part.5}% 189
+\BOOKMARK [1][-]{section.18.1}{Введение}{chapter.18}% 190
+\BOOKMARK [1][-]{section.18.2}{Организация рабочего пространства}{chapter.18}% 191
+\BOOKMARK [1][-]{section.18.3}{Визуализация цифровой модели рельефа}{chapter.18}% 192
+\BOOKMARK [1][-]{section.18.4}{Подготовка вспомогательных цифровых моделей для учета препятствий}{chapter.18}% 193
+\BOOKMARK [1][-]{section.18.5}{Преобразование растровых моделей в триангуляционные}{chapter.18}% 194
+\BOOKMARK [1][-]{section.18.6}{Визуализация данных в трехмерной среде и знакомство с приложением ArcScene}{chapter.18}% 195
+\BOOKMARK [1][-]{section.18.7}{Визуализация трехмерных объектов: геодезические пункты и здания}{chapter.18}% 196
+\BOOKMARK [1][-]{section.18.8}{Анализ зоны видимости наблюдательного пункта}{chapter.18}% 197
+\BOOKMARK [1][-]{section.18.9}{Изменение высоты наблюдения}{chapter.18}% 198
+\BOOKMARK [1][-]{section.18.10}{Контрольные вопросы}{chapter.18}% 199
+\BOOKMARK [0][-]{appendix.A}{Работа с окном каталога}{part.5}% 200
+\BOOKMARK [1][-]{section.A.1}{Открытие каталога}{appendix.A}% 201
+\BOOKMARK [1][-]{section.A.2}{Подключение к каталогу}{appendix.A}% 202
+\BOOKMARK [0][-]{appendix.B}{Геообработка}{part.5}% 203
+\BOOKMARK [1][-]{section.B.1}{Открытие ArcToolbox}{appendix.B}% 204
+\BOOKMARK [1][-]{section.B.2}{Запуск инструмента}{appendix.B}% 205
+\BOOKMARK [0][-]{appendix.C}{База геоданных}{part.5}% 206
+\BOOKMARK [1][-]{section.C.1}{Создание базы геоданных}{appendix.C}% 207
+\BOOKMARK [1][-]{section.C.2}{Создание классов пространственных объектов}{appendix.C}% 208
+\BOOKMARK [1][-]{section.C.3}{Установка базы геоданных по умолчанию}{appendix.C}% 209
+\BOOKMARK [0][-]{appendix.D}{Работа с таблицей слоев}{part.5}% 210
+\BOOKMARK [1][-]{section.D.1}{Добавление слоя}{appendix.D}% 211
+\BOOKMARK [1][-]{section.D.2}{Удаление слоя}{appendix.D}% 212
+\BOOKMARK [1][-]{section.D.3}{Переименование слоя}{appendix.D}% 213
+\BOOKMARK [1][-]{section.D.4}{Переименование показателя}{appendix.D}% 214
+\BOOKMARK [1][-]{section.D.5}{Смена порядка слоев}{appendix.D}% 215
+\BOOKMARK [1][-]{section.D.6}{Свойства слоя}{appendix.D}% 216
+\BOOKMARK [1][-]{section.D.7}{Копирование слоя}{appendix.D}% 217
+\BOOKMARK [1][-]{section.D.8}{Вставка слоя}{appendix.D}% 218
+\BOOKMARK [1][-]{section.D.9}{Создание нового слоя на основе выбранных объектов}{appendix.D}% 219
+\BOOKMARK [1][-]{section.D.10}{Отключение слоя}{appendix.D}% 220
+\BOOKMARK [1][-]{section.D.11}{Копирование и вставка слоя}{appendix.D}% 221
+\BOOKMARK [0][-]{appendix.E}{Панели инструментов}{part.5}% 222
+\BOOKMARK [1][-]{section.E.1}{Как открыть или найти панель инструментов}{appendix.E}% 223
+\BOOKMARK [0][-]{appendix.F}{Навигация по карте}{part.5}% 224
+\BOOKMARK [1][-]{section.F.1}{Инструменты навигации \(панель Tools\)}{appendix.F}% 225
+\BOOKMARK [1][-]{section.F.2}{Установка масштаба}{appendix.F}% 226
+\BOOKMARK [0][-]{appendix.G}{Оформление векторного слоя}{part.5}% 227
+\BOOKMARK [1][-]{section.G.1}{Единый символ для всего слоя}{appendix.G}% 228
+\BOOKMARK [1][-]{section.G.2}{Категории \(Categories\)}{appendix.G}% 229
+\BOOKMARK [1][-]{section.G.3}{Градуированные символы \(картодиаграммы\)}{appendix.G}% 230
+\BOOKMARK [1][-]{section.G.4}{Градуированные цвета \(картограммы\)}{appendix.G}% 231
+\BOOKMARK [1][-]{section.G.5}{Секторная картодиаграмма \(pie chart\)}{appendix.G}% 232
+\BOOKMARK [1][-]{section.G.6}{Выбор метода классификации}{appendix.G}% 233
+\BOOKMARK [1][-]{section.G.7}{Настройка символа для точечного объекта}{appendix.G}% 234
+\BOOKMARK [1][-]{section.G.8}{Настройка символа для линейного объекта}{appendix.G}% 235
+\BOOKMARK [1][-]{section.G.9}{Настройка символа для полигонального объекта}{appendix.G}% 236
+\BOOKMARK [1][-]{section.G.10}{Создание площадного объекта без заливки}{appendix.G}% 237
+\BOOKMARK [1][-]{section.G.11}{Регулировка прозрачности векторного слоя}{appendix.G}% 238
+\BOOKMARK [1][-]{section.G.12}{Поиск символа по названию}{appendix.G}% 239
+\BOOKMARK [1][-]{section.G.13}{Подключение библиотек символов}{appendix.G}% 240
+\BOOKMARK [0][-]{appendix.H}{Оформление растрового слоя}{part.5}% 241
+\BOOKMARK [1][-]{section.H.1}{Градиентная окраска}{appendix.H}% 242
+\BOOKMARK [1][-]{section.H.2}{Классификация \(послойная окраска\)}{appendix.H}% 243
+\BOOKMARK [1][-]{section.H.3}{Передискретизация и прозрачность слоя}{appendix.H}% 244
+\BOOKMARK [0][-]{appendix.I}{Подписи объектов}{part.5}% 245
+\BOOKMARK [1][-]{section.I.1}{Включение механизма Maplex}{appendix.I}% 246
+\BOOKMARK [1][-]{section.I.2}{Включение и настройка подписей}{appendix.I}% 247
+\BOOKMARK [1][-]{section.I.3}{Классифицированные подписи}{appendix.I}% 248
+\BOOKMARK [1][-]{section.I.4}{Гало подписей}{appendix.I}% 249
+\BOOKMARK [1][-]{section.I.5}{Настройки размещения подписей}{appendix.I}% 250
+\BOOKMARK [1][-]{section.I.6}{Тип и стиль размещения}{appendix.I}% 251
+\BOOKMARK [1][-]{section.I.7}{Разрядка букв}{appendix.I}% 252
+\BOOKMARK [1][-]{section.I.8}{Разрядка слов}{appendix.I}% 253
+\BOOKMARK [1][-]{section.I.9}{Подписывать наибольшую часть}{appendix.I}% 254
+\BOOKMARK [1][-]{section.I.10}{Разрешение конфликтов}{appendix.I}% 255
+\BOOKMARK [1][-]{section.I.11}{Приоритеты подписей}{appendix.I}% 256
+\BOOKMARK [0][-]{appendix.J}{Атрибутивная таблица}{part.5}% 257
+\BOOKMARK [1][-]{section.J.1}{Открытие атрибутивной таблицы}{appendix.J}% 258
+\BOOKMARK [1][-]{section.J.2}{Псевдонимы полей}{appendix.J}% 259
+\BOOKMARK [1][-]{section.J.3}{Формат отображения поля}{appendix.J}% 260
+\BOOKMARK [1][-]{section.J.4}{Выделение строки в атрибутивной таблице}{appendix.J}% 261
+\BOOKMARK [1][-]{section.J.5}{Сортировка таблицы}{appendix.J}% 262
+\BOOKMARK [1][-]{section.J.6}{Соединение таблиц}{appendix.J}% 263
+\BOOKMARK [0][-]{appendix.K}{Выборка объектов}{part.5}% 264
+\BOOKMARK [1][-]{section.K.1}{Выборка вручную}{appendix.K}% 265
+\BOOKMARK [1][-]{section.K.2}{Инвертирование выборки}{appendix.K}% 266
+\BOOKMARK [1][-]{section.K.3}{Определяющий запрос}{appendix.K}% 267
+\BOOKMARK [1][-]{section.K.4}{Пространственный запрос}{appendix.K}% 268
+\BOOKMARK [0][-]{appendix.L}{Проекции и координатная сетка}{part.5}% 269
+\BOOKMARK [1][-]{section.L.1}{Изменение проекции \(системы координат карты\)}{appendix.L}% 270
+\BOOKMARK [1][-]{section.L.2}{Вставка координатной сетки}{appendix.L}% 271
+\BOOKMARK [1][-]{section.L.3}{Отображение нулевых минут и секунд}{appendix.L}% 272
+\BOOKMARK [1][-]{section.L.4}{Шаг линий сетки}{appendix.L}% 273
+\BOOKMARK [1][-]{section.L.5}{Начало расстановки линий сетки}{appendix.L}% 274
+\BOOKMARK [0][-]{appendix.M}{Привязка растровых данных}{part.5}% 275
+\BOOKMARK [1][-]{section.M.1}{Панель Georeferencing}{appendix.M}% 276
+\BOOKMARK [1][-]{section.M.2}{Перемещение растра в область, отображаемую на экране}{appendix.M}% 277
+\BOOKMARK [1][-]{section.M.3}{Расстановка контрольных точек}{appendix.M}% 278
+\BOOKMARK [1][-]{section.M.4}{Просмотр и редактирование контрольных точек}{appendix.M}% 279
+\BOOKMARK [1][-]{section.M.5}{Выбор метода трансформирования}{appendix.M}% 280
+\BOOKMARK [1][-]{section.M.6}{Трансформирование}{appendix.M}% 281
