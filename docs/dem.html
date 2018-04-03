@@ -25,7 +25,7 @@
 <meta name="author" content="Тимофей Самсонов">
 
 
-<meta name="date" content="2018-03-15">
+<meta name="date" content="2018-04-03">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -294,7 +294,7 @@
 </ul></li>
 <li class="chapter" data-level="15.2" data-path="dem.html"><a href="dem.html#dem-design"><i class="fa fa-check"></i><b>15.2</b> Оформление данных</a></li>
 <li class="chapter" data-level="15.3" data-path="dem.html"><a href="dem.html#dem-flowdir"><i class="fa fa-check"></i><b>15.3</b> Направление тока</a></li>
-<li class="chapter" data-level="15.4" data-path="dem.html"><a href="dem.html#dem-flowacc"><i class="fa fa-check"></i><b>15.4</b> Площадь водосбора (аккумуляция тока)</a></li>
+<li class="chapter" data-level="15.4" data-path="dem.html"><a href="dem.html#dem-flowacc"><i class="fa fa-check"></i><b>15.4</b> Водосборная площадь (аккумуляция тока)</a></li>
 <li class="chapter" data-level="15.5" data-path="dem.html"><a href="dem.html#dem-classify"><i class="fa fa-check"></i><b>15.5</b> Выделение и классификация водотоков</a></li>
 <li class="chapter" data-level="15.6" data-path="dem.html"><a href="dem.html#dem-vectorize"><i class="fa fa-check"></i><b>15.6</b> Векторизация водотоков</a></li>
 <li class="chapter" data-level="15.7" data-path="dem.html"><a href="dem.html#dem-mouth"><i class="fa fa-check"></i><b>15.7</b> Выделение и разделение устьевых точек</a></li>
@@ -682,9 +682,9 @@
 <p><kbd><strong>Снимок экрана №2.</strong> Растр направления тока</kbd></p>
 </div>
 <div id="dem-flowacc" class="section level2">
-<h2><span class="header-section-number">15.4</span> Площадь водосбора (аккумуляция тока)</h2>
+<h2><span class="header-section-number">15.4</span> Водосборная площадь (аккумуляция тока)</h2>
 <p><a href="dem.html#dem">В начало упражнения ⇡</a></p>
-<p>Растр аккумуляции тока в каждой ячейке хранит количество ячеек, дренируемых выше по склону. Фактически, это число показывает площадь водосбора для каждой ячейки. Площадь водосбора необходима для автоматического выделения водотоков (тальвегов) по цифровой модели рельефа.</p>
+<p>Растр аккумуляции тока в каждой ячейке хранит количество ячеек, дренируемых выше по склону. Фактически, это число показывает водосборную площадь для каждой ячейки. Площадь водосбора необходима для автоматического выделения водотоков (тальвегов) по цифровой модели рельефа.</p>
 <ol style="list-style-type: decimal">
 <li><p>Для построения растра аккмуляции тока запустите инструмент <strong>Spatial Analyst Tools &gt; Hydrology &gt; Flow Accumulation</strong> и заполните его параметры следующим образом:</p>
 <table>
@@ -733,7 +733,7 @@
 </tr>
 <tr class="even">
 <td align="left"><em>Expression Value</em></td>
-<td>&lt; 2000</td>
+<td>VALUE &lt; 2000</td>
 </tr>
 <tr class="odd">
 <td align="left"><em>Input false raster or constant value</em></td>

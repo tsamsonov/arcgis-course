@@ -85,7 +85,7 @@
   \postauthor{\par}
   \predate{\centering\large\emph}
   \postdate{\par}
-  \date{2018-03-15}
+  \date{2018-04-03}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -158,7 +158,7 @@
 навигация по разделам.
 
 Актуальная версия практикума, которую вы сейчас просматриваете,
-сформирована 2018-03-15 и доступна по ссылке
+сформирована 2018-04-03 и доступна по ссылке
 \url{https://tsamsonov.github.io/arcgis-course/}.
 
 \textbf{Перед выполнением практикума необходимо внимательно ознакомиться
@@ -3938,7 +3938,7 @@ ArcGIS Desktop (каталог, таблица содержания, карта)
 
   Картографическое изображение примет следующий вид:
 
-  \includegraphics{images/Ex07/image14.png}
+  \includegraphics{images/Ex07/image13.png}
 
   \textbf{Снимок экрана №3}. Оцифрованные городские районы с подписями
 \item
@@ -6890,9 +6890,9 @@ ArcGIS Desktop (каталог, таблица содержания, карта)
   \midrule
   \endhead
   \emph{Input Features} &
-  \texttt{Location-Allocation\textbackslash{}\textbackslash{}Demand\ Points}\tabularnewline
+  \texttt{Location-Allocation\textbackslash{}Demand\ Points}\tabularnewline
   \emph{Output Features} &
-  \texttt{\ldots{}\textbackslash{}\textbackslash{}Ex12\textbackslash{}\textbackslash{}Regions.gdb\textbackslash{}\textbackslash{}DemandPoints\textbackslash{}\_Voronoy}\tabularnewline
+  \texttt{\ldots{}\textbackslash{}Ex12\textbackslash{}Regions.gdb\textbackslash{}DemandPoints\_Voronoy}\tabularnewline
   \emph{Output Fields} & \texttt{ALL}\tabularnewline
   \bottomrule
   \end{longtable}
@@ -8696,13 +8696,13 @@ Flow Direction} и заполните его параметры следующи
 \textbf{Снимок экрана №2.} Растр направления тока
 
 \hypertarget{dem-flowacc}{%
-\section{Площадь водосбора (аккумуляция тока)}\label{dem-flowacc}}
+\section{Водосборная площадь (аккумуляция тока)}\label{dem-flowacc}}
 
 \protect\hyperlink{dem}{В начало упражнения ⇡}
 
 Растр аккумуляции тока в каждой ячейке хранит количество ячеек,
-дренируемых выше по склону. Фактически, это число показывает площадь
-водосбора для каждой ячейки. Площадь водосбора необходима для
+дренируемых выше по склону. Фактически, это число показывает водосборную
+площадь для каждой ячейки. Площадь водосбора необходима для
 автоматического выделения водотоков (тальвегов) по цифровой модели
 рельефа.
 
@@ -8763,7 +8763,7 @@ Flow Direction} и заполните его параметры следующи
   \midrule
   \endhead
   \emph{Input Conditional Raster} & acc\tabularnewline
-  \emph{Expression Value} & \textless{} 2000\tabularnewline
+  \emph{Expression Value} & VALUE \textless{} 2000\tabularnewline
   \emph{Input false raster or constant value} & 1\tabularnewline
   \emph{Output raster} &
   \texttt{\ldots{}\textbackslash{}Ex15\textbackslash{}Ex15.gdb\textbackslash{}str}\tabularnewline

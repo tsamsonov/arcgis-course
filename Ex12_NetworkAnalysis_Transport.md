@@ -302,8 +302,8 @@
 
     Параметр          Значение  
     ----------------- --------
-    *Input Features*  `Location-Allocation\\Demand Points`  
-    *Output Features*  `…\\Ex12\\Regions.gdb\\DemandPoints\_Voronoy`  
+    *Input Features*  `Location-Allocation\Demand Points`  
+    *Output Features*  `…\Ex12\Regions.gdb\DemandPoints_Voronoy`  
     *Output Fields*   `ALL`
 
     Запустите инструмент. Полученный слой будет добавлен на карту и будет иметь следующую структуру:
