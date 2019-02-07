@@ -1,19 +1,20 @@
 --- 
-title: "Практикум по геоинформатике"
+title: "Основы геоинформатики: практикум"
 author: "Тимофей Самсонов"
-date: "2018-04-03"
+date: "2019-02-07"
+description: "Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-biblio-style: apalike
+bibliography: [book.bib]
+biblio-style: [gost-authoryear]
+biblatexoptions: [language=auto,autolang=other,movenames=false]
+csl: [gost-r-7-0-5-2008-author-date-alphab.csl]
 link-citations: yes
+colorlinks: true
 github-repo: tsamsonov/arcgis-course
-description: "Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова"
-header-includes:
-   - \usepackage[T2A]{fontenc}
-   - \usepackage[utf8]{inputenc}
-   - \usepackage[russian]{babel}
-mainfont: Open Sans
+fontsize: 12pt
+mainfont: PT Serif
 toc_float:
   collapse: section
   smooth_scroll: true
@@ -29,7 +30,7 @@ toc_float:
 
 __Для практической работы рекомендуется использовать HTML-версию, поскольку она поддерживается в актуальном состоянии__^[файлы PDF и EPUB тоже актуализируются, но их придется каждый раз качать заново, чтобы убедиться в том, что вы используете последнюю версию практикума]. Формат EPUB удобен своей компактностью и адаптивностью под экран устройства, и может быть использован для работы с электронной книгой или планшетом в оффлайн-режиме. Во всех версиях практикума реализована навигация по разделам.
 
-Актуальная версия практикума, которую вы сейчас просматриваете, сформирована 2018-04-03 и доступна по ссылке <https://tsamsonov.github.io/arcgis-course/>.
+Актуальная версия практикума, которую вы сейчас просматриваете, сформирована 2019-02-07 и доступна по ссылке <https://tsamsonov.github.io/arcgis-course/>.
 
 __Перед выполнением практикума необходимо внимательно ознакомиться с регламентом и тщательно придерживаться его при выполнении заданий__.
 

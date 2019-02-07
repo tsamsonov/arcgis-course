@@ -1,15 +1,50 @@
-\usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{fontspec}
-\usepackage{fancyhdr}
-\usepackage{hyperref}
 \setmonofont{Menlo}
+\usepackage[english,main=russian]{babel}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage[fit]{truncate}
+\fancyhead[LE,RO]{\nouppercase{\truncate{0.5\headwidth}{\rightmark}}}
+\fancyhead[LO,RE]{\nouppercase{\truncate{0.5\headwidth}{\leftmark}}}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\setlength\parindent{20pt}
+\setlength\parskip{0em}
 
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
+
+\DeclareSymbolFont{cyrletters}{\encodingdefault}{\familydefault}{m}{it}
+\newcommand{\makecyrmathletter}[1]{%
+  \begingroup\lccode`a=#1\lowercase{\endgroup
+  \Umathcode`a}="0 \csname symcyrletters\endcsname\space #1
+}
+\count255="409
+\loop\ifnum\count255<"44F
+  \advance\count255 by 1
+  \makecyrmathletter{\count255}
+\repeat
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldsource=langid, match=russian, final]
+      \step[fieldset=presort, fieldvalue={a}]
+    }
+    \map{
+      \step[fieldsource=langid, notmatch=russian, final]
+      \step[fieldset=presort, fieldvalue={z}]
+    }
+  }
+}
+
 \renewcommand{\partname}{Часть}
 \renewcommand{\contentsname}{Содержание}
 \renewcommand{\chaptername}{Упражнение}

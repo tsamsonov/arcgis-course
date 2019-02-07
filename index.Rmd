@@ -1,19 +1,20 @@
 --- 
-title: "Практикум по геоинформатике"
+title: "Основы геоинформатики: практикум"
 author: "Тимофей Самсонов"
 date: "`r Sys.Date()`"
+description: "Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-biblio-style: apalike
+bibliography: [book.bib]
+biblio-style: [gost-authoryear]
+biblatexoptions: [language=auto,autolang=other,movenames=false]
+csl: [gost-r-7-0-5-2008-author-date-alphab.csl]
 link-citations: yes
+colorlinks: true
 github-repo: tsamsonov/arcgis-course
-description: "Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова"
-header-includes:
-   - \usepackage[T2A]{fontenc}
-   - \usepackage[utf8]{inputenc}
-   - \usepackage[russian]{babel}
-mainfont: Open Sans
+fontsize: 12pt
+mainfont: PT Serif
 toc_float:
   collapse: section
   smooth_scroll: true

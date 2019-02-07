@@ -4,7 +4,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><a href="./">Практикум по геоинформатике</a></li>
+        <li><a href="./">Основы геоинформатики</a></li>
       after: |
         <li><a href="https://istina.msu.ru/profile/tsamsonov/" target="blank">Тимофей Самсонов</a></li>
         <li><a href="https://doi.org/10.5281/zenodo.1167857"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1167857.svg" title="DOI"></a><li>
@@ -14,6 +14,6 @@ bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
-  citation_package: natbib
+  citation_package: biblatex
   keep_tex: yes
 bookdown::epub_book: default
