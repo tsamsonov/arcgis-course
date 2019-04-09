@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.1)  7 FEB 2019 12:48
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.1)  9 APR 2019 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2713,18 +2713,21 @@ Package hyperref Warning: Suppressing link with empty target on input line 235.
 
 
 
-Overfull \hbox (109.52542pt too wide) in alignment at lines 256--258
+Overfull \hbox (143.67094pt too wide) in alignment at lines 256--258
  [] 
  []
 
 
-Overfull \hbox (109.52542pt too wide) in alignment at lines 258--261
+Overfull \hbox (143.67094pt too wide) in alignment at lines 258--261
  [] 
  []
 
-[15] [16] [17
 
-] [18]
+Overfull \vbox (1.1683pt too high) has occurred while \output is active []
+
+[15] [16
+
+] [17] [18]
 Глава 1.
 
 Overfull \hbox (778.20383pt too wide) in alignment at lines 276--280
