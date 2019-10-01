@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Упражнение 1 Создание карты четвертичных отложений | Основы геоинформатики: практикум</title>
-  <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Упражнение 1 Создание карты четвертичных отложений | Основы геоинформатики: практикум" />
   <meta property="og:type" content="book" />
@@ -22,18 +21,18 @@
   <meta name="twitter:description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
   
 
-<meta name="author" content="Тимофей Самсонов">
+<meta name="author" content="Тимофей Самсонов" />
 
 
-<meta name="date" content="2019-04-09">
+<meta name="date" content="2019-10-01" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="map-design-general.html">
+<link rel="prev" href="index.html"/>
+<link rel="next" href="map-design-general.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -563,10 +562,10 @@
 </blockquote></li>
 <li><p>Откройте окно <strong>Catalog</strong>, нажав кнопку <img src="images/Ex01/image2.png" /> на панели инструментов.</p>
 <blockquote>
-<p><strong>Catalog (Каталог)</strong> — это файловый менеджер для управления пространственными данными. Его задачи в чем-то аналогичны Проводнику в Windows или Finder в Mac OS X: создание, копирование, удаление и т.д., но видит она только файлы тех форматов, которые можно использовать в ГИС.</p>
+<p><strong>Catalog (Каталог)</strong> — это файловый менеджер для управления пространственными данными. Его задачи в чем-то аналогичны Проводнику в Windows или Finder в Mac OS X: создание, копирование, удаление и т.д., но видит она только файлы тех форматов, которые можно использовать в ГИС.</p>
 </blockquote>
 <div class="figure">
-<img src="images/Ex01/image3.png" alt="Приложение ArcMap" />
+<img src="images/Ex01/image3.png" alt="" />
 <p class="caption">Приложение ArcMap</p>
 </div></li>
 <li><p>Раскройте папку <em>D:/GIS</em> в дереве каталогов и найдите в ней директорию <em>Ex01</em> в вашем каталоге, содержащую исходные данные для выполнения первого задания. Если директории <em>D:/GIS</em> нет в списке, подключитесь к ней c помощью кнопки <img src="images/Ex01/image4.png" />.</p></li>
@@ -643,7 +642,7 @@
 <p>Вверху вы должны увидеть два списка: поле, из которого необходимо взять уникальные значения, и цветовая шкала.</p></li>
 <li><p>Выберите поле <em>Отложения</em> в списке <strong>Value Field</strong>, и нажмите внизу диалога кнопку <strong>Add All Values</strong>. Программа просканирует всем строчкитаблицы, найдет уникальные значения, которые там есть, и подставит их в список. В крайнем правом поле отображается количество объектов каждого уникального значения:</p>
 <div class="figure">
-<img src="images/Ex01/image15.png" alt="Диалог настройки способа изображения" />
+<img src="images/Ex01/image15.png" alt="" />
 <p class="caption">Диалог настройки способа изображения</p>
 </div>
 <p>Обратите внимание на то, что типам объектов были автоматически присвоены символы из той цветовой шкалы, которая выбрана справа вверху.</p></li>
@@ -662,14 +661,14 @@
 <ol style="list-style-type: decimal">
 <li><p>Убедитесь, что включен механизм расстановки подписей <strong>Maplex</strong>. Для этого откройте панель инструментов <strong>Labeling</strong> и поставьте соответствующую галочку:</p>
 <div class="figure">
-<img src="images/Ex01/image16.png" alt="Включение механизма расстановки подписей Maplex" />
+<img src="images/Ex01/image16.png" alt="" />
 <p class="caption">Включение механизма расстановки подписей Maplex</p>
 </div></li>
 <li><p>Откройте снова свойства слоя Четвертичные отложения и перейдите на вкладку <strong>Labels</strong>.</p></li>
 <li><p>Отметьте галочкой опцию <strong>Label features in this layer</strong>. Эта опция включает подписи для слоя.</p></li>
 <li><p>В поле <strong>Label Field</strong> выберите значение <em>Индекс</em> Подписи будут браться из этого поля. Рядом расположены элементы настройки шрифта, с которыми вы можете поэкспериментировать:</p>
 <div class="figure">
-<img src="images/Ex01/image17.png" alt="Диалог настройки подписей для объектов" />
+<img src="images/Ex01/image17.png" alt="" />
 <p class="caption">Диалог настройки подписей для объектов</p>
 </div></li>
 <li><p>Нажмите кнопку <strong>Placement Properties</strong>. Появившийся диалог позволяет вам настроить, как именно будут размещены подписи относительно самих объектов. Это очень мощный инструмент, который управляет множеством нюансов расстановки подписей.</p></li>
@@ -677,7 +676,7 @@
 <li><p>Закройте все диалоговые окна, последовательно нажимая кнопку <strong>OK</strong> в каждом из них.</p></li>
 <li><p>Нажмите кнопку <img src="images/Ex01/image18.png" /> на панели <strong>Tools</strong>, чтобы вся карта уместилась в окне просмотра. Окно приложения примет вид, примерно соответствующий тому, что показано на рисунке ниже:</p>
 <div class="figure">
-<img src="images/Ex01/image19.png" alt="Карта четвертичных отложений с индексами в произвольной цветовой шкале" />
+<img src="images/Ex01/image19.png" alt="" />
 <p class="caption">Карта четвертичных отложений с индексами в произвольной цветовой шкале</p>
 </div></li>
 </ol>
@@ -692,7 +691,7 @@
 <li><p>Выберите пункт меню <strong>View &gt; Layout View</strong>. Приложение перейдет в режим компоновки.</p></li>
 <li><p>Откройте панель инструментов <strong>Layout</strong>. С ее помощью вы можете осуществлять навигацию в режиме компоновки:</p>
 <div class="figure">
-<img src="images/Ex01/image20.png" alt="Панель инструментов Layout" />
+<img src="images/Ex01/image20.png" alt="" />
 <p class="caption">Панель инструментов Layout</p>
 </div></li>
 <li><p>Откройте меню <strong>Insert</strong> и изучите его содержание.</p>
@@ -739,18 +738,18 @@
 <li><p>Пристыкуйте таблицу в нижнюю часть окна, чтобы она не загораживала карту.</p></li>
 <li><p>Выделите в таблице содержания слой Гидрография (линии) и в его контекстном меню выберите пункт <strong>Edit Features &gt; Start Editing</strong>. Включится режим редактирования, который позволяет вручную править атрибуты и геометрию объектов. Должна появиться панель редактора:</p>
 <div class="figure">
-<img src="images/Ex01/image21.png" alt="Панель редактирования Editor" />
+<img src="images/Ex01/image21.png" alt="" />
 <p class="caption">Панель редактирования Editor</p>
 </div></li>
 <li><p>Чтобы не выделять лишних объектов, в контекстном меню слоя <em>Гидрография (линии)</em> выберите пункт <strong>Selection &gt; Make this the only selectable layer</strong></p></li>
 <li><p>Возьмите с панели редактора инструмент выбора (отмечен на рисунке) и выделите с его помощью ручей <em>Язвицы</em> (на севере полигона). Он автоматически подсветится в таблице. Введите название в ячейку поля <em>RiverName</em>:</p>
 <div class="figure">
-<img src="images/Ex01/image22.png" alt="Редактирование таблицы атрибутов слоя" />
+<img src="images/Ex01/image22.png" alt="" />
 <p class="caption">Редактирование таблицы атрибутов слоя</p>
 </div></li>
 <li><p>Найдите на карте Чолоховский ручей (на юге полигона), выделите его и в контекстном меню выберите пункт <strong>Attributes</strong>. Перед вами откроется окно редактора атрибутов — это еще один способ редактирования таблицы, ориентированный на индивидуальную работу с каждым объектом:</p>
 <div class="figure">
-<img src="images/Ex01/image23.png" alt="Редактор атрибутов" />
+<img src="images/Ex01/image23.png" alt="" />
 <p class="caption">Редактор атрибутов</p>
 </div></li>
 <li><p>Найдите поле <em>RiverName</em> и введите название ручья.</p></li>
@@ -868,8 +867,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

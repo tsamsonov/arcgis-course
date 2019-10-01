@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Упражнение 2 Создание общегеографической карты | Основы геоинформатики: практикум</title>
-  <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Упражнение 2 Создание общегеографической карты | Основы геоинформатики: практикум" />
   <meta property="og:type" content="book" />
@@ -22,18 +21,18 @@
   <meta name="twitter:description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
   
 
-<meta name="author" content="Тимофей Самсонов">
+<meta name="author" content="Тимофей Самсонов" />
 
 
-<meta name="date" content="2019-04-09">
+<meta name="date" content="2019-10-01" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="map-design-quaternary.html">
-<link rel="next" href="map-design-climates.html">
+<link rel="prev" href="map-design-quaternary.html"/>
+<link rel="next" href="map-design-climates.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -565,7 +564,10 @@
 <li><img src="images/Ex02/image9.png" /> — обычные таблицы;</li>
 </ul></li>
 <li><p>Раскройте базу данных <em>MapData.gdb</em> и изучите ее содержимое:</p>
-<p><img src="images/Ex02/image10.png" /></p></li>
+<div class="figure">
+<img src="images/Ex02/image10.png" alt="" />
+<p class="caption">База данных <code>MapData.gdb</code></p>
+</div></li>
 </ol>
 <p>Векторные слои базы данных <em>MapData.gdb</em>:</p>
 <table>
@@ -670,9 +672,11 @@
 </tr>
 </tbody>
 </table></li>
-<li><p>Установите передискретизацию слоя в режим кубической cвертки (<em>Cubic Convolution</em>).</p>
-<p><em>Результат:</em>
-<img src="images/Ex02/image12.png" /></p></li>
+<li><p>Установите передискретизацию слоя в режим кубической cвертки (<em>Cubic Convolution</em>). Результат:</p>
+<div class="figure">
+<img src="images/Ex02/image12.png" alt="" />
+<p class="caption">Гиспсометрическая окраска рельефа</p>
+</div></li>
 <li><p>Наложите отмывку поверх гипсометрической окраски. Для этого добавьте на карту слой отмывки <em>Hillshade</em> и установите для него следующие параметры:</p>
 <table>
 <thead>
@@ -693,8 +697,11 @@
 </tbody>
 </table>
 <p>Остальные параметры оставьте по умолчанию.</p>
-<p><em>Результат</em>:
-<img src="images/Ex02/image13.png" /></p></li>
+<p><em>Результат</em>:</p>
+<div class="figure">
+<img src="images/Ex02/image13.png" alt="" />
+<p class="caption">Гиспосметрическая окраска и отмывка</p>
+</div></li>
 </ol>
 <p><kbd><strong>Снимок экрана №1.</strong> Картографическое изображение рельефа</kbd></p>
 <p>Сохраните документ карты в каталог Ex02 под названием Ex02_Фамилия.</p>
@@ -702,22 +709,28 @@
 <div id="map-design-general-vector" class="section level2">
 <h2><span class="header-section-number">2.4</span> Оформление векторных слоев</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
-<p>Добавьте на карту и оформите векторные слои, содержащиеся в базе данных <em>MapData.gdb</em>, все кроме слоя <em>Countries</em>. Для каждого слоя выберите единый символ. В качестве образца оформления используйте рисунок ниже.
-<img src="images/Ex02/image14.png" /></p>
+<p>Добавьте на карту и оформите векторные слои, содержащиеся в базе данных <em>MapData.gdb</em>, все кроме слоя <em>Countries</em>. Для каждого слоя выберите единый символ. В качестве образца оформления используйте рисунок ниже.</p>
+<div class="figure">
+<img src="images/Ex02/image14.png" alt="" />
+<p class="caption">Образец оформления карты</p>
+</div>
 <p>Учтите, что:</p>
 <ul>
 <li><p>Слой <em>Snow</em> располагается между отмывкой и цветовой окраской рельефа. Это позволяет показать заснеженные территории, но при этом сохранить светотеневую пластику.</p></li>
 <li><p>При выборе значка для аэропорта следует воспользоваться поиском по символам, набрав ключевое слово <em>«airport»</em></p></li>
 </ul>
-<p><em>Результат</em>:
-<img src="images/Ex02/image15.png" /></p>
+<p><em>Результат</em>:</p>
+<div class="figure">
+<img src="images/Ex02/image15.png" alt="" />
+<p class="caption">Оформление векторных слоев</p>
+</div>
 <p><kbd><strong>Снимок экрана №2.</strong> Оформление векторных слоев</kbd></p>
 </div>
 <div id="map-design-general-labels" class="section level2">
 <h2><span class="header-section-number">2.5</span> Создание подписей</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
-<li><p>Установите масштаб карты равным 1:1 750 000.</p></li>
+<li><p>Установите масштаб карты равным 1:1 750 000.</p></li>
 <li><p>Включите <strong>Maplex</strong> для размещения подписей и переведите его в режим <em>Best</em></p></li>
 <li><p>Сделайте подписи для слоев <em>Cities</em>, <em>Heights</em>, <em>Rivers</em>, <em>Lakes</em> со следующими параметрами:</p>
 <p><em>Cities</em>:</p>
@@ -861,8 +874,11 @@
 </tbody>
 </table></li>
 </ol>
-<p><em>Результат</em> должен выглядеть примерно следующим образом:
-<img src="images/Ex02/image20.png" /></p>
+<p><em>Результат</em> должен выглядеть примерно следующим образом:</p>
+<div class="figure">
+<img src="images/Ex02/image20.png" alt="" />
+<p class="caption">Картографическое изображение с подписями</p>
+</div>
 </div>
 <div id="map-design-general-cities" class="section level2">
 <h2><span class="header-section-number">2.6</span> Классификация населенных пунктов</h2>
@@ -872,8 +888,11 @@
 <li><p>В диалоге настройки символов слоя включите режим отображения <strong>Categories (unique values)</strong>, используя значения поля <em>Население_диапазон</em></p></li>
 <li><p>Отсортируйте классы численности в нужном порядке, используя стрелочки.</p></li>
 <li><p>Настройте размер кружка таким образом, чтобы его диаметр менялся от 3 до 7 пунктов</p>
-<p><em>Результат</em>:
-<img src="images/Ex02/image21.png" /></p></li>
+<p><em>Результат:</em></p>
+<div class="figure">
+<img src="images/Ex02/image21.png" alt="" />
+<p class="caption">Настрояка шкалы размеров значков</p>
+</div></li>
 <li><p>Перейдите на вкладку <strong>Labels</strong> и переключите подписи в режим нескольких классов.</p></li>
 <li><p>Импортируйте классы с помощью кнопки <strong>Get Symbol Classes</strong>.</p></li>
 <li><p>Настройте подписи следующим образом:</p>
@@ -882,8 +901,11 @@
 <li>Размер шрифта должен увеличиваться от низшего класса (менее 10 000) до самого крупного (от 250 000 до 500 000) с 8 до 12 пунктов.</li>
 <li>Подписи городов крупнее 100 000 человек должны быть жирным шрифтом.</li>
 </ul>
-<p><em>Результат</em>:
-<img src="images/Ex02/image22.png" /></p></li>
+<p><em>Результат</em>:</p>
+<div class="figure">
+<img src="images/Ex02/image22.png" alt="" />
+<p class="caption">Карта с классифицированными по размеру населенными пунктами</p>
+</div></li>
 </ol>
 <p><kbd><strong>Снимок экрана №3.</strong> Классифицированные населенные пункты с подписями</kbd></p>
 </div>
@@ -975,8 +997,11 @@
 </tbody>
 </table></li>
 </ol>
-<p><em>Результат</em>:
-<img src="images/Ex02/image24.png" /></p>
+<p><em>Результат:</em></p>
+<div class="figure">
+<img src="images/Ex02/image24.png" alt="" />
+<p class="caption">Маскированное картографическое изображение</p>
+</div>
 <p><kbd><strong>Снимок экрана №4.</strong> Маска и подписи стран</kbd></p>
 </div>
 <div id="map-design-general-layout" class="section level2">
@@ -991,18 +1016,27 @@
 </ul></li>
 <li><p>Подгоните размер фрейма данных таким образом, чтобы карта оказалась в верхней части листа</p></li>
 <li><p>Установите масштаб равным 1:1 750 000</p>
-<p><em>Результат</em>:
-<img src="images/Ex02/image25.png" /></p></li>
+<p><em>Результат:</em></p>
+<div class="figure">
+<img src="images/Ex02/image25.png" alt="" />
+<p class="caption">Размещение карты в пределах листа</p>
+</div></li>
 <li><p>Используя настройки по умолчанию, вставьте легенду, включив в нее все слои, кроме <em>Elevation</em>, <em>Countries</em> и <em>Hillshade</em></p>
-<p><em>Результат</em>:
-<img src="images/Ex02/image26.png" /></p></li>
+<p><em>Результат:</em></p>
+<div class="figure">
+<img src="images/Ex02/image26.png" alt="" />
+<p class="caption">Размещение легенды в пределах листа</p>
+</div></li>
 <li><p>Измените название показателя для слоя <em>Cities</em> на «число жителей». Уменьшите размер шрифта до 9 и сделайте его курсивным.</p></li>
 <li><p>Уменьшите размер шрифта для стиля названия слоя <em>Cities</em> до 10 пунктов.</p></li>
 <li><p>Переименуйте все слои в таблице содержания на русский язык в соответствии с таблицей в начале упражнения. Обратите внимание на то, что в легенде они переименуются автоматически.</p></li>
 <li><p>Переименуйте заголовок легенды на русский язык.</p></li>
 <li><p>Увеличьте интервал между слоями в легенде до 10 пунктов.</p>
-<p><em>Результат</em>:
-<img src="images/Ex02/image27.png" /></p></li>
+<p><em>Результат:</em></p>
+<div class="figure">
+<img src="images/Ex02/image27.png" alt="" />
+<p class="caption">Регулировка интервала между элементами легенды</p>
+</div></li>
 <li><p>Вставьте на карту координатную сетку типа <strong>Graticule</strong> с шагом 1° по широте и долготе. Отключите для градусной сетки показ минут и секунд.</p></li>
 <li><p>Вставьте название карты над картой по центру, используя следующие параметры:</p>
 <table>
@@ -1032,7 +1066,10 @@
 </tbody>
 </table></li>
 <li><p>Вставьте <em>километровую</em> масштабную линейку по нижеприведенному образцу:</p>
-<p><img src="images/Ex02/image28.png" /></p></li>
+<div class="figure">
+<img src="images/Ex02/image28.png" alt="" />
+<p class="caption">Карта с градусной сеткой, названием и масштабной линейкой</p>
+</div></li>
 <li><p>Добавьте свою фамилию и инициалы справа внизу под легендой.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №5.</strong> Итоговая карта</kbd></p>
@@ -1114,8 +1151,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

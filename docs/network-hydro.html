@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Упражнение 13 Анализ гидрографических сетей | Основы геоинформатики: практикум</title>
-  <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Упражнение 13 Анализ гидрографических сетей | Основы геоинформатики: практикум" />
   <meta property="og:type" content="book" />
@@ -22,18 +21,18 @@
   <meta name="twitter:description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
   
 
-<meta name="author" content="Тимофей Самсонов">
+<meta name="author" content="Тимофей Самсонов" />
 
 
-<meta name="date" content="2019-04-09">
+<meta name="date" content="2019-10-01" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="network-analysis.html">
-<link rel="next" href="weighted-overlay.html">
+<link rel="prev" href="network-analysis.html"/>
+<link rel="next" href="weighted-overlay.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -573,7 +572,7 @@
 <li><p>Щелкните по <em>Ex13.gdb</em> правой кнопкой мыши и выберите пункт <strong>Make Default Geodatabase</strong>. Эта команда указывает системе, что все результаты обработки данных следует помещать в выбранную базу геоданных.</p></li>
 <li><p>Добавьте в базу геоданных <em>Ex13.gdb</em> новый набор данных <em>Hydro</em>. Для этого щелкните правой кнопкой мыши на названии базы геоданных и в контекстном меню выберите <strong>New &gt; Feature Dataset</strong> (<strong>Рис. 1</strong>).</p>
 <div class="figure">
-<img src="images/Ex13/image6.png" alt="Рис. 1. Создание нового набора данных (Feature Dataset)" />
+<img src="images/Ex13/image6.png" alt="" />
 <p class="caption"><em>Рис. 1. Создание нового набора данных (Feature Dataset)</em></p>
 </div></li>
 <li><p>В появившемся окне введите название набора данных <em>Hydro</em>.</p></li>
@@ -582,12 +581,12 @@
 <li><p>Создайте новый класс пространственных объектов <em>Streams</em> внутри набора данных <em>Hydro</em>. Для этого щелкните правой кнопкой мыши по набору данных Hydro и в контекстном меню выберите пункт <strong>New—Feature Class</strong>.</p></li>
 <li><p>В первом диалоге введите название класса <em>Streams</em>, его псевдоним (alias) <em>Водотоки</em> и из ниспадающего списка выберите тип класса <em>Line Features</em> (<strong>Рис. 2</strong>). Нажмите Далее два раза, чтобы пропустить второй диалог.</p>
 <div class="figure">
-<img src="images/Ex13/image8.png" alt="Рис. 2. Диалог создания линейного класса пространственных объектов" />
+<img src="images/Ex13/image8.png" alt="" />
 <p class="caption"><em>Рис. 2. Диалог создания линейного класса пространственных объектов</em></p>
 </div>
 <p>В появившемся (третьем) диалоге (<strong>Рис. 3</strong>) вас просят определить состав атрибутивных полей для слоя. Здесь можно сделать это вручную, однако мы воспользуемся импортом.</p>
 <div class="figure">
-<img src="images/Ex13/image9.png" alt="Рис. 3. Определение атрибутивных полей для класса Streams" />
+<img src="images/Ex13/image9.png" alt="" />
 <p class="caption"><em>Рис. 3. Определение атрибутивных полей для класса Streams</em></p>
 </div></li>
 <li><p>Нажмите кнопку <strong>Import</strong> и найдите класс <em>WaterLine</em> в базе геоданных <img src="images/Ex13/image5.png" /> <em>Satino.gdb</em>, дважды щелкните на нем. Названия и типы полей автоматически подставятся в список (<strong>Рис. 3</strong>).</p></li>
@@ -609,14 +608,14 @@
 <li><p>Удалите слой <em>Гидрография (линии)</em> из таблицы содержания. В этом задании он больше вам не понадобится.</p></li>
 <li><p>Переключитесь в окно <strong>Create Features</strong> c помощью кнопки <img src="images/Ex13/image11.png" /> на панели <strong>Tools</strong> (<strong>Рис. 4</strong>) и выберите <em>Водотоки</em> в списке цифруемых объектов:</p>
 <div class="figure">
-<img src="images/Ex13/image12.png" alt="Рис. 4. Панель Create Features" />
+<img src="images/Ex13/image12.png" alt="" />
 <p class="caption"><em>Рис. 4. Панель Create Features</em></p>
 </div></li>
 <li><p>Приблизьтесь к верховьям <em>Протвы</em> в западной части карты. Для навигации используйте колесико мыши (масштабирование) и кнопку <kbd>C</kbd> на клавиатуре (перемещение). Рекомендуемый диапазон масштабов для цифрования — <em>1:1 500–1:2000</em>. Вы можете его отслеживать вверху окна.</p></li>
 <li><p>Щелкните посередине полигона в месте начала реки и начните цифровать линию примерно по осевой линии полигона с определенным интервалом. Щелкните мышью в месте, где вы хотите поставить точку, затем переместите курсор к месту следующей точки, щелкните еще раз, и так далее. Не увлекайтесь и не расставляйте точки слишком часто. Оцифруйте осевую линию Протвы целиком с запада на восток — это займет у вас некоторое время.</p></li>
 <li><p>Когда линия будет полностью оцифрована, щелкните дважды мышью в последней точке, или нажмите <kbd>F2</kbd>.</p>
 <div class="figure">
-<img src="images/Ex13/image13.png" alt="Рис. 5. Оцифровка осевой линии реки и окно Create Features" />
+<img src="images/Ex13/image13.png" alt="" />
 <p class="caption"><em>Рис. 5. Оцифровка осевой линии реки и окно Create Features</em></p>
 </div>
 <p>Советы по цифрованию:</p>
@@ -670,7 +669,7 @@
 <li><p>Отключите слой <em>Гидрография (полигоны)</em> и нажмите кнопку <img src="images/Ex13/image14.png" /> <strong>Full extent</strong>, чтобы вся территория полигона поместилась на экране.</p></li>
 </ol>
 <div class="figure">
-<img src="images/Ex13/image19.png" alt="Рис. 7. Линейный слой водотоков, горизонтали и точка стока" />
+<img src="images/Ex13/image19.png" alt="" />
 <p class="caption"><em>Рис. 7. Линейный слой водотоков, горизонтали и точка стока</em></p>
 </div>
 <p><kbd><strong>Снимок экрана №1.</strong> Линейный слой водотоков, горизонтали и точка стока</kbd></p>
@@ -683,17 +682,17 @@
 <li><p>Перейдите в окно <strong>Каталога</strong>, щелкните правой кнопкой мыши по набору данных <em>Hydro</em> и выберите пункт <strong>New &gt; Geometric Network</strong>.</p></li>
 <li><p>Оставьте <em>Hydro_Net</em> в качестве имени по умолчанию и установите расстояние принудительного снэппинга линий равным 1 м (<strong>Рис. 8</strong>). Эта опция будет полезна, если вы где-то не дотянули устье притока до реки. Оно дотянется автоматически. Нажмите <strong>Далее</strong>.</p>
 <div class="figure">
-<img src="images/Ex13/image20.png" alt="Рис. 8. Имя геометрической сети и параметры снэппинга" />
+<img src="images/Ex13/image20.png" alt="" />
 <p class="caption"><em>Рис. 8. Имя геометрической сети и параметры снэппинга</em></p>
 </div></li>
 <li><p>В следующем окне нажмите <strong>Select All</strong>, чтобы выбрать слои, участвующие в построении сети (<strong>Рис. 9</strong>). Нажмите <strong>Далее</strong>.</p>
 <div class="figure">
-<img src="images/Ex13/image21.png" alt="Рис. 9. Выбор слоев, участвующих в построении сети" />
+<img src="images/Ex13/image21.png" alt="" />
 <p class="caption"><em>Рис. 9. Выбор слоев, участвующих в построении сети</em></p>
 </div></li>
 <li><p>Перед вами окажется диалог настройки ролей. <em>Junction</em> — это узел, <em>Edge</em> — это ребро. Для слоя Sink установите значение параметра <strong>Sources &amp; Sinks</strong> равным <em>Yes</em>. Система будет знать, что этот слой содержит точки, являющиеся истоками либо стоками (<strong>Рис. 10</strong>). Нажмите <strong>Далее</strong>.</p>
 <div class="figure">
-<img src="images/Ex13/image22.png" alt="Рис. 10. Установка ролей слоев в геометрической сети" />
+<img src="images/Ex13/image22.png" alt="" />
 <p class="caption"><em>Рис. 10. Установка ролей слоев в геометрической сети</em></p>
 </div></li>
 <li><p>Во всех остальных диалогах оставьте параметры по умолчанию. Нажмите <strong>Finish</strong> в последнем диалоге, чтобы завершить создание сети.</p></li>
@@ -701,23 +700,23 @@
 <li><p>Включите режим редактирования и откройте таблицу атрибутов слоя <em>Sink</em>.</p></li>
 <li><p>Установите для единственной точки в этом слое поле <em>AncillaryRole</em> равным 2 (<em>Sink)</em>. Если список не отображается, просто введите в ячейку 2. Обратите внимание на то, что есть и противоположный вариант — <em>Source</em> (исток).</p>
 <div class="figure">
-<img src="images/Ex13/image23.png" alt="Рис. 11. Установка роли точки стока" />
+<img src="images/Ex13/image23.png" alt="" />
 <p class="caption"><em>Рис. 11. Установка роли точки стока</em></p>
 </div></li>
 <li><p>Сохраните изменения, выбрав пункт меню <strong>Editor &gt; Save Edits</strong>.</p></li>
 <li><p>Щелкните правой кнопкой мыши на пустом поле вверху окна и откройте панель инструментов <strong>Utility Network Analyst</strong>, предназначенную для работы с геометрической сетью (<strong>Рис. 12</strong>).</p>
 <div class="figure">
-<img src="images/Ex13/image24.png" alt="Рис. 12. Панель инструментов Utility Network Analyst для работы с геометрическими сетями" />
+<img src="images/Ex13/image24.png" alt="" />
 <p class="caption"><em>Рис. 12. Панель инструментов Utility Network Analyst для работы с геометрическими сетями</em></p>
 </div></li>
 <li><p>Выберите в меню пункт <strong>Flow &gt; Display Arrows</strong> для того чтобы система автоматически показала направление течения. Вдоль отрезков будут показаны кружки, означающие, что направление еще не задано (<strong>Рис. 13</strong>).</p>
 <div class="figure">
-<img src="images/Ex13/image25.png" alt="Рис. 13. Неопределенное направление течения в геометрической сети" />
+<img src="images/Ex13/image25.png" alt="" />
 <p class="caption"><em>Рис. 13. Неопределенное направление течения в геометрической сети</em></p>
 </div></li>
 <li><p>Нажмите кнопку <img src="images/Ex13/image26.png" /> <strong>Set Flow Direction</strong>. Кружки должны смениться стрелочками, указывающими направление течения. Просмотрите разные части карты и убедитесь в том, что направление течения задано одинаково верно для всех водотоков (<strong>Рис. 14</strong>).</p>
 <div class="figure">
-<img src="images/Ex13/image27.png" alt="Рис. 14. Определенное направление течения в геометрической сети" />
+<img src="images/Ex13/image27.png" alt="" />
 <p class="caption"><em>Рис. 14. Определенное направление течения в геометрической сети</em></p>
 </div>
 <p><kbd><strong>Снимок экрана №2.</strong> Геометрическая сеть с определенным направлением течения</kbd></p></li>
@@ -735,14 +734,14 @@
 <ol style="list-style-type: decimal">
 <li><p>Откройте меню флагов и барьеров на панели инструментов <strong>Utility Network Analyst</strong> и выберите флаг для вершины (первая иконка на <strong>Рис. 15</strong>).</p>
 <div class="figure">
-<img src="images/Ex13/image28.png" alt="Рис. 15. Меню флагов и барьеров" />
+<img src="images/Ex13/image28.png" alt="" />
 <p class="caption"><em>Рис. 15. Меню флагов и барьеров</em></p>
 </div></li>
 <li><p>Поставьте флажок в месте впадения реки <em>Межиловки</em> в <em>Протву</em>.</p></li>
 <li><p>В списке <strong>Trace Task</strong> выберите задачу <strong>Trace Upstream</strong> (трассировать вверх по течению) и нажмите кнопку <img src="images/Ex13/image29.png" /> <strong>Solve</strong>.</p>
 <p>Инструмент анализа выделит водотоки, расположенные выше по течению относительно заданной точки. Весь их сток в конечном счете попадает в данную точку (<strong>Рис. 16</strong>).</p>
 <div class="figure">
-<img src="images/Ex13/image30.png" alt="Рис. 16. Трассировка водотоков, расположенных выше по течению" />
+<img src="images/Ex13/image30.png" alt="" />
 <p class="caption"><em>Рис. 16. Трассировка водотоков, расположенных выше по течению</em></p>
 </div>
 <p><kbd><strong>Снимок экрана №3.</strong> Водотоки выше по течению относительно заданной точки</kbd></p></li>
@@ -750,7 +749,7 @@
 <p>Инструмент анализа построит маршрут вниз по течению</p></li>
 <li><p>Поставьте еще один флажок в верховьях ручья Язвицы и запустите анализ в режиме <strong>Find Path</strong>. Будет построен маршрут между двумя точками (<strong>Рис. 17</strong>).</p>
 <div class="figure">
-<img src="images/Ex13/image31.png" alt="Рис. 17. Маршрут между двумя точками" />
+<img src="images/Ex13/image31.png" alt="" />
 <p class="caption"><em>Рис. 17. Маршрут между двумя точками</em></p>
 </div>
 <p><kbd><strong>Снимок экрана №4.</strong> Маршрут между двумя точками</kbd></p></li>
@@ -842,8 +841,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

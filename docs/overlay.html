@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Упражнение 10 Анализ пространственных взаимосвязей | Основы геоинформатики: практикум</title>
-  <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Упражнение 10 Анализ пространственных взаимосвязей | Основы геоинформатики: практикум" />
   <meta property="og:type" content="book" />
@@ -22,18 +21,18 @@
   <meta name="twitter:description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
   
 
-<meta name="author" content="Тимофей Самсонов">
+<meta name="author" content="Тимофей Самсонов" />
 
 
-<meta name="date" content="2019-04-09">
+<meta name="date" content="2019-10-01" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="geocoding.html">
-<link rel="next" href="land-cover-hydro.html">
+<link rel="prev" href="geocoding.html"/>
+<link rel="next" href="land-cover-hydro.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -568,18 +567,18 @@
 <li><p>Выберите тип отображения <strong>Categories</strong> и в нем — режим <strong>Match to Symbols In a Style</strong>, который позволяет настроить символы в соответствии с заранее определенным стилем.</p></li>
 <li><p>В качестве определяющего поля <strong>Value field</strong> выберите <em>Тип рельефа</em>. Далее нажмите кнопку Browse и выберите стиль <em>Satino.style</em>, лежащий в вашем каталоге <em>Ex10</em>. Нажмите кнопку <strong>Match symbols</strong>. Снимите флажок со строчки <strong>All other values</strong>. Окно свойств слоя должно принять вид, аналогичный представленному на рисунке. Нажмите <strong>ОК</strong>.</p>
 <div class="figure">
-<img src="images/Ex10/image4.png" alt="Рис. 2. Настройка способа изображения в соответствии с предопределенным стилем" />
+<img src="images/Ex10/image4.png" alt="" />
 <p class="caption">Рис. 2. Настройка способа изображения в соответствии с предопределенным стилем</p>
 </div></li>
 <li><p>Настройте отображение слоя <em>Типы почв</em> в виде полигонов без заливки с ярко красной обводкой толщиной <em>1.5</em> пиксела. Чтобы сделать полигон без заливки, необходимо выбрать в меню <strong>Fill Color</strong> режим <strong>No Color</strong>. Нажмите <strong>ОК</strong>:</p>
 <div class="figure">
-<img src="images/Ex10/image6.png" alt="Рис. 3. Выбор режима отображения полигонов без заливки" />
+<img src="images/Ex10/image6.png" alt="" />
 <p class="caption">Рис. 3. Выбор режима отображения полигонов без заливки</p>
 </div></li>
 <li><p>Выберите инструмент идентификации <img src="images/Ex10/image5.png" /> и щелкните в пределах карты на любом полигоне.</p></li>
 <li><p>Переведите инструмент идентификации в многослойный режим. Для этого в окне <strong>Identify</strong> раскройте верхний список <strong>Identify From</strong> и выберите пункт <strong>All layers</strong>. Попробуйте идентифицировать полигоны в разных участках карты, обращая внимания на информацию, которая отображается в окне идентификации.</p>
 <div class="figure">
-<img src="images/Ex10/image7.png" alt="Рис. 4. Переключение инструмента идентификации в многослойный режим" />
+<img src="images/Ex10/image7.png" alt="" />
 <p class="caption">Рис. 4. Переключение инструмента идентификации в многослойный режим</p>
 </div></li>
 </ol>
@@ -618,14 +617,14 @@
 </blockquote></li>
 <li><p>Запустите инструмент <strong>Intersect</strong>, который ищет геометрическое пересечение нескольких слоев. Изучите пояснительную иллюстрацию в правой части окна.</p></li>
 <li><p>Перенесите из таблицы содержания в список <strong>Input features</strong> слой <em>Типы почв</em>, затем слой <em>Типы рельефа</em></p>
-Обратите внимание на то, что система автоматически определила адрес и
+<p>Обратите внимание на то, что система автоматически определила адрес и
 название выходного класса объектов в следующем виде:
-<code>D:/GIS/207/CAR/Петров/Ex10/Ex10.gdb/SoilTypes/Intersect</code></li>
+<code>D:/GIS/207/CAR/Петров/Ex10/Ex10.gdb/SoilTypes/Intersect</code></p></li>
 <li><p>Замените <em>SoilTypes_Intersect</em> на <em>SoilsRelief_Intersect</em>, чтобы из названия было ясно, что с чем пересекается.</p></li>
 <li><p>Параметр <strong>Join Attributes</strong> оставьте <em>ALL</em>. В этом режиме результат оверлея унаследует все поля из обоих слоев.</p></li>
 <li><p>Диалог инструмента <strong>Intersect</strong> примет вид, аналогичный представленному на рисунке. Запустите вычисления, нажав кнопку <strong>ОК</strong>.</p>
 <div class="figure">
-<img src="images/Ex10/image9.png" alt="Рис. 5. Диалог инструмента Intersect" />
+<img src="images/Ex10/image9.png" alt="" />
 <p class="caption">Рис. 5. Диалог инструмента Intersect</p>
 </div></li>
 <li><p>Дождитесь, пока в таблицу содержания добавится слой <em>SoilsRelief_Intersect</em> и переименуйте его в <em>Комбинации почвы-рельеф</em>. Для этого выделите слой в таблице содержания и нажмите <kbd>F2</kbd> на клавиатуре, либо найдите пункт <strong>Rename</strong> в контекстном меню.</p></li>
@@ -667,7 +666,7 @@
 <ol start="4" style="list-style-type: decimal">
 <li><p>Введите название выходного класса <em>SoilsRelief_Intersect_Dissolve</em>. Диалог инструмента <strong>Dissolve</strong> примет вид, аналогичный представленному на рисунке ниже.</p>
 <div class="figure">
-<img src="images/Ex10/image10.png" alt="Рис. 6. Инструмент Dissolve, выполняющий слияние объектов по набору атрибутов" />
+<img src="images/Ex10/image10.png" alt="" />
 <p class="caption">Рис. 6. Инструмент Dissolve, выполняющий слияние объектов по набору атрибутов</p>
 </div></li>
 <li><p>Остальные параметры оставьте по умолчанию и нажмите <strong>ОК</strong>.</p></li>
@@ -709,7 +708,7 @@
 <li><p>Перейдите в контекстное меню слоя <em>Слияние комбинаций почвы-рельеф</em> и выполните команду <strong>Joins and Relates &gt; Join</strong>. Внимательно изучите содержимое появившегося диалога.</p></li>
 <li><p>Выберите <em>Подтип</em> в качестве поля <strong>1</strong>, по которому будет делаться соединение:</p>
 <div class="figure">
-<img src="images/Ex10/image12.png" alt="Рис. 7. Диалог настройки соединения таблиц" />
+<img src="images/Ex10/image12.png" alt="" />
 <p class="caption">Рис. 7. Диалог настройки соединения таблиц</p>
 </div></li>
 <li><p>Выберите <em>Слияние подтипов почв</em> в качестве присоединяемой таблицы <strong>2</strong>.</p></li>
@@ -747,7 +746,7 @@
 <li><p>Отсортируйте таблицу только по убыванию значений в поле <em>Percent</em> (нажав дважды и еще раз дважды на нем) и выделите строки, в которых значение процента в поле <em>Percent</em> более <em>75</em>.</p></li>
 <li><p>Скомпонуйте окно приложения так, чтобы было видно целиком карту, а также выделенные в таблице строки, а также столбцы <em>Тип</em>, <em>Подтип</em>, <em>Тип рельефа</em> и поле <em>Percent</em>. Окно примет вид, аналогичный представленному на рисунке:</p>
 <div class="figure">
-<img src="images/Ex10/image13.png" alt="Рис. 8. Результаты оверлейного анализа" />
+<img src="images/Ex10/image13.png" alt="" />
 <p class="caption">Рис. 8. Результаты оверлейного анализа</p>
 </div>
 <p><kbd><strong>Снимок экрана №1</strong> — Окно карты и результирующая таблица</kbd></p></li>
@@ -824,8 +823,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

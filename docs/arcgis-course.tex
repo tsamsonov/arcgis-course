@@ -22,7 +22,6 @@
 \usepackage{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 \hypersetup{unicode=true,
@@ -75,7 +74,7 @@
 \usepackage{titling}
 
 % Create subtitle command for use in maketitle
-\newcommand{\subtitle}[1]{
+\providecommand{\subtitle}[1]{
   \posttitle{
     \begin{center}\large#1\end{center}
     }
@@ -91,7 +90,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-04-09}
+    \date{2019-10-01}
 
 \usepackage{amsthm}
 \usepackage{fontspec}
@@ -166,7 +165,7 @@
 
 \textbf{Для практической работы рекомендуется использовать HTML-версию, поскольку она поддерживается в актуальном состоянии}\footnote{файлы PDF и EPUB тоже актуализируются, но их придется каждый раз качать заново, чтобы убедиться в том, что вы используете последнюю версию практикума}. Формат EPUB удобен своей компактностью и адаптивностью под экран устройства, и может быть использован для работы с электронной книгой или планшетом в оффлайн-режиме. Во всех версиях практикума реализована навигация по разделам.
 
-Актуальная версия практикума, которую вы сейчас просматриваете, сформирована 2019-04-09 и доступна по ссылке \url{https://tsamsonov.github.io/arcgis-course/}.
+Актуальная версия практикума, которую вы сейчас просматриваете, сформирована 2019-10-01 и доступна по ссылке \url{https://tsamsonov.github.io/arcgis-course/}.
 
 \textbf{Перед выполнением практикума необходимо внимательно ознакомиться с регламентом и тщательно придерживаться его при выполнении заданий}.
 
@@ -325,7 +324,7 @@
   Откройте окно \textbf{Catalog}, нажав кнопку \includegraphics{images/Ex01/image2.png} на панели инструментов.
 
   \begin{quote}
-  \textbf{Catalog (Каталог)} --- это файловый менеджер для управления пространственными данными. Его задачи в чем-то аналогичны Проводнику в Windows или Finder в Mac OS X: создание, копирование, удаление и т.д., но видит она только файлы тех форматов, которые можно использовать в~ГИС.
+  \textbf{Catalog (Каталог)} --- это файловый менеджер для управления пространственными данными. Его задачи в чем-то аналогичны Проводнику в Windows или Finder в Mac OS X: создание, копирование, удаление и т.д., но видит она только файлы тех форматов, которые можно использовать в ГИС.
   \end{quote}
 
   \begin{figure}
@@ -616,7 +615,7 @@
 \item
   Пристыкуйте таблицу в нижнюю часть окна, чтобы она не загораживала карту.
 \item
-  Выделите в таблице содержания слой Гидрография (линии) и в его контекстном меню выберите пункт \textbf{Edit~Features~\textgreater{}~Start~Editing}. Включится режим редактирования, который позволяет вручную править атрибуты и геометрию объектов. Должна появиться панель редактора:
+  Выделите в таблице содержания слой Гидрография (линии) и в его контекстном меню выберите пункт \textbf{Edit~Features~\textgreater~Start~Editing}. Включится режим редактирования, который позволяет вручную править атрибуты и геометрию объектов. Должна появиться панель редактора:
 
   \begin{figure}
   \centering
@@ -803,7 +802,11 @@
 \item
   Раскройте базу данных \emph{MapData.gdb} и изучите ее содержимое:
 
+  \begin{figure}
+  \centering
   \includegraphics{images/Ex02/image10.png}
+  \caption{База данных \texttt{MapData.gdb}}
+  \end{figure}
 \end{enumerate}
 
 Векторные слои базы данных \emph{MapData.gdb}:
@@ -862,10 +865,13 @@
   \bottomrule
   \end{longtable}
 \item
-  Установите передискретизацию слоя в режим кубической cвертки (\emph{Cubic Convolution}).
+  Установите передискретизацию слоя в режим кубической cвертки (\emph{Cubic Convolution}). Результат:
 
-  \emph{Результат:}
+  \begin{figure}
+  \centering
   \includegraphics{images/Ex02/image12.png}
+  \caption{Гиспсометрическая окраска рельефа}
+  \end{figure}
 \item
   Наложите отмывку поверх гипсометрической окраски. Для этого добавьте на карту слой отмывки \emph{Hillshade} и установите для него следующие параметры:
 
@@ -882,7 +888,12 @@
   Остальные параметры оставьте по умолчанию.
 
   \emph{Результат}:
+
+  \begin{figure}
+  \centering
   \includegraphics{images/Ex02/image13.png}
+  \caption{Гиспосметрическая окраска и отмывка}
+  \end{figure}
 \end{enumerate}
 
 \textbf{Снимок экрана №1.} Картографическое изображение рельефа
@@ -895,7 +906,12 @@
 \protect\hyperlink{map-design-general}{В начало упражнения ⇡}
 
 Добавьте на карту и оформите векторные слои, содержащиеся в базе данных \emph{MapData.gdb}, все кроме слоя \emph{Countries}. Для каждого слоя выберите единый символ. В качестве образца оформления используйте рисунок ниже.
+
+\begin{figure}
+\centering
 \includegraphics{images/Ex02/image14.png}
+\caption{Образец оформления карты}
+\end{figure}
 
 Учтите, что:
 
@@ -907,7 +923,12 @@
 \end{itemize}
 
 \emph{Результат}:
+
+\begin{figure}
+\centering
 \includegraphics{images/Ex02/image15.png}
+\caption{Оформление векторных слоев}
+\end{figure}
 
 \textbf{Снимок экрана №2.} Оформление векторных слоев
 
@@ -919,7 +940,7 @@
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Установите масштаб карты равным 1:1~750~000.
+  Установите масштаб карты равным 1:1 750 000.
 \item
   Включите \textbf{Maplex} для размещения подписей и переведите его в режим \emph{Best}
 \item
@@ -991,7 +1012,12 @@
 \end{enumerate}
 
 \emph{Результат} должен выглядеть примерно следующим образом:
+
+\begin{figure}
+\centering
 \includegraphics{images/Ex02/image20.png}
+\caption{Картографическое изображение с подписями}
+\end{figure}
 
 \hypertarget{map-design-general-cities}{%
 \section{Классификация населенных пунктов}\label{map-design-general-cities}}
@@ -1009,8 +1035,13 @@
 \item
   Настройте размер кружка таким образом, чтобы его диаметр менялся от 3 до 7 пунктов
 
-  \emph{Результат}:
+  \emph{Результат:}
+
+  \begin{figure}
+  \centering
   \includegraphics{images/Ex02/image21.png}
+  \caption{Настрояка шкалы размеров значков}
+  \end{figure}
 \item
   Перейдите на вкладку \textbf{Labels} и переключите подписи в режим нескольких классов.
 \item
@@ -1029,7 +1060,12 @@
   \end{itemize}
 
   \emph{Результат}:
+
+  \begin{figure}
+  \centering
   \includegraphics{images/Ex02/image22.png}
+  \caption{Карта с классифицированными по размеру населенными пунктами}
+  \end{figure}
 \end{enumerate}
 
 \textbf{Снимок экрана №3.} Классифицированные населенные пункты с подписями
@@ -1089,8 +1125,13 @@
   \end{longtable}
 \end{enumerate}
 
-\emph{Результат}:
+\emph{Результат:}
+
+\begin{figure}
+\centering
 \includegraphics{images/Ex02/image24.png}
+\caption{Маскированное картографическое изображение}
+\end{figure}
 
 \textbf{Снимок экрана №4.} Маска и подписи стран
 
@@ -1118,13 +1159,23 @@
 \item
   Установите масштаб равным 1:1 750 000
 
-  \emph{Результат}:
+  \emph{Результат:}
+
+  \begin{figure}
+  \centering
   \includegraphics{images/Ex02/image25.png}
+  \caption{Размещение карты в пределах листа}
+  \end{figure}
 \item
   Используя настройки по умолчанию, вставьте легенду, включив в нее все слои, кроме \emph{Elevation}, \emph{Countries} и \emph{Hillshade}
 
-  \emph{Результат}:
+  \emph{Результат:}
+
+  \begin{figure}
+  \centering
   \includegraphics{images/Ex02/image26.png}
+  \caption{Размещение легенды в пределах листа}
+  \end{figure}
 \item
   Измените название показателя для слоя \emph{Cities} на «число жителей». Уменьшите размер шрифта до 9 и сделайте его курсивным.
 \item
@@ -1136,8 +1187,13 @@
 \item
   Увеличьте интервал между слоями в легенде до 10 пунктов.
 
-  \emph{Результат}:
+  \emph{Результат:}
+
+  \begin{figure}
+  \centering
   \includegraphics{images/Ex02/image27.png}
+  \caption{Регулировка интервала между элементами легенды}
+  \end{figure}
 \item
   Вставьте на карту координатную сетку типа \textbf{Graticule} с шагом 1° по широте и долготе. Отключите для градусной сетки показ минут и секунд.
 \item
@@ -1157,7 +1213,11 @@
 \item
   Вставьте \emph{километровую} масштабную линейку по нижеприведенному образцу:
 
+  \begin{figure}
+  \centering
   \includegraphics{images/Ex02/image28.png}
+  \caption{Карта с градусной сеткой, названием и масштабной линейкой}
+  \end{figure}
 \item
   Добавьте свою фамилию и инициалы справа внизу под легендой.
 \end{enumerate}
@@ -4419,7 +4479,7 @@
 \item
   Откройте таблицу слоя \emph{Слияние комбинаций почвы-рельеф}.
 \item
-  Выберите в окне таблицы пункт меню \includegraphics{images/Ex10/image11.png} \textbf{Table~Options~\textgreater{}~Add~Field\ldots{}}
+  Выберите в окне таблицы пункт меню \includegraphics{images/Ex10/image11.png} \textbf{Table~Options~\textgreater~Add~Field\ldots{}}
 \item
   В диалоге введите название поля \emph{Percent}.
 \item
@@ -4683,7 +4743,7 @@
   \emph{Input Zone Features} & fishnet\_1000\tabularnewline
   \emph{Zone Fields} & OID\tabularnewline
   \emph{Input Class} & Features Hydro\tabularnewline
-  \emph{Output Table} & \textless{}Ваша папка\textgreater{}/Ex11/Ex11.gdb/fishnet\_1000\_Hydro\tabularnewline
+  \emph{Output Table} & \textless Ваша папка\textgreater/Ex11/Ex11.gdb/fishnet\_1000\_Hydro\tabularnewline
   \bottomrule
   \end{longtable}
 
@@ -5336,7 +5396,7 @@
 \item
   Откройте \textbf{ArcToolbox}.
 \item
-  Запустите инструмент геообработки \textbf{Analysis Tools \textgreater{} Proximity \textgreater{}~Create Thiessen Polygons} и заполните его параметры следующим образом:
+  Запустите инструмент геообработки \textbf{Analysis Tools \textgreater{} Proximity \textgreater~Create Thiessen Polygons} и заполните его параметры следующим образом:
 
   \begin{longtable}[]{@{}ll@{}}
   \toprule
@@ -6818,7 +6878,7 @@
 
   \includegraphics{images/Ex15/image19.png}
 \item
-  Запустите инструмент \textbf{Analysis Tools \textgreater{} Proximity \textgreater{}~Buffer}, который отвечает за построение буферных зон. Заполните его параметры следующим образом:
+  Запустите инструмент \textbf{Analysis Tools \textgreater{} Proximity \textgreater~Buffer}, который отвечает за построение буферных зон. Заполните его параметры следующим образом:
 
   \begin{longtable}[]{@{}ll@{}}
   \toprule
@@ -6835,7 +6895,7 @@
 
   \includegraphics{images/Ex15/image20.png}
 \item
-  Обрежьте водотоки с помощью инструмента \textbf{Analysis Tools \textgreater{} Overlay \textgreater{}~Erase}. Разберитесь самостоятельно, какие слои следует подставить в параметры \textbf{Input~Features} и \textbf{Erase Features}. Назовите выходной слой \emph{streams\_Erase}.
+  Обрежьте водотоки с помощью инструмента \textbf{Analysis Tools \textgreater{} Overlay \textgreater~Erase}. Разберитесь самостоятельно, какие слои следует подставить в параметры \textbf{Input~Features} и \textbf{Erase Features}. Назовите выходной слой \emph{streams\_Erase}.
 
   Отключите временно слои \emph{Водотоки} и \emph{streams\_ends\_Buffer}, результат будет выглядеть следующим образом:
 
@@ -7146,7 +7206,7 @@
   \endhead
   \emph{Input polyline features} & Roads\tabularnewline
   \emph{Output cell size} & 10000\tabularnewline
-  \emph{Output raster} & \textless{}путь к базе данных\textgreater{}/line\_dens\_100\tabularnewline
+  \emph{Output raster} & \textless путь к базе данных\textgreater/line\_dens\_100\tabularnewline
   \emph{Search radius} & 100000\tabularnewline
   \emph{Area units} & SQUARE\_KILOMETERS\tabularnewline
   \bottomrule
@@ -8617,7 +8677,7 @@
 \hypertarget{manual-vector-size}{%
 \subsection{Размер символа}\label{manual-vector-size}}
 
-Вы можете менять размера символа в соответствии со значением в атрибутивном поле. Для включения этого режима войдите в свойства слоя и на вкладке Symbology нажмите кнопку Advanced --- Size\ldots{}:
+Вы можете менять размера символа в соответствии со значением в атрибутивном поле. Для включения этого режима войдите в свойства слоя и на вкладке Symbology нажмите кнопку Advanced --- Size\ldots:
 
 \includegraphics{images/Appendix/image29.png}
 
