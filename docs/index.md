@@ -31,7 +31,7 @@ toc_float:
 Практикум доступен в трех форматах: [__HTML__](https://tsamsonov.github.io/arcgis-course/), [__EPUB__](https://tsamsonov.github.io/arcgis-course/arcgis-course.epub) и [__PDF__](https://tsamsonov.github.io/arcgis-course/arcgis-course.pdf). Скачать практикум в форматах PDF и EPUB можно через главное меню (Рис. \@ref(fig:index-down)):
 
 <div class="figure">
-<img src="images/download.png" alt="Загрузка файловых версий практикума" width="1582" />
+<img src="images/download.png" alt="Загрузка файловых версий практикума" width="791" />
 <p class="caption">(\#fig:index-down)Загрузка файловых версий практикума</p>
 </div>
 
