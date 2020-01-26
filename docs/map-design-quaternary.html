@@ -81,7 +81,7 @@
 <li class="chapter" data-level="1.1.2" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-annotation"><i class="fa fa-check"></i><b>1.1.2</b> Аннотация</a></li>
 </ul></li>
 <li class="chapter" data-level="1.2" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-data"><i class="fa fa-check"></i><b>1.2</b> Изучение данных в приложении ArcMap</a></li>
-<li class="chapter" data-level="1.3" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-representations"><i class="fa fa-check"></i><b>1.3</b> Способы изображения</a></li>
+<li class="chapter" data-level="1.3" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-representations"><i class="fa fa-check"></i><b>1.3</b> Оформление слоя четвертичных отложений</a></li>
 <li class="chapter" data-level="1.4" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-labels"><i class="fa fa-check"></i><b>1.4</b> Подписи</a></li>
 <li class="chapter" data-level="1.5" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-layout"><i class="fa fa-check"></i><b>1.5</b> Компоновка карты</a></li>
 <li class="chapter" data-level="1.6" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-attributes"><i class="fa fa-check"></i><b>1.6</b> Редактирование атрибутов</a></li>
@@ -603,7 +603,7 @@
 </blockquote></li>
 <li><p>Откройте свойства слоя <em>HydroMeasures</em>, лежащего к корне базы геоданных. Этот слой хранится в <em>Географической системе координат (ГСК)</em> — широтах и долготах, отнесенных к эллипсоиду <em>WGS-1984</em>. Т.е. у него <strong>нет проекции</strong>.</p></li>
 <li><p>Закройте свойства слоя <em>HydroMeasures</em>.</p></li>
-<li><p>Перенесите в таблицу содержания слой <em>WaterPolygon</em> из группы <em>General</em>.</p>
+<li><p>Перенесите в таблицу содержания (окно <strong>Table of Contents</strong> на Рис. <a href="map-design-quaternary.html#fig:mdq-arcmap">1.1</a>) слой <em>WaterPolygon</em> из группы <em>General</em>.</p>
 <p>Обратите внимание на то, что слой добавился под названием Гидрография (полигоны). У него был русскоязычный псевдоним (<em>alias</em>). Его можно задать в свойствах слоя в <strong>Каталоге</strong>.</p>
 <blockquote>
 <p><strong>Объекты базы геоданных</strong>, такие как слои, наборы данных, атрибутивные поля, обычно называют латинскими буквами, однако вы можете дать им русскоязычные псевдонимы, которые будут отображаться вместо названий в <strong>ArcMap</strong>.</p>
@@ -633,9 +633,8 @@
 </ol>
 </div>
 <div id="map-design-quaternary-representations" class="section level2">
-<h2><span class="header-section-number">1.3</span> Способы изображения</h2>
+<h2><span class="header-section-number">1.3</span> Оформление слоя четвертичных отложений</h2>
 <p><a href="map-design-quaternary.html#map-design-quaternary">В начало упражнения ⇡</a></p>
-<p><strong>Карта</strong> — язык географии, и квалифицированный географ должен уметь пользоваться современным диалектом этого языка. В основе языка карт, как вы помните, лежат символы и способы изображения.</p>
 <ol style="list-style-type: decimal">
 <li><p>Удалите из таблицы содержания слой <em>HydroMeasures</em> и добавьте слой <em>QDeposit</em> (четвертичные отложения). Перетащите его вниз списка и дважды щелкните на нем.</p></li>
 <li><p>Перейдите на вкладку <strong>Symbology</strong> (Рис. <a href="map-design-quaternary.html#fig:mdq-symb">1.2</a>). Здесь вы встретите многие знакомые вам способы изображения.</p>
@@ -645,7 +644,7 @@
 <p>Четвертичные отложения показываются качественным фоном. В ArcGIS этот способ изображения называется <strong>Categories</strong> (категории).</p></li>
 <li><p>Выберите пункт <strong>Categories</strong> в списке слева, и в нем же выберите режим <em>Unique values</em> (уникальные значения).</p>
 <p>Вверху вы должны увидеть два списка: поле, из которого необходимо взять уникальные значения, и цветовая шкала.</p></li>
-<li><p>Выберите поле <em>Отложения</em> в списке <strong>Value Field</strong>, и нажмите внизу диалога кнопку <strong>Add All Values</strong>. Программа просканирует всем строчкитаблицы, найдет уникальные значения, которые там есть, и подставит их в список. В крайнем правом поле отображается количество объектов каждого уникального значения (Рис. <a href="map-design-quaternary.html#fig:mdq-symb">1.2</a>).</p>
+<li><p>Выберите поле <em>Отложения</em> в списке <strong>Value Field</strong>, и нажмите внизу диалога кнопку <strong>Add All Values</strong>. Программа просканирует все строчки таблицы, найдет уникальные значения, которые там есть, и подставит их в список. В крайнем правом поле отображается количество объектов каждого уникального значения (Рис. <a href="map-design-quaternary.html#fig:mdq-symb">1.2</a>).</p>
 <div class="figure"><span id="fig:mdq-symb"></span>
 <img src="images/Ex01/image15.png" alt="Диалог настройки способа изображения" width="100%" />
 <p class="caption">
@@ -655,16 +654,16 @@
 <p>Обратите внимание на то, что типам объектов были автоматически присвоены символы из той цветовой шкалы, которая выбрана справа вверху.</p></li>
 <li><p>Снимите галочку <strong>All other values</strong>, расположенную вверху списка.</p></li>
 <li><p>Разверните список цветовых шкал <strong>Color Ramp</strong> и выберите любую другую на свой вкус. Цвета объектов в легенде автоматически поменяются.</p>
-<p>Вы помните, однако, что есть официальные и неофициальные договоренности относительно цветов, используемых на геологических, геоморфологических, почвенных, геоботанических картах. Вы можете задать каждому типу индивидуально тот цвет, который требуется. Более того, вы можете сохранить набор цветов как шкалу.</p></li>
+<p>Существуют официальные и негласные договоренности относительно цветов, используемых на геологических, геоморфологических, почвенных, геоботанических картах. Вы можете задать каждому типу индивидуально тот цвет, который требуется. Более того, вы можете сохранить набор цветов как шкалу.</p></li>
 <li><p>Щелкните дважды на любом символе в легенде. Перед вами появится диалог настройки символа, в котором вы можете поэкспериментировать.</p></li>
 <li><p>Закройте диалог настройки символа и нажмите <strong>ОК</strong> в диалоге свойств слоя.</p></li>
 </ol>
-<p>Теперь слой <em>Четвертичные отложения</em> показан методом качественного фона с использованием тех цветов, которые были назначены каждому типу.</p>
+<p>Теперь слой <em>Четвертичные отложения</em> показан способом качественного фона с использованием тех цветов, которые были назначены каждому типу.</p>
 </div>
 <div id="map-design-quaternary-labels" class="section level2">
 <h2><span class="header-section-number">1.4</span> Подписи</h2>
 <p><a href="map-design-quaternary.html#map-design-quaternary">В начало упражнения ⇡</a></p>
-<p>В предыдущем разделе вы изучили возможные способы изображения и показали типы рельефа методом качественного фона. Однако карты без подписей встречаются крайне редко. Если в слое есть поле с теми значениями, которые надо вынести в качестве подписей, это делается автоматически.</p>
+<p>В предыдущем разделе вы изучили возможные способы изображения и показали типы четвертичных отложений способом качественного фона. Однако карты без подписей встречаются крайне редко. Если в атрибутивной таблице набора данных есть поле с теми значениями, которые надо вынести в качестве подписей, это делается автоматически.</p>
 <ol style="list-style-type: decimal">
 <li><p>Убедитесь, что включен механизм расстановки подписей <strong>Maplex</strong>. Для этого откройте панель инструментов <strong>Labeling</strong> и поставьте соответствующую галочку (Рис. <a href="map-design-quaternary.html#fig:mdq-maplex">1.3</a>).</p>
 <div class="figure"><span id="fig:mdq-maplex"></span>
@@ -683,7 +682,7 @@
 </p>
 </div></li>
 <li><p>Нажмите кнопку <strong>Placement Properties</strong>. Появившийся диалог позволяет вам настроить, как именно будут размещены подписи относительно самих объектов. Это очень мощный инструмент, который управляет множеством нюансов расстановки подписей.</p></li>
-<li><p>В диалоге <strong>Placement Properties</strong> нажмите кнопку <strong>Position</strong> и изучите возможные варианты. Попробуйте применить разные варианты. В конце верните способ по умолчанию — горизонтально внутри.</p></li>
+<li><p>В диалоге <strong>Placement Properties</strong> нажмите кнопку <strong>Position</strong> и изучите возможные варианты размещения подписей.</p></li>
 <li><p>Закройте все диалоговые окна, последовательно нажимая кнопку <strong>OK</strong> в каждом из них.</p></li>
 <li><p>Нажмите кнопку <img src="images/Ex01/image18.png" /> на панели <strong>Tools</strong>, чтобы вся карта уместилась в окне просмотра. Окно приложения примет вид, примерно соответствующий тому, что показано на Рис. <a href="map-design-quaternary.html#fig:mdq-fullview">1.5</a>.</p>
 <div class="figure"><span id="fig:mdq-fullview"></span>
@@ -693,7 +692,9 @@
 </p>
 </div></li>
 </ol>
+<blockquote>
 <p>Обратите внимание, что на вашей карте все объекты подписаны одинаково. Если требуется, чтобы подписи объектов были разными в зависимости от типа объекта, на вкладке <strong>Labels</strong> свойств слоя необходимо сменить режим <em>Label all the features the same way</em> на режим <em>Define classes…</em> и произвести настройку.</p>
+</blockquote>
 <p><kbd><strong>Снимок экрана №1.</strong> Окно карты с подписями объектов</kbd></p>
 </div>
 <div id="map-design-quaternary-layout" class="section level2">
@@ -729,7 +730,10 @@
 <li><p>Разместите на карте линейный масштаб в метрах.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №2.</strong> Компоновка карты с легендой и масштабом</kbd></p>
-<p>Сохраните карту через команду меню <strong>File &gt; Save as</strong> в свою директорию под названием <em>Ex01.mxd</em>.</p>
+<p>Сохраните документ карты через команду меню <strong>File &gt; Save as</strong> в свою директорию под названием <em>Ex01_<Фамилия>.mxd</em>.</p>
+<blockquote>
+<p>Файл с расширением <code>.mxd</code> является файлом документа карты <strong>ArcMap</strong>. Он содержит перечень слоев и их настроек, созданные компоновки и ряд дополнительных параметров. Документ карты, как и входящие в него слои, не хранит сами данные, а лишь <em>ссылается</em> на них. Поэтому, перемещая проект на другой компьютер, вы должны также переместить и данные, чтобы он открылся.</p>
+</blockquote>
 </div>
 <div id="map-design-quaternary-attributes" class="section level2">
 <h2><span class="header-section-number">1.6</span> Редактирование атрибутов</h2>
@@ -744,7 +748,7 @@
 <blockquote>
 <p>Появились ли подписи ручьев?</p>
 </blockquote>
-<p>По всей видимости, с полем <em>RiverName</em> что-то не в порядке. Давайте проинспектируем атрибутивную таблицу.</p></li>
+<p>По всей видимости, с атрибутом <em>RiverName</em> что-то не в порядке, необходимо проверить его содержимое.</p></li>
 <li><p>Зажмите клавишу <kbd>Ctrl</kbd> и дважды кликните на названии слоя <em>Гидрография (линии)</em>. Откроется его атрибутивная таблица.</p>
 <blockquote>
 <p>Таблицу также можно открыть через контекстное меню слоя, выбрав пункт <strong>Open Attribute Table</strong>. Свойства слоя также доступны из пункта <strong>Properties</strong> в контекстном меню. Однако вариант с двойным нажатием более быстрый и, скорее всего, более удобный.</p>
@@ -782,7 +786,7 @@
 <div id="map-design-quaternary-calculation" class="section level2">
 <h2><span class="header-section-number">1.7</span> Создание и вычисление атрибутов (дополнительно)</h2>
 <p><a href="map-design-quaternary.html#map-design-quaternary">В начало упражнения ⇡</a></p>
-<p>Поля можно не только заполнять вручную, их можно вычислять и копировать значения из других полей. Но для начала необходимо научиться их создавать.</p>
+<p>Поля можно не заполнять не только вручную, но и автоматизированно. В частности, их можно вычислять и копировать значения из других полей. Но для начала необходимо научиться их создавать.</p>
 <p>Предположим, что бригада топографов произвела съемку границы леса в целях ее сравнения с данными 10-летней давности. Чтобы построить карту границы леса и совместить ее с другими данными, необходимо знать координаты опорных геодезических пунктов, которые участвовали в планово-высотном обосновании. Эти пункты есть в базе геоданных <em>Satino.gdb</em>.</p>
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слой <img src="images/Ex01/image7.png" /> <em>GeoPoints</em> (геодезические пункты).</p></li>
@@ -826,6 +830,13 @@
 <li><p>Какая команда меню позволяет создать легенду?</p></li>
 <li><p>Если открыта таблица слоя, что нужно включить, чтобы отредактировать значение в ячейке?</p></li>
 </ol>
+<table>
+<tbody>
+<tr class="odd">
+<td><em>Самсонов Т.Е.</em> <strong>Основы геоинформатики: практикум</strong>. М.: Географический факультет МГУ, 2020. DOI: 10.5281/zenodo.1167857</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
@@ -885,6 +896,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
