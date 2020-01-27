@@ -3,7 +3,7 @@
 # Создание карты четвертичных отложений {#map-design-quaternary}
 
 ```{r map-design-options, echo = FALSE}
-knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning = FALSE, fig.retina = 2)
+knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 [Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex01.zip)

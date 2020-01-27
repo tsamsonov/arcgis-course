@@ -24,7 +24,7 @@
 <meta name="author" content="Тимофей Самсонов" />
 
 
-<meta name="date" content="2020-01-26" />
+<meta name="date" content="2020-01-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -551,7 +551,7 @@
 </div>
 <div id="map-design-general-annotation" class="section level3">
 <h3><span class="header-section-number">2.1.2</span> Аннотация</h3>
-<p>Задание посвящено знакомству с созданием тематических карт на основе баз пространственных данных. Вы познакомитесь с представлением площадных, линейных, точечных объектов в базе пространственных данных. Научитесь создавать карты на их основе, оформлять легенду, сетку координат и зарамочные элементы карты.</p>
+<p>Задание посвящено знакомству с базами пространственных данных а также созданием тематических карт на их основе. Вы научитесь извлекать из базы данных и визуализировать данные различной локализации, оформлять легенду, сетку координат и зарамочные элементы карты.</p>
 </div>
 </div>
 <div id="map-design-general-begin" class="section level2">
@@ -566,10 +566,12 @@
 <li><img src="images/Ex02/image8.png" /> — слои растровых данных;</li>
 <li><img src="images/Ex02/image9.png" /> — обычные таблицы;</li>
 </ul></li>
-<li><p>Раскройте базу данных <em>MapData.gdb</em> и изучите ее содержимое:</p>
-<div class="figure">
-<img src="images/Ex02/image10.png" alt="" />
-<p class="caption">База данных <code>MapData.gdb</code></p>
+<li><p>Раскройте базу данных <em>MapData.gdb</em> и изучите ее содержимое (Рис. <a href="map-design-general.html#fig:mdg-gdb">2.1</a>).</p>
+<div class="figure"><span id="fig:mdg-gdb"></span>
+<img src="images/Ex02/image10.png" alt="База данных `MapData.gdb`" width="100%" />
+<p class="caption">
+Рис. 2.1: База данных <code>MapData.gdb</code>
+</p>
 </div></li>
 </ol>
 <p>Векторные слои базы данных <em>MapData.gdb</em>:</p>
@@ -675,10 +677,12 @@
 </tr>
 </tbody>
 </table></li>
-<li><p>Установите передискретизацию слоя в режим кубической cвертки (<em>Cubic Convolution</em>). Результат:</p>
-<div class="figure">
-<img src="images/Ex02/image12.png" alt="" />
-<p class="caption">Гиспсометрическая окраска рельефа</p>
+<li><p>Установите передискретизацию слоя в режим кубической cвертки — <em>Cubic Convolution</em> (Рис. <a href="map-design-general.html#fig:mdg-hyp">2.2</a>). Результат:</p>
+<div class="figure"><span id="fig:mdg-hyp"></span>
+<img src="images/Ex02/image12.png" alt="Гипсометрическая окраска рельефа" width="100%" />
+<p class="caption">
+Рис. 2.2: Гипсометрическая окраска рельефа
+</p>
 </div></li>
 <li><p>Наложите отмывку поверх гипсометрической окраски. Для этого добавьте на карту слой отмывки <em>Hillshade</em> и установите для него следующие параметры:</p>
 <table>
@@ -700,10 +704,12 @@
 </tbody>
 </table>
 <p>Остальные параметры оставьте по умолчанию.</p>
-<p><em>Результат</em>:</p>
-<div class="figure">
-<img src="images/Ex02/image13.png" alt="" />
-<p class="caption">Гиспосметрическая окраска и отмывка</p>
+<p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-hyphill">2.3</a>):</p>
+<div class="figure"><span id="fig:mdg-hyphill"></span>
+<img src="images/Ex02/image13.png" alt="Гиспосметрическая окраска и отмывка" width="100%" />
+<p class="caption">
+Рис. 2.3: Гиспосметрическая окраска и отмывка
+</p>
 </div></li>
 </ol>
 <p><kbd><strong>Снимок экрана №1.</strong> Картографическое изображение рельефа</kbd></p>
@@ -712,20 +718,24 @@
 <div id="map-design-general-vector" class="section level2">
 <h2><span class="header-section-number">2.4</span> Оформление векторных слоев</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
-<p>Добавьте на карту и оформите векторные слои, содержащиеся в базе данных <em>MapData.gdb</em>, все кроме слоя <em>Countries</em>. Для каждого слоя выберите единый символ. В качестве образца оформления используйте рисунок ниже.</p>
-<div class="figure">
-<img src="images/Ex02/image14.png" alt="" />
-<p class="caption">Образец оформления карты</p>
+<p>Добавьте на карту и оформите векторные слои, содержащиеся в базе данных <em>MapData.gdb</em>, все кроме слоя <em>Countries</em>. Для каждого слоя выберите единый символ. В качестве образца оформления используйте рисунок ниже (Рис. <a href="map-design-general.html#fig:mdg-template">2.4</a>).</p>
+<div class="figure"><span id="fig:mdg-template"></span>
+<img src="images/Ex02/image14.png" alt="Образец оформления карты" width="100%" />
+<p class="caption">
+Рис. 2.4: Образец оформления карты
+</p>
 </div>
 <p>Учтите, что:</p>
 <ul>
 <li><p>Слой <em>Snow</em> располагается между отмывкой и цветовой окраской рельефа. Это позволяет показать заснеженные территории, но при этом сохранить светотеневую пластику.</p></li>
 <li><p>При выборе значка для аэропорта следует воспользоваться поиском по символам, набрав ключевое слово <em>«airport»</em></p></li>
 </ul>
-<p><em>Результат</em>:</p>
-<div class="figure">
-<img src="images/Ex02/image15.png" alt="" />
-<p class="caption">Оформление векторных слоев</p>
+<p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-designed">2.5</a>):</p>
+<div class="figure"><span id="fig:mdg-designed"></span>
+<img src="images/Ex02/image15.png" alt="Оформление векторных слоев" width="100%" />
+<p class="caption">
+Рис. 2.5: Оформление векторных слоев
+</p>
 </div>
 <p><kbd><strong>Снимок экрана №2.</strong> Оформление векторных слоев</kbd></p>
 </div>
@@ -877,10 +887,12 @@
 </tbody>
 </table></li>
 </ol>
-<p><em>Результат</em> должен выглядеть примерно следующим образом:</p>
-<div class="figure">
-<img src="images/Ex02/image20.png" alt="" />
-<p class="caption">Картографическое изображение с подписями</p>
+<p><em>Результат</em> должен выглядеть примерно следующим образом (Рис. <a href="map-design-general.html#fig:mdg-wlabels">2.6</a>):</p>
+<div class="figure"><span id="fig:mdg-wlabels"></span>
+<img src="images/Ex02/image20.png" alt="Картографическое изображение с подписями" width="100%" />
+<p class="caption">
+Рис. 2.6: Картографическое изображение с подписями
+</p>
 </div>
 </div>
 <div id="map-design-general-cities" class="section level2">
@@ -891,10 +903,12 @@
 <li><p>В диалоге настройки символов слоя включите режим отображения <strong>Categories (unique values)</strong>, используя значения поля <em>Население_диапазон</em></p></li>
 <li><p>Отсортируйте классы численности в нужном порядке, используя стрелочки.</p></li>
 <li><p>Настройте размер кружка таким образом, чтобы его диаметр менялся от 3 до 7 пунктов</p>
-<p><em>Результат:</em></p>
-<div class="figure">
-<img src="images/Ex02/image21.png" alt="" />
-<p class="caption">Настрояка шкалы размеров значков</p>
+<p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-sizes">2.7</a>):</p>
+<div class="figure"><span id="fig:mdg-sizes"></span>
+<img src="images/Ex02/image21.png" alt="Настрояка шкалы размеров значков" width="100%" />
+<p class="caption">
+Рис. 2.7: Настрояка шкалы размеров значков
+</p>
 </div></li>
 <li><p>Перейдите на вкладку <strong>Labels</strong> и переключите подписи в режим нескольких классов.</p></li>
 <li><p>Импортируйте классы с помощью кнопки <strong>Get Symbol Classes</strong>.</p></li>
@@ -904,10 +918,12 @@
 <li>Размер шрифта должен увеличиваться от низшего класса (менее 10 000) до самого крупного (от 250 000 до 500 000) с 8 до 12 пунктов.</li>
 <li>Подписи городов крупнее 100 000 человек должны быть жирным шрифтом.</li>
 </ul>
-<p><em>Результат</em>:</p>
-<div class="figure">
-<img src="images/Ex02/image22.png" alt="" />
-<p class="caption">Карта с классифицированными по размеру населенными пунктами</p>
+<p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-classes">2.8</a>):</p>
+<div class="figure"><span id="fig:mdg-classes"></span>
+<img src="images/Ex02/image22.png" alt="Карта с классифицированными по размеру населенными пунктами" width="100%" />
+<p class="caption">
+Рис. 2.8: Карта с классифицированными по размеру населенными пунктами
+</p>
 </div></li>
 </ol>
 <p><kbd><strong>Снимок экрана №3.</strong> Классифицированные населенные пункты с подписями</kbd></p>
@@ -1000,10 +1016,12 @@
 </tbody>
 </table></li>
 </ol>
-<p><em>Результат:</em></p>
-<div class="figure">
-<img src="images/Ex02/image24.png" alt="" />
-<p class="caption">Маскированное картографическое изображение</p>
+<p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-masked">2.9</a>):</p>
+<div class="figure"><span id="fig:mdg-masked"></span>
+<img src="images/Ex02/image24.png" alt="Маскированное картографическое изображение" width="100%" />
+<p class="caption">
+Рис. 2.9: Маскированное картографическое изображение
+</p>
 </div>
 <p><kbd><strong>Снимок экрана №4.</strong> Маска и подписи стран</kbd></p>
 </div>
@@ -1019,26 +1037,32 @@
 </ul></li>
 <li><p>Подгоните размер фрейма данных таким образом, чтобы карта оказалась в верхней части листа</p></li>
 <li><p>Установите масштаб равным 1:1 750 000</p>
-<p><em>Результат:</em></p>
-<div class="figure">
-<img src="images/Ex02/image25.png" alt="" />
-<p class="caption">Размещение карты в пределах листа</p>
+<p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-layout">2.10</a>):</p>
+<div class="figure"><span id="fig:mdg-layout"></span>
+<img src="images/Ex02/image25.png" alt="Размещение карты в пределах листа" width="100%" />
+<p class="caption">
+Рис. 2.10: Размещение карты в пределах листа
+</p>
 </div></li>
 <li><p>Используя настройки по умолчанию, вставьте легенду, включив в нее все слои, кроме <em>Elevation</em>, <em>Countries</em> и <em>Hillshade</em></p>
-<p><em>Результат:</em></p>
-<div class="figure">
-<img src="images/Ex02/image26.png" alt="" />
-<p class="caption">Размещение легенды в пределах листа</p>
+<p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-legend">2.11</a>):</p>
+<div class="figure"><span id="fig:mdg-legend"></span>
+<img src="images/Ex02/image26.png" alt="Карта с легендой" width="100%" />
+<p class="caption">
+Рис. 2.11: Карта с легендой
+</p>
 </div></li>
 <li><p>Измените название показателя для слоя <em>Cities</em> на «число жителей». Уменьшите размер шрифта до 9 и сделайте его курсивным.</p></li>
 <li><p>Уменьшите размер шрифта для стиля названия слоя <em>Cities</em> до 10 пунктов.</p></li>
 <li><p>Переименуйте все слои в таблице содержания на русский язык в соответствии с таблицей в начале упражнения. Обратите внимание на то, что в легенде они переименуются автоматически.</p></li>
 <li><p>Переименуйте заголовок легенды на русский язык.</p></li>
 <li><p>Увеличьте интервал между слоями в легенде до 10 пунктов.</p>
-<p><em>Результат:</em></p>
-<div class="figure">
-<img src="images/Ex02/image27.png" alt="" />
-<p class="caption">Регулировка интервала между элементами легенды</p>
+<p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-interval">2.12</a>):</p>
+<div class="figure"><span id="fig:mdg-interval"></span>
+<img src="images/Ex02/image27.png" alt="Регулировка интервала между элементами легенды" width="100%" />
+<p class="caption">
+Рис. 2.12: Регулировка интервала между элементами легенды
+</p>
 </div></li>
 <li><p>Вставьте на карту координатную сетку типа <strong>Graticule</strong> с шагом 1° по широте и долготе. Отключите для градусной сетки показ минут и секунд.</p></li>
 <li><p>Вставьте название карты над картой по центру, используя следующие параметры:</p>
@@ -1068,10 +1092,12 @@
 </tr>
 </tbody>
 </table></li>
-<li><p>Вставьте <em>километровую</em> масштабную линейку по нижеприведенному образцу:</p>
-<div class="figure">
-<img src="images/Ex02/image28.png" alt="" />
-<p class="caption">Карта с градусной сеткой, названием и масштабной линейкой</p>
+<li><p>Вставьте <em>километровую</em> масштабную линейку по нижеприведенному образцу (Рис. <a href="map-design-general.html#fig:mdg-grid">2.13</a>):</p>
+<div class="figure"><span id="fig:mdg-grid"></span>
+<img src="images/Ex02/image28.png" alt="Карта с градусной сеткой, названием и масштабной линейкой" width="100%" />
+<p class="caption">
+Рис. 2.13: Карта с градусной сеткой, названием и масштабной линейкой
+</p>
 </div></li>
 <li><p>Добавьте свою фамилию и инициалы справа внизу под легендой.</p></li>
 </ol>
