@@ -551,11 +551,7 @@
 </div>
 <div id="map-design-climates-annotation" class="section level3">
 <h3><span class="header-section-number">3.1.2</span> Аннотация</h3>
-<p>Задание посвящено знакомству с созданием тематических карт на основе баз
-пространственных данных. Вы познакомитесь с представлением площадных,
-линейных, точечных объектов в базе пространственных данных. Научитесь
-создавать карты на их основе, оформлять легенду, сетку координат и
-зарамочные элементы карты.</p>
+<p>Задание посвящено знакомству с базами пространственных данных а также созданием тематических карт на их основе. Вы научитесь извлекать из базы данных и визуализировать пространственные данные, оформлять легенду, сетку координат и зарамочные элементы карты.</p>
 </div>
 </div>
 <div id="map-design-climates-begin" class="section level2">
@@ -568,12 +564,9 @@
 <blockquote>
 <p>Если вашей директории или вышестоящей директории <em>D:/GIS</em> нет в списке, подключитесь к ней c помощью кнопки <img src="images/Ex03/image6.png" />.</p>
 </blockquote>
-<p>В каталоге <em>Ex03</em> находится база геоданных <em>MapData.gdb</em>, содержащая
-исходные данные для выполнения задания.</p>
+<p>В каталоге <em>Ex03</em> находится база геоданных <em>MapData.gdb</em>, содержащая исходные данные для выполнения задания.</p>
 <blockquote>
-<p><strong>База геоданных</strong> — это структурированное хранилище, внутри которого
-можно создавать слои данных, группировать их и связывать различными
-отношениями.</p>
+<p><strong>База геоданных</strong> — это структурированное хранилище, внутри которого можно создавать слои данных, группировать их и связывать различными отношениями.</p>
 </blockquote>
 <p>Внутри базы геоданных могут быть объекты следующих типов:</p>
 <ul>
@@ -582,13 +575,7 @@
 <li><img src="images/Ex03/image11.png" /> — обычные таблицы;</li>
 </ul>
 <blockquote>
-<p><strong>Класс пространственных объектов (feature class)</strong> — это набор
-пространственных объектов одного типа геометрии (точки, линии, полигоны
-или объемные тела). Для класса могут быть определены атрибуты, а его
-представлением является таблица, содержащая как обычные столбцы
-(текстовые, числовые и т.д.) так и специальное поле Shape, в котором
-хранится информация о геометрии. Каждая строчка в таблице — это описание
-одного объекта. В поле ObjectID хранится уникальный идентификатор каждого объекта.</p>
+<p><strong>Класс пространственных объектов (feature class)</strong> — это набор пространственных объектов одного типа геометрии (точки, линии, полигоны или объемные тела). Для класса могут быть определены атрибуты, а его представлением является таблица, содержащая как обычные столбцы (текстовые, числовые и т.д.) так и специальное поле Shape, в котором хранится информация о геометрии. Каждая строчка в таблице — это описание одного объекта. В поле ObjectID хранится уникальный идентификатор каждого объекта.</p>
 </blockquote>
 <ol start="3" style="list-style-type: decimal">
 <li><p>Раскройте базу данных <em>MapData.gdb</em> и изучите ее содержимое, состоящее из следующих классов:</p>
@@ -637,12 +624,7 @@
 <p>К какому типу геометрии относятся данные классы?</p></li>
 <li><p>Дважды щелкните на слое <em>Climates</em> и перейдите на вкладку XY Coordinate System.</p></li>
 </ol>
-<p>Внимательно прочитайте информацию. Этот слой хранится в <em>Географической
-системе координат (GCS)</em>, отнесенной к эллипсоиду WGS-1984. Это
-означает, что координаты каждого объекта хранятся в виде широты и
-долготы. В любой момент этот слой можно спроецировать в любую проекцию.
-При этом координаты будут представлены в метрических единицах, а система
-координат получит название <em>Проецированной системы координат (PCS)</em>.</p>
+<p>Внимательно прочитайте информацию. Этот слой хранится в <em>Географической системе координат (GCS)</em>, отнесенной к эллипсоиду WGS-1984. Это означает, что координаты каждого объекта хранятся в виде широты и долготы. В любой момент этот слой можно спроецировать в любую проекцию. При этом координаты будут представлены в метрических единицах, а система координат получит название <em>Проецированной системы координат (PCS)</em>.</p>
 </div>
 <div id="map-design-climates-basic" class="section level2">
 <h2><span class="header-section-number">3.3</span> Оформление базовых слоев</h2>
@@ -650,9 +632,14 @@
 <ol style="list-style-type: decimal">
 <li><p>Ознакомьтесь с главой <a href="manual-vector.html#manual-vector">Оформление векторного слоя</a> в разделе описания функций.</p></li>
 <li><p>Добавьте на карту слой <em>Countries</em>, просто перетащив его из окна каталога.</p></li>
-<li><p>Дважды щелкните на названии слоя <em>Countries</em> и перейдите на вкладку Symbology.</p></li>
-<li><p>Внимательно изучите список способов изображения слева. Они разделены на категории <strong>Features</strong> (единый символ), <strong>Categories</strong> (качественные характеристики), <strong>Quantities</strong> (количественные характеристики), <strong>Charts</strong> (картодиаграммы), <strong>Multiple Attributes</strong> (способы изображения по нескольким атрибутам).Разверните каждую группу и щелкните на каждом способе. Сопоставьте их с традиционной классификацией способов изображения:</p>
-<p><img src="images/Ex03/image12.png" /></p></li>
+<li><p>Дважды щелкните на названии слоя <em>Countries</em> и перейдите на вкладку <strong>Symbology</strong> (Рис. <a href="map-design-climates.html#fig:mdc-sym">3.1</a>).</p>
+<div class="figure"><span id="fig:mdc-sym"></span>
+<img src="images/Ex03/image12.png" alt="Возможности отображения полигонального слоя" width="100%" />
+<p class="caption">
+Рис. 3.1: Возможности отображения полигонального слоя
+</p>
+</div></li>
+<li><p>Внимательно изучите список способов изображения слева. Они разделены на категории <strong>Features</strong> (единый символ), <strong>Categories</strong> (качественные характеристики), <strong>Quantities</strong> (количественные характеристики), <strong>Charts</strong> (картодиаграммы), <strong>Multiple Attributes</strong> (способы изображения по нескольким атрибутам).Разверните каждую группу и щелкните на каждом способе. Сопоставьте их с традиционной классификацией способов изображения:</p></li>
 <li><p>Выберите способ единого символа (<strong>Features &gt; Single symbol</strong>)</p></li>
 <li><p>Щелкните на кнопке с изображением символа и измените оформление следующим образом:</p>
 <table>
@@ -677,14 +664,34 @@
 </tr>
 </tbody>
 </table>
-<p>Диалог свойств слоя:</p>
-<p><img src="images/Ex03/image16.png" /></p>
-<p>Результат:</p>
-<p><img src="images/Ex03/image17.png" /></p></li>
-<li><p>Измените проекцию карты на <em>проекцию Робинсона (Robinson)</em>. Ее можно найти в группе <strong>Projected Сoordinate Systems &gt; World</strong>. Обратите внимание на то, как изменятся очертания объектов:</p>
-<p><img src="images/Ex03/image18.png" /></p></li>
-<li><p>Добавьте на карту слой <em>Coast</em>, расположите его поверх слоя <em>Countries</em> и измените цвет линии на <em>Delft Blue:</em></p>
-<p><img src="images/Ex03/image19.png" /></p></li>
+<p>Диалог свойств слоя (Рис. <a href="map-design-climates.html#fig:mdc-lyrprop">3.2</a>):</p>
+<div class="figure"><span id="fig:mdc-lyrprop"></span>
+<img src="images/Ex03/image16.png" alt="Диалог свойств слоя" width="100%" />
+<p class="caption">
+Рис. 3.2: Диалог свойств слоя
+</p>
+</div>
+<p><strong>Результат</strong> (Рис. <a href="map-design-climates.html#fig:mdc-lyrres">3.3</a>):</p>
+<div class="figure"><span id="fig:mdc-lyrres"></span>
+<img src="images/Ex03/image17.png" alt="Результат визуализации слоя стран" width="100%" />
+<p class="caption">
+Рис. 3.3: Результат визуализации слоя стран
+</p>
+</div></li>
+<li><p>Измените проекцию карты на <em>проекцию Робинсона (Robinson)</em>. Ее можно найти в группе <strong>Projected Сoordinate Systems &gt; World</strong>. Обратите внимание на то, как изменятся очертания объектов (Рис. <a href="map-design-climates.html#fig:mdc-proj">3.4</a>):</p>
+<div class="figure"><span id="fig:mdc-proj"></span>
+<img src="images/Ex03/image18.png" alt="Картографическое изображение в проекции Робинсона" width="100%" />
+<p class="caption">
+Рис. 3.4: Картографическое изображение в проекции Робинсона
+</p>
+</div></li>
+<li><p>Добавьте на карту слой <em>Coast</em>, расположите его поверх слоя <em>Countries</em> и измените цвет линии на <em>Delft Blue</em> (Рис. <a href="map-design-climates.html#fig:mdc-color">3.5</a>):</p>
+<div class="figure"><span id="fig:mdc-color"></span>
+<img src="images/Ex03/image19.png" alt="Изображение береговой линии" width="100%" />
+<p class="caption">
+Рис. 3.5: Изображение береговой линии
+</p>
+</div></li>
 <li><p>Добавьте на карту слой <em>Rivers</em> расположите его поверх слоя <em>Coast</em> и измените цвет линии на <em>Delft Blue,</em> а толщину сделайте равной 0,5 пиксела<em>.</em></p></li>
 <li><p>Добавьте на карту слой <em>Lakes</em>, расположите его поверх слоя <em>Rivers</em> и измените его оформление следующим образом:</p>
 <table>
@@ -709,10 +716,15 @@
 </tr>
 </tbody>
 </table>
-<p>Результат:</p>
-<p><img src="images/Ex03/image20.png" /></p></li>
+<p><strong>Результат</strong> (Рис. <a href="map-design-climates.html#fig:mdc-hydro">3.6</a>):</p>
+<div class="figure"><span id="fig:mdc-hydro"></span>
+<img src="images/Ex03/image20.png" alt="Изображение рек и озер" width="100%" />
+<p class="caption">
+Рис. 3.6: Изображение рек и озер
+</p>
+</div></li>
 <li><p>Сохраните карту в свою директорию <em>Ex03</em>.</p></li>
-<li><p>Добавьте на карту слой <em>Cities</em>, расположите его поверх слоя <em>Lakes</em> и измените его параметры следующим образом:</p>
+<li><p>Добавьте на карту слой <em>Cities</em>, расположите его поверх слоя <em>Lakes</em> и измените его параметры следующим образом (Рис. <a href="map-design-climates.html#fig:mdc-cities">3.7</a>):</p>
 <table>
 <thead>
 <tr class="header">
@@ -735,7 +747,12 @@
 </tr>
 </tbody>
 </table>
-<p><img src="images/Ex03/image21.png" /></p></li>
+<div class="figure"><span id="fig:mdc-cities"></span>
+<img src="images/Ex03/image21.png" alt="Параметры отображения населенных пунктов" width="100%" />
+<p class="caption">
+Рис. 3.7: Параметры отображения населенных пунктов
+</p>
+</div></li>
 <li><p>Добавьте на карту слой <em>Seas</em>, расположите его внизу таблицы содержания и измените его параметры следующим образом:</p>
 <table>
 <thead>
@@ -763,8 +780,13 @@
 </tr>
 </tbody>
 </table>
-<p>Результат:</p>
-<p><img src="images/Ex03/image22.png" /></p></li>
+<p><strong>Результат</strong> (Рис. <a href="map-design-climates.html#fig:mdc-seas">3.8</a>):</p>
+<div class="figure"><span id="fig:mdc-seas"></span>
+<img src="images/Ex03/image22.png" alt="Границы океанов на картографическом изображении" width="100%" />
+<p class="caption">
+Рис. 3.8: Границы океанов на картографическом изображении
+</p>
+</div></li>
 </ol>
 <p><kbd><strong>Снимок экрана №1.</strong> Базовые слои</kbd></p>
 </div>
@@ -815,13 +837,18 @@
 </tr>
 </tbody>
 </table>
-<p>Диалог настройки символики слоя должен выглядеть следующим образом:</p>
-<p><img src="images/Ex03/image23.png" /></p></li>
+<p>Диалог настройки символики слоя должен выглядеть следующим образом (Рис. <a href="map-design-climates.html#fig:mdc-clim">3.9</a>):</p>
+<div class="figure"><span id="fig:mdc-clim"></span>
+<img src="images/Ex03/image23.png" alt="Цвета отображения типов климата" width="100%" />
+<p class="caption">
+Рис. 3.9: Цвета отображения типов климата
+</p>
+</div></li>
 <li><p>Добавьте на карту слой <em>Сurrents</em>, расположите его поверх слоя <em>Сlimates</em>. Этот слой содержит данные о течениях <em>OSCAR (Ocean Surface Current Analyses – Real time)</em>, осредненные с 1993 по 2003 год.</p>
 <blockquote>
 <p>Течения относятся к векторным полям. Существует множество способов визуализации векторных полей. В картографии распространен способ <strong>градиентного поля</strong>, при котором стрелки размещаются по регулярной сетке, их поворот соответствует направлению векторного поля в точке, а длина — скорости. Для реализации способа градиентного поля вам нужно выбрать символ (стрелку), а также указать атрибутивные поля слоя, в соответствии с которыми будет меняться их направление и длина.</p>
 </blockquote></li>
-<li><p>Измените тип символа слоя на символьный маркер и задайте его параметры следующим образом:</p>
+<li><p>Измените тип символа слоя на символьный маркер и задайте его параметры следующим образом (Рис. <a href="map-design-climates.html#fig:mdc-arrow">3.10</a>):</p>
 <table>
 <thead>
 <tr class="header">
@@ -848,7 +875,12 @@
 </tr>
 </tbody>
 </table>
-<p><img src="images/Ex03/image24.png" /></p></li>
+<div class="figure"><span id="fig:mdc-arrow"></span>
+<img src="images/Ex03/image24.png" alt="Значок для отображения направления течения" width="100%" />
+<p class="caption">
+Рис. 3.10: Значок для отображения направления течения
+</p>
+</div></li>
 <li><p>Нажмите <em>ОК</em> и еще раз <em>ОК</em>.</p></li>
 <li><p>Чтобы задать направление стрелки, не выходя из диалога свойств слоя на вкладке <strong>Symbology</strong> нажмите <strong>Advanced &gt; Rotation…</strong> и настройте следующие параметры вращения:</p>
 <table>
@@ -869,9 +901,13 @@
 </tr>
 </tbody>
 </table></li>
-<li><p>Для изменения размера стрелки в зависимости от скорости течения нажмите <strong>Advanced &gt; Size…</strong> Выберите в списке поле <em>Length</em>. Нажмите ОК.</p>
-<p>Результат:
-<img src="images/Ex03/image25.png" /></p></li>
+<li><p>Для изменения размера стрелки в зависимости от скорости течения нажмите <strong>Advanced &gt; Size…</strong> Выберите в списке поле <em>Length</em> и нажмите <strong>ОК</strong>. Результат (Рис. <a href="map-design-climates.html#fig:mdc-currents">3.11</a>):</p>
+<div class="figure"><span id="fig:mdc-currents"></span>
+<img src="images/Ex03/image25.png" alt="Отображение течений на карте" width="100%" />
+<p class="caption">
+Рис. 3.11: Отображение течений на карте
+</p>
+</div></li>
 <li><p>Сохраните карту.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №2.</strong> Климат и направления морских течений</kbd></p>
@@ -880,12 +916,22 @@
 <h2><span class="header-section-number">3.5</span> Настройка подписей</h2>
 <p><a href="map-design-climates.html#map-design-climates">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
-<li><p>Включите механизм размещения подписей Maplex</p>
-<p><img src="images/Ex03/image26.png" /></p></li>
+<li><p>Включите механизм размещения подписей <strong>Maplex</strong> (Рис. <a href="map-design-climates.html#fig:mdc-maplex">3.12</a>):</p>
+<div class="figure"><span id="fig:mdc-maplex"></span>
+<img src="images/Ex03/image26.png" alt="Отображение течений на карте" width="100%" />
+<p class="caption">
+Рис. 3.12: Отображение течений на карте
+</p>
+</div></li>
 <li><p>Дважды щелкните на слое <em>Cities</em>, и перейдите на вкладку <em>Labels</em>.</p></li>
-<li><p>Включите подписи для слоя <em>Cities</em>:</p>
-<p><img src="images/Ex03/image27.png" /></p></li>
-<li><p>Настройте параметры подписей следующим образом:</p>
+<li><p>Включите подписи для слоя <em>Cities</em> (Рис. <a href="map-design-climates.html#fig:mdc-labels">3.13</a>):</p>
+<div class="figure"><span id="fig:mdc-labels"></span>
+<img src="images/Ex03/image27.png" alt="Отображение течений на карте" width="100%" />
+<p class="caption">
+Рис. 3.13: Отображение течений на карте
+</p>
+</div></li>
+<li><p>Настройте параметры подписей следующим образом (Рис. <a href="map-design-climates.html#fig:mdc-labparams">3.14</a>):</p>
 <table>
 <thead>
 <tr class="header">
@@ -912,7 +958,12 @@
 </tr>
 </tbody>
 </table>
-<p><img src="images/Ex03/image28.png" /></p></li>
+<div class="figure"><span id="fig:mdc-labparams"></span>
+<img src="images/Ex03/image28.png" alt="Отображение течений на карте" width="100%" />
+<p class="caption">
+Рис. 3.14: Отображение течений на карте
+</p>
+</div></li>
 <li><p>Включите подписи для слоя <em>Rivers</em> со следующими параметрами:</p>
 <table>
 <thead>
@@ -1010,8 +1061,13 @@
 </tr>
 </tbody>
 </table>
-<p>Результат:</p>
-<p><img src="images/Ex03/image29.png" /></p></li>
+<p>Результат (Рис. <a href="map-design-climates.html#fig:mdc-labelres">3.15</a>):</p>
+<div class="figure"><span id="fig:mdc-labelres"></span>
+<img src="images/Ex03/image29.png" alt="Отображение подписей на карте" width="100%" />
+<p class="caption">
+Рис. 3.15: Отображение подписей на карте
+</p>
+</div></li>
 <li><p>Сохраните карту.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №3.</strong> Подписи объектов</kbd></p>
@@ -1028,16 +1084,41 @@
 </ul></li>
 <li><p>Подгоните размер фрейма данных таким образом, чтобы карта заняла площадь всего листа с небольшим запасом.</p></li>
 <li><p>Установите масштаб равным <code>1:90 000 000</code> и отцентрируйте карту в пределах листа.</p>
-<p>Результат:
-<img src="images/Ex03/image30.png" /></p></li>
-<li><p>Добавьте на карту легенду с помощью команды <strong>Insert &gt; Legend</strong>, включив в нее только слои <em>Климат</em> и <em>Течения:</em></p>
-<p><img src="images/Ex03/image31.png" /></p></li>
-<li><p>В следующем диалоге название легенды оставьте пустым:</p>
-<p><img src="images/Ex03/image32.png" /></p></li>
+<p>Результат (Рис. <a href="map-design-climates.html#fig:mdc-scale">3.16</a>):</p>
+<div class="figure"><span id="fig:mdc-scale"></span>
+<img src="images/Ex03/image30.png" alt="Результирующий охват карты" width="100%" />
+<p class="caption">
+Рис. 3.16: Результирующий охват карты
+</p>
+</div></li>
+<li><p>Добавьте на карту легенду с помощью команды <strong>Insert &gt; Legend</strong>, включив в нее только слои <em>Климат</em> и <em>Течения</em> (Рис. <a href="map-design-climates.html#fig:mdc-legendial">3.17</a>):</p>
+<div class="figure"><span id="fig:mdc-legendial"></span>
+<img src="images/Ex03/image31.png" alt="Добавление слоев _Климат_ и _Течения_ в состав легенды" width="100%" />
+<p class="caption">
+Рис. 3.17: Добавление слоев <em>Климат</em> и <em>Течения</em> в состав легенды
+</p>
+</div></li>
+<li><p>В следующем диалоге название легенды оставьте пустым (Рис. <a href="map-design-climates.html#fig:mdc-legendempty">3.18</a>):</p>
+<div class="figure"><span id="fig:mdc-legendempty"></span>
+<img src="images/Ex03/image32.png" alt="Пустой заголовок легенды" width="100%" />
+<p class="caption">
+Рис. 3.18: Пустой заголовок легенды
+</p>
+</div></li>
 <li><p>Далее все параметры оставьте по умолчанию.</p></li>
-<li><p>Уберите заголовок поля для слоя <em>Климат</em>:</p>
-<p><img src="images/Ex03/image33.png" />
-<img src="images/Ex03/image34.png" /></p></li>
+<li><p>Уберите заголовок поля для слоя <em>Климат</em>, выделив его мышью, нажав <kbd>F2</kbd> и стерев содержимое (Рис. <a href="map-design-climates.html#fig:mdc-fieldempty">3.19</a>):</p>
+<div class="figure"><span id="fig:mdc-fieldempty"></span>
+<img src="images/Ex03/image33.png" alt="Удаление заголовка поля для слоя _Климат_" width="100%" />
+<p class="caption">
+Рис. 3.19: Удаление заголовка поля для слоя <em>Климат</em>
+</p>
+</div>
+<div class="figure"><span id="fig:mdc-fieldempty"></span>
+<img src="images/Ex03/image34.png" alt="Удаление заголовка поля для слоя _Климат_" width="100%" />
+<p class="caption">
+Рис. 3.19: Удаление заголовка поля для слоя <em>Климат</em>
+</p>
+</div></li>
 <li><p>Добавьте градусную сетку координат со следующими параметрами:</p>
 <table>
 <thead>
@@ -1062,8 +1143,13 @@
 <li><p>Разместите над картой текст «КЛИМАТ И ОСНОВНЫЕ ОБЪЕКТЫ ГИДРОСФЕРЫ».</p></li>
 <li><p>Разместите под картой по центру численный масштаб <code>1:90 000 000</code>.</p></li>
 <li><p>Разместите в правом нижнем углу карты текст «Выполнил» и свое ФИО.</p>
-<p>Результат:
-<img src="images/Ex03/image35.png" /></p></li>
+<p>Результат (Рис. <a href="map-design-climates.html#fig:mdc-finalres">3.20</a>):</p>
+<div class="figure"><span id="fig:mdc-finalres"></span>
+<img src="images/Ex03/image35.png" alt="Итоговая карта" width="100%" />
+<p class="caption">
+Рис. 3.20: Итоговая карта
+</p>
+</div></li>
 <li><p>Сохраните карту.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №4.</strong> Итоговая карта</kbd></p>
@@ -1084,9 +1170,16 @@
 <li><p>В какой системе координат хранились данные, которые вы использовали для составления карты?</p></li>
 <li><p>Какая проекция была использована вами в работе? К какому типу по характеру искажений она относится?</p></li>
 <li><p>Где хранятся данные, которые используются для классификации символов при отображении, изменения их размера и направления?</p></li>
-<li><p>За что отвечают системные поля Shape и ObjectID?</p></li>
+<li><p>За что отвечают системные поля <em>Shape</em> и <em>ObjectID</em>?</p></li>
 <li><p>Чем отличается вид компоновки от вида данных?</p></li>
 </ol>
+<table>
+<tbody>
+<tr class="odd">
+<td><em>Самсонов Т.Е.</em> <strong>Основы геоинформатики: практикум</strong>. М.: Географический факультет МГУ, 2020. DOI: 10.5281/zenodo.1167857</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
