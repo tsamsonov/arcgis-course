@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Упражнение 3 Создание климатической карты | Основы геоинформатики: практикум</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Упражнение 3 Создание климатической карты | Основы геоинформатики: практикум" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Тимофей Самсонов" />
 
 
-<meta name="date" content="2020-01-27" />
+<meta name="date" content="2020-02-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -124,7 +124,7 @@
 <li class="chapter" data-level="4.2" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-begin"><i class="fa fa-check"></i><b>4.2</b> Начало работы</a></li>
 <li class="chapter" data-level="4.3" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-choropleth"><i class="fa fa-check"></i><b>4.3</b> Создание картограмм</a></li>
 <li class="chapter" data-level="4.4" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-diagrams"><i class="fa fa-check"></i><b>4.4</b> Создание картодиаграмм</a></li>
-<li class="chapter" data-level="4.5" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-general"><i class="fa fa-check"></i><b>4.5</b> Оформление общегеографической основы</a></li>
+<li class="chapter" data-level="4.5" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-general"><i class="fa fa-check"></i><b>4.5</b> Оформление географической основы</a></li>
 <li class="chapter" data-level="4.6" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-labels"><i class="fa fa-check"></i><b>4.6</b> Настройка подписей</a></li>
 <li class="chapter" data-level="4.7" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-layout"><i class="fa fa-check"></i><b>4.7</b> Настройка компоновки</a></li>
 <li class="chapter" data-level="4.8" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-export"><i class="fa fa-check"></i><b>4.8</b> Экспорт в графический файл</a></li>
@@ -624,14 +624,14 @@
 <p>К какому типу геометрии относятся данные классы?</p></li>
 <li><p>Дважды щелкните на слое <em>Climates</em> и перейдите на вкладку XY Coordinate System.</p></li>
 </ol>
-<p>Внимательно прочитайте информацию. Этот слой хранится в <em>Географической системе координат (GCS)</em>, отнесенной к эллипсоиду WGS-1984. Это означает, что координаты каждого объекта хранятся в виде широты и долготы. В любой момент этот слой можно спроецировать в любую проекцию. При этом координаты будут представлены в метрических единицах, а система координат получит название <em>Проецированной системы координат (PCS)</em>.</p>
+<p>Внимательно прочитайте информацию. Этот слой хранится в <em>Географической системе координат (GCS)</em>, отнесенной к эллипсоиду WGS-1984. Это означает, что координаты каждого объекта зафиксированы в виде широты и долготы. В любой момент этот слой можно спроецировать в любую проекцию. При этом координаты будут представлены в метрических единицах, а система координат получит название <em>Проецированной системы координат (PCS)</em>.</p>
 </div>
 <div id="map-design-climates-basic" class="section level2">
 <h2><span class="header-section-number">3.3</span> Оформление базовых слоев</h2>
 <p><a href="map-design-climates.html#map-design-climates">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Ознакомьтесь с главой <a href="manual-vector.html#manual-vector">Оформление векторного слоя</a> в разделе описания функций.</p></li>
-<li><p>Добавьте на карту слой <em>Countries</em>, просто перетащив его из окна каталога.</p></li>
+<li><p>Добавьте в таблицу содержания карты слой <em>Countries</em>, просто перетащив его из окна каталога.</p></li>
 <li><p>Дважды щелкните на названии слоя <em>Countries</em> и перейдите на вкладку <strong>Symbology</strong> (Рис. <a href="map-design-climates.html#fig:mdc-sym">3.1</a>).</p>
 <div class="figure"><span id="fig:mdc-sym"></span>
 <img src="images/Ex03/image12.png" alt="Возможности отображения полигонального слоя" width="100%" />
@@ -639,7 +639,7 @@
 Рис. 3.1: Возможности отображения полигонального слоя
 </p>
 </div></li>
-<li><p>Внимательно изучите список способов изображения слева. Они разделены на категории <strong>Features</strong> (единый символ), <strong>Categories</strong> (качественные характеристики), <strong>Quantities</strong> (количественные характеристики), <strong>Charts</strong> (картодиаграммы), <strong>Multiple Attributes</strong> (способы изображения по нескольким атрибутам).Разверните каждую группу и щелкните на каждом способе. Сопоставьте их с традиционной классификацией способов изображения:</p></li>
+<li><p>Внимательно изучите перечень вариантов отображения слева. Они разделены на категории <strong>Features</strong> (единый символ), <strong>Categories</strong> (качественные характеристики), <strong>Quantities</strong> (количественные характеристики), <strong>Charts</strong> (диаграммы), <strong>Multiple Attributes</strong> (визуализация по нескольким атрибутам).Разверните каждую группу и щелкните на каждом способе. Сопоставьте их с традиционной классификацией способов изображения.</p></li>
 <li><p>Выберите способ единого символа (<strong>Features &gt; Single symbol</strong>)</p></li>
 <li><p>Щелкните на кнопке с изображением символа и измените оформление следующим образом:</p>
 <table>
@@ -678,7 +678,7 @@
 Рис. 3.3: Результат визуализации слоя стран
 </p>
 </div></li>
-<li><p>Измените проекцию карты на <em>проекцию Робинсона (Robinson)</em>. Ее можно найти в группе <strong>Projected Сoordinate Systems &gt; World</strong>. Обратите внимание на то, как изменятся очертания объектов (Рис. <a href="map-design-climates.html#fig:mdc-proj">3.4</a>):</p>
+<li><p>Используя инструкции в разделе <a href="manual-projections.html#manual-projections-change">Изменение проекции</a> поменяйте проекцию карты на <em>проекцию Робинсона (Robinson)</em>. Ее можно найти в группе <strong>Projected Сoordinate Systems &gt; World</strong>. Обратите внимание на то, как изменятся очертания объектов (Рис. <a href="map-design-climates.html#fig:mdc-proj">3.4</a>):</p>
 <div class="figure"><span id="fig:mdc-proj"></span>
 <img src="images/Ex03/image18.png" alt="Картографическое изображение в проекции Робинсона" width="100%" />
 <p class="caption">
@@ -908,15 +908,18 @@
 Рис. 3.11: Отображение течений на карте
 </p>
 </div></li>
-<li><p>Сохраните карту.</p></li>
 </ol>
+<p><strong>Сохраните документ карты</strong> через команду меню <strong>File &gt; Save as</strong> в свой каталог <em>Ex03</em> под названием <em>Ex03_<Фамилия>.mxd</em>.</p>
+<blockquote>
+<p>Файл с расширением <code>.mxd</code> является файлом документа карты <strong>ArcMap</strong>. Он содержит перечень слоев и их настроек, созданные компоновки и ряд дополнительных параметров. Документ карты, как и входящие в него слои, не хранит сами данные, а лишь <em>ссылается</em> на них. Поэтому, перемещая проект на другой компьютер, вы должны также переместить и данные, чтобы он открылся (в вашем случае — базу геоданных, из которой вы добавляли классы объектов на карту).</p>
+</blockquote>
 <p><kbd><strong>Снимок экрана №2.</strong> Климат и направления морских течений</kbd></p>
 </div>
 <div id="map-design-climates-labels" class="section level2">
 <h2><span class="header-section-number">3.5</span> Настройка подписей</h2>
 <p><a href="map-design-climates.html#map-design-climates">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
-<li><p>Включите механизм размещения подписей <strong>Maplex</strong> (Рис. <a href="map-design-climates.html#fig:mdc-maplex">3.12</a>):</p>
+<li><p>Включите механизм размещения подписей <strong>Maplex</strong> на панели <strong>Labeling</strong> (Рис. <a href="map-design-climates.html#fig:mdc-maplex">3.12</a>):</p>
 <div class="figure"><span id="fig:mdc-maplex"></span>
 <img src="images/Ex03/image26.png" alt="Отображение течений на карте" width="100%" />
 <p class="caption">
@@ -1106,17 +1109,17 @@
 </p>
 </div></li>
 <li><p>Далее все параметры оставьте по умолчанию.</p></li>
-<li><p>Уберите заголовок поля для слоя <em>Климат</em>, выделив его мышью, нажав <kbd>F2</kbd> и стерев содержимое (Рис. <a href="map-design-climates.html#fig:mdc-fieldempty">3.19</a>):</p>
-<div class="figure"><span id="fig:mdc-fieldempty"></span>
+<li><p>Уберите заголовок поля для слоя <em>Климат</em>, выделив его мышью, нажав <kbd>F2</kbd> и стерев содержимое (Рис. <a href="#fig:mdc-fieldempty"><strong>??</strong></a>):</p>
+<div class="figure"><span id="fig:mdc-fieldempty1"></span>
 <img src="images/Ex03/image33.png" alt="Удаление заголовка поля для слоя _Климат_" width="100%" />
 <p class="caption">
 Рис. 3.19: Удаление заголовка поля для слоя <em>Климат</em>
 </p>
 </div>
-<div class="figure"><span id="fig:mdc-fieldempty"></span>
+<div class="figure"><span id="fig:mdc-fieldempty2"></span>
 <img src="images/Ex03/image34.png" alt="Удаление заголовка поля для слоя _Климат_" width="100%" />
 <p class="caption">
-Рис. 3.19: Удаление заголовка поля для слоя <em>Климат</em>
+Рис. 3.20: Удаление заголовка поля для слоя <em>Климат</em>
 </p>
 </div></li>
 <li><p>Добавьте градусную сетку координат со следующими параметрами:</p>
@@ -1143,11 +1146,11 @@
 <li><p>Разместите над картой текст «КЛИМАТ И ОСНОВНЫЕ ОБЪЕКТЫ ГИДРОСФЕРЫ».</p></li>
 <li><p>Разместите под картой по центру численный масштаб <code>1:90 000 000</code>.</p></li>
 <li><p>Разместите в правом нижнем углу карты текст «Выполнил» и свое ФИО.</p>
-<p>Результат (Рис. <a href="map-design-climates.html#fig:mdc-finalres">3.20</a>):</p>
+<p>Результат (Рис. <a href="map-design-climates.html#fig:mdc-finalres">3.21</a>):</p>
 <div class="figure"><span id="fig:mdc-finalres"></span>
 <img src="images/Ex03/image35.png" alt="Итоговая карта" width="100%" />
 <p class="caption">
-Рис. 3.20: Итоговая карта
+Рис. 3.21: Итоговая карта
 </p>
 </div></li>
 <li><p>Сохраните карту.</p></li>
@@ -1171,7 +1174,7 @@
 <li><p>Какая проекция была использована вами в работе? К какому типу по характеру искажений она относится?</p></li>
 <li><p>Где хранятся данные, которые используются для классификации символов при отображении, изменения их размера и направления?</p></li>
 <li><p>За что отвечают системные поля <em>Shape</em> и <em>ObjectID</em>?</p></li>
-<li><p>Чем отличается вид компоновки от вида данных?</p></li>
+<li><p>Чем отличается вид компоновки от вида данных? Для чего требуется каждый из них?</p></li>
 </ol>
 <table>
 <tbody>

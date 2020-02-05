@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Упражнение 4 Создание социально-экономической карты | Основы геоинформатики: практикум</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Упражнение 4 Создание социально-экономической карты | Основы геоинформатики: практикум" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Тимофей Самсонов" />
 
 
-<meta name="date" content="2020-01-27" />
+<meta name="date" content="2020-02-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -124,7 +124,7 @@
 <li class="chapter" data-level="4.2" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-begin"><i class="fa fa-check"></i><b>4.2</b> Начало работы</a></li>
 <li class="chapter" data-level="4.3" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-choropleth"><i class="fa fa-check"></i><b>4.3</b> Создание картограмм</a></li>
 <li class="chapter" data-level="4.4" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-diagrams"><i class="fa fa-check"></i><b>4.4</b> Создание картодиаграмм</a></li>
-<li class="chapter" data-level="4.5" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-general"><i class="fa fa-check"></i><b>4.5</b> Оформление общегеографической основы</a></li>
+<li class="chapter" data-level="4.5" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-general"><i class="fa fa-check"></i><b>4.5</b> Оформление географической основы</a></li>
 <li class="chapter" data-level="4.6" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-labels"><i class="fa fa-check"></i><b>4.6</b> Настройка подписей</a></li>
 <li class="chapter" data-level="4.7" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-layout"><i class="fa fa-check"></i><b>4.7</b> Настройка компоновки</a></li>
 <li class="chapter" data-level="4.8" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-export"><i class="fa fa-check"></i><b>4.8</b> Экспорт в графический файл</a></li>
@@ -551,7 +551,7 @@
 </div>
 <div id="map-design-economic-annotation" class="section level3">
 <h3><span class="header-section-number">4.1.2</span> Аннотация</h3>
-<p>Задание посвящено знакомству с ГИС на примере создания социально-экономической карты. Вы познакомитесь с представлением площадных, линейных, точечных объектов в базе пространственных данных. Научитесь создавать карты на их основе, оформлять легенду, сетку координат и зарамочные элементы карты, познакомитесь с применением картограмм и картодиаграмм в геоинформационном картографировании.</p>
+<p>Задание посвящено знакомству с ГИС на примере создания социально-экономической карты. Вы познакомитесь с представлением площадных, линейных, точечных объектов в базе пространственных данных. Научитесь создавать карты на их основе, оформлять легенду, добавлять сетку координат и зарамочные элементы карты, познакомитесь с применением картограмм и картодиаграмм в геоинформационном картографировании.</p>
 </div>
 </div>
 <div id="map-design-economic-begin" class="section level2">
@@ -560,8 +560,13 @@
 <ol style="list-style-type: decimal">
 <li><p>Скачайте с сервера каталог <em>Ex04</em> и положите его в свою директорию.</p></li>
 <li><p>Запустите приложение <strong>ArcMap</strong> и откройте окно <strong>Сatalog</strong>, нажав кнопку <img src="images/Ex01/image2.png" /> на панели инструментов.</p></li>
-<li><p>Подключитесь к рабочему каталогу <em>Ex04</em> в окне <strong>Сatalog</strong>:</p>
-<p><img src="images/Ex04/image2.png" /></p>
+<li><p>Подключитесь к рабочему каталогу <em>Ex04</em> в окне <strong>Сatalog</strong> (Рис. <a href="map-design-economic.html#fig:mde-cat">4.1</a>):</p>
+<div class="figure"><span id="fig:mde-cat"></span>
+<img src="images/Ex04/image2.png" alt="Рабочее окно Catalog" width="40%" />
+<p class="caption">
+Рис. 4.1: Рабочее окно Catalog
+</p>
+</div>
 <p>В каталоге <em>Ex04</em> находится база геоданных <em>MapData.gdb</em>, содержащая исходные данные для выполнения задания.</p>
 <blockquote>
 <p><strong>База геоданных</strong> — это структурированное хранилище, внутри которого можно создавать слои данных, группировать их и связывать различными отношениями.</p>
@@ -616,9 +621,14 @@
 <p><a href="map-design-economic.html#map-design-economic">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слой <em>Regions</em>. Для этого просто перетащите его из окна Каталога на карту.</p></li>
-<li><p>Переименуйте его в «<em>Плотность населения</em>». Для этого дважды (медленно) щелкните на названии слоя или выделите его и нажмите клавишу <kbd>F2</kbd>:</p>
-<p><img src="images/Ex04/image8.png" /></p></li>
-<li><p>Измените проекцию карты на равновеликую коническую проекцию Альберса. Ее можно найти по следующему пути:</p>
+<li><p>Переименуйте его в «<em>Плотность населения</em>». Для этого дважды (медленно) щелкните на названии слоя или выделите его и нажмите клавишу <kbd>F2</kbd> (Рис. <a href="map-design-economic.html#fig:mde-ren">4.2</a>):</p>
+<div class="figure"><span id="fig:mde-ren"></span>
+<img src="images/Ex04/image8.png" alt="Переименование слоя" width="35%" />
+<p class="caption">
+Рис. 4.2: Переименование слоя
+</p>
+</div></li>
+<li><p>Используя инструкции в разделе <a href="manual-projections.html#manual-projections-change">Изменение проекции</a>, измените проекцию карты на равновеликую коническую проекцию Альберса. Ее можно найти по следующему пути:</p>
 <p><strong>Projected Coordinate Systems &gt; Continental &gt; Asia &gt; Asia North Albers Equal Area Conic</strong></p>
 <p>Обратите внимание на то, как изменится форма отображаемых объектов.</p></li>
 <li><p>Откройте таблицу атрибутов слоя. Найдите в ней столбец <em>Density</em>, просмотрите его значения. Это поле таблицы хранит значения плотности населения по субъектам.</p></li>
@@ -629,64 +639,147 @@
 <blockquote>
 <p>В поле <em>Shape</em> хранится геометрия объектов. Если слой точечный — это будут просто пары координат X и Y для каждого объекта. Для линейных и полигональных слоев это будет уже упорядоченный набор пар координат вершин границы объекта. Геометрия редактируется специальными инструментами, поэтому содержимое поля <em>Shape</em> скрыто от пользователя.</p>
 </blockquote></li>
-<li><p>Дважды щелкните на названии слоя и на вкладке <strong>Symbology</strong> и выберите способ изображения <em>Quantity — Graduated colors</em> (Картограммы).</p></li>
+<li><p>Дважды щелкните на названии слоя и на вкладке <strong>Symbology</strong> и выберите способ изображения <em>Quantity — Graduated colors</em> (Градуированные цвета).</p></li>
 <li><p>Выберите в списке <strong>Value Field</strong> поле <em>Density</em>, система автоматически сформирует список классов, созданных методом естественных интервалов.</p>
 <blockquote>
 <p>Существует множество методов классификаций: равных интервалов, квантилей, стандартных отклонений и т.д. По умолчанию всегда выбирается метод естественных интервалов, т.к. считается, что он в среднем неплохо отражает особенности распределения. Следует знать, однако, что этот метод классификации плохо справляется с распределениями, обладающими значительной асимметрией и эксцессом (<em>heavy-tail distribution</em>).</p>
 </blockquote></li>
-<li><p>Измените число классов на 7:</p>
-<p><img src="images/Ex04/image9.png" /></p></li>
-<li><p>Измените метод классификации. Для этого нажмите <strong>Classify</strong>. В появившемся диалоговом окне выберите в списке сверху ручной метод задания интервалов (<em>Manual</em>) и в правом столбце замените первые шесть значений на следующие: 1, 10, 25, 50, 100, 250. Максимальное значение оставьте без изменений. Жмите <strong>ОК</strong>:</p>
-<p><img src="images/Ex04/image10.png" /></p></li>
-<li><p>На вкладке <strong>Symbology</strong> выберите цветовую шкалу <em>Yellow To Dark Red</em>:</p>
-<p><img src="images/Ex04/image11.png" /></p></li>
-<li><p>Инвертируйте сортировку классов, чтобы наверху оказались максимальные градации:</p>
-<p><img src="images/Ex04/image12.png" /></p></li>
-<li><p>Инвертируйте цветовую шкалу, чтобы цвета соответствовали градациям:</p>
-<p><img src="images/Ex04/image13.png" /></p></li>
-<li><p>В основном диалоге настройки символов исправьте подписи классов (столбец <em>Label</em>) в соответствии с нижеприведенным фрагментом:</p>
-<p><img src="images/Ex04/image14.png" /></p></li>
+<li><p>Измените число классов на 7 (Рис. <a href="map-design-economic.html#fig:mde-cla">4.3</a>):</p>
+<div class="figure"><span id="fig:mde-cla"></span>
+<img src="images/Ex04/image9.png" alt="Изменение числа классов в методе Естественных интервалов" width="30%" />
+<p class="caption">
+Рис. 4.3: Изменение числа классов в методе Естественных интервалов
+</p>
+</div></li>
+<li><p>Измените метод классификации. Для этого нажмите <strong>Classify</strong>. В появившемся диалоговом окне выберите в списке сверху ручной метод задания интервалов (<em>Manual</em>) и в правом столбце замените первые шесть значений на следующие: 1, 10, 25, 50, 100, 250. Максимальное значение оставьте без изменений. Жмите <strong>ОК</strong> (Рис. <a href="map-design-economic.html#fig:mde-cle">4.4</a>):</p>
+<div class="figure"><span id="fig:mde-cle"></span>
+<img src="images/Ex04/image10.png" alt="Ручное редактирование границ классов" width="100%" />
+<p class="caption">
+Рис. 4.4: Ручное редактирование границ классов
+</p>
+</div></li>
+<li><p>На вкладке <strong>Symbology</strong> выберите цветовую шкалу <em>Yellow To Dark Red</em> (Рис. <a href="map-design-economic.html#fig:mde-ramp">4.5</a>):</p>
+<div class="figure"><span id="fig:mde-ramp"></span>
+<img src="images/Ex04/image11.png" alt="Цветовая шкала от желтого к темно-красному" width="40%" />
+<p class="caption">
+Рис. 4.5: Цветовая шкала от желтого к темно-красному
+</p>
+</div></li>
+<li><p>Инвертируйте сортировку классов, чтобы наверху оказались максимальные градации (Рис. <a href="map-design-economic.html#fig:mde-clssort">4.6</a>):</p>
+<div class="figure"><span id="fig:mde-clssort"></span>
+<img src="images/Ex04/image12.png" alt="Инвертирование сортировки классов" width="45%" />
+<p class="caption">
+Рис. 4.6: Инвертирование сортировки классов
+</p>
+</div></li>
+<li><p>Инвертируйте цветовую шкалу, чтобы цвета соответствовали градациям (Рис. <a href="map-design-economic.html#fig:mde-colsort">4.7</a>):</p>
+<div class="figure"><span id="fig:mde-colsort"></span>
+<img src="images/Ex04/image13.png" alt="Инвертирование цветового градиента" width="35%" />
+<p class="caption">
+Рис. 4.7: Инвертирование цветового градиента
+</p>
+</div></li>
+<li><p>В основном диалоге настройки символов исправьте подписи классов (столбец <em>Label</em>) в соответствии с нижеприведенным фрагментом (Рис. <a href="map-design-economic.html#fig:mde-labedit">4.8</a>):</p>
+<div class="figure"><span id="fig:mde-labedit"></span>
+<img src="images/Ex04/image14.png" alt="Редактирование подписей классов" width="100%" />
+<p class="caption">
+Рис. 4.8: Редактирование подписей классов
+</p>
+</div></li>
 <li><p>Нажмите <strong>ОК</strong>.</p></li>
-<li><p>Переименуйте показатель в «<em>чел/кв. км</em>»:</p>
-<p><img src="images/Ex04/image15.png" /></p>
-<p><em>Результат:</em></p>
-<p><img src="images/Ex04/image16.png" /></p>
-<p><kbd><strong>Снимок экрана №1.</strong> Картограммы плотности населения</kbd></p></li>
-<li><p>Сохраните документ карты (<strong>File &gt; Save As</strong>) в свою директорию <em>Ex4</em> под названием <em>Ex4.mxd</em>.</p></li>
+<li><p>Переименуйте показатель в «<em>чел/кв. км</em>» (Рис. <a href="map-design-economic.html#fig:mde-unedit">4.9</a>):</p>
+<div class="figure"><span id="fig:mde-unedit"></span>
+<img src="images/Ex04/image15.png" alt="Редактирование единиц измерения" width="30%" />
+<p class="caption">
+Рис. 4.9: Редактирование единиц измерения
+</p>
+</div>
+<p><em>Результат</em> (Рис. <a href="map-design-economic.html#fig:mde-choropleth">4.10</a>):</p>
+<div class="figure"><span id="fig:mde-choropleth"></span>
+<img src="images/Ex04/image16.png" alt="Визуализация плотности населения по регионам" width="100%" />
+<p class="caption">
+Рис. 4.10: Визуализация плотности населения по регионам
+</p>
+</div></li>
 </ol>
+<p><kbd><strong>Снимок экрана №1.</strong> Картограммы плотности населения</kbd></p>
+<p><strong>Сохраните документ карты</strong> через команду меню <strong>File &gt; Save as</strong> в свой каталог <em>Ex04</em> под названием <em>Ex04_<Фамилия>.mxd</em>.</p>
+<blockquote>
+<p>Файл с расширением <code>.mxd</code> является файлом документа карты <strong>ArcMap</strong>. Он содержит перечень слоев и их настроек, созданные компоновки и ряд дополнительных параметров. Документ карты, как и входящие в него слои, не хранит сами данные, а лишь <em>ссылается</em> на них. Поэтому, перемещая проект на другой компьютер, вы должны также переместить и данные, чтобы он открылся (в вашем случае — базу геоданных, из которой вы добавляли классы объектов на карту).</p>
+</blockquote>
 </div>
 <div id="map-design-economic-diagrams" class="section level2">
 <h2><span class="header-section-number">4.4</span> Создание картодиаграмм</h2>
 <p><a href="map-design-economic.html#map-design-economic">В начало упражнения ⇡</a></p>
-<ol start="2" style="list-style-type: decimal">
-<li><p>Скопируйте и вставьте слой «<em>Плотность населения</em>». Переименуйте его в «<em>Численность населения</em>»:</p>
-<p><img src="images/Ex04/image17.png" /></p></li>
+<ol style="list-style-type: decimal">
+<li><p>Скопируйте и вставьте слой «<em>Плотность населения</em>». Переименуйте его в «<em>Численность населения</em>» (Рис. <a href="map-design-economic.html#fig:mde-popedit">4.11</a>):</p>
+<div class="figure"><span id="fig:mde-popedit"></span>
+<img src="images/Ex04/image17.png" alt="Редактирование названия слоя численности населения" width="35%" />
+<p class="caption">
+Рис. 4.11: Редактирование названия слоя численности населения
+</p>
+</div></li>
 <li><p>Разместите новый слой поверх слоя плотности населения.</p></li>
-<li><p>Измените его способ изображения на <em>Картодиаграммы (Quantities &gt; Graduated Symbols)</em>.</p></li>
-<li><p>Выберите для отображения поле <em>SUM_Все_население</em>. Появится шкала классификации картодиаграмм.</p></li>
-<li><p>Измените цвет кружка на голубой. Для этого нажмите кнопку <strong>Template</strong>, выберите значок <em>Circle 2</em> с тонкой обводкой и смените цвет заливки:</p>
-<p><img src="images/Ex04/image18.png" /></p></li>
-<li><p>Установите число классов равным 6:</p>
-<p><img src="images/Ex04/image19.png" /></p></li>
-<li><p>Аналогично предыдущему слою выберите ручной метод классификации и введите следующие границы классов: <span class="math inline">\(500, 1000, 2500, 5000, 10000\)</span>. Максимальную границу оставьте прежней:</p>
-<p><img src="images/Ex04/image20.png" /></p></li>
+<li><p>Измените его способ изображения на <em>Картодиаграммы (Quantities &gt; Graduated Symbols)</em> (Градуированные символы).</p></li>
+<li><p>Выберите для отображения поле <em>SUM_Все_население</em>. Появится шкала классификации показателя.</p></li>
+<li><p>Измените цвет кружка на голубой. Для этого нажмите кнопку <strong>Template</strong>, выберите значок <em>Circle 2</em> с тонкой обводкой и смените цвет заливки (Рис. <a href="map-design-economic.html#fig:mde-popsym">4.12</a>):</p>
+<div class="figure"><span id="fig:mde-popsym"></span>
+<img src="images/Ex04/image18.png" alt="Выбор символа для построения диаграмм" width="100%" />
+<p class="caption">
+Рис. 4.12: Выбор символа для построения диаграмм
+</p>
+</div></li>
+<li><p>Установите число классов равным <code>6</code> (Рис. <a href="map-design-economic.html#fig:mde-popncla">4.13</a>):</p>
+<div class="figure"><span id="fig:mde-popncla"></span>
+<img src="images/Ex04/image19.png" alt="Редактирование количества классов для диаграмм" width="100%" />
+<p class="caption">
+Рис. 4.13: Редактирование количества классов для диаграмм
+</p>
+</div></li>
+<li><p>Аналогично предыдущему слою выберите ручной метод классификации и введите следующие границы классов: <span class="math inline">\(500, 1000, 2500, 5000, 10000\)</span>. Максимальную границу оставьте прежней (Рис. <a href="map-design-economic.html#fig:mde-popbrcla">4.14</a>):</p>
+<div class="figure"><span id="fig:mde-popbrcla"></span>
+<img src="images/Ex04/image20.png" alt="Редактирование границ классов для диаграмм" width="100%" />
+<p class="caption">
+Рис. 4.14: Редактирование границ классов для диаграмм
+</p>
+</div></li>
 <li><p>Нажмите <strong>ОК</strong>.</p></li>
 <li><p>Инвертируйте порядок классов и порядок символов в классификации (аналогично предыдущему слою) так чтобы наверху оказались максимальные значения.</p></li>
-<li><p>Установите на вкладке <strong>Symbology</strong> максимальный и минимальный размер значка равным 18 и 4 пункта соответственно:</p>
-<p><img src="images/Ex04/image21.png" /></p></li>
-<li><p>Отредактируйте подписи классов по аналогии с картограммами:</p>
-<p><img src="images/Ex04/image22.png" /></p></li>
-<li><p>Задайте символ фона картодиаграмм в виде полигона с пустой заливкой и пустой обводкой. Для этого щелкните на кнопке <strong>Background</strong> и выберите режим <em>No Color</em> для заливки и для обводки:</p>
-<p><img src="images/Ex04/image23.png" /></p></li>
+<li><p>Установите на вкладке <strong>Symbology</strong> максимальный и минимальный размер значка равным 18 и 4 пункта соответственно (Рис. <a href="map-design-economic.html#fig:mde-popsize">4.15</a>):</p>
+<div class="figure"><span id="fig:mde-popsize"></span>
+<img src="images/Ex04/image21.png" alt="Изменение границ размеров символа" width="40%" />
+<p class="caption">
+Рис. 4.15: Изменение границ размеров символа
+</p>
+</div></li>
+<li><p>Отредактируйте подписи классов по аналогии с картограммами (Рис. <a href="map-design-economic.html#fig:mde-poplabcla">4.16</a>):</p>
+<div class="figure"><span id="fig:mde-poplabcla"></span>
+<img src="images/Ex04/image22.png" alt="Редактирование подписей классов размеров кружков" width="50%" />
+<p class="caption">
+Рис. 4.16: Редактирование подписей классов размеров кружков
+</p>
+</div></li>
+<li><p>Задайте символ фона картодиаграмм в виде полигона с пустой заливкой и пустой обводкой. Для этого щелкните на кнопке <strong>Background</strong> и выберите режим <em>No Color</em> для заливки и для обводки (Рис. <a href="map-design-economic.html#fig:mde-popnocolor">4.17</a>):</p>
+<div class="figure"><span id="fig:mde-popnocolor"></span>
+<img src="images/Ex04/image23.png" alt="Установка пустого цвет заливки и обводки полигонов" width="100%" />
+<p class="caption">
+Рис. 4.17: Установка пустого цвет заливки и обводки полигонов
+</p>
+</div></li>
 <li><p>Нажмите <strong>ОК</strong>.</p>
-<p><em>Результат:</em></p>
-<p><img src="images/Ex04/image24.png" /></p>
+<p><em>Результат</em> (Рис. <a href="map-design-economic.html#fig:mde-popdiag">4.18</a>):</p>
+<div class="figure"><span id="fig:mde-popdiag"></span>
+<img src="images/Ex04/image24.png" alt="Картодиаграммы численности населения" width="100%" />
+<p class="caption">
+Рис. 4.18: Картодиаграммы численности населения
+</p>
+</div>
 <p><kbd><strong>Снимок экрана №2.</strong> Картодиаграммы численности населения</kbd></p></li>
 <li><p>Сохраните документ карты</p></li>
 </ol>
 </div>
 <div id="map-design-economic-general" class="section level2">
-<h2><span class="header-section-number">4.5</span> Оформление общегеографической основы</h2>
+<h2><span class="header-section-number">4.5</span> Оформление географической основы</h2>
 <p><a href="map-design-economic.html#map-design-economic">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слои <em>Borders</em>, <em>Cities</em>, <em>Countries</em> и <em>Lakes</em>. Установите следующий порядок слоев в таблице содержания:</p>
@@ -751,8 +844,13 @@
 </tr>
 </tbody>
 </table>
-<p><em>Результат:</em>
-<img src="images/Ex04/image25.png" /></p>
+<p><em>Результат</em> (Рис. <a href="map-design-economic.html#fig:mde-popback">4.19</a>):</p>
+<div class="figure"><span id="fig:mde-popback"></span>
+<img src="images/Ex04/image25.png" alt="Карта с элементами общегеографической основы" width="100%" />
+<p class="caption">
+Рис. 4.19: Карта с элементами общегеографической основы
+</p>
+</div>
 <p><kbd><strong>Снимок экрана №3.</strong> Карта с элементами общегеографической основы</kbd></p></li>
 <li><p>Сохраните документ карты.</p></li>
 </ol>
@@ -761,10 +859,20 @@
 <h2><span class="header-section-number">4.6</span> Настройка подписей</h2>
 <p><a href="map-design-economic.html#map-design-economic">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
-<li><p>Включите механизм размещения подписей <strong>Maplex</strong>:</p>
-<p><img src="images/Ex04/image26.png" /></p></li>
-<li><p>Включите подписи для слоя <em>Города</em> на вкладке <strong>Labels</strong>. Выберите в качестве поля для подписей <em>name_2.</em> Остальные настройки оставьте по умолчанию:</p>
-<p><img src="images/Ex04/image27.png" /></p></li>
+<li><p>Включите механизм размещения подписей <strong>Maplex</strong> (Рис. <a href="map-design-economic.html#fig:mde-maplex">4.20</a>):</p>
+<div class="figure"><span id="fig:mde-maplex"></span>
+<img src="images/Ex04/image26.png" alt="Механизм размещения подписей Maplex" width="50%" />
+<p class="caption">
+Рис. 4.20: Механизм размещения подписей Maplex
+</p>
+</div></li>
+<li><p>Включите подписи для слоя <em>Города</em> на вкладке <strong>Labels</strong>. Выберите в качестве поля для подписей <em>name_2.</em> Остальные настройки оставьте по умолчанию (Рис. <a href="map-design-economic.html#fig:mde-labels">4.21</a>):</p>
+<div class="figure"><span id="fig:mde-labels"></span>
+<img src="images/Ex04/image27.png" alt="Механизм размещения подписей Maplex" width="100%" />
+<p class="caption">
+Рис. 4.21: Механизм размещения подписей Maplex
+</p>
+</div></li>
 <li><p>Включите подписи для слоя Страны. Настройте подписи следующим образом:</p>
 <table>
 <thead>
@@ -796,8 +904,13 @@
 </tr>
 </tbody>
 </table>
-<p><em>Результат:</em></p>
-<p><img src="images/Ex04/image28.png" /></p>
+<p><em>Результат</em> (Рис. <a href="map-design-economic.html#fig:mde-wlabels">4.22</a>):</p>
+<div class="figure"><span id="fig:mde-wlabels"></span>
+<img src="images/Ex04/image28.png" alt="Карта с подписями объектов" width="100%" />
+<p class="caption">
+Рис. 4.22: Карта с подписями объектов
+</p>
+</div>
 <p><kbd><strong>Снимок экрана №4.</strong> Карта с подписями объектов</kbd></p></li>
 <li><p>Сохраните документ карты.</p></li>
 </ol>
@@ -815,12 +928,27 @@
 <li><p>Установите масштаб карты равным <span class="math inline">\(1:35 000 000\)</span>. Подгоните размер фрейма данных таким образом, чтобы он был слегка больше контура России. Для этого используйте стрелку <img src="images/Ex04/image29.png" /> на панели <strong>Tools</strong>. Разместите его в правом верхнем углу карты.</p></li>
 <li><p>Отцентрируйте контур России внутри фрейма (рамки). Для этого используйте лапу <img src="images/Ex04/image30.png" /> на панели <strong>Tools</strong>.</p></li>
 <li><p>Смените цвет фрейма данных (фона) на светло-голубой.</p>
-<p><em>Результат:</em>
-<img src="images/Ex04/image31.png" /></p></li>
-<li><p>Добавьте на карту легенду, включив в нее только слои <em>Численность населения</em> и <em>Плотность населения.</em> Нажмите <strong>Далее</strong>.</p>
-<p><img src="images/Ex04/image32.png" /></p></li>
-<li><p>В следующем диалоге название легенды оставьте пустым:</p>
-<p><img src="images/Ex04/image33.png" /></p></li>
+<p><em>Результат</em> (Рис. <a href="map-design-economic.html#fig:mde-frcolor">4.23</a>):</p>
+<div class="figure"><span id="fig:mde-frcolor"></span>
+<img src="images/Ex04/image31.png" alt="Изменение фонового цвета фрейма данных" width="100%" />
+<p class="caption">
+Рис. 4.23: Изменение фонового цвета фрейма данных
+</p>
+</div></li>
+<li><p>Добавьте на карту легенду, включив в нее только слои <em>Численность населения</em> и <em>Плотность населения.</em> Нажмите <strong>Далее</strong> (Рис. <a href="map-design-economic.html#fig:mde-leglyrs">4.24</a>).</p>
+<div class="figure"><span id="fig:mde-leglyrs"></span>
+<img src="images/Ex04/image32.png" alt="Добавление слоев в легенду карты" width="100%" />
+<p class="caption">
+Рис. 4.24: Добавление слоев в легенду карты
+</p>
+</div></li>
+<li><p>В следующем диалоге название легенды оставьте пустым (Рис. <a href="map-design-economic.html#fig:mde-legtitle">4.25</a>):</p>
+<div class="figure"><span id="fig:mde-legtitle"></span>
+<img src="images/Ex04/image33.png" alt="Пустое название легенды" width="100%" />
+<p class="caption">
+Рис. 4.25: Пустое название легенды
+</p>
+</div></li>
 <li><p>Далее все параметры оставьте по умолчанию.</p></li>
 <li><p>Добавьте сетку координат со следующими параметрами:</p>
 <table>
@@ -846,14 +974,24 @@
 </tbody>
 </table></li>
 <li><p>Отключите <a href="manual-projections.html#manual-projections-zero-degrees">отображение нулевых минут и секунд</a>.</p></li>
-<li><p>Разместите над картой текст заголовка карты, используя панель <strong>Drawing</strong> или меню <strong>Insert</strong>:</p>
-<p><img src="images/Ex04/image34.png" /></p></li>
+<li><p>Разместите над картой текст заголовка карты, используя панель <strong>Drawing</strong> или меню <strong>Insert</strong> (Рис. <a href="map-design-economic.html#fig:mde-text">4.26</a>):</p>
+<div class="figure"><span id="fig:mde-text"></span>
+<img src="images/Ex04/image34.png" alt="Добвление текста через панель __Drawing__" width="100%" />
+<p class="caption">
+Рис. 4.26: Добвление текста через панель <strong>Drawing</strong>
+</p>
+</div></li>
 <li><p>Разместите под картой по центру численный масштаб <span class="math inline">\(1:30 000 000\)</span>.</p></li>
 <li><p>Разместите в правом нижнем углу карты текст «Выполнил» и свое ФИО.</p>
-<p>Результат:
-<img src="images/Ex04/image35.png" /></p>
+<p><strong>Результат</strong> (Рис. <a href="map-design-economic.html#fig:mde-res">4.27</a>):</p>
+<div class="figure"><span id="fig:mde-res"></span>
+<img src="images/Ex04/image35.png" alt="Окончательный вид карты" width="100%" />
+<p class="caption">
+Рис. 4.27: Окончательный вид карты
+</p>
+</div>
 <p><kbd><strong>Снимок экрана №5.</strong> Итоговая карта</kbd></p></li>
-<li><p>Сохраните карту.</p></li>
+<li><p>Сохраните документ карты.</p></li>
 </ol>
 </div>
 <div id="map-design-economic-export" class="section level2">
