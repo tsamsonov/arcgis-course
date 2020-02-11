@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Упражнение 5 Привязка и цифрование туристской карты | Основы геоинформатики: практикум</title>
+  <title>Упражнение 5 Привязка и векторизация туристской карты | Основы геоинформатики: практикум</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Упражнение 5 Привязка и цифрование туристской карты | Основы геоинформатики: практикум" />
+  <meta property="og:title" content="Упражнение 5 Привязка и векторизация туристской карты | Основы геоинформатики: практикум" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="tsamsonov/arcgis-course" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Упражнение 5 Привязка и цифрование туристской карты | Основы геоинформатики: практикум" />
+  <meta name="twitter:title" content="Упражнение 5 Привязка и векторизация туристской карты | Основы геоинформатики: практикум" />
   
   <meta name="twitter:description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Тимофей Самсонов" />
 
 
-<meta name="date" content="2020-02-05" />
+<meta name="date" content="2020-02-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -131,14 +131,17 @@
 <li class="chapter" data-level="4.9" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-questions"><i class="fa fa-check"></i><b>4.9</b> Контрольные вопросы</a></li>
 </ul></li>
 <li class="part"><span><b>II Базовые технологии</b></span></li>
-<li class="chapter" data-level="5" data-path="map-ref-general.html"><a href="map-ref-general.html"><i class="fa fa-check"></i><b>5</b> Привязка и цифрование туристской карты</a><ul>
+<li class="chapter" data-level="5" data-path="map-ref-general.html"><a href="map-ref-general.html"><i class="fa fa-check"></i><b>5</b> Привязка и векторизация туристской карты</a><ul>
 <li class="chapter" data-level="5.1" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-intro"><i class="fa fa-check"></i><b>5.1</b> Введение</a><ul>
 <li class="chapter" data-level="5.1.1" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-control"><i class="fa fa-check"></i><b>5.1.1</b> Контрольный лист</a></li>
 <li class="chapter" data-level="5.1.2" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-anno"><i class="fa fa-check"></i><b>5.1.2</b> Аннотация</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-referencing"><i class="fa fa-check"></i><b>5.2</b> Привязка карт</a></li>
+<li class="chapter" data-level="5.2" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-referencing"><i class="fa fa-check"></i><b>5.2</b> Привязка карт</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-referencing-phys"><i class="fa fa-check"></i><b>5.2.1</b> Карта физико-географических регионов</a></li>
+<li class="chapter" data-level="5.2.2" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-referencing-tourist"><i class="fa fa-check"></i><b>5.2.2</b> Карта туристического маршрута</a></li>
+</ul></li>
 <li class="chapter" data-level="5.3" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-geodatabase"><i class="fa fa-check"></i><b>5.3</b> Создание базы данных и классов пространственных объектов</a></li>
-<li class="chapter" data-level="5.4" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-digitizing"><i class="fa fa-check"></i><b>5.4</b> Цифрование регионов</a></li>
+<li class="chapter" data-level="5.4" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-digitizing"><i class="fa fa-check"></i><b>5.4</b> Векторизация регионов</a></li>
 <li class="chapter" data-level="5.5" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-attributes"><i class="fa fa-check"></i><b>5.5</b> Атрибутирование регионов</a></li>
 <li class="chapter" data-level="5.6" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-routes-poi"><i class="fa fa-check"></i><b>5.6</b> Цифрование маршрутов и точек интереса</a></li>
 <li class="chapter" data-level="5.7" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-design"><i class="fa fa-check"></i><b>5.7</b> Оформление карты</a></li>
@@ -505,11 +508,11 @@
 
             <section class="normal" id="section-">
 <div id="map-ref-general" class="section level1">
-<h1><span class="header-section-number">Упражнение 5</span> Привязка и цифрование туристской карты</h1>
+<h1><span class="header-section-number">Упражнение 5</span> Привязка и векторизация туристской карты</h1>
 <p><a href="http://autolab.geogr.msu.ru/gis/data/Ex05.zip">Скачать данные и файл отчета</a></p>
 <div id="map-ref-general-intro" class="section level2">
 <h2><span class="header-section-number">5.1</span> Введение</h2>
-<p><strong>Цель задания</strong> — знакомство с привязкой, трансформированием и цифрованием геоизображений.</p>
+<p><strong>Цель задания</strong> — знакомство с привязкой, трансформированием и векторизацией растровых геоизображений.</p>
 <table>
 <thead>
 <tr class="header">
@@ -536,7 +539,7 @@
 </tr>
 <tr class="odd">
 <td align="left"><em>Ключевые слова</em></td>
-<td>Системы координат, проекции, трансформирование координат, пространственная привязка, цифрование, классы пространственных объектов, база пространственных данных,</td>
+<td>Системы координат, проекции, трансформирование координат, пространственная привязка, цифрование, векторизация, классы пространственных объектов, база пространственных данных,</td>
 </tr>
 </tbody>
 </table>
@@ -554,38 +557,74 @@
 </div>
 <div id="map-ref-general-anno" class="section level3">
 <h3><span class="header-section-number">5.1.2</span> Аннотация</h3>
-<p>Задание посвящено знакомству с привязкой растровых карт, созданием и наполнением баз пространственных данных путем цифрования, оформлением карт на их основе.</p>
+<p>Задание посвящено знакомству с привязкой растровых карт, созданием и наполнением баз пространственных данных путем их векториизации, оформлением карт на их основе.</p>
 <p>В задании предлагается привязать в координатную систему карту природных зон и карту туристического маршрута по территории Швейцарии. По результатам цифрования этих карт вы составите туристскую карту, показывающую прохождение маршрута по разным природным зонам.</p>
 </div>
 </div>
 <div id="map-ref-general-referencing" class="section level2">
 <h2><span class="header-section-number">5.2</span> Привязка карт</h2>
 <p><a href="map-ref-general.html#map-ref-general">В начало упражнения ⇡</a></p>
+<div id="map-ref-general-referencing-phys" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> Карта физико-географических регионов</h3>
 <ol style="list-style-type: decimal">
 <li><p>Внимательно прочтите раздел <strong>Привязка растровых данных (Georeferencing)</strong> в разделе <strong>Описание функций</strong>.</p></li>
 <li><p>Добавьте на карту слой <em>Countries</em> из базы данных упражнения 3.</p></li>
 <li><p>Добавьте на карту растр <em>SwissRegions.gif</em>. Появится диалог, предупреждающий вас, что добавляемый файл не имеет пространственной привязки. Нажмите <strong>ОК</strong>:</p>
-<p><img src="images/Ex05/image8.png" /></p></li>
+<div class="figure"><span id="fig:mrg-noref"></span>
+<img src="images/Ex05/image8.png" alt="Предупреждение о неизвестной пространственной привязке" width="100%" />
+<p class="caption">
+Рис. 5.1: Предупреждение о неизвестной пространственной привязке
+</p>
+</div></li>
 <li><p>Убедитесь, что контур страны отображается примерно посередине экрана.</p></li>
 <li><p>Откройте панель инструментов <strong>Georeferencing</strong>. Выберите в меню команду <strong>Fit to Display</strong>, чтобы переместить непривязанный растр на середину области отображения:</p>
-<p><img src="images/Ex05/image9.png" /></p></li>
+<div class="figure"><span id="fig:mrg-fit"></span>
+<img src="images/Ex05/image9.png" alt="Вписывание изображения в экран с помощью панели Georeferencing" width="100%" />
+<p class="caption">
+Рис. 5.2: Вписывание изображения в экран с помощью панели Georeferencing
+</p>
+</div></li>
 <li><p>Сделайте растровый слой прозрачным на <em>50%</em>.</p></li>
 <li><p>Используя <strong>инструмент расстановки контрольных точек</strong>, укажите <em>3-6</em> соответствующих точек по границе страны на характерных выступах контура:</p>
-<p><img src="images/Ex05/image10.png" /></p></li>
-<li><p>Выберите команду меню <strong>Georeferencing &gt; Update Georeferencing</strong>, чтобы завершить привязку растра. При этом по умолчанию будет примененоаффинное преобразование с минимизацией среднеквадратической ошибки отклонения исходных и целевых координат:</p>
-<p><img src="images/Ex05/image11.png" /></p></li>
+<div class="figure"><span id="fig:mrg-ctr"></span>
+<img src="images/Ex05/image10.png" alt="Инструмент расстановки контрольных точек" width="100%" />
+<p class="caption">
+Рис. 5.3: Инструмент расстановки контрольных точек
+</p>
+</div></li>
+<li><p>Выберите команду меню <strong>Georeferencing &gt; Update Georeferencing</strong>, чтобы завершить привязку растра. При этом по умолчанию будет применено аффинное преобразование с минимизацией среднеквадратической ошибки отклонения исходных и целевых координат:</p>
+<div class="figure"><span id="fig:mrg-upd"></span>
+<img src="images/Ex05/image11.png" alt="Привязанная карта физико-географических регионов" width="100%" />
+<p class="caption">
+Рис. 5.4: Привязанная карта физико-географических регионов
+</p>
+</div></li>
 </ol>
 <p><kbd><strong>Снимок экрана №1</strong>. Привязанная карта физико-географических регионов</kbd></p>
+</div>
+<div id="map-ref-general-referencing-tourist" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Карта туристического маршрута</h3>
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слой <em>WineSafariRoute.jpg</em>.</p></li>
 <li><p>Выберите его в списке на панели <strong>Georeferencing</strong>:</p>
-<p><img src="images/Ex05/image12.png" /></p></li>
+<div class="figure"><span id="fig:mrg-lyr"></span>
+<img src="images/Ex05/image12.png" alt="Выбор слоя для привязки" width="100%" />
+<p class="caption">
+Рис. 5.5: Выбор слоя для привязки
+</p>
+</div></li>
 <li><p>Отключите слой <em>SwissRegions.gif</em> в таблице содержания.</p></li>
 <li><p>Привяжите растр <em>WineSafariRoute</em> аналогично предыдущему растру, используя контрольные точки:</p>
-<p><img src="images/Ex05/image13.png" /></p></li>
+<div class="figure"><span id="fig:mrg-rou"></span>
+<img src="images/Ex05/image13.png" alt="Привязка карты маршрута по контрольным точкам" width="100%" />
+<p class="caption">
+Рис. 5.6: Привязка карты маршрута по контрольным точкам
+</p>
+</div></li>
+<li><p>Выберите команду <strong>Georeferencing &gt; Update georeferencing</strong>, чтобы завершить привязку второго растра.</p></li>
 </ol>
-<p>1.Выберите команду <strong>Georeferencing &gt; Update georeferencing</strong>, чтобы завершить привязку второго растра.</p>
 <p><kbd><strong>Снимок экрана №2</strong>. Привязанная карта маршрута</kbd></p>
+</div>
 </div>
 <div id="map-ref-general-geodatabase" class="section level2">
 <h2><span class="header-section-number">5.3</span> Создание базы данных и классов пространственных объектов</h2>
@@ -625,39 +664,88 @@
 </tr>
 </tbody>
 </table>
-<p>По завершению создания слоев они автоматически будут добавлены на карту:</p>
-<p><img src="images/Ex05/image14.png" /></p>
+<p>По завершению создания слоёв они автоматически будут добавлены в таблицу содержания карты:</p>
+<div class="figure"><span id="fig:mrg-lyrs"></span>
+<img src="images/Ex05/image14.png" alt="Созданные слои в таблице содержания карты" width="100%" />
+<p class="caption">
+Рис. 5.7: Созданные слои в таблице содержания карты
+</p>
+</div>
 </div>
 <div id="map-ref-general-digitizing" class="section level2">
-<h2><span class="header-section-number">5.4</span> Цифрование регионов</h2>
+<h2><span class="header-section-number">5.4</span> Векторизация регионов</h2>
 <p><a href="map-ref-general.html#map-ref-general">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Прочитайте параграф <strong>Редактирование</strong> в разделе <strong>Описание функций</strong>.</p></li>
 <li><p>Оставьте включенными только слои <em>Regions</em>, <em>SwissRegions</em> и <em>Countries</em>.</p></li>
 <li><p>Уберите <em>прозрачность</em> у слоя <em>SwissRegions</em>.</p></li>
 <li><p>Откройте сеанс редактирования для слоя <em>Regions</em>. Появится панель редактирования <strong>Editor</strong>, а также окно шаблонов объектов <strong>Create Features</strong>:</p>
-<p><img src="images/Ex05/image15.png" /></p></li>
-<li><p>Щелкните на шаблоне объекта <em>Regions</em> в окне <strong>Create Features</strong> и выберите режим цифрования <strong>Polygon</strong>:</p>
-<p><img src="images/Ex05/image16.png" /></p></li>
-<li><p>Оцифруйте регион <em>Prealpine Zones</em> в центре карты. По завершению дважды щелкните мышкой:</p>
-<p><img src="images/Ex05/image17.png" /></p></li>
+<div class="figure"><span id="fig:mrg-cre"></span>
+<img src="images/Ex05/image15.png" alt="Панель Editor и окно Create Features" width="100%" />
+<p class="caption">
+Рис. 5.8: Панель Editor и окно Create Features
+</p>
+</div></li>
+<li><p>Щелкните на шаблоне объекта <em>Regions</em> в окне <strong>Create Features</strong> и выберите режим создания объектов <strong>Polygon</strong>:</p>
+<div class="figure"><span id="fig:mrg-pol"></span>
+<img src="images/Ex05/image16.png" alt="Выбор режима создания объектов" width="100%" />
+<p class="caption">
+Рис. 5.9: Выбор режима создания объектов
+</p>
+</div></li>
+<li><p>Последовательно щелкая мышкой на точках вдоль границы, оцифруйте регион <em>Prealpine Zones</em> (Предальпийские зоны) в центре карты. По завершению дважды щелкните мышкой:</p>
+<div class="figure"><span id="fig:mrg-alp"></span>
+<img src="images/Ex05/image17.png" alt="Ручная векторизация границы Предальпийской зоны" width="100%" />
+<p class="caption">
+Рис. 5.10: Ручная векторизация границы Предальпийской зоны
+</p>
+</div></li>
 <li><p>Чтобы появилась возможность пристыковать остальные регионы к границам стран, <strong>выделите</strong> в слое <em>Countries</em> все страны, кроме Швейцарии, <strong>скопируйте</strong> их в буфер обмена и <strong>вставьте</strong> в слой <em>Regions</em>:</p>
-<p><img src="images/Ex05/image18.png" /></p></li>
+<div class="figure"><span id="fig:mrg-bnd"></span>
+<img src="images/Ex05/image18.png" alt="Вставка границ стран в слой с границами физико-географических зон" width="100%" />
+<p class="caption">
+Рис. 5.11: Вставка границ стран в слой с границами физико-географических зон
+</p>
+</div></li>
 <li><p>Выделите опять шаблон <em>Regions</em> в окне <strong>Create Features</strong>.</p></li>
 <li><p>Используя режим <strong>Auto-Complete Polygon</strong>, оцифруйте границы оставшихся регионов в следующем порядке:</p>
 <ul>
-<li><p>Сначала небольшие регионы, примыкающие к границам:</p>
-<p><img src="images/Ex05/image19.png" /></p></li>
-<li><p>Затем область второго порядка (горы <em>Юра</em>):</p>
-<p><img src="images/Ex05/image20.png" /></p></li>
-<li><p>Наконец, границу между центральными регионами:</p>
-<p><img src="images/Ex05/image21.png" /></p></li>
-</ul></li>
+<li>Сначала небольшие регионы, примыкающие к границам:</li>
+</ul>
+<div class="figure"><span id="fig:mrg-breg"></span>
+<img src="images/Ex05/image19.png" alt="Регионы, примыкающие к границе" width="100%" />
+<p class="caption">
+Рис. 5.12: Регионы, примыкающие к границе
+</p>
+</div>
+<ul>
+<li>Затем область второго порядка дальности от границы (горы <em>Юра</em>):</li>
+</ul>
+<div class="figure"><span id="fig:mrg-jura"></span>
+<img src="images/Ex05/image20.png" alt="Векторизация региона гор Юра" width="100%" />
+<p class="caption">
+Рис. 5.13: Векторизация региона гор Юра
+</p>
+</div>
+<ul>
+<li>Наконец, границу между центральными регионами:</li>
+</ul>
+<div class="figure"><span id="fig:mrg-cnt"></span>
+<img src="images/Ex05/image21.png" alt="Граница между центральными регионами" width="100%" />
+<p class="caption">
+Рис. 5.14: Граница между центральными регионами
+</p>
+</div></li>
 <li><p>Выделите в слое <em>Regions</em> границы стран и удалите их.</p></li>
 <li><p>Выберите команду <strong>Editor &gt; Save Edits</strong>, чтобы сохранить результаты редактирования.</p></li>
 </ol>
-<p><em>Результат</em>:
-<img src="images/Ex05/image22.png" /></p>
+<p><em>Результат</em>:</p>
+<div class="figure"><span id="fig:mrg-cntr"></span>
+<img src="images/Ex05/image22.png" alt="Результат векторизации границ физико-географических регионов" width="100%" />
+<p class="caption">
+Рис. 5.15: Результат векторизации границ физико-географических регионов
+</p>
+</div>
 <p><kbd><strong>Снимок экрана №3</strong>. Векторный слой физико-географических регионов</kbd></p>
 </div>
 <div id="map-ref-general-attributes" class="section level2">
@@ -665,10 +753,20 @@
 <p><a href="map-ref-general.html#map-ref-general">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Уберите заливку регионов, линии сделайте толщиной 1.5-2 пиксела:</p>
-<p><img src="images/Ex05/image23.png" /></p></li>
+<div class="figure"><span id="fig:mrg-out"></span>
+<img src="images/Ex05/image23.png" alt="Оформление границ регионов" width="100%" />
+<p class="caption">
+Рис. 5.16: Оформление границ регионов
+</p>
+</div></li>
 <li><p>Откройте атрибутивную таблицу слоя <em>Regions</em>.</p></li>
 <li><p>Поочередно выделяя каждый объект в таблице или на карте, заполните его атрибуты в соответствии с легендой:</p>
-<p><img src="images/Ex05/image24.png" /></p></li>
+<div class="figure"><span id="fig:mrg-att"></span>
+<img src="images/Ex05/image24.png" alt="Заполнение атрибутов объектов" width="100%" />
+<p class="caption">
+Рис. 5.17: Заполнение атрибутов объектов
+</p>
+</div></li>
 <li><p>Сохраните изменения и завершите сеанс редактирования.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №4</strong>. Атрибутированные регионы</kbd></p>
@@ -681,17 +779,46 @@
 <li><p>Включите слои <em>WinSafariRoute</em>, <em>Routes</em> и <em>Places</em>.</p></li>
 <li><p>Оцифруйте объекты слоев <em>Places</em> и <em>Routes</em>, используя инструменты панели <strong>Сreate Features</strong>:</p>
 <ul>
-<li><p>Начните с расстановки точек:</p>
-<p><img src="images/Ex05/image25.png" /></p></li>
-<li><p>Увеличьте масштаб, чтобы были хорошо видны изгибы линий:</p>
-<p><img src="images/Ex05/image26.png" /></p></li>
-<li><p>Проведите линии через получившиеся точки, повторяя контур исходной линии на растровой подложке. Каждую линию начинайте в точке и завершайте двойным щелчком в перекрестке:</p>
-<p><img src="images/Ex05/image27.png" /></p></li>
+<li>Начните с расстановки точек населённых пунктов:</li>
 </ul>
-<p><em>Результат</em>:
-<img src="images/Ex05/image28.png" /></p></li>
+<div class="figure"><span id="fig:mrg-pop"></span>
+<img src="images/Ex05/image25.png" alt="Расстановка точек населенных пунктов" width="100%" />
+<p class="caption">
+Рис. 5.18: Расстановка точек населенных пунктов
+</p>
+</div>
+<ul>
+<li>Увеличьте масштаб, чтобы были хорошо видны изгибы линий:</li>
+</ul>
+<div class="figure"><span id="fig:mrg-bds"></span>
+<img src="images/Ex05/image26.png" alt="Линии маршрутов при увеличенном масштабе" width="100%" />
+<p class="caption">
+Рис. 5.19: Линии маршрутов при увеличенном масштабе
+</p>
+</div>
+<ul>
+<li>Проведите линии через получившиеся точки, повторяя контур исходной линии на растровой подложке. Каждую линию начинайте в точке и завершайте двойным щелчком в перекрестке:</li>
+</ul>
+<div class="figure"><span id="fig:mrg-rts"></span>
+<img src="images/Ex05/image27.png" alt="Векторизация линий маршрутов" width="100%" />
+<p class="caption">
+Рис. 5.20: Векторизация линий маршрутов
+</p>
+</div>
+<p><em>Результат</em>:</p>
+<div class="figure"><span id="fig:mrg-vrts"></span>
+<img src="images/Ex05/image28.png" alt="Векторизованные линии маршрутов" width="100%" />
+<p class="caption">
+Рис. 5.21: Векторизованные линии маршрутов
+</p>
+</div></li>
 <li><p>Заполните названия городов в слое <em>Places</em>.</p>
-<p><img src="images/Ex05/image29.png" /></p></li>
+<div class="figure"><span id="fig:mrg-popn"></span>
+<img src="images/Ex05/image29.png" alt="Заполнение названий городов в атрибутах точек" width="100%" />
+<p class="caption">
+Рис. 5.22: Заполнение названий городов в атрибутах точек
+</p>
+</div></li>
 <li><p>Сохраните изменения и завершите сеанс редактирования.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №5</strong>. Слои маршрута и пунктов назначения</kbd></p>
@@ -703,9 +830,19 @@
 <li><p>Оставьте включенными слои <em>Regions</em>, <em>Routes</em>, <em>Places</em> и <em>Countries</em>. Остальные слои выключите.</p></li>
 <li><p>Уберите заливку у слоя <em>Countries</em>.</p></li>
 <li><p>Оформите слой <em>Regions</em> методом категорий по полю <em>NAME</em>:</p>
-<p><img src="images/Ex05/image30.png" /></p></li>
+<div class="figure"><span id="fig:mrg-symreg"></span>
+<img src="images/Ex05/image30.png" alt="Настройка визуализации слоя Regions" width="100%" />
+<p class="caption">
+Рис. 5.23: Настройка визуализации слоя Regions
+</p>
+</div></li>
 <li><p>Оформите слои <em>Routes</em> и <em>Places</em> по аналогии с нижеприведенным фрагментом:</p>
-<p><img src="images/Ex05/image31.png" /></p></li>
+<div class="figure"><span id="fig:mrg-sympop"></span>
+<img src="images/Ex05/image31.png" alt="Образец оформления слоёв Routes и Places" width="100%" />
+<p class="caption">
+Рис. 5.24: Образец оформления слоёв Routes и Places
+</p>
+</div></li>
 <li><p>Откройте панель <strong>Labeling</strong> и включите <strong>Maplex</strong> для размещения подписей.</p></li>
 <li><p>Включите подписи для слоя <em>Places</em> со следующими настройками:</p>
 <table>
@@ -738,22 +875,47 @@
 </tr>
 </tbody>
 </table>
-<p><em>Результат</em>:
-<img src="images/Ex05/image32.png" /></p></li>
+<p><em>Результат</em>:</p>
+<div class="figure"><span id="fig:mrg-labpop"></span>
+<img src="images/Ex05/image32.png" alt="Подписи населенных пунктов" width="100%" />
+<p class="caption">
+Рис. 5.25: Подписи населенных пунктов
+</p>
+</div></li>
 </ol>
 <p>Некоторые подписи могут быть размещены не очень удачно. Чтобы они не перекрывали линии маршрута и значки выполните следующие действия:</p>
 <ol style="list-style-type: decimal">
 <li><p>Откройте <em>настройки весов подписей</em> <strong>Label Weight Ranking</strong> на панели <strong>Labeling</strong></p></li>
 <li><p>Установите вес равным <em>1000</em> слоям <em>Places</em> и <em>Routes:</em></p>
-<p><img src="images/Ex05/image33.png" /></p>
-<p><em>Результат</em>:
-<img src="images/Ex05/image34.png" /></p></li>
-<li><p>Добавьте на карту слой <em>Hillshade</em> из базы данных упражнения 3, разместите его над слоем Regions и установите прозрачность <em>80%</em>.</p>
-<p><em>Результат</em>:
-<img src="images/Ex05/image35.png" /></p></li>
+<div class="figure"><span id="fig:mrg-labwgt"></span>
+<img src="images/Ex05/image33.png" alt="Редактирование весов для слоёв карты" width="100%" />
+<p class="caption">
+Рис. 5.26: Редактирование весов для слоёв карты
+</p>
+</div>
+<p><em>Результат</em>:</p>
+<div class="figure"><span id="fig:mrg-labres"></span>
+<img src="images/Ex05/image34.png" alt="Отображение подписей после настройки весов слоёв" width="100%" />
+<p class="caption">
+Рис. 5.27: Отображение подписей после настройки весов слоёв
+</p>
+</div></li>
+<li><p>Добавьте на карту слой аналитической отмывки рельефа <em>Hillshade</em> из базы данных упражнения 3, разместите его над слоем Regions и установите прозрачность <em>80%</em>.</p>
+<p><em>Результат</em>:</p>
+<div class="figure"><span id="fig:mrg-hill"></span>
+<img src="images/Ex05/image35.png" alt="Карта со слоем аналитической отмывки" width="100%" />
+<p class="caption">
+Рис. 5.28: Карта со слоем аналитической отмывки
+</p>
+</div></li>
 <li><p>Добавьте на карту слой <em>Lakes</em> и присвойте ему символ полигона с голубой заливкой без обводки.</p>
-<p><em>Результат</em>:
-<img src="images/Ex05/image36.png" /></p></li>
+<p><em>Результат</em>:</p>
+<div class="figure"><span id="fig:mrg-lakes"></span>
+<img src="images/Ex05/image36.png" alt="Карта со слоем озёр" width="100%" />
+<p class="caption">
+Рис. 5.29: Карта со слоем озёр
+</p>
+</div></li>
 </ol>
 <p><kbd><strong>Снимок экрана №6</strong>. Оформление карты</kbd></p>
 </div>
@@ -764,7 +926,12 @@
 <li><p>Переключитесь в <strong>режим компоновки</strong>.</p></li>
 <li><p>Установите альбомную ориентировку листа.</p></li>
 <li><p>Оформите компоновку в соответствии с нижеприведенным образцом:</p>
-<p><img src="images/Ex05/image37.png" /></p></li>
+<div class="figure"><span id="fig:mrg-lay"></span>
+<img src="images/Ex05/image37.png" alt="Образец компоновки карты" width="100%" />
+<p class="caption">
+Рис. 5.30: Образец компоновки карты
+</p>
+</div></li>
 </ol>
 <p><kbd><strong>Снимок экрана №7</strong>. Компоновка карты</kbd></p>
 <ol style="list-style-type: decimal">
