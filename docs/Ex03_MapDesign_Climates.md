@@ -86,19 +86,17 @@
 
 1. Выберите способ единого символа (**Features > Single symbol**)
 
-2. Щелкните на кнопке с изображением символа и измените оформление следующим образом:
+2. Щелкните на кнопке с изображением символа и измените оформление в диалоге настройки символа (Рис. \@ref(fig:mdc-lyrprop)) следующим образом:
 
     **Параметр**                      **Значение**
     --------------------------------- --------
     *Цвет заливки (Fill Color)*       Без заливки ![](images/Ex03/image13.png)
     *Цвет обводки (Outline Color)*    Серый 50% ![](images/Ex03/image14.png)
     *Толщина обводки (Outline width)* 0,5 ![](images/Ex03/image15.png)
-
-    Диалог свойств слоя (Рис. \@ref(fig:mdc-lyrprop)):
     
     <div class="figure">
-    <img src="images/Ex03/image16.png" alt="Диалог свойств слоя" width="100%" />
-    <p class="caption">(\#fig:mdc-lyrprop)Диалог свойств слоя</p>
+    <img src="images/Ex03/image16.png" alt="Диалог настройки символа" width="100%" />
+    <p class="caption">(\#fig:mdc-lyrprop)Диалог настройки символа</p>
     </div>
 
     __Результат__ (Рис. \@ref(fig:mdc-lyrres)):
@@ -118,8 +116,8 @@
 1. Добавьте на карту слой *Coast*, расположите его поверх слоя *Countries* и измените цвет линии на *Delft Blue* (Рис. \@ref(fig:mdc-color)):
     
     <div class="figure">
-    <img src="images/Ex03/image19.png" alt="Изображение береговой линии" width="40%" />
-    <p class="caption">(\#fig:mdc-color)Изображение береговой линии</p>
+    <img src="images/Ex03/image19.png" alt="Выбор цвета из палитры" width="40%" />
+    <p class="caption">(\#fig:mdc-color)Выбор цвета из палитры</p>
     </div>
 
 1. Добавьте на карту слой *Rivers* расположите его поверх слоя *Coast* и измените цвет линии на *Delft Blue,* а толщину сделайте равной 0,5 пиксела*.*
@@ -216,8 +214,8 @@
     *Цвет*       Серый 70%
     
     <div class="figure">
-    <img src="images/Ex03/image24.png" alt="Выбор значока для отображения направления течения" width="70%" />
-    <p class="caption">(\#fig:mdc-arrow)Выбор значока для отображения направления течения</p>
+    <img src="images/Ex03/image24.png" alt="Выбор значка для отображения направления течения" width="70%" />
+    <p class="caption">(\#fig:mdc-arrow)Выбор значка для отображения направления течения</p>
     </div>
 
 1. Нажмите *ОК* и еще раз *ОК*.

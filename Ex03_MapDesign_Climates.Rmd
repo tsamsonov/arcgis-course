@@ -87,17 +87,15 @@ knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning
 
 1. Выберите способ единого символа (**Features > Single symbol**)
 
-2. Щелкните на кнопке с изображением символа и измените оформление следующим образом:
+2. Щелкните на кнопке с изображением символа и измените оформление в диалоге настройки символа (Рис. \@ref(fig:mdc-lyrprop)) следующим образом:
 
     **Параметр**                      **Значение**
     --------------------------------- --------
     *Цвет заливки (Fill Color)*       Без заливки ![](images/Ex03/image13.png)
     *Цвет обводки (Outline Color)*    Серый 50% ![](images/Ex03/image14.png)
     *Толщина обводки (Outline width)* 0,5 ![](images/Ex03/image15.png)
-
-    Диалог свойств слоя (Рис. \@ref(fig:mdc-lyrprop)):
     
-    ```{r mdc-lyrprop, fig.cap = 'Диалог свойств слоя'}
+    ```{r mdc-lyrprop, fig.cap = 'Диалог настройки символа'}
     knitr::include_graphics('images/Ex03/image16.png')
     ```
 
@@ -115,7 +113,7 @@ knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning
 
 1. Добавьте на карту слой *Coast*, расположите его поверх слоя *Countries* и измените цвет линии на *Delft Blue* (Рис. \@ref(fig:mdc-color)):
     
-    ```{r mdc-color, out.width = '40%', fig.cap = 'Изображение береговой линии'}
+    ```{r mdc-color, out.width = '40%', fig.cap = 'Выбор цвета из палитры'}
     knitr::include_graphics('images/Ex03/image19.png')
     ```
 
@@ -208,7 +206,7 @@ knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning
     *Размер*     28
     *Цвет*       Серый 70%
     
-    ```{r mdc-arrow, out.width = '70%', fig.cap = 'Выбор значока для отображения направления течения'}
+    ```{r mdc-arrow, out.width = '70%', fig.cap = 'Выбор значка для отображения направления течения'}
     knitr::include_graphics('images/Ex03/image24.png')
     ```
 
