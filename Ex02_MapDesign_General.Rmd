@@ -44,7 +44,7 @@ knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning
 
 3. Раскройте базу данных *MapData.gdb* и изучите ее содержимое (Рис. \@ref(fig:mdg-gdb)).
     
-    ```{r mdg-gdb, fig.cap = 'База данных `MapData.gdb`'}
+    ```{r mdg-gdb, out.width = '30%', fig.cap = 'База данных `MapData.gdb`'}
     knitr::include_graphics('images/Ex02/image10.png')
     ```
 

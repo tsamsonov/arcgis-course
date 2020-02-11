@@ -43,7 +43,7 @@
 3. Раскройте базу данных *MapData.gdb* и изучите ее содержимое (Рис. \@ref(fig:mdg-gdb)).
     
     <div class="figure">
-    <img src="images/Ex02/image10.png" alt="База данных `MapData.gdb`" width="100%" />
+    <img src="images/Ex02/image10.png" alt="База данных `MapData.gdb`" width="30%" />
     <p class="caption">(\#fig:mdg-gdb)База данных `MapData.gdb`</p>
     </div>
 
