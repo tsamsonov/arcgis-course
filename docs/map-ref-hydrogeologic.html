@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Упражнение 6 Привязка и цифрование гидрогеологической карты | Основы геоинформатики: практикум</title>
+  <title>Упражнение 6 Привязка и векторизация гидрогеологической карты | Основы геоинформатики: практикум</title>
   <meta name="description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
   <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Упражнение 6 Привязка и цифрование гидрогеологической карты | Основы геоинформатики: практикум" />
+  <meta property="og:title" content="Упражнение 6 Привязка и векторизация гидрогеологической карты | Основы геоинформатики: практикум" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="tsamsonov/arcgis-course" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Упражнение 6 Привязка и цифрование гидрогеологической карты | Основы геоинформатики: практикум" />
+  <meta name="twitter:title" content="Упражнение 6 Привязка и векторизация гидрогеологической карты | Основы геоинформатики: практикум" />
   
   <meta name="twitter:description" content="Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова" />
   
@@ -148,7 +148,7 @@
 <li class="chapter" data-level="5.8" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-layout"><i class="fa fa-check"></i><b>5.8</b> Компоновка карты</a></li>
 <li class="chapter" data-level="5.9" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-questions"><i class="fa fa-check"></i><b>5.9</b> Контрольные вопросы</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html"><i class="fa fa-check"></i><b>6</b> Привязка и цифрование гидрогеологической карты</a><ul>
+<li class="chapter" data-level="6" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html"><i class="fa fa-check"></i><b>6</b> Привязка и векторизация гидрогеологической карты</a><ul>
 <li class="chapter" data-level="6.1" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-intro"><i class="fa fa-check"></i><b>6.1</b> Введение</a><ul>
 <li class="chapter" data-level="6.1.1" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-control"><i class="fa fa-check"></i><b>6.1.1</b> Контрольный лист</a></li>
 <li class="chapter" data-level="6.1.2" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-annotation"><i class="fa fa-check"></i><b>6.1.2</b> Аннотация</a></li>
@@ -508,11 +508,11 @@
 
             <section class="normal" id="section-">
 <div id="map-ref-hydrogeologic" class="section level1">
-<h1><span class="header-section-number">Упражнение 6</span> Привязка и цифрование гидрогеологической карты</h1>
+<h1><span class="header-section-number">Упражнение 6</span> Привязка и векторизация гидрогеологической карты</h1>
 <p><a href="http://autolab.geogr.msu.ru/gis/data/Ex06.zip">Скачать данные и файл отчета</a></p>
 <div id="map-ref-hydrogeologic-intro" class="section level2">
 <h2><span class="header-section-number">6.1</span> Введение</h2>
-<p><strong>Цель задания</strong> — знакомство с привязкой, трансформированием и цифрованием геоизображений, элементами базовых технологий ГИС (оверлей, пространственные запросы).</p>
+<p><strong>Цель задания</strong> — знакомство с привязкой, трансформированием и векторизацией геоизображений, элементами базовых технологий ГИС (оверлей, пространственные запросы).</p>
 <table>
 <thead>
 <tr class="header">
@@ -535,7 +535,7 @@
 </tr>
 <tr class="even">
 <td align="left"><em>Исходные данные</em></td>
-<td>Слои картографической основы (карт масштаба 1:2 500 000), растровая карта гидрогеологического районирования на район среднего течения Дона.</td>
+<td>Слои картографической основы (карт масштаба 1:2 500 000), растровая карта гидрогеологического районирования на район среднего течения Дона.</td>
 </tr>
 <tr class="odd">
 <td align="left"><em>Результат</em></td>
@@ -602,17 +602,29 @@
 </table></li>
 </ul>
 <p>Диалог примет следующий вид:</p>
-<div class="figure">
-<img src="images/Ex06/image7.png" alt="" />
-<p class="caption">Рисунок 5</p>
+<div class="figure"><span id="fig:mrh-sym"></span>
+<img src="images/Ex06/image7.png" alt="Настройка параметров толщины линий" width="40%" />
+<p class="caption">
+Рис. 6.1: Настройка параметров толщины линий
+</p>
 </div></li>
 <li><p>Включите опцию подписи рек. Перейдите на вкладу <strong>Labels</strong> и отметьте флажок <strong>Label features in this layer</strong>. Выберите поле <em>Название</em> в качестве поля для подписей, смените их цвет на темно-синий и установите криволинейное размещение вдоль линии. Нажмите ОК. В результате операции все реки будут подписаны.</p></li>
 <li><p>Чтобы были подписаны только крупнейшие реки, необходимо использовать определяющий запрос на языке SQL. Для этого откройте снова свойства слоя и на вкладке <strong>Labels</strong> выберите метод «<em>Define classes of features and label each class separately</em>». Нажмите кнопку <strong>SQL query…</strong> и введите в поле следующий текст запроса:</p>
 <p><code>"CLASS" = 2 OR "CLASS" = 3</code></p>
 <p>Чтобы избежать ошибок ввода, вы можете дважды щелкнуть на поле <code>CLASS</code> в списке слева — оно подставится в запрос. Добавьте знак <code>=</code>. Далее нажмите кнопку <strong>Get unique values</strong> и найдите 2-й класс. Щелкните на нем дважды — после этого название поля подставится в текст запроса. После этого введите оператор <code>OR</code> и повторите ввод для 3-го класса. Диалог примет следующий вид:</p>
-<p><img src="images/Ex06/image8.png" /></p></li>
+<div class="figure"><span id="fig:mrh-sql"></span>
+<img src="images/Ex06/image8.png" alt="Диалог SQL-запроса" width="40%" />
+<p class="caption">
+Рис. 6.2: Диалог SQL-запроса
+</p>
+</div></li>
 <li><p>Нажмите <strong>ОК</strong> в диалоге свойств слоя. Карта примет следующий вид:</p>
-<p><img src="images/Ex06/image9.png" /></p></li>
+<div class="figure"><span id="fig:mrh-riv"></span>
+<img src="images/Ex06/image9.png" alt="Диалог SQL-запроса" width="100%" />
+<p class="caption">
+Рис. 6.3: Диалог SQL-запроса
+</p>
+</div></li>
 <li><p>Сохраните документ карты в <em>свою</em> папку <em>Ex06</em> под именем <em>Don.mxd</em>.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №1</strong> — <em>Реки</em></kbd></p>
@@ -629,8 +641,18 @@
 <li><p>Откройте панель инструментов <strong>Georeferencing</strong>. Убедитесь, что в ее списке выбран файл <em>DonArtesian</em>. Выберите в ее меню команду <strong>Fit to Display</strong>, чтобы переместить непривязанный растр на середину области отображения.</p></li>
 <li><p>Поместите растр непосредственно под слоем <em>Rivers</em>.</p></li>
 <li><p>Используя инструмент расстановки контрольных точек, укажите пять контрольных точек в разных частях карты. Желательно, чтобы точки были равномерно распределены по полю карты (по краям и в центре) и <em>не располагались на одной линии</em> — это обеспечит хорошие коэффициенты трансформации. В качестве точек используйте места впадения притоков и впадения рек в водохранилища. Например, можно использовать точку впадения реки Хопёр в реку Дон:</p>
-<p><img src="images/Ex06/image10.png" /></p>
-<p><img src="images/Ex06/image11.png" /></p></li>
+<div class="figure"><span id="fig:mrh-cpt"></span>
+<img src="images/Ex06/image10.png" alt="Расстановка одной пары контрольных точек" width="40%" />
+<p class="caption">
+Рис. 6.4: Расстановка одной пары контрольных точек
+</p>
+</div>
+<div class="figure"><span id="fig:mrh-cpu"></span>
+<img src="images/Ex06/image11.png" alt="Результат привязки изображения в окрестности одной пары контрольных точек" width="40%" />
+<p class="caption">
+Рис. 6.5: Результат привязки изображения в окрестности одной пары контрольных точек
+</p>
+</div></li>
 <li><p>Ознакомьтесь с доступными методами трансформирования по контрольным точкам. Для этого в меню <strong>Georeferencing</strong> выберите команду <strong>Transformation</strong>. По умолчанию выбрано аффинное преобразование.</p>
 <blockquote>
 <p><strong>Какие еще виды трансформирования доступны?</strong> Чем проективное преобразование отличается от аффинного?</p>
@@ -638,7 +660,12 @@
 <p>Оставьте выбранным аффинное преобразование.</p></li>
 <li><p>Осуществите трансформирование растра. На панели инструментов <strong>Georeferencing</strong> выберите команду меню <strong>Georeferencing &gt; Update Georeferencing</strong>. Контрольные точки удалятся.</p>
 <p>Картографическое изображение примет следующий вид:</p>
-<p><img src="images/Ex06/image12.png" /></p>
+<div class="figure"><span id="fig:mrh-ref"></span>
+<img src="images/Ex06/image12.png" alt="Привязанная растровая карта" width="40%" />
+<p class="caption">
+Рис. 6.6: Привязанная растровая карта
+</p>
+</div>
 <p><kbd><strong>Снимок экрана №2</strong> — <em>Привязанная растровая карта</em></kbd></p></li>
 <li><p>Сохраните документ карты в формате mxd в папке отчета.</p></li>
 </ol>
@@ -669,16 +696,24 @@
 </ul></li>
 <li><p>После того как редактирование районов завершено, сохраните изменения, выбрав команду <strong>Editor &gt; Save Edits</strong>.</p></li>
 <li><p>Откройте таблицу атрибутов слоя районов. Поочередно выделяя каждый из них (для этого щелкните в самом начале строки), введите в поле <em>Basin</em> его название, ориентируясь по карте. Слово «бассейн» не вводите:</p>
-<p><img src="images/Ex06/image13.png" /></p></li>
+<div class="figure"><span id="fig:mrh-att"></span>
+<img src="images/Ex06/image13.png" alt="Редактирование атрибута выбранного объекта" width="40%" />
+<p class="caption">
+Рис. 6.7: Редактирование атрибута выбранного объекта
+</p>
+</div></li>
 <li><p>После ввода названий снова сохраните изменения.</p></li>
 <li><p>Завершите редактирование, выбрав команду <strong>Editor &gt; Stop Editing</strong>.</p></li>
 <li><p>Измените оформление слоя в соответствии с цветами на
 исходном растре.</p></li>
 <li><p>Включите подписи районов по полю <em>Basin</em>.</p></li>
-<li><p>Отключите слой растровой карты. Включите снова слои рек и озер и
-переместите их вверх таблицы содержания. Картографическое
-изображение примет следующий вид:</p>
-<p><img src="images/Ex06/image14.png" /></p></li>
+<li><p>Отключите слой растровой карты. Включите снова слои рек и озер и переместите их вверх таблицы содержания. Картографическоем изображение примет следующий вид:</p>
+<div class="figure"><span id="fig:mrh-vec"></span>
+<img src="images/Ex06/image14.png" alt="Векторизованный слой артезианских бассейнов" width="40%" />
+<p class="caption">
+Рис. 6.8: Векторизованный слой артезианских бассейнов
+</p>
+</div></li>
 <li><p>Сохраните документ карты в папке отчета.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №3</strong> — <em>Слой артезианских бассейнов</em></kbd></p>
@@ -688,7 +723,12 @@
 <p><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слои <em>Boundaries</em> (границы) и <em>Cities</em> (города). Используйте для их отображения способ <strong>Categories</strong> и настройте отображение разными символами классов границ, а также городов в соответствии с численностью населения. При оформлении подписей городов используйте метод <strong>классифицированных подписей</strong> (прочтите соответствующий раздел в файле <strong>Описание функций</strong>). Пример результирующего изображения:</p>
-<p><img src="images/Ex06/image24.png" /></p>
+<div class="figure"><span id="fig:mrh-map"></span>
+<img src="images/Ex06/image24.png" alt="Оформленное картографическое изображение" width="40%" />
+<p class="caption">
+Рис. 6.9: Оформленное картографическое изображение
+</p>
+</div>
 <p><kbd><strong>Снимок экрана №4</strong> — Карта</kbd></p></li>
 <li><p>Переключитесь в режим компоновки и оформите легенду карты. Добавьте название «<em>Гидрогеологическое районирование среднего течения Дона</em>», а также масштаб и свои ФИО.</p></li>
 <li><p>Экспортируйте результирующую карту в файл в формате <em>PNG</em> и вставьте ее в отчет.</p></li>
@@ -714,13 +754,28 @@
 <li><p>Выберите в диалоге пространственной выборки слой <em>Rivers</em> в качестве выбираемого (<strong>target</strong>) и слой <em>Artesian</em> в качестве выбирающего (<strong>source</strong>). Отметьте галочкой пункт <strong>Use Selected Features</strong> — это позволит выбирать с использованием уже выбранных объектов.</p></li>
 <li><p>Выберите метод выборки <em>intersect the source layer feature</em> — пересечение.</p></li>
 <li><p>Нажмите <strong>Apply</strong>. Будут выбраны реки, пересекающие выбранный артезианский бассейн:</p>
-<p><img src="images/Ex06/image16.png" /></p></li>
+<div class="figure"><span id="fig:mrh-int"></span>
+<img src="images/Ex06/image16.png" alt="Пространственная выборка по правилу пересечения (intersect)" width="40%" />
+<p class="caption">
+Рис. 6.10: Пространственная выборка по правилу пересечения (intersect)
+</p>
+</div></li>
 <li><p>Выберите метод выборки <em>are completely within the source layer feature</em> (полностью внутри).</p></li>
 <li><p>Нажмите <strong>Apply</strong>. Будут выбраны реки, находящиеся полностью внутри выбранного бассейна:</p>
-<p><img src="images/Ex06/image17.png" /></p></li>
+<div class="figure"><span id="fig:mrh-wit"></span>
+<img src="images/Ex06/image17.png" alt="Пространственная выборка по правилу нахождения внутри (completely within)" width="40%" />
+<p class="caption">
+Рис. 6.11: Пространственная выборка по правилу нахождения внутри (completely within)
+</p>
+</div></li>
 <li><p>Очистите выборку с помощью инструмента <strong>Clear Selected Features</strong>:</p></li>
 </ol>
-<p><img src="images/Ex06/image18.png" /></p>
+<div class="figure"><span id="fig:mrh-clr"></span>
+<img src="images/Ex06/image18.png" alt="Кнопка очищения текущей выборки" width="40%" />
+<p class="caption">
+Рис. 6.12: Кнопка очищения текущей выборки
+</p>
+</div>
 </div>
 <div id="map-ref-hydrogeologic-overlay" class="section level2">
 <h2><span class="header-section-number">6.7</span> Оверлей (дополнительно)</h2>
@@ -764,10 +819,20 @@
 </tbody>
 </table>
 <p>Диалог инструмента примет следующий вид:</p>
-<p><img src="images/Ex06/image20.png" /></p></li>
+<div class="figure"><span id="fig:mrh-ide"></span>
+<img src="images/Ex06/image20.png" alt="Параметры инструмента оверлея методом Identity" width="40%" />
+<p class="caption">
+Рис. 6.13: Параметры инструмента оверлея методом Identity
+</p>
+</div></li>
 </ol>
 <p>После выполнения инструмента слой будет добавлен на карту. Раскройте его таблицу атрибутов, чтобы убедиться, что каждому участку реки присвоена принадлежность к артезианскому бассейну (часть строк будет пустой, так как созданный вами слой артезианских бассейнов покрывает не всю территорию):</p>
-<p><img src="images/Ex06/image21.png" /></p>
+<div class="figure"><span id="fig:mrh-ida"></span>
+<img src="images/Ex06/image21.png" alt="Атрибутивная таблица слоя рек с идентификацией принадлежности участков к артезианским бассейнам" width="40%" />
+<p class="caption">
+Рис. 6.14: Атрибутивная таблица слоя рек с идентификацией принадлежности участков к артезианским бассейнам
+</p>
+</div>
 </div>
 <div id="map-ref-hydrogeologic-attributes" class="section level2">
 <h2><span class="header-section-number">6.8</span> Атрибутивный запрос (дополнительно)</h2>
@@ -780,9 +845,19 @@
 <p><code>"Basin" = 'Приволжско-Хоперский'</code></p></li>
 <li><p>На карте будут выделены водотоки, принадлежащие данному артезианскому бассейну. Обратите внимание на то, что выборка теперь полностью совпадает с границами бассейна.</p></li>
 <li><p>Откройте таблицу атрибутов слоя <em>Rivers_Identity</em> и укажите опцию <strong>Show Selected records</strong>, чтобы показывать только выбранные объекты:</p>
-<p><img src="images/Ex06/image22.png" /></p></li>
+<div class="figure"><span id="fig:mrh-shw"></span>
+<img src="images/Ex06/image22.png" alt="Кнопка переключения в режим отображения в таблице только выбранных объектов" width="40%" />
+<p class="caption">
+Рис. 6.15: Кнопка переключения в режим отображения в таблице только выбранных объектов
+</p>
+</div></li>
 <li><p>Скомпонуйте окна приложения таким образом, чтобы было видно одновременно окно атрибутивного запроса, таблицу атрибутов слоя со столбцом <em>Basin</em>, а также картографическое изображение с выделенными реками. Окно приложения примет следующий вид:</p>
-<p><img src="images/Ex06/image23.png" /></p></li>
+<div class="figure"><span id="fig:mrh-sat"></span>
+<img src="images/Ex06/image23.png" alt="Выборка участков рек по атрибуту принадлежности артезианскому бассейну" width="40%" />
+<p class="caption">
+Рис. 6.16: Выборка участков рек по атрибуту принадлежности артезианскому бассейну
+</p>
+</div></li>
 <li><p>Сохраните документ карты.</p></li>
 </ol>
 </div>
@@ -855,20 +930,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
