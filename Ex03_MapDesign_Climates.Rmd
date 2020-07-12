@@ -1,4 +1,4 @@
-# Создание климатической карты {#map-design-climates}
+# Климатическая карта {#map-design-climates}
 
 ```{r map-design-options, echo = FALSE}
 knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning = FALSE)

@@ -1,4 +1,4 @@
-# Создание климатической карты {#map-design-climates}
+# Климатическая карта {#map-design-climates}
 
 
 

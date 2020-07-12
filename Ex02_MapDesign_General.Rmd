@@ -1,4 +1,4 @@
-# Создание общегеографической карты {#map-design-general}
+# Общегеографическая карта {#map-design-general}
 
 ```{r map-design-options, echo = FALSE}
 knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning = FALSE)

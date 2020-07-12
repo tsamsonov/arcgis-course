@@ -1,4 +1,4 @@
-# Анализ гидрографических сетей {#network-hydro}
+# Гидрографические сети {#network-hydro}
 
 [Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex13.zip)
 

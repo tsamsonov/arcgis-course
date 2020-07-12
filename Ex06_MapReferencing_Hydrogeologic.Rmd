@@ -1,4 +1,4 @@
-# Привязка и векторизация гидрогеологической карты {#map-ref-hydrogeologic}
+# Привязка и векторизация (гидрогеологическая карта) {#map-ref-hydrogeologic}
 
 ```{r map-ref-hydrogeologic, echo = FALSE}
 knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning = FALSE)

@@ -1,4 +1,4 @@
-# Анализ пространственных соотношений {#land-cover-hydro}
+# Пространственные соотношения {#land-cover-hydro}
 
 [Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex11.zip)
 

@@ -2,7 +2,7 @@
 title: "Основы геоинформатики: практикум"
 author: "Тимофей Самсонов"
 date: "`r Sys.Date()`"
-description: "Упражнения о курсу Основы геоинформатики для студентов географического факультета МГУ имени М.В.Ломоносова"
+description: "Основы геоинформатики: практикум"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book

@@ -1,6 +1,6 @@
-# (PART) Знакомство с ГИС {-}
+# (PART) Визуализация данных {-}
 
-# Создание карты четвертичных отложений {#map-design-quaternary}
+# Карта четвертичных отложений {#map-design-quaternary}
 
 ```{r map-design-options, echo = FALSE}
 knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning = FALSE)

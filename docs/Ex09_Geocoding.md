@@ -1,4 +1,4 @@
-# Привязка адресных данных {#geocoding}
+# Адресное геокодирование {#geocoding}
 
 [Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex09.zip)
 

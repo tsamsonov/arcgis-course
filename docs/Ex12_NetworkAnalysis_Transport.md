@@ -1,4 +1,4 @@
-# Анализ транспортных сетей {#network-analysis}
+# Транспортные сети {#network-analysis}
 
 [Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex12.zip)
 

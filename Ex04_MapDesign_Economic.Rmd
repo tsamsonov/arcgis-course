@@ -1,4 +1,4 @@
-# Создание социально-экономической карты {#map-design-economic}
+# Социально-экономическая карта {#map-design-economic}
 
 ```{r map-design-options, echo = FALSE}
 knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning = FALSE)
