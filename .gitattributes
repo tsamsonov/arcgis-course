@@ -7,3 +7,4 @@
 *.aux     linguist-vendored=true
 *.Rmd     linguist-vendored=true
 Makefile  linguist-vendored=true
+docs/* linguist-vendored=false
