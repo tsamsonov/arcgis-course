@@ -1,5 +1,5 @@
-bookdown::gitbook:
-  css: style.css
+bookdown::bs4_book:
+  css: [default, "custom.css"]
   fig_caption: true
   config:
     toc:

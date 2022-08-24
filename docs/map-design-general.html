@@ -1,588 +1,113 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html lang="en">
 <head>
-
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Упражнение 2 Общегеографическая карта | Основы геоинформатики: практикум в ArcGIS</title>
-  <meta name="description" content="Упражнение 2 Общегеографическая карта | Основы геоинформатики: практикум в ArcGIS" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
-
-  <meta property="og:title" content="Упражнение 2 Общегеографическая карта | Основы геоинформатики: практикум в ArcGIS" />
-  <meta property="og:type" content="book" />
-  
-  
-  <meta property="og:description" content="Упражнение 2 Общегеографическая карта | Основы геоинформатики: практикум в ArcGIS" />
-  <meta name="github-repo" content="tsamsonov/arcgis-course" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Упражнение 2 Общегеографическая карта | Основы геоинформатики: практикум в ArcGIS" />
-  
-  <meta name="twitter:description" content="Упражнение 2 Общегеографическая карта | Основы геоинформатики: практикум в ArcGIS" />
-  
-
-<meta name="author" content="Тимофей Самсонов" />
-
-
-<meta name="date" content="2022-03-11" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-<link rel="prev" href="map-design-quaternary.html"/>
-<link rel="next" href="map-design-climates.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
-
-
-
-
-
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-
-
-
-
-<link rel="stylesheet" href="style.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Упражнение 2 Общегеографическая карта | Основы геоинформатики: практикум в ArcGIS</title>
+<meta name="author" content="Тимофей Самсонов">
+<meta name="description" content="Скачать данные и файл отчета  2.1 Введение Цель задания — знакомство с моделями пространственных объектов и базой пространственных данных. Визуализация данных на карте. Оформление легенды и...">
+<meta name="generator" content="bookdown 0.28 with bs4_book()">
+<meta property="og:title" content="Упражнение 2 Общегеографическая карта | Основы геоинформатики: практикум в ArcGIS">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Скачать данные и файл отчета  2.1 Введение Цель задания — знакомство с моделями пространственных объектов и базой пространственных данных. Визуализация данных на карте. Оформление легенды и...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Упражнение 2 Общегеографическая карта | Основы геоинформатики: практикум в ArcGIS">
+<meta name="twitter:description" content="Скачать данные и файл отчета  2.1 Введение Цель задания — знакомство с моделями пространственных объектов и базой пространственных данных. Визуализация данных на карте. Оформление легенды и...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="default">
+<link rel="stylesheet" href="custom.css">
 </head>
+<body data-spy="scroll" data-target="#toc">
 
-<body>
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
-
-
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
-
-<ul class="summary">
-<li><a href="./">Основы геоинформатики</a></li>
-
-<li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Введение</a>
-<ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#регламент"><i class="fa fa-check"></i>Регламент</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#принятые-обозначения"><i class="fa fa-check"></i>Принятые обозначения</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#о-практикуме"><i class="fa fa-check"></i>О практикуме</a></li>
-</ul></li>
-<li class="part"><span><b>I Визуализация данных</b></span></li>
-<li class="chapter" data-level="1" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html"><i class="fa fa-check"></i><b>1</b> Карта четвертичных отложений</a>
-<ul>
-<li class="chapter" data-level="1.1" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-intro"><i class="fa fa-check"></i><b>1.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="1.1.1" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-control"><i class="fa fa-check"></i><b>1.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="1.1.2" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-annotation"><i class="fa fa-check"></i><b>1.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="1.2" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-data"><i class="fa fa-check"></i><b>1.2</b> Изучение данных в приложении ArcMap</a></li>
-<li class="chapter" data-level="1.3" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-representations"><i class="fa fa-check"></i><b>1.3</b> Оформление слоя четвертичных отложений</a></li>
-<li class="chapter" data-level="1.4" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-labels"><i class="fa fa-check"></i><b>1.4</b> Подписи</a></li>
-<li class="chapter" data-level="1.5" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-layout"><i class="fa fa-check"></i><b>1.5</b> Компоновка карты</a></li>
-<li class="chapter" data-level="1.6" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-attributes"><i class="fa fa-check"></i><b>1.6</b> Редактирование атрибутов</a></li>
-<li class="chapter" data-level="1.7" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-calculation"><i class="fa fa-check"></i><b>1.7</b> Создание и вычисление атрибутов (дополнительно)</a></li>
-<li class="chapter" data-level="1.8" data-path="map-design-quaternary.html"><a href="map-design-quaternary.html#map-design-quaternary-questions"><i class="fa fa-check"></i><b>1.8</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="map-design-general.html"><a href="map-design-general.html"><i class="fa fa-check"></i><b>2</b> Общегеографическая карта</a>
-<ul>
-<li class="chapter" data-level="2.1" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-intro"><i class="fa fa-check"></i><b>2.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="2.1.1" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-control"><i class="fa fa-check"></i><b>2.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="2.1.2" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-annotation"><i class="fa fa-check"></i><b>2.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="2.2" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-begin"><i class="fa fa-check"></i><b>2.2</b> Начало работы</a></li>
-<li class="chapter" data-level="2.3" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-relief"><i class="fa fa-check"></i><b>2.3</b> Оформление рельефа</a></li>
-<li class="chapter" data-level="2.4" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-vector"><i class="fa fa-check"></i><b>2.4</b> Оформление векторных слоев</a></li>
-<li class="chapter" data-level="2.5" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-labels"><i class="fa fa-check"></i><b>2.5</b> Создание подписей</a></li>
-<li class="chapter" data-level="2.6" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-cities"><i class="fa fa-check"></i><b>2.6</b> Классификация населенных пунктов</a></li>
-<li class="chapter" data-level="2.7" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-mask"><i class="fa fa-check"></i><b>2.7</b> Маска и подписи стран</a></li>
-<li class="chapter" data-level="2.8" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-layout"><i class="fa fa-check"></i><b>2.8</b> Настройка компоновки карты</a></li>
-<li class="chapter" data-level="2.9" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-export"><i class="fa fa-check"></i><b>2.9</b> Экспорт в графический файл</a></li>
-<li class="chapter" data-level="2.10" data-path="map-design-general.html"><a href="map-design-general.html#map-design-general-questions"><i class="fa fa-check"></i><b>2.10</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="map-design-climates.html"><a href="map-design-climates.html"><i class="fa fa-check"></i><b>3</b> Климатическая карта</a>
-<ul>
-<li class="chapter" data-level="3.1" data-path="map-design-climates.html"><a href="map-design-climates.html#map-design-climates-intro"><i class="fa fa-check"></i><b>3.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="3.1.1" data-path="map-design-climates.html"><a href="map-design-climates.html#map-design-climates-control"><i class="fa fa-check"></i><b>3.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="3.1.2" data-path="map-design-climates.html"><a href="map-design-climates.html#map-design-climates-annotation"><i class="fa fa-check"></i><b>3.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="3.2" data-path="map-design-climates.html"><a href="map-design-climates.html#map-design-climates-begin"><i class="fa fa-check"></i><b>3.2</b> Начало работы</a></li>
-<li class="chapter" data-level="3.3" data-path="map-design-climates.html"><a href="map-design-climates.html#map-design-climates-basic"><i class="fa fa-check"></i><b>3.3</b> Оформление базовых слоев</a></li>
-<li class="chapter" data-level="3.4" data-path="map-design-climates.html"><a href="map-design-climates.html#map-design-climates-thematic"><i class="fa fa-check"></i><b>3.4</b> Оформление данных о климате и морских течениях</a></li>
-<li class="chapter" data-level="3.5" data-path="map-design-climates.html"><a href="map-design-climates.html#map-design-climates-labels"><i class="fa fa-check"></i><b>3.5</b> Настройка подписей</a></li>
-<li class="chapter" data-level="3.6" data-path="map-design-climates.html"><a href="map-design-climates.html#map-design-climates-layout"><i class="fa fa-check"></i><b>3.6</b> Настройка компоновки</a></li>
-<li class="chapter" data-level="3.7" data-path="map-design-climates.html"><a href="map-design-climates.html#map-design-climates-export"><i class="fa fa-check"></i><b>3.7</b> Экспорт в графический файл</a></li>
-<li class="chapter" data-level="3.8" data-path="map-design-climates.html"><a href="map-design-climates.html#map-design-climates-questions"><i class="fa fa-check"></i><b>3.8</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="map-design-economic.html"><a href="map-design-economic.html"><i class="fa fa-check"></i><b>4</b> Социально-экономическая карта</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-intro"><i class="fa fa-check"></i><b>4.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="4.1.1" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-control"><i class="fa fa-check"></i><b>4.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="4.1.2" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-annotation"><i class="fa fa-check"></i><b>4.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="4.2" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-begin"><i class="fa fa-check"></i><b>4.2</b> Начало работы</a></li>
-<li class="chapter" data-level="4.3" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-choropleth"><i class="fa fa-check"></i><b>4.3</b> Создание картограмм</a></li>
-<li class="chapter" data-level="4.4" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-diagrams"><i class="fa fa-check"></i><b>4.4</b> Создание картодиаграмм</a></li>
-<li class="chapter" data-level="4.5" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-general"><i class="fa fa-check"></i><b>4.5</b> Оформление географической основы</a></li>
-<li class="chapter" data-level="4.6" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-labels"><i class="fa fa-check"></i><b>4.6</b> Настройка подписей</a></li>
-<li class="chapter" data-level="4.7" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-layout"><i class="fa fa-check"></i><b>4.7</b> Настройка компоновки</a></li>
-<li class="chapter" data-level="4.8" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-export"><i class="fa fa-check"></i><b>4.8</b> Экспорт в графический файл</a></li>
-<li class="chapter" data-level="4.9" data-path="map-design-economic.html"><a href="map-design-economic.html#map-design-economic-questions"><i class="fa fa-check"></i><b>4.9</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="part"><span><b>II Базовые технологии ГИС</b></span></li>
-<li class="chapter" data-level="5" data-path="map-ref-general.html"><a href="map-ref-general.html"><i class="fa fa-check"></i><b>5</b> Привязка и векторизация (туристская карта)</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-intro"><i class="fa fa-check"></i><b>5.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="5.1.1" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-control"><i class="fa fa-check"></i><b>5.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="5.1.2" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-anno"><i class="fa fa-check"></i><b>5.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="5.2" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-referencing"><i class="fa fa-check"></i><b>5.2</b> Привязка карт</a>
-<ul>
-<li class="chapter" data-level="5.2.1" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-referencing-phys"><i class="fa fa-check"></i><b>5.2.1</b> Карта физико-географических регионов</a></li>
-<li class="chapter" data-level="5.2.2" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-referencing-tourist"><i class="fa fa-check"></i><b>5.2.2</b> Карта туристического маршрута</a></li>
-</ul></li>
-<li class="chapter" data-level="5.3" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-geodatabase"><i class="fa fa-check"></i><b>5.3</b> Создание базы данных и классов пространственных объектов</a></li>
-<li class="chapter" data-level="5.4" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-digitizing"><i class="fa fa-check"></i><b>5.4</b> Векторизация регионов</a></li>
-<li class="chapter" data-level="5.5" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-attributes"><i class="fa fa-check"></i><b>5.5</b> Атрибутирование регионов</a></li>
-<li class="chapter" data-level="5.6" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-routes-poi"><i class="fa fa-check"></i><b>5.6</b> Цифрование маршрутов и точек интереса</a></li>
-<li class="chapter" data-level="5.7" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-design"><i class="fa fa-check"></i><b>5.7</b> Оформление карты</a></li>
-<li class="chapter" data-level="5.8" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-layout"><i class="fa fa-check"></i><b>5.8</b> Компоновка карты</a></li>
-<li class="chapter" data-level="5.9" data-path="map-ref-general.html"><a href="map-ref-general.html#map-ref-general-questions"><i class="fa fa-check"></i><b>5.9</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html"><i class="fa fa-check"></i><b>6</b> Привязка и векторизация (гидрогеологическая карта)</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-intro"><i class="fa fa-check"></i><b>6.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="6.1.1" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-control"><i class="fa fa-check"></i><b>6.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="6.1.2" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-annotation"><i class="fa fa-check"></i><b>6.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="6.2" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-base"><i class="fa fa-check"></i><b>6.2</b> Оформление базовых слоев</a></li>
-<li class="chapter" data-level="6.3" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-referencing"><i class="fa fa-check"></i><b>6.3</b> Привязка растровой карты по контрольным точкам</a></li>
-<li class="chapter" data-level="6.4" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-regions"><i class="fa fa-check"></i><b>6.4</b> Векторизация слоя гидрогеологического районирования</a></li>
-<li class="chapter" data-level="6.5" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-design"><i class="fa fa-check"></i><b>6.5</b> Оформление карты</a></li>
-<li class="chapter" data-level="6.6" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-query"><i class="fa fa-check"></i><b>6.6</b> Пространственный запрос (дополнительно)</a></li>
-<li class="chapter" data-level="6.7" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-overlay"><i class="fa fa-check"></i><b>6.7</b> Оверлей (дополнительно)</a></li>
-<li class="chapter" data-level="6.8" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-attributes"><i class="fa fa-check"></i><b>6.8</b> Атрибутивный запрос (дополнительно)</a></li>
-<li class="chapter" data-level="6.9" data-path="map-ref-hydrogeologic.html"><a href="map-ref-hydrogeologic.html#map-ref-hydrogeologic-questions"><i class="fa fa-check"></i><b>6.9</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="7" data-path="map-ref-economic.html"><a href="map-ref-economic.html"><i class="fa fa-check"></i><b>7</b> Привязка и векторизация (административная карта)</a>
-<ul>
-<li class="chapter" data-level="7.1" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-intro"><i class="fa fa-check"></i><b>7.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="7.1.1" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-control"><i class="fa fa-check"></i><b>7.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="7.1.2" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-annotation"><i class="fa fa-check"></i><b>7.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="7.2" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-reference"><i class="fa fa-check"></i><b>7.2</b> Добавление референцных данных</a></li>
-<li class="chapter" data-level="7.3" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-referencing"><i class="fa fa-check"></i><b>7.3</b> Привязка карты</a></li>
-<li class="chapter" data-level="7.4" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-regions"><i class="fa fa-check"></i><b>7.4</b> Создание слоя городских районов</a></li>
-<li class="chapter" data-level="7.5" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-stats"><i class="fa fa-check"></i><b>7.5</b> Расчет статистики по районам</a></li>
-<li class="chapter" data-level="7.6" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-diagrams"><i class="fa fa-check"></i><b>7.6</b> Построение картодиаграмм</a></li>
-<li class="chapter" data-level="7.7" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-other"><i class="fa fa-check"></i><b>7.7</b> Настройка оформления других слоев</a></li>
-<li class="chapter" data-level="7.8" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-layout"><i class="fa fa-check"></i><b>7.8</b> Компоновка</a></li>
-<li class="chapter" data-level="7.9" data-path="map-ref-economic.html"><a href="map-ref-economic.html#map-ref-economic-questions"><i class="fa fa-check"></i><b>7.9</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="8" data-path="stat-map-economic.html"><a href="stat-map-economic.html"><i class="fa fa-check"></i><b>8</b> Соединение табличных данных</a>
-<ul>
-<li class="chapter" data-level="8.1" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-intro"><i class="fa fa-check"></i><b>8.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="8.1.1" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-control"><i class="fa fa-check"></i><b>8.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="8.1.2" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-annotation"><i class="fa fa-check"></i><b>8.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="8.2" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-nuts-geo"><i class="fa fa-check"></i><b>8.2</b> Скачивание географических данных с сайта NUTS</a></li>
-<li class="chapter" data-level="8.3" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-nuts-tables"><i class="fa fa-check"></i><b>8.3</b> Скачивание таблиц с сайта NUTS</a></li>
-<li class="chapter" data-level="8.4" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-structures"><i class="fa fa-check"></i><b>8.4</b> Скачивание структурных таблиц с сайта NUTS</a></li>
-<li class="chapter" data-level="8.5" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-formatting"><i class="fa fa-check"></i><b>8.5</b> Форматирование таблиц для загрузки в ГИС</a></li>
-<li class="chapter" data-level="8.6" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-prepare"><i class="fa fa-check"></i><b>8.6</b> Подготовка проекта</a></li>
-<li class="chapter" data-level="8.7" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-diagrams2"><i class="fa fa-check"></i><b>8.7</b> Отображение картодиаграмм по единицам 2-го уровня</a></li>
-<li class="chapter" data-level="8.8" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-choropleths3"><i class="fa fa-check"></i><b>8.8</b> Отображение картограмм по единицам 3-го уровня</a></li>
-<li class="chapter" data-level="8.9" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-diagrams3"><i class="fa fa-check"></i><b>8.9</b> Отображение структурных картодиаграмм по единицам 3-го уровня</a></li>
-<li class="chapter" data-level="8.10" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-design"><i class="fa fa-check"></i><b>8.10</b> Оформление итоговых карт</a></li>
-<li class="chapter" data-level="8.11" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-export-transport"><i class="fa fa-check"></i><b>8.11</b> Экспорт карты числа транспортных средств</a></li>
-<li class="chapter" data-level="8.12" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-export-population"><i class="fa fa-check"></i><b>8.12</b> Экспорт карты населения</a></li>
-<li class="chapter" data-level="8.13" data-path="stat-map-economic.html"><a href="stat-map-economic.html#stat-map-economic-export-questions"><i class="fa fa-check"></i><b>8.13</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="9" data-path="geocoding.html"><a href="geocoding.html"><i class="fa fa-check"></i><b>9</b> Адресное геокодирование</a>
-<ul>
-<li class="chapter" data-level="9.1" data-path="geocoding.html"><a href="geocoding.html#geocoding-intro"><i class="fa fa-check"></i><b>9.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="9.1.1" data-path="geocoding.html"><a href="geocoding.html#geocoding-control"><i class="fa fa-check"></i><b>9.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="9.1.2" data-path="geocoding.html"><a href="geocoding.html#geocoding-annotation"><i class="fa fa-check"></i><b>9.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="9.2" data-path="geocoding.html"><a href="geocoding.html#geocoding-connection"><i class="fa fa-check"></i><b>9.2</b> Подключение к сервисам</a></li>
-<li class="chapter" data-level="9.3" data-path="geocoding.html"><a href="geocoding.html#geocoding-addresses"><i class="fa fa-check"></i><b>9.3</b> Геокодирование адресов</a></li>
-<li class="chapter" data-level="9.4" data-path="geocoding.html"><a href="geocoding.html#geocoding-visitors"><i class="fa fa-check"></i><b>9.4</b> Визуализация посещаемости в точках</a></li>
-<li class="chapter" data-level="9.5" data-path="geocoding.html"><a href="geocoding.html#geocoding-field"><i class="fa fa-check"></i><b>9.5</b> Построение поля посещаемости</a></li>
-<li class="chapter" data-level="9.6" data-path="geocoding.html"><a href="geocoding.html#geocoding-design"><i class="fa fa-check"></i><b>9.6</b> Оформление карты</a></li>
-<li class="chapter" data-level="9.7" data-path="geocoding.html"><a href="geocoding.html#geocoding-questions"><i class="fa fa-check"></i><b>9.7</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="part"><span><b>III Векторный анализ</b></span></li>
-<li class="chapter" data-level="10" data-path="overlay.html"><a href="overlay.html"><i class="fa fa-check"></i><b>10</b> Пространственные взаимосвязи</a>
-<ul>
-<li class="chapter" data-level="10.1" data-path="overlay.html"><a href="overlay.html#overlay-intro"><i class="fa fa-check"></i><b>10.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="10.1.1" data-path="overlay.html"><a href="overlay.html#overlay-control"><i class="fa fa-check"></i><b>10.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="10.1.2" data-path="overlay.html"><a href="overlay.html#overlay-annotation"><i class="fa fa-check"></i><b>10.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="10.2" data-path="overlay.html"><a href="overlay.html#overlay-vectors"><i class="fa fa-check"></i><b>10.2</b> Визуальный анализ векторных слоев</a></li>
-<li class="chapter" data-level="10.3" data-path="overlay.html"><a href="overlay.html#overlay-workspace"><i class="fa fa-check"></i><b>10.3</b> Организация рабочего пространства</a></li>
-<li class="chapter" data-level="10.4" data-path="overlay.html"><a href="overlay.html#overlay-intersect"><i class="fa fa-check"></i><b>10.4</b> Оверлей слоев методом пересечения</a></li>
-<li class="chapter" data-level="10.5" data-path="overlay.html"><a href="overlay.html#overlay-merge"><i class="fa fa-check"></i><b>10.5</b> Слияние результатов пересечения с целью получения показателя пространственной связи</a></li>
-<li class="chapter" data-level="10.6" data-path="overlay.html"><a href="overlay.html#overlay-sumarea-combination"><i class="fa fa-check"></i><b>10.6</b> Подсчет суммарной площади каждой комбинации подтипа почв и типа рельефа</a></li>
-<li class="chapter" data-level="10.7" data-path="overlay.html"><a href="overlay.html#overlay-sumarea-subtypes"><i class="fa fa-check"></i><b>10.7</b> Подсчет суммарной площади каждого подтипа почв</a></li>
-<li class="chapter" data-level="10.8" data-path="overlay.html"><a href="overlay.html#overlay-field"><i class="fa fa-check"></i><b>10.8</b> Добавление нового поля для результирующих значений</a></li>
-<li class="chapter" data-level="10.9" data-path="overlay.html"><a href="overlay.html#overlay-join"><i class="fa fa-check"></i><b>10.9</b> Соединение таблиц по названию подтипа почв</a></li>
-<li class="chapter" data-level="10.10" data-path="overlay.html"><a href="overlay.html#overlay-resulting"><i class="fa fa-check"></i><b>10.10</b> Вычисление результирующих значений</a></li>
-<li class="chapter" data-level="10.11" data-path="overlay.html"><a href="overlay.html#overlay-questions"><i class="fa fa-check"></i><b>10.11</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="11" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html"><i class="fa fa-check"></i><b>11</b> Пространственные соотношения</a>
-<ul>
-<li class="chapter" data-level="11.1" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-intro"><i class="fa fa-check"></i><b>11.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="11.1.1" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-control"><i class="fa fa-check"></i><b>11.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="11.1.2" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-annotation"><i class="fa fa-check"></i><b>11.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="11.2" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-base"><i class="fa fa-check"></i><b>11.2</b> Оформление базовых слоев</a></li>
-<li class="chapter" data-level="11.3" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-fishnet"><i class="fa fa-check"></i><b>11.3</b> Построение регулярной сетки</a></li>
-<li class="chapter" data-level="11.4" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-waters"><i class="fa fa-check"></i><b>11.4</b> Подсчет доли водных объектов в площади ячеек</a></li>
-<li class="chapter" data-level="11.5" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-others"><i class="fa fa-check"></i><b>11.5</b> Подсчет доли прочих типов поверхности в площади ячеек</a></li>
-<li class="chapter" data-level="11.6" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-fields"><i class="fa fa-check"></i><b>11.6</b> Добавление и инициализация атрибутивных полей</a></li>
-<li class="chapter" data-level="11.7" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-water-tables"><i class="fa fa-check"></i><b>11.7</b> Присоединение таблицы с долей водных объектов</a></li>
-<li class="chapter" data-level="11.8" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-other-tables"><i class="fa fa-check"></i><b>11.8</b> Присоединение таблиц прочих типов поверхностей</a></li>
-<li class="chapter" data-level="11.9" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-other-ratios"><i class="fa fa-check"></i><b>11.9</b> Вычисление доли прочих поверхностей</a></li>
-<li class="chapter" data-level="11.10" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-other-centers"><i class="fa fa-check"></i><b>11.10</b> Вычисление координат центров ячеек</a></li>
-<li class="chapter" data-level="11.11" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-export"><i class="fa fa-check"></i><b>11.11</b> Экспорт таблицы в файл</a></li>
-<li class="chapter" data-level="11.12" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-diagrams"><i class="fa fa-check"></i><b>11.12</b> Построение картодиаграмм</a></li>
-<li class="chapter" data-level="11.13" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-layout"><i class="fa fa-check"></i><b>11.13</b> Оформление компоновки карты</a></li>
-<li class="chapter" data-level="11.14" data-path="land-cover-hydro.html"><a href="land-cover-hydro.html#land-cover-hydro-questions"><i class="fa fa-check"></i><b>11.14</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="12" data-path="network-analysis.html"><a href="network-analysis.html"><i class="fa fa-check"></i><b>12</b> Транспортные сети</a>
-<ul>
-<li class="chapter" data-level="12.1" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-intro"><i class="fa fa-check"></i><b>12.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="12.1.1" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-control"><i class="fa fa-check"></i><b>12.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="12.1.2" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-annotation"><i class="fa fa-check"></i><b>12.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="12.2" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-basemap"><i class="fa fa-check"></i><b>12.2</b> Оформление базовых слоев</a></li>
-<li class="chapter" data-level="12.3" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-route"><i class="fa fa-check"></i><b>12.3</b> Построение маршрута</a></li>
-<li class="chapter" data-level="12.4" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-servicearea"><i class="fa fa-check"></i><b>12.4</b> Определение зоны обслуживания</a></li>
-<li class="chapter" data-level="12.5" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-facility"><i class="fa fa-check"></i><b>12.5</b> Определение ближайшего пункта обслуживания</a></li>
-<li class="chapter" data-level="12.6" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-allocation"><i class="fa fa-check"></i><b>12.6</b> Размещение—распределение</a></li>
-<li class="chapter" data-level="12.7" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-zoning"><i class="fa fa-check"></i><b>12.7</b> Районирование города по зонам обслуживания</a></li>
-<li class="chapter" data-level="12.8" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-layout"><i class="fa fa-check"></i><b>12.8</b> Компоновка карты</a></li>
-<li class="chapter" data-level="12.9" data-path="network-analysis.html"><a href="network-analysis.html#network-analysis-questions"><i class="fa fa-check"></i><b>12.9</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="13" data-path="network-hydro.html"><a href="network-hydro.html"><i class="fa fa-check"></i><b>13</b> Гидрографические сети</a>
-<ul>
-<li class="chapter" data-level="13.1" data-path="network-hydro.html"><a href="network-hydro.html#network-hydro-intro"><i class="fa fa-check"></i><b>13.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="13.1.1" data-path="network-hydro.html"><a href="network-hydro.html#network-hydro-control"><i class="fa fa-check"></i><b>13.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="13.1.2" data-path="network-hydro.html"><a href="network-hydro.html#network-hydro-annotation"><i class="fa fa-check"></i><b>13.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="13.2" data-path="network-hydro.html"><a href="network-hydro.html#network-hydro-dataset"><i class="fa fa-check"></i><b>13.2</b> Создание набора данных речной сети</a></li>
-<li class="chapter" data-level="13.3" data-path="network-hydro.html"><a href="network-hydro.html#network-hydro-digitizing"><i class="fa fa-check"></i><b>13.3</b> Копирование и цифрование линий водотоков</a></li>
-<li class="chapter" data-level="13.4" data-path="network-hydro.html"><a href="network-hydro.html#притягивание-снэппинг-притоков-и-разрезание-осевой-линии-основных-рек"><i class="fa fa-check"></i><b>13.4</b> Притягивание (снэппинг) притоков и разрезание осевой линии основных рек</a></li>
-<li class="chapter" data-level="13.5" data-path="network-hydro.html"><a href="network-hydro.html#network-hydro-sink"><i class="fa fa-check"></i><b>13.5</b> Установка точки стока</a></li>
-<li class="chapter" data-level="13.6" data-path="network-hydro.html"><a href="network-hydro.html#network-hydro-gnetwork"><i class="fa fa-check"></i><b>13.6</b> Построение и настройка геометрической сети</a></li>
-<li class="chapter" data-level="13.7" data-path="network-hydro.html"><a href="network-hydro.html#network-hydro-analysis"><i class="fa fa-check"></i><b>13.7</b> Анализ и редактирование геометрической сети</a></li>
-<li class="chapter" data-level="13.8" data-path="network-hydro.html"><a href="network-hydro.html#network-hydro-questions"><i class="fa fa-check"></i><b>13.8</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="part"><span><b>IV Растровый анализ</b></span></li>
-<li class="chapter" data-level="14" data-path="weighted-overlay.html"><a href="weighted-overlay.html"><i class="fa fa-check"></i><b>14</b> Оптимизация местоположения</a>
-<ul>
-<li class="chapter" data-level="14.1" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-intro"><i class="fa fa-check"></i><b>14.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="14.1.1" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-control"><i class="fa fa-check"></i><b>14.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="14.1.2" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-annotation"><i class="fa fa-check"></i><b>14.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="14.2" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-workspace"><i class="fa fa-check"></i><b>14.2</b> Подготовка рабочего пространства</a></li>
-<li class="chapter" data-level="14.3" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-rasterize"><i class="fa fa-check"></i><b>14.3</b> Преобразование слоя типов землепользования в растровое представление</a></li>
-<li class="chapter" data-level="14.4" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-slopes"><i class="fa fa-check"></i><b>14.4</b> Расчет углов наклона</a></li>
-<li class="chapter" data-level="14.5" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-distances"><i class="fa fa-check"></i><b>14.5</b> Расчет расстояний</a>
-<ul>
-<li class="chapter" data-level="14.5.1" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-roads"><i class="fa fa-check"></i><b>14.5.1</b> Дороги</a></li>
-<li class="chapter" data-level="14.5.2" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-streams"><i class="fa fa-check"></i><b>14.5.2</b> Водотоки</a></li>
-</ul></li>
-<li class="chapter" data-level="14.6" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-slope-classes"><i class="fa fa-check"></i><b>14.6</b> Классификация углов наклона</a></li>
-<li class="chapter" data-level="14.7" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-distance-classes"><i class="fa fa-check"></i><b>14.7</b> Классификация расстояний</a>
-<ul>
-<li class="chapter" data-level="14.7.1" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-roads-classes"><i class="fa fa-check"></i><b>14.7.1</b> Дороги</a></li>
-<li class="chapter" data-level="14.7.2" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-streams-classes"><i class="fa fa-check"></i><b>14.7.2</b> Водотоки</a></li>
-</ul></li>
-<li class="chapter" data-level="14.8" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-combination"><i class="fa fa-check"></i><b>14.8</b> Нахождение мест с наилучшей комбинацией факторов с помощью взвешенного оверлея</a></li>
-<li class="chapter" data-level="14.9" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-conversion"><i class="fa fa-check"></i><b>14.9</b> Конвертация результирующих зон в векторный формат</a>
-<ul>
-<li class="chapter" data-level="14.9.1" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-area"><i class="fa fa-check"></i><b>14.9.1</b> Выбор участков, имеющих необходимую площадь</a></li>
-</ul></li>
-<li class="chapter" data-level="14.10" data-path="weighted-overlay.html"><a href="weighted-overlay.html#weighted-overlay-questions"><i class="fa fa-check"></i><b>14.10</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="15" data-path="dem.html"><a href="dem.html"><i class="fa fa-check"></i><b>15</b> Цифровое моделирование рельефа</a>
-<ul>
-<li class="chapter" data-level="15.1" data-path="dem.html"><a href="dem.html#dem-intro"><i class="fa fa-check"></i><b>15.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="15.1.1" data-path="dem.html"><a href="dem.html#dem-control"><i class="fa fa-check"></i><b>15.1.1</b> Контрольный список</a></li>
-<li class="chapter" data-level="15.1.2" data-path="dem.html"><a href="dem.html#dem-annotation"><i class="fa fa-check"></i><b>15.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="15.2" data-path="dem.html"><a href="dem.html#dem-design"><i class="fa fa-check"></i><b>15.2</b> Оформление данных</a></li>
-<li class="chapter" data-level="15.3" data-path="dem.html"><a href="dem.html#dem-flowdir"><i class="fa fa-check"></i><b>15.3</b> Направление тока</a></li>
-<li class="chapter" data-level="15.4" data-path="dem.html"><a href="dem.html#dem-flowacc"><i class="fa fa-check"></i><b>15.4</b> Водосборная площадь (аккумуляция тока)</a></li>
-<li class="chapter" data-level="15.5" data-path="dem.html"><a href="dem.html#dem-classify"><i class="fa fa-check"></i><b>15.5</b> Выделение и классификация водотоков</a></li>
-<li class="chapter" data-level="15.6" data-path="dem.html"><a href="dem.html#dem-vectorize"><i class="fa fa-check"></i><b>15.6</b> Векторизация водотоков</a></li>
-<li class="chapter" data-level="15.7" data-path="dem.html"><a href="dem.html#dem-mouth"><i class="fa fa-check"></i><b>15.7</b> Выделение и разделение устьевых точек</a></li>
-<li class="chapter" data-level="15.8" data-path="dem.html"><a href="dem.html#dem-watersheds"><i class="fa fa-check"></i><b>15.8</b> Построение водосборных бассейнов</a></li>
-<li class="chapter" data-level="15.9" data-path="dem.html"><a href="dem.html#dem-statistics"><i class="fa fa-check"></i><b>15.9</b> Расчет, привязка и визуализация статистики по водосборным бассейнам</a></li>
-<li class="chapter" data-level="15.10" data-path="dem.html"><a href="dem.html#dem-result"><i class="fa fa-check"></i><b>15.10</b> Оформление итоговой карты</a></li>
-<li class="chapter" data-level="15.11" data-path="dem.html"><a href="dem.html#dem-questions"><i class="fa fa-check"></i><b>15.11</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="part"><span><b>V Пространственное моделирование</b></span></li>
-<li class="chapter" data-level="16" data-path="density-analysis.html"><a href="density-analysis.html"><i class="fa fa-check"></i><b>16</b> Оценка плотности распределения</a>
-<ul>
-<li class="chapter" data-level="16.1" data-path="density-analysis.html"><a href="density-analysis.html#density-analysis-intro"><i class="fa fa-check"></i><b>16.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="16.1.1" data-path="density-analysis.html"><a href="density-analysis.html#density-analysis-control"><i class="fa fa-check"></i><b>16.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="16.1.2" data-path="density-analysis.html"><a href="density-analysis.html#density-analysis-annotation"><i class="fa fa-check"></i><b>16.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="16.2" data-path="density-analysis.html"><a href="density-analysis.html#density-analysis-estimation"><i class="fa fa-check"></i><b>16.2</b> Оценка плотности дорожной сети</a></li>
-<li class="chapter" data-level="16.3" data-path="density-analysis.html"><a href="density-analysis.html#density-analysis-radius"><i class="fa fa-check"></i><b>16.3</b> Оценка влияния радиуса поиска</a></li>
-<li class="chapter" data-level="16.4" data-path="density-analysis.html"><a href="density-analysis.html#density-analysis-scaling"><i class="fa fa-check"></i><b>16.4</b> Масштабирование значение показателя</a></li>
-<li class="chapter" data-level="16.5" data-path="density-analysis.html"><a href="density-analysis.html#density-analysis-layer"><i class="fa fa-check"></i><b>16.5</b> Оформление слоя густоты дорожной сети</a></li>
-<li class="chapter" data-level="16.6" data-path="density-analysis.html"><a href="density-analysis.html#density-analysis-design"><i class="fa fa-check"></i><b>16.6</b> Оформление итоговой карты</a></li>
-<li class="chapter" data-level="16.7" data-path="density-analysis.html"><a href="density-analysis.html#density-analysis-questions"><i class="fa fa-check"></i><b>16.7</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="17" data-path="interpolation.html"><a href="interpolation.html"><i class="fa fa-check"></i><b>17</b> Пространственная интерполяция</a>
-<ul>
-<li class="chapter" data-level="17.1" data-path="interpolation.html"><a href="interpolation.html#interpolation-intro"><i class="fa fa-check"></i><b>17.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="17.1.1" data-path="interpolation.html"><a href="interpolation.html#interpolation-control"><i class="fa fa-check"></i><b>17.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="17.1.2" data-path="interpolation.html"><a href="interpolation.html#interpolation-annotation"><i class="fa fa-check"></i><b>17.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="17.2" data-path="interpolation.html"><a href="interpolation.html#interpolation-base"><i class="fa fa-check"></i><b>17.2</b> Оформление базовых слоев</a></li>
-<li class="chapter" data-level="17.3" data-path="interpolation.html"><a href="interpolation.html#interpolation-resolution"><i class="fa fa-check"></i><b>17.3</b> Оценка необходимого разрешения растра</a></li>
-<li class="chapter" data-level="17.4" data-path="interpolation.html"><a href="interpolation.html#interpolation-surfaces"><i class="fa fa-check"></i><b>17.4</b> Интерполяция поверхностей</a></li>
-<li class="chapter" data-level="17.5" data-path="interpolation.html"><a href="interpolation.html#interpolation-visualization"><i class="fa fa-check"></i><b>17.5</b> Настройка отображения поверхностей</a></li>
-<li class="chapter" data-level="17.6" data-path="interpolation.html"><a href="interpolation.html#interpolation-smoothing"><i class="fa fa-check"></i><b>17.6</b> Сглаживание поверхности, полученной методом кригинга</a></li>
-<li class="chapter" data-level="17.7" data-path="interpolation.html"><a href="interpolation.html#interpolation-profile"><i class="fa fa-check"></i><b>17.7</b> Построение линии профиля</a></li>
-<li class="chapter" data-level="17.8" data-path="interpolation.html"><a href="interpolation.html#interpolation-temperature"><i class="fa fa-check"></i><b>17.8</b> Определение температур по линии профиля</a></li>
-<li class="chapter" data-level="17.9" data-path="interpolation.html"><a href="interpolation.html#interpolation-map-design"><i class="fa fa-check"></i><b>17.9</b> Оформление карты</a></li>
-<li class="chapter" data-level="17.10" data-path="interpolation.html"><a href="interpolation.html#interpolation-questions"><i class="fa fa-check"></i><b>17.10</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="chapter" data-level="18" data-path="threed-modelling.html"><a href="threed-modelling.html"><i class="fa fa-check"></i><b>18</b> Трехмерное моделирование</a>
-<ul>
-<li class="chapter" data-level="18.1" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-intro"><i class="fa fa-check"></i><b>18.1</b> Введение</a>
-<ul>
-<li class="chapter" data-level="18.1.1" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-control"><i class="fa fa-check"></i><b>18.1.1</b> Контрольный лист</a></li>
-<li class="chapter" data-level="18.1.2" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-annotation"><i class="fa fa-check"></i><b>18.1.2</b> Аннотация</a></li>
-</ul></li>
-<li class="chapter" data-level="18.2" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-workspace"><i class="fa fa-check"></i><b>18.2</b> Организация рабочего пространства</a></li>
-<li class="chapter" data-level="18.3" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-demviz"><i class="fa fa-check"></i><b>18.3</b> Визуализация цифровой модели рельефа</a></li>
-<li class="chapter" data-level="18.4" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-additional"><i class="fa fa-check"></i><b>18.4</b> Подготовка вспомогательных цифровых моделей для учета препятствий</a></li>
-<li class="chapter" data-level="18.5" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-rastertotin"><i class="fa fa-check"></i><b>18.5</b> Преобразование растровых моделей в триангуляционные</a></li>
-<li class="chapter" data-level="18.6" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-arcscene"><i class="fa fa-check"></i><b>18.6</b> Визуализация данных в трехмерной среде и знакомство с приложением ArcScene</a></li>
-<li class="chapter" data-level="18.7" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-geodesy"><i class="fa fa-check"></i><b>18.7</b> Визуализация трехмерных объектов: геодезические пункты и здания</a></li>
-<li class="chapter" data-level="18.8" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-viewshed"><i class="fa fa-check"></i><b>18.8</b> Анализ зоны видимости наблюдательного пункта</a></li>
-<li class="chapter" data-level="18.9" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-height"><i class="fa fa-check"></i><b>18.9</b> Изменение высоты наблюдения</a></li>
-<li class="chapter" data-level="18.10" data-path="threed-modelling.html"><a href="threed-modelling.html#threed-modelling-questions"><i class="fa fa-check"></i><b>18.10</b> Контрольные вопросы</a></li>
-</ul></li>
-<li class="appendix"><span><b>Описание функций</b></span></li>
-<li class="chapter" data-level="A" data-path="manual-catalog.html"><a href="manual-catalog.html"><i class="fa fa-check"></i><b>A</b> Работа с окном каталога</a>
-<ul>
-<li class="chapter" data-level="A.1" data-path="manual-catalog.html"><a href="manual-catalog.html#открытие-каталога"><i class="fa fa-check"></i><b>A.1</b> Открытие каталога</a></li>
-<li class="chapter" data-level="A.2" data-path="manual-catalog.html"><a href="manual-catalog.html#подключение-к-каталогу"><i class="fa fa-check"></i><b>A.2</b> Подключение к каталогу</a></li>
-</ul></li>
-<li class="chapter" data-level="B" data-path="manual-toolbox.html"><a href="manual-toolbox.html"><i class="fa fa-check"></i><b>B</b> Геообработка</a>
-<ul>
-<li class="chapter" data-level="B.1" data-path="manual-toolbox.html"><a href="manual-toolbox.html#открытие-arctoolbox"><i class="fa fa-check"></i><b>B.1</b> Открытие ArcToolbox</a></li>
-<li class="chapter" data-level="B.2" data-path="manual-toolbox.html"><a href="manual-toolbox.html#запуск-инструмента"><i class="fa fa-check"></i><b>B.2</b> Запуск инструмента</a></li>
-</ul></li>
-<li class="chapter" data-level="C" data-path="manual-gdb.html"><a href="manual-gdb.html"><i class="fa fa-check"></i><b>C</b> База геоданных</a>
-<ul>
-<li class="chapter" data-level="C.1" data-path="manual-gdb.html"><a href="manual-gdb.html#manual-gdb-create"><i class="fa fa-check"></i><b>C.1</b> Создание базы геоданных</a></li>
-<li class="chapter" data-level="C.2" data-path="manual-gdb.html"><a href="manual-gdb.html#manual-gdb-create-class"><i class="fa fa-check"></i><b>C.2</b> Создание классов пространственных объектов</a></li>
-<li class="chapter" data-level="C.3" data-path="manual-gdb.html"><a href="manual-gdb.html#manual-gdb-default"><i class="fa fa-check"></i><b>C.3</b> Установка базы геоданных по умолчанию</a></li>
-</ul></li>
-<li class="chapter" data-level="D" data-path="manual-toc.html"><a href="manual-toc.html"><i class="fa fa-check"></i><b>D</b> Работа с таблицей слоев</a>
-<ul>
-<li class="chapter" data-level="D.1" data-path="manual-toc.html"><a href="manual-toc.html#добавление-слоя"><i class="fa fa-check"></i><b>D.1</b> Добавление слоя</a></li>
-<li class="chapter" data-level="D.2" data-path="manual-toc.html"><a href="manual-toc.html#удаление-слоя"><i class="fa fa-check"></i><b>D.2</b> Удаление слоя</a></li>
-<li class="chapter" data-level="D.3" data-path="manual-toc.html"><a href="manual-toc.html#переименование-слоя"><i class="fa fa-check"></i><b>D.3</b> Переименование слоя</a></li>
-<li class="chapter" data-level="D.4" data-path="manual-toc.html"><a href="manual-toc.html#переименование-показателя"><i class="fa fa-check"></i><b>D.4</b> Переименование показателя</a></li>
-<li class="chapter" data-level="D.5" data-path="manual-toc.html"><a href="manual-toc.html#смена-порядка-слоев"><i class="fa fa-check"></i><b>D.5</b> Смена порядка слоев</a></li>
-<li class="chapter" data-level="D.6" data-path="manual-toc.html"><a href="manual-toc.html#свойства-слоя"><i class="fa fa-check"></i><b>D.6</b> Свойства слоя</a></li>
-<li class="chapter" data-level="D.7" data-path="manual-toc.html"><a href="manual-toc.html#копирование-слоя"><i class="fa fa-check"></i><b>D.7</b> Копирование слоя</a></li>
-<li class="chapter" data-level="D.8" data-path="manual-toc.html"><a href="manual-toc.html#вставка-слоя"><i class="fa fa-check"></i><b>D.8</b> Вставка слоя</a></li>
-<li class="chapter" data-level="D.9" data-path="manual-toc.html"><a href="manual-toc.html#создание-нового-слоя-на-основе-выбранных-объектов"><i class="fa fa-check"></i><b>D.9</b> Создание нового слоя на основе выбранных объектов</a></li>
-<li class="chapter" data-level="D.10" data-path="manual-toc.html"><a href="manual-toc.html#отключение-слоя"><i class="fa fa-check"></i><b>D.10</b> Отключение слоя</a></li>
-<li class="chapter" data-level="D.11" data-path="manual-toc.html"><a href="manual-toc.html#копирование-и-вставка-слоя"><i class="fa fa-check"></i><b>D.11</b> Копирование и вставка слоя</a></li>
-</ul></li>
-<li class="chapter" data-level="E" data-path="manual-toolbar.html"><a href="manual-toolbar.html"><i class="fa fa-check"></i><b>E</b> Панели инструментов</a>
-<ul>
-<li class="chapter" data-level="E.1" data-path="manual-toolbar.html"><a href="manual-toolbar.html#как-открыть-или-найти-панель-инструментов"><i class="fa fa-check"></i><b>E.1</b> Как открыть или найти панель инструментов</a></li>
-</ul></li>
-<li class="chapter" data-level="F" data-path="manual-navigation.html"><a href="manual-navigation.html"><i class="fa fa-check"></i><b>F</b> Навигация по карте</a>
-<ul>
-<li class="chapter" data-level="F.1" data-path="manual-navigation.html"><a href="manual-navigation.html#инструменты-навигации-панель-tools"><i class="fa fa-check"></i><b>F.1</b> Инструменты навигации (панель Tools)</a></li>
-<li class="chapter" data-level="F.2" data-path="manual-navigation.html"><a href="manual-navigation.html#установка-масштаба"><i class="fa fa-check"></i><b>F.2</b> Установка масштаба</a></li>
-</ul></li>
-<li class="chapter" data-level="G" data-path="manual-vector.html"><a href="manual-vector.html"><i class="fa fa-check"></i><b>G</b> Оформление векторного слоя</a>
-<ul>
-<li class="chapter" data-level="G.1" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-one"><i class="fa fa-check"></i><b>G.1</b> Единый символ для всего слоя</a></li>
-<li class="chapter" data-level="G.2" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-categories"><i class="fa fa-check"></i><b>G.2</b> Категории (Categories)</a>
-<ul>
-<li class="chapter" data-level="G.2.1" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-sorting"><i class="fa fa-check"></i><b>G.2.1</b> Сортировка классов</a></li>
-<li class="chapter" data-level="G.2.2" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-colorscale"><i class="fa fa-check"></i><b>G.2.2</b> Сортировка цветовой шкалы</a></li>
-<li class="chapter" data-level="G.2.3" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-match"><i class="fa fa-check"></i><b>G.2.3</b> Подстановка стиля (Match Symbols In a Style)</a></li>
-</ul></li>
-<li class="chapter" data-level="G.3" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-diagrams"><i class="fa fa-check"></i><b>G.3</b> Градуированные символы (картодиаграммы)</a></li>
-<li class="chapter" data-level="G.4" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-graduated"><i class="fa fa-check"></i><b>G.4</b> Градуированные цвета (картограммы)</a></li>
-<li class="chapter" data-level="G.5" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-pie"><i class="fa fa-check"></i><b>G.5</b> Секторная картодиаграмма (pie chart)</a></li>
-<li class="chapter" data-level="G.6" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-classes"><i class="fa fa-check"></i><b>G.6</b> Выбор метода классификации</a></li>
-<li class="chapter" data-level="G.7" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-point"><i class="fa fa-check"></i><b>G.7</b> Настройка символа для точечного объекта</a>
-<ul>
-<li class="chapter" data-level="G.7.1" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-symbol"><i class="fa fa-check"></i><b>G.7.1</b> Символьный маркер</a></li>
-<li class="chapter" data-level="G.7.2" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-rotation"><i class="fa fa-check"></i><b>G.7.2</b> Вращение символа</a></li>
-<li class="chapter" data-level="G.7.3" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-size"><i class="fa fa-check"></i><b>G.7.3</b> Размер символа</a></li>
-</ul></li>
-<li class="chapter" data-level="G.8" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-line"><i class="fa fa-check"></i><b>G.8</b> Настройка символа для линейного объекта</a></li>
-<li class="chapter" data-level="G.9" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-polygon"><i class="fa fa-check"></i><b>G.9</b> Настройка символа для полигонального объекта</a></li>
-<li class="chapter" data-level="G.10" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-nullfill"><i class="fa fa-check"></i><b>G.10</b> Создание площадного объекта без заливки</a></li>
-<li class="chapter" data-level="G.11" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-transparency"><i class="fa fa-check"></i><b>G.11</b> Регулировка прозрачности векторного слоя</a></li>
-<li class="chapter" data-level="G.12" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-search"><i class="fa fa-check"></i><b>G.12</b> Поиск символа по названию</a></li>
-<li class="chapter" data-level="G.13" data-path="manual-vector.html"><a href="manual-vector.html#manual-vector-libraries"><i class="fa fa-check"></i><b>G.13</b> Подключение библиотек символов</a></li>
-</ul></li>
-<li class="chapter" data-level="H" data-path="manual-raster.html"><a href="manual-raster.html"><i class="fa fa-check"></i><b>H</b> Оформление растрового слоя</a>
-<ul>
-<li class="chapter" data-level="H.1" data-path="manual-raster.html"><a href="manual-raster.html#градиентная-окраска"><i class="fa fa-check"></i><b>H.1</b> Градиентная окраска</a></li>
-<li class="chapter" data-level="H.2" data-path="manual-raster.html"><a href="manual-raster.html#классификация-послойная-окраска"><i class="fa fa-check"></i><b>H.2</b> Классификация (послойная окраска)</a></li>
-<li class="chapter" data-level="H.3" data-path="manual-raster.html"><a href="manual-raster.html#передискретизация-и-прозрачность-слоя"><i class="fa fa-check"></i><b>H.3</b> Передискретизация и прозрачность слоя</a></li>
-</ul></li>
-<li class="chapter" data-level="I" data-path="manual-labels.html"><a href="manual-labels.html"><i class="fa fa-check"></i><b>I</b> Подписи объектов</a>
-<ul>
-<li class="chapter" data-level="I.1" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-maplex"><i class="fa fa-check"></i><b>I.1</b> Включение механизма Maplex</a></li>
-<li class="chapter" data-level="I.2" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-enable"><i class="fa fa-check"></i><b>I.2</b> Включение и настройка подписей</a></li>
-<li class="chapter" data-level="I.3" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-class"><i class="fa fa-check"></i><b>I.3</b> Классифицированные подписи</a></li>
-<li class="chapter" data-level="I.4" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-halo"><i class="fa fa-check"></i><b>I.4</b> Гало подписей</a></li>
-<li class="chapter" data-level="I.5" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-placement"><i class="fa fa-check"></i><b>I.5</b> Настройки размещения подписей</a></li>
-<li class="chapter" data-level="I.6" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-style"><i class="fa fa-check"></i><b>I.6</b> Тип и стиль размещения</a></li>
-<li class="chapter" data-level="I.7" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-kerning"><i class="fa fa-check"></i><b>I.7</b> Разрядка букв</a></li>
-<li class="chapter" data-level="I.8" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-spaces"><i class="fa fa-check"></i><b>I.8</b> Разрядка слов</a></li>
-<li class="chapter" data-level="I.9" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-largest"><i class="fa fa-check"></i><b>I.9</b> Подписывать наибольшую часть</a></li>
-<li class="chapter" data-level="I.10" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-conflicts"><i class="fa fa-check"></i><b>I.10</b> Разрешение конфликтов</a></li>
-<li class="chapter" data-level="I.11" data-path="manual-labels.html"><a href="manual-labels.html#manual-labels-prior"><i class="fa fa-check"></i><b>I.11</b> Приоритеты подписей</a></li>
-</ul></li>
-<li class="chapter" data-level="J" data-path="manual-attributes.html"><a href="manual-attributes.html"><i class="fa fa-check"></i><b>J</b> Атрибутивная таблица</a>
-<ul>
-<li class="chapter" data-level="J.1" data-path="manual-attributes.html"><a href="manual-attributes.html#открытие-атрибутивной-таблицы"><i class="fa fa-check"></i><b>J.1</b> Открытие атрибутивной таблицы</a></li>
-<li class="chapter" data-level="J.2" data-path="manual-attributes.html"><a href="manual-attributes.html#псевдонимы-полей"><i class="fa fa-check"></i><b>J.2</b> Псевдонимы полей</a></li>
-<li class="chapter" data-level="J.3" data-path="manual-attributes.html"><a href="manual-attributes.html#формат-отображения-поля"><i class="fa fa-check"></i><b>J.3</b> Формат отображения поля</a></li>
-<li class="chapter" data-level="J.4" data-path="manual-attributes.html"><a href="manual-attributes.html#выделение-строки-в-атрибутивной-таблице"><i class="fa fa-check"></i><b>J.4</b> Выделение строки в атрибутивной таблице</a></li>
-<li class="chapter" data-level="J.5" data-path="manual-attributes.html"><a href="manual-attributes.html#сортировка-таблицы"><i class="fa fa-check"></i><b>J.5</b> Сортировка таблицы</a></li>
-<li class="chapter" data-level="J.6" data-path="manual-attributes.html"><a href="manual-attributes.html#соединение-таблиц"><i class="fa fa-check"></i><b>J.6</b> Соединение таблиц</a></li>
-</ul></li>
-<li class="chapter" data-level="K" data-path="manual-select.html"><a href="manual-select.html"><i class="fa fa-check"></i><b>K</b> Выборка объектов</a>
-<ul>
-<li class="chapter" data-level="K.1" data-path="manual-select.html"><a href="manual-select.html#manual-select-manual"><i class="fa fa-check"></i><b>K.1</b> Выборка вручную</a></li>
-<li class="chapter" data-level="K.2" data-path="manual-select.html"><a href="manual-select.html#manual-select-invert"><i class="fa fa-check"></i><b>K.2</b> Инвертирование выборки</a></li>
-<li class="chapter" data-level="K.3" data-path="manual-select.html"><a href="manual-select.html#manual-select-attribute"><i class="fa fa-check"></i><b>K.3</b> Атрибутивный запрос</a></li>
-<li class="chapter" data-level="K.4" data-path="manual-select.html"><a href="manual-select.html#manual-select-location"><i class="fa fa-check"></i><b>K.4</b> Пространственный запрос</a></li>
-<li class="chapter" data-level="K.5" data-path="manual-select.html"><a href="manual-select.html#manual-select-definition"><i class="fa fa-check"></i><b>K.5</b> Определяющий запрос</a></li>
-</ul></li>
-<li class="chapter" data-level="L" data-path="manual-projections.html"><a href="manual-projections.html"><i class="fa fa-check"></i><b>L</b> Проекции и координатная сетка</a>
-<ul>
-<li class="chapter" data-level="L.1" data-path="manual-projections.html"><a href="manual-projections.html#manual-projections-change"><i class="fa fa-check"></i><b>L.1</b> Изменение проекции (системы координат карты)</a></li>
-<li class="chapter" data-level="L.2" data-path="manual-projections.html"><a href="manual-projections.html#manual-projections-graticule"><i class="fa fa-check"></i><b>L.2</b> Вставка координатной сетки</a></li>
-<li class="chapter" data-level="L.3" data-path="manual-projections.html"><a href="manual-projections.html#manual-projections-zero-degrees"><i class="fa fa-check"></i><b>L.3</b> Отображение нулевых минут и секунд</a></li>
-<li class="chapter" data-level="L.4" data-path="manual-projections.html"><a href="manual-projections.html#шаг-линий-сетки"><i class="fa fa-check"></i><b>L.4</b> Шаг линий сетки</a></li>
-<li class="chapter" data-level="L.5" data-path="manual-projections.html"><a href="manual-projections.html#начало-расстановки-линий-сетки"><i class="fa fa-check"></i><b>L.5</b> Начало расстановки линий сетки</a></li>
-</ul></li>
-<li class="chapter" data-level="M" data-path="manual-georef.html"><a href="manual-georef.html"><i class="fa fa-check"></i><b>M</b> Привязка растровых данных</a>
-<ul>
-<li class="chapter" data-level="M.1" data-path="manual-georef.html"><a href="manual-georef.html#панель-georeferencing"><i class="fa fa-check"></i><b>M.1</b> Панель Georeferencing</a></li>
-<li class="chapter" data-level="M.2" data-path="manual-georef.html"><a href="manual-georef.html#перемещение-растра-в-область-отображаемую-на-экране"><i class="fa fa-check"></i><b>M.2</b> Перемещение растра в область, отображаемую на экране</a></li>
-<li class="chapter" data-level="M.3" data-path="manual-georef.html"><a href="manual-georef.html#расстановка-контрольных-точек"><i class="fa fa-check"></i><b>M.3</b> Расстановка контрольных точек</a></li>
-<li class="chapter" data-level="M.4" data-path="manual-georef.html"><a href="manual-georef.html#просмотр-и-редактирование-контрольных-точек"><i class="fa fa-check"></i><b>M.4</b> Просмотр и редактирование контрольных точек</a></li>
-<li class="chapter" data-level="M.5" data-path="manual-georef.html"><a href="manual-georef.html#выбор-метода-трансформирования"><i class="fa fa-check"></i><b>M.5</b> Выбор метода трансформирования</a></li>
-<li class="chapter" data-level="M.6" data-path="manual-georef.html"><a href="manual-georef.html#трансформирование"><i class="fa fa-check"></i><b>M.6</b> Трансформирование</a></li>
-</ul></li>
-<li class="chapter" data-level="N" data-path="manual-edit.html"><a href="manual-edit.html"><i class="fa fa-check"></i><b>N</b> Редактирование</a>
-<ul>
-<li class="chapter" data-level="N.1" data-path="manual-edit.html"><a href="manual-edit.html#manual-edit-begin"><i class="fa fa-check"></i><b>N.1</b> Включение сеанса редактирования</a></li>
-<li class="chapter" data-level="N.2" data-path="manual-edit.html"><a href="manual-edit.html#manual-edit-save"><i class="fa fa-check"></i><b>N.2</b> Сохранение изменений</a></li>
-<li class="chapter" data-level="N.3" data-path="manual-edit.html"><a href="manual-edit.html#manual-edit-end"><i class="fa fa-check"></i><b>N.3</b> Завершение сеанса редактирования</a></li>
-<li class="chapter" data-level="N.4" data-path="manual-edit.html"><a href="manual-edit.html#manual-edit-create"><i class="fa fa-check"></i><b>N.4</b> Создание (цифрование) объектов</a></li>
-<li class="chapter" data-level="N.5" data-path="manual-edit.html"><a href="manual-edit.html#manual-edit-complete"><i class="fa fa-check"></i><b>N.5</b> Цифрование полигонов в режиме автозавершения (auto-complete)</a></li>
-<li class="chapter" data-level="N.6" data-path="manual-edit.html"><a href="manual-edit.html#manual-edit-copy"><i class="fa fa-check"></i><b>N.6</b> Копирование объектов</a></li>
-<li class="chapter" data-level="N.7" data-path="manual-edit.html"><a href="manual-edit.html#manual-edit-insert"><i class="fa fa-check"></i><b>N.7</b> Вставка объектов</a></li>
-</ul></li>
-<li class="chapter" data-level="O" data-path="manual-layout.html"><a href="manual-layout.html"><i class="fa fa-check"></i><b>O</b> Компоновка карт</a>
-<ul>
-<li class="chapter" data-level="O.1" data-path="manual-layout.html"><a href="manual-layout.html#включение-режима-компоновки"><i class="fa fa-check"></i><b>O.1</b> Включение режима компоновки</a></li>
-<li class="chapter" data-level="O.2" data-path="manual-layout.html"><a href="manual-layout.html#макет-страницы"><i class="fa fa-check"></i><b>O.2</b> Макет страницы</a></li>
-<li class="chapter" data-level="O.3" data-path="manual-layout.html"><a href="manual-layout.html#изменение-фрейма-карты"><i class="fa fa-check"></i><b>O.3</b> Изменение фрейма карты</a></li>
-<li class="chapter" data-level="O.4" data-path="manual-layout.html"><a href="manual-layout.html#заливка-и-обводка-фрейма-карты"><i class="fa fa-check"></i><b>O.4</b> Заливка и обводка фрейма карты</a></li>
-<li class="chapter" data-level="O.5" data-path="manual-layout.html"><a href="manual-layout.html#вставка-текста"><i class="fa fa-check"></i><b>O.5</b> Вставка текста</a></li>
-<li class="chapter" data-level="O.6" data-path="manual-layout.html"><a href="manual-layout.html#вставка-линейного-масштаба"><i class="fa fa-check"></i><b>O.6</b> Вставка линейного масштаба</a></li>
-<li class="chapter" data-level="O.7" data-path="manual-layout.html"><a href="manual-layout.html#вставка-численного-масштаба"><i class="fa fa-check"></i><b>O.7</b> Вставка численного масштаба</a></li>
-<li class="chapter" data-level="O.8" data-path="manual-layout.html"><a href="manual-layout.html#изменение-единиц-измерения"><i class="fa fa-check"></i><b>O.8</b> Изменение единиц измерения</a></li>
-</ul></li>
-<li class="chapter" data-level="P" data-path="manual-legend.html"><a href="manual-legend.html"><i class="fa fa-check"></i><b>P</b> Легенда карты</a>
-<ul>
-<li class="chapter" data-level="P.1" data-path="manual-legend.html"><a href="manual-legend.html#вставка-легенды"><i class="fa fa-check"></i><b>P.1</b> Вставка легенды</a></li>
-<li class="chapter" data-level="P.2" data-path="manual-legend.html"><a href="manual-legend.html#название-слоя-в-легенде"><i class="fa fa-check"></i><b>P.2</b> Название слоя в легенде</a></li>
-<li class="chapter" data-level="P.3" data-path="manual-legend.html"><a href="manual-legend.html#название-показателя-в-легенде"><i class="fa fa-check"></i><b>P.3</b> Название показателя в легенде</a></li>
-<li class="chapter" data-level="P.4" data-path="manual-legend.html"><a href="manual-legend.html#стиль-отображения-подписей-в-легенде"><i class="fa fa-check"></i><b>P.4</b> Стиль отображения подписей в легенде</a></li>
-<li class="chapter" data-level="P.5" data-path="manual-legend.html"><a href="manual-legend.html#название-легенды"><i class="fa fa-check"></i><b>P.5</b> Название легенды</a></li>
-<li class="chapter" data-level="P.6" data-path="manual-legend.html"><a href="manual-legend.html#интервал-между-элементами-легенды"><i class="fa fa-check"></i><b>P.6</b> Интервал между элементами легенды</a></li>
-<li class="chapter" data-level="P.7" data-path="manual-legend.html"><a href="manual-legend.html#изменение-подписей-классов"><i class="fa fa-check"></i><b>P.7</b> Изменение подписей классов</a></li>
-</ul></li>
-<li class="chapter" data-level="Q" data-path="manual-export.html"><a href="manual-export.html"><i class="fa fa-check"></i><b>Q</b> Экспорт изображения</a></li>
-<li class="divider"></li>
-<li><a href="https://istina.msu.ru/profile/tsamsonov/" target="blank">Тимофей Самсонов</a></li>
-<li><a href="https://doi.org/10.5281/zenodo.1167857"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1167857.svg" title="DOI"></a><li>
-
-</ul>
-
-      </nav>
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Основы геоинформатики: практикум в ArcGIS</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
     </div>
 
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Основы геоинформатики: практикум в ArcGIS</a>
-          </h1>
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Введение</a></li>
+<li class="book-part">Визуализация данных</li>
+<li><a class="" href="map-design-quaternary.html"><span class="header-section-number">1</span> Карта четвертичных отложений</a></li>
+<li><a class="active" href="map-design-general.html"><span class="header-section-number">2</span> Общегеографическая карта</a></li>
+<li><a class="" href="map-design-climates.html"><span class="header-section-number">3</span> Климатическая карта</a></li>
+<li><a class="" href="map-design-economic.html"><span class="header-section-number">4</span> Социально-экономическая карта</a></li>
+<li class="book-part">Базовые технологии ГИС</li>
+<li><a class="" href="map-ref-general.html"><span class="header-section-number">5</span> Привязка и векторизация (туристская карта)</a></li>
+<li><a class="" href="map-ref-hydrogeologic.html"><span class="header-section-number">6</span> Привязка и векторизация (гидрогеологическая карта)</a></li>
+<li><a class="" href="map-ref-economic.html"><span class="header-section-number">7</span> Привязка и векторизация (административная карта)</a></li>
+<li><a class="" href="stat-map-economic.html"><span class="header-section-number">8</span> Соединение табличных данных</a></li>
+<li><a class="" href="geocoding.html"><span class="header-section-number">9</span> Адресное геокодирование</a></li>
+<li class="book-part">Векторный анализ</li>
+<li><a class="" href="overlay.html"><span class="header-section-number">10</span> Пространственные взаимосвязи</a></li>
+<li><a class="" href="land-cover-hydro.html"><span class="header-section-number">11</span> Пространственные соотношения</a></li>
+<li><a class="" href="network-analysis.html"><span class="header-section-number">12</span> Транспортные сети</a></li>
+<li><a class="" href="network-hydro.html"><span class="header-section-number">13</span> Гидрографические сети</a></li>
+<li class="book-part">Растровый анализ</li>
+<li><a class="" href="weighted-overlay.html"><span class="header-section-number">14</span> Оптимизация местоположения</a></li>
+<li><a class="" href="dem.html"><span class="header-section-number">15</span> Цифровое моделирование рельефа</a></li>
+<li class="book-part">Пространственное моделирование</li>
+<li><a class="" href="density-analysis.html"><span class="header-section-number">16</span> Оценка плотности распределения</a></li>
+<li><a class="" href="interpolation.html"><span class="header-section-number">17</span> Пространственная интерполяция</a></li>
+<li><a class="" href="threed-modelling.html"><span class="header-section-number">18</span> Трехмерное моделирование</a></li>
+<li class="book-part">Описание функций</li>
+<li><a class="" href="manual-catalog.html"><span class="header-section-number">A</span> Работа с окном каталога</a></li>
+<li><a class="" href="manual-toolbox.html"><span class="header-section-number">B</span> Геообработка</a></li>
+<li><a class="" href="manual-gdb.html"><span class="header-section-number">C</span> База геоданных</a></li>
+<li><a class="" href="manual-toc.html"><span class="header-section-number">D</span> Работа с таблицей слоев</a></li>
+<li><a class="" href="manual-toolbar.html"><span class="header-section-number">E</span> Панели инструментов</a></li>
+<li><a class="" href="manual-navigation.html"><span class="header-section-number">F</span> Навигация по карте</a></li>
+<li><a class="" href="manual-vector.html"><span class="header-section-number">G</span> Оформление векторного слоя</a></li>
+<li><a class="" href="manual-raster.html"><span class="header-section-number">H</span> Оформление растрового слоя</a></li>
+<li><a class="" href="manual-labels.html"><span class="header-section-number">I</span> Подписи объектов</a></li>
+<li><a class="" href="manual-attributes.html"><span class="header-section-number">J</span> Атрибутивная таблица</a></li>
+<li><a class="" href="manual-select.html"><span class="header-section-number">K</span> Выборка объектов</a></li>
+<li><a class="" href="manual-projections.html"><span class="header-section-number">L</span> Проекции и координатная сетка</a></li>
+<li><a class="" href="manual-georef.html"><span class="header-section-number">M</span> Привязка растровых данных</a></li>
+<li><a class="" href="manual-edit.html"><span class="header-section-number">N</span> Редактирование</a></li>
+<li><a class="" href="manual-layout.html"><span class="header-section-number">O</span> Компоновка карт</a></li>
+<li><a class="" href="manual-legend.html"><span class="header-section-number">P</span> Легенда карты</a></li>
+<li><a class="" href="manual-export.html"><span class="header-section-number">Q</span> Экспорт изображения</a></li>
+</ul>
+
+        <div class="book-extra">
+          
         </div>
-
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
-<div id="map-design-general" class="section level1" number="2">
-<h1><span class="header-section-number">Упражнение 2</span> Общегеографическая карта</h1>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="map-design-general" class="section level1" number="2">
+<h1>
+<span class="header-section-number">Упражнение 2</span> Общегеографическая карта<a class="anchor" aria-label="anchor" href="#map-design-general"><i class="fas fa-link"></i></a>
+</h1>
 <p><a href="http://autolab.geogr.msu.ru/gis/data/Ex02.zip">Скачать данные и файл отчета</a></p>
 <div id="map-design-general-intro" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Введение</h2>
+<h2>
+<span class="header-section-number">2.1</span> Введение<a class="anchor" aria-label="anchor" href="#map-design-general-intro"><i class="fas fa-link"></i></a>
+</h2>
 <p><strong>Цель задания</strong> — знакомство с моделями пространственных объектов и базой пространственных данных. Визуализация данных на карте. Оформление легенды и компоновки карты.</p>
-<table>
-<thead>
-<tr class="header">
+<div class="inline-table"><table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th>Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Теоретическая подготовка</em></td>
@@ -605,9 +130,11 @@
 <td>Модели пространственных данных, модели пространственных объектов, базы пространственных данных, классы пространственных объектов, визуализация пространственных данных</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <div id="map-design-general-control" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Контрольный лист</h3>
+<h3>
+<span class="header-section-number">2.1.1</span> Контрольный лист<a class="anchor" aria-label="anchor" href="#map-design-general-control"><i class="fas fa-link"></i></a>
+</h3>
 <ul>
 <li>Добавить на карту слои базы пространственных данных и оформить их</li>
 <li>Настроить подписи объектов</li>
@@ -616,38 +143,47 @@
 </ul>
 </div>
 <div id="map-design-general-annotation" class="section level3" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Аннотация</h3>
+<h3>
+<span class="header-section-number">2.1.2</span> Аннотация<a class="anchor" aria-label="anchor" href="#map-design-general-annotation"><i class="fas fa-link"></i></a>
+</h3>
 <p>Задание посвящено знакомству с базами пространственных данных а также созданием тематических карт на их основе. Вы научитесь извлекать из базы данных и визуализировать пространственные данные, оформлять легенду, сетку координат и зарамочные элементы карты.</p>
 </div>
 </div>
 <div id="map-design-general-begin" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Начало работы</h2>
+<h2>
+<span class="header-section-number">2.2</span> Начало работы<a class="anchor" aria-label="anchor" href="#map-design-general-begin"><i class="fas fa-link"></i></a>
+</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Запустите приложение <strong>ArcMap</strong> и откройте окно <strong>Сatalog</strong></p></li>
-<li><p>Подключитесь к рабочему каталогу <em>Ex02</em> в окне <strong>Сatalog</strong>.</p>
+<li>
+<p>Подключитесь к рабочему каталогу <em>Ex02</em> в окне <strong>Сatalog</strong>.</p>
 <p>В каталоге <em>Ex02</em> находится база геоданных <em>MapData.gdb</em>, содержащая исходные данные для выполнения задания. Внутри базы геоданных могут быть объекты следующих типов:</p>
 <ul>
-<li><img src="images/Ex02/image5.png" /><img src="images/Ex02/image6.png" /><img src="images/Ex02/image7.png" /> — слои векторных данных (классы пространственных объектов),</li>
-<li><img src="images/Ex02/image8.png" /> — слои растровых данных;</li>
-<li><img src="images/Ex02/image9.png" /> — обычные таблицы;</li>
-</ul></li>
-<li><p>Раскройте базу данных <em>MapData.gdb</em> и изучите ее содержимое (Рис. <a href="map-design-general.html#fig:mdg-gdb">2.1</a>).</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-gdb"></span>
-<img src="images/Ex02/image10.png" alt="База данных `MapData.gdb`" width="30%" />
-<p class="caption">
+<li>
+<img src="images/Ex02/image5.png"><img src="images/Ex02/image6.png"><img src="images/Ex02/image7.png"> — слои векторных данных (классы пространственных объектов),</li>
+<li>
+<img src="images/Ex02/image8.png"> — слои растровых данных;</li>
+<li>
+<img src="images/Ex02/image9.png"> — обычные таблицы;</li>
+</ul>
+</li>
+<li>
+<p>Раскройте базу данных <em>MapData.gdb</em> и изучите ее содержимое (Рис. <a href="map-design-general.html#fig:mdg-gdb">2.1</a>).</p>
+<div class="figure">
+<span style="display:block;" id="fig:mdg-gdb"></span>
+<img src="images/Ex02/image10.png" alt="База данных `MapData.gdb`" width="30%"><p class="caption">
 Рис. 2.1: База данных <code>MapData.gdb</code>
 </p>
-</div></li>
+</div>
+</li>
 </ol>
 <p>Векторные слои базы данных <em>MapData.gdb</em>:</p>
-<table>
-<thead>
-<tr class="header">
+<div class="inline-table"><table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Слой</th>
 <th align="left">Содержание</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Airports</em></td>
@@ -698,15 +234,13 @@
 <td align="left">Урбанизированные территории</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Растровые слои базы данных <em>MapData.gdb</em>:</p>
-<table>
-<thead>
-<tr class="header">
+<div class="inline-table"><table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Слой</th>
 <th align="left">Содержание</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Elevation</em></td>
@@ -717,47 +251,51 @@
 <td align="left">Отмывка рельефа</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 <div id="map-design-general-relief" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Оформление рельефа</h2>
+<h2>
+<span class="header-section-number">2.3</span> Оформление рельефа<a class="anchor" aria-label="anchor" href="#map-design-general-relief"><i class="fas fa-link"></i></a>
+</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слой <em>Elevation</em> из базы данных <em>MapData.gdb</em>.</p></li>
-<li><p>В настройках оформления растрового слоя установите способ градиентной окраски со следующими параметрами:</p>
-<table>
-<thead>
-<tr class="header">
+<li>
+<p>В настройках оформления растрового слоя установите способ градиентной окраски со следующими параметрами:</p>
+<table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th align="left">Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Шкала</em></td>
-<td align="left">Surface <img src="images/Ex02/image11.png" /></td>
+<td align="left">Surface <img src="images/Ex02/image11.png">
+</td>
 </tr>
 <tr class="even">
 <td align="left"><em>Растяжение гистограммы</em></td>
 <td align="left">Минимум-Максимум (Minimum-maximum)</td>
 </tr>
 </tbody>
-</table></li>
-<li><p>Установите передискретизацию слоя на вкладке <strong>Display</strong> в режим кубической cвертки — <em>Cubic Convolution</em> (Рис. <a href="map-design-general.html#fig:mdg-hyp">2.2</a>). Результат:</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-hyp"></span>
-<img src="images/Ex02/image12.png" alt="Гипсометрическая окраска рельефа" width="100%" />
-<p class="caption">
+</table>
+</li>
+<li>
+<p>Установите передискретизацию слоя на вкладке <strong>Display</strong> в режим кубической cвертки — <em>Cubic Convolution</em> (Рис. <a href="map-design-general.html#fig:mdg-hyp">2.2</a>). Результат:</p>
+<div class="figure">
+<span style="display:block;" id="fig:mdg-hyp"></span>
+<img src="images/Ex02/image12.png" alt="Гипсометрическая окраска рельефа" width="100%"><p class="caption">
 Рис. 2.2: Гипсометрическая окраска рельефа
 </p>
-</div></li>
-<li><p>Наложите отмывку поверх гипсометрической окраски. Для этого добавьте на карту слой отмывки <em>Hillshade</em> и установите для него следующие параметры:</p>
-<table>
-<thead>
-<tr class="header">
+</div>
+</li>
+<li>
+<p>Наложите отмывку поверх гипсометрической окраски. Для этого добавьте на карту слой отмывки <em>Hillshade</em> и установите для него следующие параметры:</p>
+<table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th align="left">Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Прозрачность</em></td>
@@ -771,26 +309,29 @@
 </table>
 <p>Остальные параметры оставьте по умолчанию и нажмите <strong>ОК</strong>.</p>
 <p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-hyphill">2.3</a>):</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-hyphill"></span>
-<img src="images/Ex02/image13.png" alt="Гиспосметрическая окраска и отмывка рельефа" width="100%" />
-<p class="caption">
+<div class="figure">
+<span style="display:block;" id="fig:mdg-hyphill"></span>
+<img src="images/Ex02/image13.png" alt="Гиспосметрическая окраска и отмывка рельефа" width="100%"><p class="caption">
 Рис. 2.3: Гиспосметрическая окраска и отмывка рельефа
 </p>
-</div></li>
+</div>
+</li>
 </ol>
 <p><kbd><strong>Снимок экрана №1.</strong> Картографическое изображение рельефа</kbd></p>
-<p><strong>Сохраните документ карты</strong> через команду меню <strong>File &gt; Save as</strong> в свой каталог <em>Ex02</em> под названием <em>Ex02_<Фамилия>.mxd</em>.</p>
+<p><strong>Сохраните документ карты</strong> через команду меню <strong>File &gt; Save as</strong> в свой каталог <em>Ex02</em> под названием <em>Ex02_.mxd</em>.</p>
 <blockquote>
 <p>Файл с расширением <code>.mxd</code> является файлом документа карты <strong>ArcMap</strong>. Он содержит перечень слоев и их настроек, созданные компоновки и ряд дополнительных параметров. Документ карты, как и входящие в него слои, не хранит сами данные, а лишь <em>ссылается</em> на них. Поэтому, перемещая проект на другой компьютер, вы должны также переместить и данные, чтобы он открылся (в вашем случае — базу геоданных, из которой вы добавляли классы объектов на карту).</p>
 </blockquote>
 </div>
 <div id="map-design-general-vector" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Оформление векторных слоев</h2>
+<h2>
+<span class="header-section-number">2.4</span> Оформление векторных слоев<a class="anchor" aria-label="anchor" href="#map-design-general-vector"><i class="fas fa-link"></i></a>
+</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
 <p>Добавьте на карту и оформите векторные слои, содержащиеся в базе данных <em>MapData.gdb</em>, все кроме слоя <em>Countries</em>. Для каждого слоя выберите единый символ. В качестве образца оформления используйте рисунок ниже (Рис. <a href="map-design-general.html#fig:mdg-template">2.4</a>).</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-template"></span>
-<img src="images/Ex02/image14.png" alt="Образец оформления карты (крупно)" width="100%" />
-<p class="caption">
+<div class="figure">
+<span style="display:block;" id="fig:mdg-template"></span>
+<img src="images/Ex02/image14.png" alt="Образец оформления карты (крупно)" width="100%"><p class="caption">
 Рис. 2.4: Образец оформления карты (крупно)
 </p>
 </div>
@@ -800,29 +341,30 @@
 <li><p>При выборе значка для аэропорта следует воспользоваться поиском по символам, набрав ключевое слово <em>«airport»</em></p></li>
 </ul>
 <p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-designed">2.5</a>):</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-designed"></span>
-<img src="images/Ex02/image15.png" alt="Образец оформления карты (полный охват)" width="100%" />
-<p class="caption">
+<div class="figure">
+<span style="display:block;" id="fig:mdg-designed"></span>
+<img src="images/Ex02/image15.png" alt="Образец оформления карты (полный охват)" width="100%"><p class="caption">
 Рис. 2.5: Образец оформления карты (полный охват)
 </p>
 </div>
 <p><kbd><strong>Снимок экрана №2.</strong> Оформление векторных слоев</kbd></p>
 </div>
 <div id="map-design-general-labels" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Создание подписей</h2>
+<h2>
+<span class="header-section-number">2.5</span> Создание подписей<a class="anchor" aria-label="anchor" href="#map-design-general-labels"><i class="fas fa-link"></i></a>
+</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Установите масштаб карты равным 1:1 750 000.</p></li>
 <li><p>Включите <strong>Maplex</strong> для размещения подписей и переведите его в режим <em>Best</em></p></li>
-<li><p>Сделайте подписи для слоев <em>Cities</em>, <em>Heights</em>, <em>Rivers</em>, <em>Lakes</em> со следующими параметрами:</p>
+<li>
+<p>Сделайте подписи для слоев <em>Cities</em>, <em>Heights</em>, <em>Rivers</em>, <em>Lakes</em> со следующими параметрами:</p>
 <p><em>Cities</em>:</p>
-<table>
-<thead>
-<tr class="header">
+<table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th align="left">Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Шрифт</em></td>
@@ -846,18 +388,17 @@
 </tr>
 <tr class="even">
 <td align="left"><em>Образец</em></td>
-<td align="left">-<img src="images/Ex02/image16.png" /></td>
+<td align="left">-<img src="images/Ex02/image16.png">
+</td>
 </tr>
 </tbody>
 </table>
 <p><em>Heights</em>:</p>
-<table>
-<thead>
-<tr class="header">
+<table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th align="left">Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Шрифт</em></td>
@@ -881,18 +422,17 @@
 </tr>
 <tr class="even">
 <td align="left"><em>Образец</em></td>
-<td align="left">-<img src="images/Ex02/image17.png" /></td>
+<td align="left">-<img src="images/Ex02/image17.png">
+</td>
 </tr>
 </tbody>
 </table>
 <p><em>Rivers</em>:</p>
-<table>
-<thead>
-<tr class="header">
+<table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th align="left">Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Шрифт</em></td>
@@ -916,18 +456,17 @@
 </tr>
 <tr class="even">
 <td align="left"><em>Образец</em></td>
-<td align="left">-<img src="images/Ex02/image18.png" /></td>
+<td align="left">-<img src="images/Ex02/image18.png">
+</td>
 </tr>
 </tbody>
 </table>
 <p><em>Lakes</em>:</p>
-<table>
-<thead>
-<tr class="header">
+<table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th align="left">Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Шрифт</em></td>
@@ -951,66 +490,75 @@
 </tr>
 <tr class="even">
 <td align="left"><em>Образец</em></td>
-<td align="left">-<img src="images/Ex02/image19.png" /></td>
+<td align="left">-<img src="images/Ex02/image19.png">
+</td>
 </tr>
 </tbody>
-</table></li>
+</table>
+</li>
 </ol>
 <p><em>Результат</em> должен выглядеть примерно следующим образом (Рис. <a href="map-design-general.html#fig:mdg-wlabels">2.6</a>):</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-wlabels"></span>
-<img src="images/Ex02/image20.png" alt="Картографическое изображение с подписями" width="100%" />
-<p class="caption">
+<div class="figure">
+<span style="display:block;" id="fig:mdg-wlabels"></span>
+<img src="images/Ex02/image20.png" alt="Картографическое изображение с подписями" width="100%"><p class="caption">
 Рис. 2.6: Картографическое изображение с подписями
 </p>
 </div>
 </div>
 <div id="map-design-general-cities" class="section level2" number="2.6">
-<h2><span class="header-section-number">2.6</span> Классификация населенных пунктов</h2>
+<h2>
+<span class="header-section-number">2.6</span> Классификация населенных пунктов<a class="anchor" aria-label="anchor" href="#map-design-general-cities"><i class="fas fa-link"></i></a>
+</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
 <p>Недостатком полученной карты является то, что все населенные пункты показаны одинаково. Чтобы исправить этого, необходимо разделить их по категориям численности населения. Для этого:</p>
 <ol style="list-style-type: decimal">
 <li><p>В диалоге настройки символов слоя включите режим отображения <strong>Categories (unique values)</strong>, используя значения поля <em>Население_диапазон</em></p></li>
 <li><p>Отсортируйте классы численности в нужном порядке, используя стрелочки.</p></li>
-<li><p>Настройте размер кружка таким образом, чтобы его диаметр менялся от 3 до 7 пунктов</p>
+<li>
+<p>Настройте размер кружка таким образом, чтобы его диаметр менялся от 3 до 7 пунктов</p>
 <p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-sizes">2.7</a>):</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-sizes"></span>
-<img src="images/Ex02/image21.png" alt="Настройка шкалы размеров значков населенных пунктов" width="100%" />
-<p class="caption">
+<div class="figure">
+<span style="display:block;" id="fig:mdg-sizes"></span>
+<img src="images/Ex02/image21.png" alt="Настройка шкалы размеров значков населенных пунктов" width="100%"><p class="caption">
 Рис. 2.7: Настройка шкалы размеров значков населенных пунктов
 </p>
-</div></li>
+</div>
+</li>
 <li><p>Перейдите на вкладку <strong>Labels</strong> и переключите подписи в режим нескольких классов.</p></li>
 <li><p>Импортируйте классы с помощью кнопки <strong>Get Symbol Classes</strong>.</p></li>
-<li><p>Настройте подписи следующим образом:</p>
+<li>
+<p>Настройте подписи следующим образом:</p>
 <ul>
 <li>Шрифт <em>Calibri</em> черного цвета</li>
 <li>Размер шрифта должен увеличиваться от низшего класса (менее 10 000) до самого крупного (от 250 000 до 500 000) с 8 до 12 пунктов.</li>
 <li>Подписи городов крупнее 100 000 человек должны быть жирным шрифтом.</li>
 </ul>
 <p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-classes">2.8</a>):</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-classes"></span>
-<img src="images/Ex02/image22.png" alt="Классифицированные населенные пункты на карте" width="100%" />
-<p class="caption">
+<div class="figure">
+<span style="display:block;" id="fig:mdg-classes"></span>
+<img src="images/Ex02/image22.png" alt="Классифицированные населенные пункты на карте" width="100%"><p class="caption">
 Рис. 2.8: Классифицированные населенные пункты на карте
 </p>
-</div></li>
+</div>
+</li>
 </ol>
 <p><kbd><strong>Снимок экрана №3.</strong> Классифицированные населенные пункты с подписями</kbd></p>
 </div>
 <div id="map-design-general-mask" class="section level2" number="2.7">
-<h2><span class="header-section-number">2.7</span> Маска и подписи стран</h2>
+<h2>
+<span class="header-section-number">2.7</span> Маска и подписи стран<a class="anchor" aria-label="anchor" href="#map-design-general-mask"><i class="fas fa-link"></i></a>
+</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Добавьте на карту слой <em>Countries</em> и расположите его между слоями <em>Hillshade</em> и <em>Snow</em>.</p></li>
 <li><p>Настройте отображение слоя способом <strong>Categories (unique values)</strong> по полю <em>Name</em>.</p></li>
-<li><p>Установите следующие параметры отображения:</p>
-<table>
-<thead>
-<tr class="header">
+<li>
+<p>Установите следующие параметры отображения:</p>
+<table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th align="left">Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Цвет заливки</em></td>
@@ -1025,15 +573,15 @@
 <td align="left">50%</td>
 </tr>
 </tbody>
-</table></li>
-<li><p>Включите подписи стран по полю <em>Name</em>, используя следующие параметры:</p>
-<table>
-<thead>
-<tr class="header">
+</table>
+</li>
+<li>
+<p>Включите подписи стран по полю <em>Name</em>, используя следующие параметры:</p>
+<table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th align="left">Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Шрифт</em></td>
@@ -1052,15 +600,15 @@
 <td align="left">Обычный</td>
 </tr>
 </tbody>
-</table></li>
-<li><p>Также установите следующие параметры размещения:</p>
-<table>
-<thead>
-<tr class="header">
+</table>
+</li>
+<li>
+<p>Также установите следующие параметры размещения:</p>
+<table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th align="left">Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Позиция</em></td>
@@ -1080,68 +628,79 @@
 </tr>
 <tr class="odd">
 <td align="left"><em>Образец</em></td>
-<td align="left">-<img src="images/Ex02/image23.png" /></td>
+<td align="left">-<img src="images/Ex02/image23.png">
+</td>
 </tr>
 </tbody>
-</table></li>
+</table>
+</li>
 </ol>
 <p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-masked">2.9</a>):</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-masked"></span>
-<img src="images/Ex02/image24.png" alt="Маскированная территория Швейцарии на картографическом изображении" width="100%" />
-<p class="caption">
+<div class="figure">
+<span style="display:block;" id="fig:mdg-masked"></span>
+<img src="images/Ex02/image24.png" alt="Маскированная территория Швейцарии на картографическом изображении" width="100%"><p class="caption">
 Рис. 2.9: Маскированная территория Швейцарии на картографическом изображении
 </p>
 </div>
 <p><kbd><strong>Снимок экрана №4.</strong> Маска и подписи стран</kbd></p>
 </div>
 <div id="map-design-general-layout" class="section level2" number="2.8">
-<h2><span class="header-section-number">2.8</span> Настройка компоновки карты</h2>
+<h2>
+<span class="header-section-number">2.8</span> Настройка компоновки карты<a class="anchor" aria-label="anchor" href="#map-design-general-layout"><i class="fas fa-link"></i></a>
+</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Переключитесь в вид компоновки</p></li>
-<li><p>Настройте макет листа следующим образом:</p>
+<li>
+<p>Настройте макет листа следующим образом:</p>
 <ul>
 <li>Размер А4</li>
 <li>Альбомная ориентировка</li>
-</ul></li>
+</ul>
+</li>
 <li><p>Подгоните размер фрейма данных таким образом, чтобы карта оказалась в верхней части листа</p></li>
-<li><p>Установите масштаб равным 1:1 750 000</p>
+<li>
+<p>Установите масштаб равным 1:1 750 000</p>
 <p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-layout">2.10</a>):</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-layout"></span>
-<img src="images/Ex02/image25.png" alt="Размещение карты в пределах листа" width="100%" />
-<p class="caption">
+<div class="figure">
+<span style="display:block;" id="fig:mdg-layout"></span>
+<img src="images/Ex02/image25.png" alt="Размещение карты в пределах листа" width="100%"><p class="caption">
 Рис. 2.10: Размещение карты в пределах листа
 </p>
-</div></li>
-<li><p>Используя настройки по умолчанию, вставьте легенду, включив в нее все слои, кроме <em>Elevation</em>, <em>Countries</em> и <em>Hillshade</em></p>
+</div>
+</li>
+<li>
+<p>Используя настройки по умолчанию, вставьте легенду, включив в нее все слои, кроме <em>Elevation</em>, <em>Countries</em> и <em>Hillshade</em></p>
 <p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-legend">2.11</a>):</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-legend"></span>
-<img src="images/Ex02/image26.png" alt="Карта с легендой" width="100%" />
-<p class="caption">
+<div class="figure">
+<span style="display:block;" id="fig:mdg-legend"></span>
+<img src="images/Ex02/image26.png" alt="Карта с легендой" width="100%"><p class="caption">
 Рис. 2.11: Карта с легендой
 </p>
-</div></li>
+</div>
+</li>
 <li><p>Измените название показателя для слоя <em>Cities</em> на «число жителей». Уменьшите размер шрифта до 9 и сделайте его курсивным.</p></li>
 <li><p>Уменьшите размер шрифта для стиля названия слоя <em>Cities</em> до 10 пунктов.</p></li>
 <li><p>Переименуйте все слои в таблице содержания на русский язык в соответствии с таблицей в начале упражнения. Обратите внимание на то, что в легенде они переименуются автоматически.</p></li>
 <li><p>Переименуйте заголовок легенды на русский язык.</p></li>
-<li><p>Увеличьте интервал между слоями в легенде до 10 пунктов.</p>
+<li>
+<p>Увеличьте интервал между слоями в легенде до 10 пунктов.</p>
 <p><em>Результат</em> (Рис. <a href="map-design-general.html#fig:mdg-interval">2.12</a>):</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-interval"></span>
-<img src="images/Ex02/image27.png" alt="Расширенный интервал между элементами легенды" width="100%" />
-<p class="caption">
+<div class="figure">
+<span style="display:block;" id="fig:mdg-interval"></span>
+<img src="images/Ex02/image27.png" alt="Расширенный интервал между элементами легенды" width="100%"><p class="caption">
 Рис. 2.12: Расширенный интервал между элементами легенды
 </p>
-</div></li>
+</div>
+</li>
 <li><p>Вставьте на карту координатную сетку типа <strong>Graticule</strong> с шагом 1° по широте и долготе. Отключите для градусной сетки показ минут и секунд.</p></li>
-<li><p>Вставьте название карты над картой по центру, используя следующие параметры:</p>
-<table>
-<thead>
-<tr class="header">
+<li>
+<p>Вставьте название карты над картой по центру, используя следующие параметры:</p>
+<table class="table table-sm">
+<thead><tr class="header">
 <th align="left">Параметр</th>
 <th align="left">Значение</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td align="left"><em>Шрифт</em></td>
@@ -1160,25 +719,32 @@
 <td align="left">10 пунктов</td>
 </tr>
 </tbody>
-</table></li>
-<li><p>Вставьте <em>километровую</em> масштабную линейку по нижеприведенному образцу (Рис. <a href="map-design-general.html#fig:mdg-grid">2.13</a>):</p>
-<div class="figure"><span style="display:block;" id="fig:mdg-grid"></span>
-<img src="images/Ex02/image28.png" alt="Карта с градусной сеткой, названием и масштабной линейкой" width="100%" />
-<p class="caption">
+</table>
+</li>
+<li>
+<p>Вставьте <em>километровую</em> масштабную линейку по нижеприведенному образцу (Рис. <a href="map-design-general.html#fig:mdg-grid">2.13</a>):</p>
+<div class="figure">
+<span style="display:block;" id="fig:mdg-grid"></span>
+<img src="images/Ex02/image28.png" alt="Карта с градусной сеткой, названием и масштабной линейкой" width="100%"><p class="caption">
 Рис. 2.13: Карта с градусной сеткой, названием и масштабной линейкой
 </p>
-</div></li>
+</div>
+</li>
 <li><p>Добавьте свою фамилию и инициалы справа внизу под легендой.</p></li>
 </ol>
 <p><kbd><strong>Снимок экрана №5.</strong> Итоговая карта</kbd></p>
 </div>
 <div id="map-design-general-export" class="section level2" number="2.9">
-<h2><span class="header-section-number">2.9</span> Экспорт в графический файл</h2>
+<h2>
+<span class="header-section-number">2.9</span> Экспорт в графический файл<a class="anchor" aria-label="anchor" href="#map-design-general-export"><i class="fas fa-link"></i></a>
+</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
 <p>Экспортируйте карту из режима компоновки в формат <kbd>PNG</kbd> с разрешением 300 точек на дюйм.</p>
 </div>
 <div id="map-design-general-questions" class="section level2" number="2.10">
-<h2><span class="header-section-number">2.10</span> Контрольные вопросы</h2>
+<h2>
+<span class="header-section-number">2.10</span> Контрольные вопросы<a class="anchor" aria-label="anchor" href="#map-design-general-questions"><i class="fas fa-link"></i></a>
+</h2>
 <p><a href="map-design-general.html#map-design-general">В начало упражнения ⇡</a></p>
 <ol style="list-style-type: decimal">
 <li><p>Какие типы геометрии допустимы для слоев в базе геоданных? К каким типам относятся слои, использованные вами в работе?</p></li>
@@ -1188,90 +754,86 @@
 <li><p>За что отвечают системные поля <em>Shape</em> и <em>ObjectID</em>?</p></li>
 <li><p>Чем отличается вид компоновки от вида данных?</p></li>
 </ol>
-<table>
-<tbody>
-<tr class="odd">
-<td><em>Самсонов Т.Е.</em> <strong>Основы геоинформатики: практикум</strong>. М.: Географический факультет МГУ, 2022. DOI: 10.5281/zenodo.1167857</td>
-</tr>
-</tbody>
-</table>
-
+<div class="inline-table"><table class="table table-sm"><tbody><tr class="odd">
+<td>
+<em>Самсонов Т.Е.</em> <strong>Основы геоинформатики: практикум</strong>. М.: Географический факультет МГУ, 2022. DOI: 10.5281/zenodo.1167857</td>
+</tr></tbody></table></div>
 </div>
 </div>
-            </section>
+  <div class="chapter-nav">
+<div class="prev"><a href="map-design-quaternary.html"><span class="header-section-number">1</span> Карта четвертичных отложений</a></div>
+<div class="next"><a href="map-design-climates.html"><span class="header-section-number">3</span> Климатическая карта</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#map-design-general"><span class="header-section-number">2</span> Общегеографическая карта</a></li>
+<li>
+<a class="nav-link" href="#map-design-general-intro"><span class="header-section-number">2.1</span> Введение</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#map-design-general-control"><span class="header-section-number">2.1.1</span> Контрольный лист</a></li>
+<li><a class="nav-link" href="#map-design-general-annotation"><span class="header-section-number">2.1.2</span> Аннотация</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#map-design-general-begin"><span class="header-section-number">2.2</span> Начало работы</a></li>
+<li><a class="nav-link" href="#map-design-general-relief"><span class="header-section-number">2.3</span> Оформление рельефа</a></li>
+<li><a class="nav-link" href="#map-design-general-vector"><span class="header-section-number">2.4</span> Оформление векторных слоев</a></li>
+<li><a class="nav-link" href="#map-design-general-labels"><span class="header-section-number">2.5</span> Создание подписей</a></li>
+<li><a class="nav-link" href="#map-design-general-cities"><span class="header-section-number">2.6</span> Классификация населенных пунктов</a></li>
+<li><a class="nav-link" href="#map-design-general-mask"><span class="header-section-number">2.7</span> Маска и подписи стран</a></li>
+<li><a class="nav-link" href="#map-design-general-layout"><span class="header-section-number">2.8</span> Настройка компоновки карты</a></li>
+<li><a class="nav-link" href="#map-design-general-export"><span class="header-section-number">2.9</span> Экспорт в графический файл</a></li>
+<li><a class="nav-link" href="#map-design-general-questions"><span class="header-section-number">2.10</span> Контрольные вопросы</a></li>
+</ul>
 
-          </div>
-        </div>
-      </div>
-<a href="map-design-quaternary.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="map-design-climates.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Основы геоинформатики: практикум в ArcGIS</strong>" was written by Тимофей Самсонов. It was last built on 2022-08-24.</p>
   </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
-<script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/tsamsonov/arcgis-course/edit/master/Ex02_MapDesign_General.Rmd",
-"text": "Редактировать"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["arcgis-course.pdf", "arcgis-course.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "section"
-}
-});
-});
-</script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
 </script>
 </body>
-
 </html>

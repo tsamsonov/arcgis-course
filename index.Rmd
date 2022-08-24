@@ -4,7 +4,7 @@ author: "Тимофей Самсонов"
 date: "`r Sys.Date()`"
 description: "Основы геоинформатики: практикум в ArcGIS"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+knit: "bookdown::render_book"
 documentclass: book
 bibliography: [book.bib]
 biblio-style: [gost-authoryear]
