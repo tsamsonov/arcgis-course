@@ -5,7 +5,6 @@
 *.sh      linguist-vendored=true
 *.aux     linguist-vendored=true
 *.Rmd     linguist-vendored=true
-*.html     linguist-vendored=true
 Makefile  linguist-vendored=true
 docs/* linguist-vendored=false
 *.md linguist-detectable
