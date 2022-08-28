@@ -7,3 +7,4 @@
 *.Rmd     linguist-vendored=true
 Makefile  linguist-vendored=true
 docs/* linguist-vendored=false
+*.md linguist-detectable
