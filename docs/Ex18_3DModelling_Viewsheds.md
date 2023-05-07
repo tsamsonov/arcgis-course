@@ -1,6 +1,6 @@
 # Трехмерное моделирование {#threed-modelling}
 
-[Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex18.zip)
+[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex18.zip)
 
 ## Введение {#threed-modelling-intro}
 

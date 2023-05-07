@@ -2,7 +2,7 @@
 
 # Оценка плотности распределения {#density-analysis}
 
-[Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex16.zip)
+[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex16.zip)
 
 ## Введение {#density-analysis-intro}
 

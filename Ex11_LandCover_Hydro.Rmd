@@ -1,6 +1,6 @@
 # Пространственные соотношения {#land-cover-hydro}
 
-[Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex11.zip)
+[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex11.zip)
 
 ## Введение {#land-cover-hydro-intro}
 

@@ -1,6 +1,6 @@
 # Пространственная интерполяция {#interpolation}
 
-[Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex17.zip)
+[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex17.zip)
 
 ## Введение {#interpolation-intro}
 

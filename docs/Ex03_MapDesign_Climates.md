@@ -2,7 +2,7 @@
 
 
 
-[Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex03.zip)
+[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex03.zip)
 
 ## Введение {#map-design-climates-intro}
 

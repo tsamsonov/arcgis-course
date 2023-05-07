@@ -1,6 +1,6 @@
 # Соединение табличных данных {#stat-map-economic}
 
-[Скачать данные и файл отчета](http://autolab.geogr.msu.ru/gis/data/Ex08.zip)
+[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex08.zip)
 
 ## Введение {#stat-map-economic-intro}
 
