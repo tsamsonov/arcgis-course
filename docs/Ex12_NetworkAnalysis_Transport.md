@@ -1,6 +1,6 @@
 # Транспортные сети {#network-analysis}
 
-[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex12.zip)
+[Скачать данные и файл отчета](https://github.com/tsamsonov/arcgis-course/raw/refs/heads/master/data/Ex12.zip)
 
 ## Введение {#network-analysis-intro}
 

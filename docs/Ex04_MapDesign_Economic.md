@@ -2,7 +2,7 @@
 
 
 
-[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex04.zip)
+[Скачать данные и файл отчета](https://github.com/tsamsonov/arcgis-course/raw/refs/heads/master/data/Ex04.zip)
 
 ## Введение {#map-design-economic-intro}
 

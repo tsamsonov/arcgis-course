@@ -7,7 +7,7 @@
 <title>Упражнение 18 Трехмерное моделирование | Основы геоинформатики: практикум в ArcGIS</title>
 <meta name="author" content="Тимофей Самсонов">
 <meta name="description" content="Скачать данные и файл отчета  18.1 Введение Цель задания — знакомство с трехмерными моделями данных, трехмерной визуализацией и анализом в ГИС Параметр Значение Теоретическая подготовка Трехмерные...">
-<meta name="generator" content="bookdown 0.33 with bs4_book()">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
 <meta property="og:title" content="Упражнение 18 Трехмерное моделирование | Основы геоинформатики: практикум в ArcGIS">
 <meta property="og:type" content="book">
 <meta property="og:description" content="Скачать данные и файл отчета  18.1 Введение Цель задания — знакомство с трехмерными моделями данных, трехмерной визуализацией и анализом в ГИС Параметр Значение Теоретическая подготовка Трехмерные...">
@@ -16,7 +16,7 @@
 <meta name="twitter:description" content="Скачать данные и файл отчета  18.1 Введение Цель задания — знакомство с трехмерными моделями данных, трехмерной визуализацией и анализом в ГИС Параметр Значение Теоретическая подготовка Трехмерные...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -97,7 +97,7 @@
 <h1>
 <span class="header-section-number">Упражнение 18</span> Трехмерное моделирование<a class="anchor" aria-label="anchor" href="#threed-modelling"><i class="fas fa-link"></i></a>
 </h1>
-<p><a href="https://carto.geogr.msu.ru/gis/data/Ex18.zip">Скачать данные и файл отчета</a></p>
+<p><a href="https://github.com/tsamsonov/arcgis-course/raw/refs/heads/master/data/Ex18.zip">Скачать данные и файл отчета</a></p>
 <div id="threed-modelling-intro" class="section level2" number="18.1">
 <h2>
 <span class="header-section-number">18.1</span> Введение<a class="anchor" aria-label="anchor" href="#threed-modelling-intro"><i class="fas fa-link"></i></a>
@@ -189,8 +189,8 @@
 <li><p>Разместите слои именно в том порядке, в котором они указаны выше.</p></li>
 <li>
 <p>Дважды щелкните на слое <em>Горизонтали</em>. Перейдите на вкладку <strong>Display</strong> и установите значение прозрачности равным <em>80%</em> (Рис. 1).</p>
-<div class="figure">
-<img src="images/Ex18/image2.png" alt=""><p class="caption"><em>Рис. 1. Установка прозрачности слоя</em></p>
+<div class="float">
+<img src="images/Ex18/image2.png" alt="Рис. 1. Установка прозрачности слоя"><div class="figcaption"><em>Рис. 1. Установка прозрачности слоя</em></div>
 </div>
 </li>
 <li><p>Перейдите на вкладку <strong>Symbology</strong> и поменяйте цвет горизонталей на черный. Нажмите <strong>ОК</strong>.</p></li>
@@ -200,15 +200,15 @@
 <li><p>Дважды щелкните на слое <em>ЦМР</em>, перейдите на вкладку <strong>Symbology</strong> и нажмите <strong>Classify…</strong>, чтобы сменить метод классификации.</p></li>
 <li>
 <p>В появившемся диалоге выберите режим <em>Defined Interval</em> (заданный вручную интервал) и установите величину интервала равной 4 метрам. Окно классификации примет вид, аналогичный Рис. 2.</p>
-<div class="figure">
-<img src="images/Ex18/image3.png" alt=""><p class="caption"><em>Рис. 2. Классификация высот для послойной окраски методом заданного интервала</em></p>
+<div class="float">
+<img src="images/Ex18/image3.png" alt="Рис. 2. Классификация высот для послойной окраски методом заданного интервала"><div class="figcaption"><em>Рис. 2. Классификация высот для послойной окраски методом заданного интервала</em></div>
 </div>
 </li>
 <li><p>Нажмите <strong>ОК</strong> чтобы закрыть диалог классификации высот.</p></li>
 <li>
 <p>Выберите цветовую шкалу, близкую по гамме к гипсометрической. Окно карты примет вид, аналогичный представленному на Рис. 3.</p>
-<div class="figure">
-<img src="images/Ex18/image4.png" alt=""><p class="caption"><em>Рис. 3. Цифровая модель рельефа долины реки Протвы</em></p>
+<div class="float">
+<img src="images/Ex18/image4.png" alt="Рис. 3. Цифровая модель рельефа долины реки Протвы"><div class="figcaption"><em>Рис. 3. Цифровая модель рельефа долины реки Протвы</em></div>
 </div>
 <p><kbd><strong>Снимок экрана №1.</strong> Цифровая модель рельефа долины реки Протвы</kbd></p>
 </li>
@@ -229,14 +229,14 @@
 <li><p>Дважды щелкните на слое <em>Растительность</em> и перейдите на вкладку <strong>Symbology</strong>.</p></li>
 <li>
 <p>Выберите тип отображение <strong>Quantities &gt; Graduated Colors</strong>. В качестве поля отображения укажите поле <em>Высота</em>. Выберите шкалу от светло-зеленого к темно-зеленому. Диалог примет вид, аналогичный представленному на Рис. 4:</p>
-<div class="figure">
-<img src="images/Ex18/image5.png" alt=""><p class="caption"><em>Рис. 4. Визуализация слоя по численному показателю методом количественного фона</em></p>
+<div class="float">
+<img src="images/Ex18/image5.png" alt="Рис. 4. Визуализация слоя по численному показателю методом количественного фона"><div class="figcaption"><em>Рис. 4. Визуализация слоя по численному показателю методом количественного фона</em></div>
 </div>
 </li>
 <li>
 <p>Нажмите <strong>ОК</strong>. Окно карты примет следующий вид (Рис. 5):</p>
-<div class="figure">
-<img src="images/Ex18/image6.png" alt=""><p class="caption"><em>Рис. 5. Количественный фон по высоте растительности</em></p>
+<div class="float">
+<img src="images/Ex18/image6.png" alt="Рис. 5. Количественный фон по высоте растительности"><div class="figcaption"><em>Рис. 5. Количественный фон по высоте растительности</em></div>
 </div>
 </li>
 <li><p>Откройте <strong>ArcToolbox</strong> и запустите инструмент <strong>Conversion Tools &gt; To Raster &gt; Polygon to Raster</strong>.</p></li>
@@ -244,8 +244,8 @@
 <li><p>В списке <strong>Field</strong> выберите поле <em>Height</em> — значение, хранящееся в нем, будет присвоено каждой ячейке растра.</p></li>
 <li>
 <p>Установите параметр <strong>Cell size</strong> равным <em>2,5</em> метра. Остальные параметры оставьте по умолчанию. Диалог инструмента примет вид, аналогичный представленному на Рис. 6:</p>
-<div class="figure">
-<img src="images/Ex18/image7.png" alt=""><p class="caption"><em>Рис. 6. Преобразование полигона лесного массива в растровое представление с помощью инструмента Polygon to Raster</em></p>
+<div class="float">
+<img src="images/Ex18/image7.png" alt="Рис. 6. Преобразование полигона лесного массива в растровое представление с помощью инструмента Polygon to Raster"><div class="figcaption"><em>Рис. 6. Преобразование полигона лесного массива в растровое представление с помощью инструмента Polygon to Raster</em></div>
 </div>
 </li>
 <li><p>Нажмите <strong>ОК</strong>, чтобы запустить выполнение инструмента.</p></li>
@@ -254,16 +254,16 @@
 <li><p>Выберите в качестве первого растра <em>ЦМР</em>, в качестве второго — <em>Высота растительности</em>.</p></li>
 <li>
 <p>Назовите выходной класс <em>DEM_Veg</em>. Диалог примет следующий вид (Рис. 7).</p>
-<div class="figure">
-<img src="images/Ex18/image8.png" alt=""><p class="caption"><em>Рис. 7. Инструмент <strong>Plus</strong>, осуществляющий сложение растров</em></p>
+<div class="float">
+<img src="images/Ex18/image8.png" alt="Рис. 7. Инструмент Plus, осуществляющий сложение растров"><div class="figcaption"><em>Рис. 7. Инструмент <strong>Plus</strong>, осуществляющий сложение растров</em></div>
 </div>
 </li>
 <li><p>Нажмите <em>ОК</em>.</p></li>
 <li><p>После того, как полученный слой добавится на карту, назовите его <em>ЦМР+</em>.</p></li>
 <li>
 <p>Перенесите слой <em>ЦМР+</em> под гидрографию. Обратите внимание на резкие перепады яркости изображения, обусловленные внедрением объектов растительности.</p>
-<div class="figure">
-<img src="images/Ex18/image9.png" alt=""><p class="caption"><em>Рис. 8. Поле высот с внедренными объектами растительности</em></p>
+<div class="float">
+<img src="images/Ex18/image9.png" alt="Рис. 8. Поле высот с внедренными объектами растительности"><div class="figcaption"><em>Рис. 8. Поле высот с внедренными объектами растительности</em></div>
 </div>
 </li>
 </ol>
@@ -287,8 +287,8 @@
 <li><p>Максимальное количество точек <strong>Maximum Number Of Points</strong> увеличьте до <em>3 000 000</em> (три миллиона). Это значение подобрано для вас эмпирически.</p></li>
 <li>
 <p>Множитель по высоте <strong>Z factor</strong> оставьте равным <em>1</em>. Окно инструмента примет вид, аналогичный представленному на Рис. 9.</p>
-<div class="figure">
-<img src="images/Ex18/image10.png" alt=""><p class="caption"><em>Рис. 9. Инструмент Raster to TIN для преобразования растровых моделей в триангуляционные</em></p>
+<div class="float">
+<img src="images/Ex18/image10.png" alt="Рис. 9. Инструмент Raster to TIN для преобразования растровых моделей в триангуляционные"><div class="figcaption"><em>Рис. 9. Инструмент Raster to TIN для преобразования растровых моделей в триангуляционные</em></div>
 </div>
 </li>
 <li><p>Нажмите <strong>ОК</strong>, чтобы запустить преобразование.</p></li>
@@ -300,8 +300,8 @@
 <li><p>Исправьте цвет стандартного ребра <em>Regular Edge</em> на черный и нажмите <strong>ОК</strong>.</p></li>
 <li>
 <p>Приблизьтесь к лесному массиву в центральной части карты к северу от <em>Протвы</em>. Окно карты примет вид, аналогичный представленному на (Рис. 10).</p>
-<div class="figure">
-<img src="images/Ex18/image11.png" alt=""><p class="caption"><em>Рис. 10. Триангуляционная модель рельефа с лесным массивом</em></p>
+<div class="float">
+<img src="images/Ex18/image11.png" alt="Рис. 10. Триангуляционная модель рельефа с лесным массивом"><div class="figcaption"><em>Рис. 10. Триангуляционная модель рельефа с лесным массивом</em></div>
 </div>
 </li>
 </ol>
@@ -324,8 +324,8 @@
 <li><p>Раскройте домашнюю директорию в окне <strong>Каталога</strong>, щелкните правой кнопкой мыши на базе геоданных <em>Ex18.gdb</em> и выберите пункт <strong>Make Default Geodatabase</strong>, чтобы назначить ее базой геоданных по умолчанию, если это еще не сделано.</p></li>
 <li>
 <p>Откройте панель инструментов <strong>Tools</strong> и обратите внимание на то, что она несколько отличается от привычной вам панели инструментов в <strong>Аркмапе</strong>. Самый первый инструмент используется для вращения сцены.</p>
-<div class="figure">
-<img src="images/Ex18/image12.png" alt=""><p class="caption"><em>Рис. 11. Панель инструментов <strong>Tools</strong> в <strong>ArcScene</strong> </em></p>
+<div class="float">
+<img src="images/Ex18/image12.png" alt="Рис. 11. Панель инструментов Tools в ArcScene "><div class="figcaption"><em>Рис. 11. Панель инструментов <strong>Tools</strong> в <strong>ArcScene</strong> </em></div>
 </div>
 </li>
 <li>
@@ -342,8 +342,8 @@
 <li><p>Перейдите на вкладку <strong>Rendering</strong> поставьте галочку <strong>Shade areal features relative to the scene’s light position</strong>. В этом режиме снимок на снимок будет накладываться тень в соответствии с параметрами освещения сцены.</p></li>
 <li>
 <p>На той же вкладке в группе настроек <strong>Optimize</strong> переместите ползунок <strong>Quality enhancement for raster images</strong> в крайнее правое положение для того чтобы снимок отображался в максимальном качестве. Диалог настройки слоя примет вид, аналогичный представленному на Рис. 12.</p>
-<div class="figure">
-<img src="images/Ex18/image14.png" alt=""><p class="caption"><em>Рис. 12. Настройка параметров рендеринга для аэрофотоснимка</em></p>
+<div class="float">
+<img src="images/Ex18/image14.png" alt="Рис. 12. Настройка параметров рендеринга для аэрофотоснимка"><div class="figcaption"><em>Рис. 12. Настройка параметров рендеринга для аэрофотоснимка</em></div>
 </div>
 </li>
 <li><p>Нажмите <strong>ОК</strong> в настройках слоя. Вам придется подождать некоторое время, пока снимок драпируется на поверхность модели.</p></li>
@@ -360,8 +360,8 @@
 <li><p>Дважды щелкните в таблице содержания на заголовке <strong>Scene Layers</strong> и установите параметр <strong>Vertical Exxageration</strong> равным <em>3</em>. Нажмите <strong>ОК</strong>.</p></li>
 <li>
 <p>Окно приложения примет вид, аналогичный представленному на Рис. 13.</p>
-<div class="figure">
-<img src="images/Ex18/image15.png" alt=""><p class="caption"><em>Рис. 13. Снимок, драпированный поверх ЦМР с высотами растительности</em></p>
+<div class="float">
+<img src="images/Ex18/image15.png" alt="Рис. 13. Снимок, драпированный поверх ЦМР с высотами растительности"><div class="figcaption"><em>Рис. 13. Снимок, драпированный поверх ЦМР с высотами растительности</em></div>
 </div>
 <blockquote>
 <p>Что изменилось в сцене после установки параметра Vertical Exxageration? Как он влияет на отображение слоев?</p>
@@ -381,22 +381,22 @@
 <li><p>В открывшемся диалоге нажмите кнопку <strong>Style References</strong>, чтобы подгрузить дополнительные символы.</p></li>
 <li>
 <p>Отметьте в списке набор символов <em>3D Industrial</em> (Рис. 14) и нажмите <strong>ОК</strong>.</p>
-<div class="figure">
-<img src="images/Ex18/image16.png" alt=""><p class="caption"><em>Рис. 14. Подключение набора символов через Symbol Selector</em></p>
+<div class="float">
+<img src="images/Ex18/image16.png" alt="Рис. 14. Подключение набора символов через Symbol Selector"><div class="figcaption"><em>Рис. 14. Подключение набора символов через Symbol Selector</em></div>
 </div>
 </li>
 <li>
 <p>Найдите в таблице символ <em>WatchTower 1</em>, выберите его и установите размер <em>40 пикселов</em>. Диалог настройки символа примет вид, аналогичный представленному на Рис. 15.</p>
-<div class="figure">
-<img src="images/Ex18/image17.png" alt=""><p class="caption"><em>Рис. 15. Выбор символа для геодезического пункта (Watch Tower 1)</em></p>
+<div class="float">
+<img src="images/Ex18/image17.png" alt="Рис. 15. Выбор символа для геодезического пункта (Watch Tower 1)"><div class="figcaption"><em>Рис. 15. Выбор символа для геодезического пункта (Watch Tower 1)</em></div>
 </div>
 </li>
 <li><p>Нажмите <strong>ОК</strong>, чтобы завершить настройку символа для геодезического пункта.</p></li>
 <li><p>Добавьте на карту слой <em>Buildings_3D</em> из базы данных <em>Satino</em>. Это трехмерные объекты типа <strong>Multipatch</strong>, у которых была заранее определена высота.</p></li>
 <li>
 <p>Приблизьтесь к участку поймы между деревнями <em>Дедюевка</em> и <em>Рыжково</em>. Окно приложения примет вид, аналогичный представленному на Рис. 16.</p>
-<div class="figure">
-<img src="images/Ex18/image18.png" alt=""><p class="caption"><em>Рис. 16. Трехмерные данные для анализа зон видимости и открытости небосвода</em></p>
+<div class="float">
+<img src="images/Ex18/image18.png" alt="Рис. 16. Трехмерные данные для анализа зон видимости и открытости небосвода"><div class="figcaption"><em>Рис. 16. Трехмерные данные для анализа зон видимости и открытости небосвода</em></div>
 </div>
 <p><kbd><strong>Снимок экрана №3</strong>. Визуализация исходных данных для анализа зон видимости: рельеф, снимок, геодезические пункты и трехмерные здания</kbd></p>
 </li>
@@ -416,8 +416,8 @@
 <li><p>Из списка препятствий <strong>Input Features</strong> выберите слой <em>Здания 3D</em>. Диалог инструмента и окно приложения примут вид, аналогичный представленному на Рис. 17.</p></li>
 <li>
 <p>Нажмите <strong>ОК</strong>, чтобы запустить расчеты.</p>
-<div class="figure">
-<img src="images/Ex18/image19.png" alt=""><p class="caption"><em>Рис. 17. Инструмент Skyline для построения линии небосвода</em></p>
+<div class="float">
+<img src="images/Ex18/image19.png" alt="Рис. 17. Инструмент Skyline для построения линии небосвода"><div class="figcaption"><em>Рис. 17. Инструмент Skyline для построения линии небосвода</em></div>
 </div>
 </li>
 <li><p>После того, как результат будет добавлен в таблицу содержания, смените его название на <em>Линия небосвода (Старое русло)</em> и смените символ на ярко-желтую линию.</p></li>
@@ -430,8 +430,8 @@
 <li><p>После того, как результат добавится в таблицу содержания, переименуйте его в Зона видимости (Старое русло).</p></li>
 <li>
 <p>Смените цвет слоя зоны видимости на ярко-желтый и установите прозрачность слоя равной <em>50%</em>. Окно приложения примет вид, аналогичный представленному на Рис. 18:</p>
-<div class="figure">
-<img src="images/Ex18/image20.png" alt=""><p class="caption"><em>Рис. 18. Результат расчета зоны видимости для пункта Старое русло</em></p>
+<div class="float">
+<img src="images/Ex18/image20.png" alt="Рис. 18. Результат расчета зоны видимости для пункта Старое русло"><div class="figcaption"><em>Рис. 18. Результат расчета зоны видимости для пункта Старое русло</em></div>
 </div>
 <p><kbd><strong>Снимок экрана №4.</strong> Результат расчета зоны видимости пункта Старое русло</kbd></p>
 </li>
@@ -462,8 +462,8 @@
 <li><p>Отключите слои <em>Линия небосвода (Старое русло)</em> и <em>Зона видимости (Старое русло)</em>.</p></li>
 <li>
 <p>Нажмите <strong>глобус</strong>, чтобы вся сцена поместилась на в окне просмотра (Рис. 19).</p>
-<div class="figure">
-<img src="images/Ex18/image21.png" alt=""><p class="caption"><em>Рис. 19. Зона видимости, построенная для пункта Дедюевка</em></p>
+<div class="float">
+<img src="images/Ex18/image21.png" alt="Рис. 19. Зона видимости, построенная для пункта Дедюевка"><div class="figcaption"><em>Рис. 19. Зона видимости, построенная для пункта Дедюевка</em></div>
 </div>
 <p><kbd><strong>Снимок экрана №5</strong>. Результат расчета зоны видимости пункта Дедюевка</kbd></p>
 <blockquote>
@@ -529,7 +529,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Основы геоинформатики: практикум в ArcGIS</strong>" was written by Тимофей Самсонов. It was last built on 2023-05-07.</p>
+    <p>"<strong>Основы геоинформатики: практикум в ArcGIS</strong>" was written by Тимофей Самсонов. It was last built on 2025-03-17.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

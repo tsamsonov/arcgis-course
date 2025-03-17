@@ -1,6 +1,6 @@
 # Привязка и векторизация (административная карта) {#map-ref-economic}
 
-[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex07.zip)
+[Скачать данные и файл отчета](https://github.com/tsamsonov/arcgis-course/raw/refs/heads/master/data/Ex07.zip)
 
 ## Введение {#map-ref-economic-intro}
 

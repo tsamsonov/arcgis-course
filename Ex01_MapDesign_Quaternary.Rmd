@@ -6,7 +6,7 @@
 knitr::opts_chunk$set(out.width = '100%', echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex01.zip)
+[Скачать данные и файл отчета](https://github.com/tsamsonov/arcgis-course/raw/refs/heads/master/data/Ex01.zip)
 
 ## Введение {#map-design-quaternary-intro}
 

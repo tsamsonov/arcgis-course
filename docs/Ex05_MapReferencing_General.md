@@ -4,7 +4,7 @@
 
 
 
-[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex05.zip)
+[Скачать данные и файл отчета](https://github.com/tsamsonov/arcgis-course/raw/refs/heads/master/data/Ex05.zip)
 
 ## Введение {#map-ref-general-intro}
 

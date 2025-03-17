@@ -1,6 +1,6 @@
 # Гидрографические сети {#network-hydro}
 
-[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex13.zip)
+[Скачать данные и файл отчета](https://github.com/tsamsonov/arcgis-course/raw/refs/heads/master/data/Ex13.zip)
 
 ## Введение {#network-hydro-intro}
 

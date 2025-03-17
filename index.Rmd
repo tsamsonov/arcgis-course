@@ -9,7 +9,7 @@ documentclass: book
 bibliography: [book.bib]
 biblio-style: [gost-authoryear]
 biblatexoptions: [language=auto,autolang=other,movenames=false]
-csl: [gost-r-7-0-5-2008-author-date-alphab.csl]
+#csl: [gost-r-7-0-5-2008-author-date-alphab.csl]
 link-citations: yes
 colorlinks: true
 github-repo: tsamsonov/arcgis-course

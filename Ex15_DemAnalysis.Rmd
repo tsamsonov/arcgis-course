@@ -1,6 +1,6 @@
 # Цифровое моделирование рельефа {#dem}
 
-[Скачать данные и файл отчета](https://carto.geogr.msu.ru/gis/data/Ex15.zip)
+[Скачать данные и файл отчета](https://github.com/tsamsonov/arcgis-course/raw/refs/heads/master/data/Ex15.zip)
 
 ## Введение {#dem-intro}
 
